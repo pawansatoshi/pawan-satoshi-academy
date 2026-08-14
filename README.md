@@ -2,31 +2,48 @@
 
 A free, mobile-first Discord learning ecosystem for Web2, Web3, AI, cybersecurity and digital literacy.
 
-## Project status
+## Mission
 
-This repository is being initialized from the verified Pawan Satoshi Academy handoff snapshot. The implementation is modular and designed for administration from Android using GitHub Codespaces and a mobile browser.
+Transform the existing Pawan Satoshi Discord community into a safe, beginner-friendly Academy from Orientation through Class 12 and Graduation, with free quizzes, assessments, certificates, community activities and a public learning website.
 
-### Core principles
+## Non-negotiables
 
 - Existing Discord server only: https://discord.gg/hvHNpT4xX
-- Free-first: no mandatory paid services
-- Least-privilege Discord permissions
-- Owner retains ultimate control
-- Mobile-first development and administration
-- Production-ready code; no placeholder implementations
-- Automated validation and documented handoffs
+- Learning, quizzes and certificates remain free.
+- Least-privilege permissions; no unnecessary Administrator access.
+- Owner retains ultimate control.
+- No placeholder implementations.
+- Official documentation is preferred for technical and crypto facts.
+- Mobile-first administration.
 
 ## Current architecture
 
 - `bot/` — Discord bot and automation
 - `quizzes/` — validated question banks and schemas
-- `academy/` — curriculum content
+- `academy/` — long-form curriculum content
+- `certificates/` — certificate generation assets
 - `website/` — GitHub Pages application
-- `docs/` — architecture and module documentation
+- `docs/` — architecture, setup and module documentation
 - `.github/` — CI/CD workflows
 
-## Important
+## Roadmap
 
-GitHub stores the source code; the Discord bot still requires a supported runtime to remain online. Never put a Discord token in the repository. Use environment variables or GitHub/Codespaces secrets.
+Read [`MASTER_BLUEPRINT.md`](MASTER_BLUEPRINT.md) for the product definition and [`ROADMAP.md`](ROADMAP.md) for the authoritative execution order.
 
-See `HANDOFF.md` and `CONTINUE.md` for the verified implementation state and exact next steps.
+`SOURCE_SNAPSHOT.md` records the historical ZIP checkpoints and the canonical handoff baseline.
+
+## Current baseline
+
+The latest verified handoff contains 17 populated subjects and 537 validated quiz questions, plus the Discord foundation, security engine, quiz engine, assessment engine and curriculum progress tracking. The remaining product modules are explicitly tracked in the roadmap and status documents.
+
+## Mobile workflow
+
+The project is designed so the administrator can manage the repository from an Android phone using GitHub's web/mobile interfaces. A desktop PC or Codespace is not a project requirement.
+
+## Security
+
+Never commit Discord tokens, API keys, `.env` files or local databases. Use a supported secret store/environment for deployment.
+
+## Important deployment note
+
+GitHub stores the source code and can host the static website. The Discord bot still needs a supported runtime to remain continuously online; repository storage alone does not run a Discord bot.
