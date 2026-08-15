@@ -7,7 +7,7 @@ export const data = new SlashCommandBuilder()
   .setDescription("Submit or review Academy suggestions")
   .addSubcommand((sub) => sub.setName("add").setDescription("Submit an improvement idea").addStringOption((o) => o.setName("idea").setDescription("Your suggestion").setRequired(true).setMaxLength(500)))
   .addSubcommand((sub) => sub.setName("list").setDescription("View recent suggestions"))
-  .addSubcommand((sub) => sub.setName("status").setDescription("Update a suggestion status").setDefaultMemberPermissions(PermissionFlagsBits.ManageGuild).addStringOption((o) => o.setName("id").setDescription("Suggestion ID").setRequired(true)).addStringOption((o) => o.setName("value").setDescription("new status").setRequired(true).addChoices({ name: "planned", value: "planned" }, { name: "accepted", value: "accepted" }, { name: "declined", value: "declined" })));
+  .addSubcommand((sub) => sub.setName("status").setDescription("Update a suggestion status").addStringOption((o) => o.setName("id").setDescription("Suggestion ID").setRequired(true)).addStringOption((o) => o.setName("value").setDescription("new status").setRequired(true).addChoices({ name: "planned", value: "planned" }, { name: "accepted", value: "accepted" }, { name: "declined", value: "declined" })));
 
 export async function execute(interaction) {
   const sub = interaction.options.getSubcommand();
@@ -21,6 +21,10 @@ export async function execute(interaction) {
   if (sub === "list") {
     const text = suggestions.slice(-15).reverse().map((item) => `**${item.id}** · ${item.status} · ${item.idea}`).join("\n") || "No suggestions yet.";
     await interaction.reply({ embeds: [new EmbedBuilder().setColor("#8E9BFF").setTitle("Academy Suggestions").setDescription(text)], ephemeral: true });
+    return;
+  }
+  if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) {
+    await interaction.reply({ content: "Only Academy managers can update suggestion status.", ephemeral: true });
     return;
   }
   const id = interaction.options.getString("id", true).toUpperCase();
