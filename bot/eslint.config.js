@@ -1,20 +1,9 @@
-const nodeGlobals = {
-  console: "readonly",
-  process: "readonly",
-  URL: "readonly",
-  setInterval: "readonly",
-  clearInterval: "readonly",
-  setTimeout: "readonly",
-  clearTimeout: "readonly"
-};
-
 export default [
   {
     files: ["src/**/*.js", "tests/**/*.js", "scripts/**/*.js"],
     languageOptions: {
       ecmaVersion: 2023,
-      sourceType: "module",
-      globals: nodeGlobals
+      sourceType: "module"
     },
     rules: {
       "no-unused-vars": "warn",
