@@ -85,6 +85,7 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Source-language vs reviewed-translation status
 - Fallback strategy for missing strings
 - Translation validation tests
+- India-specific locale coverage and script validation
 
 **Exit condition:** switching locale never breaks navigation, lesson loading, scoring, certificates or accessibility, even when a translation is incomplete.
 
@@ -102,7 +103,9 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Translation review workflow and glossary enforcement
 - Architecture remains open to any Unicode language rather than a fixed language ceiling
 
-**Recommended initial production locales:** English, Hindi, Spanish, Portuguese, French, German, Arabic, Bengali, Urdu, Indonesian, Turkish, Vietnamese, Japanese, Korean and Chinese variants, followed by community-reviewed expansion.
+**India language requirement:** the product language selector must include all 22 languages listed by the Government of India's Legislative Department in its regional-language resources: Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu and Urdu. Additional Indian regional/community languages remain eligible for future locale packs; the 22-language list is the initial national coverage target, not a ceiling.
+
+**Recommended initial global production locales:** English, Hindi, Spanish, Portuguese, French, German, Arabic, Bengali, Urdu, Indonesian, Turkish, Vietnamese, Japanese, Korean and Chinese variants, followed by reviewed expansion.
 
 ## Phase 10 — Dynamic Voice Learning
 **Goal: every learner can listen to lessons in a suitable available voice.**
@@ -193,6 +196,7 @@ Every chapter becomes:
 - Privacy/security review of all optional providers
 - Community translation contribution workflow
 - New-chain/new-tool curriculum update process
+- India regional-language expansion workflow beyond the initial 22-language target
 
 ## Working rule
 
