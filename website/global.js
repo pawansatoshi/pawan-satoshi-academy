@@ -3,6 +3,10 @@
  * Translation is an optional enhancement. The core site remains usable when
  * the translation provider is unavailable. Speech uses the browser/device
  * Web Speech API and therefore does not require an API key.
+ *
+ * India language coverage includes all 22 languages listed by the Government
+ * of India's Legislative Department under its regional-language resources.
+ * The architecture remains open to additional Indian languages.
  */
 (function () {
   const LANGUAGE_STORAGE_KEY = 'psa.locale';
@@ -11,13 +15,39 @@
 
   const languageOptions = [
     ['auto', 'Auto / Device language'],
-    ['en', 'English'], ['hi', 'हिन्दी'], ['es', 'Español'], ['pt', 'Português'],
-    ['fr', 'Français'], ['de', 'Deutsch'], ['ar', 'العربية'], ['bn', 'বাংলা'],
-    ['ur', 'اردو'], ['id', 'Bahasa Indonesia'], ['tr', 'Türkçe'], ['vi', 'Tiếng Việt'],
-    ['ja', '日本語'], ['ko', '한국어'], ['zh-CN', '简体中文'], ['zh-TW', '繁體中文'],
-    ['it', 'Italiano'], ['nl', 'Nederlands'], ['pl', 'Polski'], ['ru', 'Русский'],
-    ['uk', 'Українська'], ['th', 'ไทย'], ['ta', 'தமிழ்'], ['te', 'తెలుగు'],
-    ['mr', 'मराठी'], ['gu', 'ગુજરાતી'], ['pa', 'ਪੰਜਾਬੀ'], ['sw', 'Kiswahili']
+    ['en', 'English'],
+
+    // India — all 22 Eighth Schedule languages
+    ['as', 'অসমীয়া — Assamese'],
+    ['bn', 'বাংলা — Bengali'],
+    ['brx', 'बड़ो — Bodo'],
+    ['doi', 'डोगरी — Dogri'],
+    ['gu', 'ગુજરાતી — Gujarati'],
+    ['hi', 'हिन्दी — Hindi'],
+    ['kn', 'ಕನ್ನಡ — Kannada'],
+    ['ks', 'کٲشُر — Kashmiri'],
+    ['kok', 'कोंकणी — Konkani'],
+    ['mai', 'मैथिली — Maithili'],
+    ['ml', 'മലയാളം — Malayalam'],
+    ['mni', 'মৈতৈলোন — Manipuri'],
+    ['mr', 'मराठी — Marathi'],
+    ['ne', 'नेपाली — Nepali'],
+    ['or', 'ଓଡ଼ିଆ — Odia'],
+    ['pa', 'ਪੰਜਾਬੀ — Punjabi'],
+    ['sa', 'संस्कृतम् — Sanskrit'],
+    ['sat', 'ᱥᱟᱱᱛᱟᱲᱤ — Santali'],
+    ['sd', 'سنڌي — Sindhi'],
+    ['ta', 'தமிழ் — Tamil'],
+    ['te', 'తెలుగు — Telugu'],
+    ['ur', 'اردو — Urdu'],
+
+    // Initial wider global coverage
+    ['es', 'Español'], ['pt', 'Português'], ['fr', 'Français'], ['de', 'Deutsch'],
+    ['ar', 'العربية'], ['id', 'Bahasa Indonesia'], ['tr', 'Türkçe'],
+    ['vi', 'Tiếng Việt'], ['ja', '日本語'], ['ko', '한국어'],
+    ['zh-CN', '简体中文'], ['zh-TW', '繁體中文'], ['it', 'Italiano'],
+    ['nl', 'Nederlands'], ['pl', 'Polski'], ['ru', 'Русский'],
+    ['uk', 'Українська'], ['th', 'ไทย'], ['sw', 'Kiswahili']
   ];
 
   function normalizeLocale(locale) {
@@ -75,7 +105,6 @@
       if (detected === 'en') return;
       return applyGoogleLanguage(detected);
     }
-    if (locale === 'en') return applyGoogleLanguage('en');
     applyGoogleLanguage(locale);
   }
 
