@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="Pawan Satoshi Academy lesson">
+  <meta name="description" content="Pawan Satoshi Academy interactive lesson">
   <title>Academy Lesson</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="./index.html">Pawan Satoshi Academy</a><nav><a href="./index.html#curriculum">Curriculum</a><a href="./index.html#verify">Verify</a></nav></header>
+  <header class="topbar">
+    <a class="brand" href="./index.html">Pawan Satoshi Academy</a>
+    <nav><a href="./index.html#curriculum">Curriculum</a><a href="./index.html#verify">Verify</a></nav>
+    <div class="global-tools" data-global-tools aria-label="Global learning controls"></div>
+    <div id="google_translate_element" class="google-translate-hidden" aria-hidden="true"></div>
+  </header>
   <main class="lesson-page">
     <a class="lesson-back" href="./index.html#curriculum">← Back to curriculum</a>
+    <div class="lesson-toolbar" data-voice-tools aria-label="Lesson audio controls"></div>
     <article id="lesson" class="lesson-card" aria-live="polite"><p class="eyebrow">ACADEMY LESSON</p><h1>Loading lesson…</h1></article>
   </main>
   <script>
@@ -27,7 +33,7 @@
         const link=part.match(/^\[([^\]]+)\]\(([^\)]+)\)$/);
         if(link){const a=document.createElement('a');a.textContent=link[1];a.href=link[2];a.target='_blank';a.rel='noopener';parent.appendChild(a);continue;}
         const code=part.match(/^`([^`]+)`$/);
-        if(code){const el=document.createElement('code');el.textContent=code[1];parent.appendChild(el);continue;}
+        if(code){const el=document.createElement('code');el.textContent=code[1];el.setAttribute('translate','no');parent.appendChild(el);continue;}
         const bold=part.match(/^\*\*([^*]+)\*\*$/);
         if(bold){const el=document.createElement('strong');el.textContent=bold[1];parent.appendChild(el);continue;}
         parent.appendChild(document.createTextNode(part));
@@ -38,13 +44,11 @@
       target.replaceChildren();
       const eyebrow=document.createElement('p'); eyebrow.className='eyebrow'; eyebrow.textContent='ACADEMY LESSON'; target.appendChild(eyebrow);
       const lines=markdown.replace(/\r/g,'').split('\n');
-      let inCode=false,codeLines=[];
-      let list=null;
+      let inCode=false,codeLines=[]; let list=null;
       for(const line of lines){
         if(line.trim().startsWith('```')){
           if(inCode){const pre=document.createElement('pre');const code=document.createElement('code');code.textContent=codeLines.join('\n');pre.appendChild(code);target.appendChild(pre);codeLines=[];inCode=false;}
-          else inCode=true;
-          continue;
+          else inCode=true; continue;
         }
         if(inCode){codeLines.push(line);continue;}
         if(!line.trim()){list=null;continue;}
@@ -60,5 +64,6 @@
     if(!source){target.querySelector('h1').textContent='Lesson not specified';target.insertAdjacentHTML('beforeend','<p>Return to the curriculum and choose a lesson.</p>');}
     else fetch(`./${source}`,{cache:'no-store'}).then(r=>{if(!r.ok) throw new Error(`HTTP ${r.status}`);return r.text();}).then(render).catch(error=>{target.replaceChildren();const e=document.createElement('p');e.className='eyebrow';e.textContent='LOAD ERROR';target.appendChild(e);const h=document.createElement('h1');h.textContent='Lesson unavailable';target.appendChild(h);const p=document.createElement('p');p.textContent=`Unable to load this lesson right now (${error.message}). Return to the curriculum and try again.`;target.appendChild(p);});
   </script>
+  <script src="global.js"></script>
 </body>
 </html>
