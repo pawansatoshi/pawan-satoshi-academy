@@ -1,5 +1,6 @@
 import { ChannelType, PermissionFlagsBits } from "discord.js";
 import { readStore, writeStore } from "../../core/store.js";
+import { getConfigValue } from "../../core/database.js";
 
 const TICKETS = "tickets";
 const GROUPS = "study-groups";
@@ -13,18 +14,17 @@ export async function openTicket(guild, user, subject) {
   if (existing) return { existing, channel: guild.channels.cache.get(existing.channelId) };
 
   const name = `ticket-${user.username.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 20)}-${Date.now().toString().slice(-4)}`;
-  const channel = await guild.channels.create({
-    name,
-    type: ChannelType.GuildText,
-    topic: `Academy support ticket: ${subject}`,
-    permissionOverwrites: [
-      { id: guild.roles.everyone.id, deny: [PermissionFlagsBits.ViewChannel] },
-      { id: user.id, allow: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages, PermissionFlagsBits.ReadMessageHistory] }
-    ]
-  });
+  const moderatorRoleId = getConfigValue("role.moderator");
+  const permissionOverwrites = [
+    { id: guild.roles.everyone.id, deny: [PermissionFlagsBits.ViewChannel] },
+    { id: user.id, allow: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages, PermissionFlagsBits.ReadMessageHistory] }
+  ];
+  if (moderatorRoleId) permissionOverwrites.push({ id: moderatorRoleId, allow: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages, PermissionFlagsBits.ReadMessageHistory] });
+
+  const channel = await guild.channels.create({ name, type: ChannelType.GuildText, topic: `Academy support ticket: ${subject}`, permissionOverwrites });
   const ticket = { id: `T-${Date.now().toString(36).toUpperCase()}`, userId: user.id, channelId: channel.id, subject, status: "open", createdAt: new Date().toISOString() };
   writeStore(TICKETS, [...tickets, ticket]);
-  await channel.send(`Support ticket **${ticket.id}** opened by <@${user.id}>. Subject: **${subject}**\nA moderator can close it with \/ticket close.`);
+  await channel.send(`Support ticket **${ticket.id}** opened by <@${user.id}>. Subject: **${subject}**\nA moderator can close it with \/community ticket-close.`);
   return { ticket, channel };
 }
 
