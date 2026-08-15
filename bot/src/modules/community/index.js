@@ -1,6 +1,5 @@
 import { ChannelType, PermissionFlagsBits } from "discord.js";
 import { readStore, writeStore } from "../../core/store.js";
-import { getConfigValue } from "../../core/database.js";
 
 const TICKETS = "tickets";
 const GROUPS = "study-groups";
