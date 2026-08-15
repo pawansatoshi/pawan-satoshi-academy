@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
+    "prestart": "node scripts/deploy-commands.js",
     "dev": "node --watch src/index.js",
     "lint": "eslint src tests scripts",
     "lint:fix": "eslint src tests scripts --fix",
