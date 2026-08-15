@@ -2,9 +2,6 @@ name: Materialize Academy Handoff
 
 on:
   push:
-    paths:
-      - 'pawan-satoshi-academy-HANDOFF-snapshot.zip'
-      - '.github/workflows/materialize-handoff.yml'
   workflow_dispatch:
 
 permissions:
@@ -36,14 +33,10 @@ jobs:
           unzip -q pawan-satoshi-academy-HANDOFF-snapshot.zip -d .handoff-materialized
           root=.handoff-materialized/pawan-satoshi-academy
           test -d "$root"
-
-          # The handoff snapshot is the canonical implementation baseline.
-          # Preserve the newer repository governance files created after the snapshot.
           rsync -a --exclude='.git/' "$root/" ./
-
           rm -rf .handoff-materialized
 
-          # Preserve repository-level governance documents introduced after the handoff.
+          # Preserve newer repository governance files created after the handoff.
           git checkout -- MASTER_BLUEPRINT.md ROADMAP.md SOURCE_SNAPSHOT.md 2>/dev/null || true
 
       - name: Audit materialized tree
@@ -64,7 +57,6 @@ jobs:
 
           if find . -type f \( -name '.env' -o -name '.env.*' \) -not -name '.env.example' | grep -q .; then
             echo 'ERROR: secret environment file detected in repository tree'
-            find . -type f \( -name '.env' -o -name '.env.*' \) -not -name '.env.example'
             exit 1
           fi
 
