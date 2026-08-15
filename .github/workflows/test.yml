@@ -29,3 +29,5 @@ jobs:
 
       - name: Test
         run: npm test
+
+      # Keep CI intentionally dependency-light: npm install is the source of truth.
