@@ -1,5 +1,3 @@
-// bot/src/events/ready.js
-
 import { Events } from "discord.js";
 import { config } from "../core/config.js";
 import { getLogger } from "../core/logger.js";
@@ -13,60 +11,60 @@ import { getConfigValue, getRecurringEventByKey } from "../core/database.js";
 import { istHourToUtcHour } from "../modules/events/recurrence.js";
 
 const logger = getLogger("ready");
-
 export const name = Events.ClientReady;
 export const once = true;
 
+function timeFromIst(hourIst) {
+  const { hour, minute } = istHourToUtcHour(Math.min(23, Math.max(0, hourIst)));
+  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+}
+
 async function ensureDefaultAcademyEvents(client) {
   const quizChannelId = getConfigValue("channel.quiz-arena");
-  if (!quizChannelId) {
-    logger.warn("Quiz channel is not configured — automatic daily quiz was not seeded");
-    return;
+  if (quizChannelId && !getRecurringEventByKey("daily-community-quiz")) {
+    createEvent({
+      eventKey: "daily-community-quiz",
+      title: "Daily Academy Quiz",
+      description: "A daily optional community quiz. Answer directly in #quiz-arena and learn from the explanation.",
+      channelId: quizChannelId,
+      eventType: "quiz",
+      recurrenceRule: "daily",
+      recurrenceDay: null,
+      timeUtc: timeFromIst(config.academyAutomation.dailyQuizHourIst),
+      createdBy: client.user.id,
+      quizCount: Math.min(10, Math.max(1, config.academyAutomation.dailyQuizCount))
+    });
+    logger.info("Default daily community quiz scheduled");
   }
 
-  if (getRecurringEventByKey("daily-community-quiz")) return;
-
-  const hour = Math.min(23, Math.max(0, config.academyAutomation.dailyQuizHourIst));
-  const { hour: utcHour, minute: utcMinute } = istHourToUtcHour(hour);
-  const timeUtc = `${String(utcHour).padStart(2, "0")}:${String(utcMinute).padStart(2, "0")}`;
-
-  createEvent({
-    eventKey: "daily-community-quiz",
-    title: "Daily Academy Quiz",
-    description: "A daily optional community quiz. Answer directly in #quiz-arena and learn from the explanation.",
-    channelId: quizChannelId,
-    eventType: "quiz",
-    recurrenceRule: "daily",
-    recurrenceDay: null,
-    timeUtc,
-    createdBy: client.user.id,
-    quizCount: Math.min(10, Math.max(1, config.academyAutomation.dailyQuizCount))
-  });
-
-  logger.info({ hourIst: hour, timeUtc, quizCount: config.academyAutomation.dailyQuizCount }, "Default daily community quiz scheduled");
+  const meetingChannelId = getConfigValue("channel.announcements") || getConfigValue("channel.academy-hub");
+  if (meetingChannelId && !getRecurringEventByKey("weekly-academy-meeting")) {
+    createEvent({
+      eventKey: "weekly-academy-meeting",
+      title: "Weekly Academy Meeting",
+      description: "Weekly Academy community meeting. Bring questions, project updates and useful learning resources.",
+      channelId: meetingChannelId,
+      eventType: "meeting",
+      recurrenceRule: "weekly",
+      recurrenceDay: config.meeting.day,
+      timeUtc: timeFromIst(config.meeting.hourIst),
+      createdBy: client.user.id
+    });
+    logger.info({ day: config.meeting.day, hourIst: config.meeting.hourIst }, "Default weekly Academy meeting scheduled");
+  }
 }
 
 export async function execute(client) {
   logger.info({ tag: client.user.tag }, "Bot logged in");
-
   const guild = await client.guilds.fetch(config.discord.guildId).catch(() => null);
   if (!guild) {
     logger.error({ guildId: config.discord.guildId }, "Configured guild not found — is the bot invited to the right server?");
     return;
   }
-
   auditBotPermissions(guild, BOT_RECOMMENDED_PERMISSIONS);
-
   await syncServerIds(guild);
-
-  try {
-    await setupSecurity(guild);
-  } catch (err) {
-    logger.warn({ err }, "Security engine setup skipped an item (likely missing ManageGuild permission or already configured)");
-  }
-
+  try { await setupSecurity(guild); } catch (err) { logger.warn({ err }, "Security engine setup skipped an item"); }
   await ensureDefaultAcademyEvents(client);
   startEventScheduler(client);
-
   logger.info("Startup sequence complete — bot is ready");
 }
