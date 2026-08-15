@@ -35,14 +35,6 @@ jobs:
           rm -rf .handoff-materialized
           git checkout -- MASTER_BLUEPRINT.md ROADMAP.md SOURCE_SNAPSHOT.md 2>/dev/null || true
 
-          # GitHub's GITHUB_TOKEN cannot push new workflow files without the
-          # workflow permission. Materialize application source first; the
-          # workflow files can be added safely through the GitHub contents API.
-          rm -f .github/workflows/deploy-pages.yml
-          rm -f .github/workflows/link-check.yml
-          rm -f .github/workflows/test.yml
-          rm -f .github/workflows/mlc-config.json
-
       - name: Audit materialized tree
         shell: bash
         run: |
