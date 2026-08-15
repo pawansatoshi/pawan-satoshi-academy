@@ -11,7 +11,7 @@ export const data = new SlashCommandBuilder()
   .addSubcommand((sub) => sub.setName("group-list").setDescription("List study groups"))
   .addSubcommand((sub) => sub.setName("group-join").setDescription("Join a study group").addStringOption((o) => o.setName("id").setDescription("Group ID").setRequired(true)))
   .addSubcommand((sub) => sub.setName("activity").setDescription("Post a community poll/activity").addStringOption((o) => o.setName("title").setDescription("Activity title").setRequired(true)).addStringOption((o) => o.setName("question").setDescription("Question").setRequired(true)).addStringOption((o) => o.setName("options").setDescription("Comma-separated choices, 2-4").setRequired(true)))
-  .addSubcommand((sub) => sub.setName("export").setDescription("Export community operations data").setDefaultMemberPermissions(PermissionFlagsBits.ManageGuild));
+  .addSubcommand((sub) => sub.setName("export").setDescription("Export community operations data"));
 
 export async function execute(interaction) {
   const sub = interaction.options.getSubcommand();
@@ -59,6 +59,10 @@ export async function execute(interaction) {
     const activity = createActivity({ title: interaction.options.getString("title", true), question: interaction.options.getString("question", true), options, createdBy: interaction.user.id });
     const row = new ActionRowBuilder().addComponents(options.map((option, index) => new ButtonBuilder().setCustomId(`activity:${activity.id}:${index}`).setLabel(option.slice(0, 80)).setStyle(ButtonStyle.Primary)));
     await interaction.reply({ embeds: [new EmbedBuilder().setColor("#8E9BFF").setTitle(activity.title).setDescription(activity.question)], components: [row] });
+    return;
+  }
+  if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) {
+    await interaction.reply({ content: "Only Academy managers can export community data.", ephemeral: true });
     return;
   }
   const file = Buffer.from(JSON.stringify(exportCommunityData(), null, 2));
