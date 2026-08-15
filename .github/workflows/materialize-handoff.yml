@@ -1,0 +1,88 @@
+name: Materialize Academy Handoff
+
+on:
+  push:
+    paths:
+      - 'pawan-satoshi-academy-HANDOFF-snapshot.zip'
+      - '.github/workflows/materialize-handoff.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    if: ${{ !startsWith(github.event.head_commit.message, 'chore: materialize Academy handoff') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify handoff archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s pawan-satoshi-academy-HANDOFF-snapshot.zip
+          unzip -t pawan-satoshi-academy-HANDOFF-snapshot.zip >/dev/null
+
+      - name: Materialize source tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .handoff-materialized
+          mkdir .handoff-materialized
+          unzip -q pawan-satoshi-academy-HANDOFF-snapshot.zip -d .handoff-materialized
+          root=.handoff-materialized/pawan-satoshi-academy
+          test -d "$root"
+
+          # The handoff snapshot is the canonical implementation baseline.
+          # Preserve the newer repository governance files created after the snapshot.
+          rsync -a --exclude='.git/' "$root/" ./
+
+          rm -rf .handoff-materialized
+
+          # Preserve repository-level governance documents introduced after the handoff.
+          git checkout -- MASTER_BLUEPRINT.md ROADMAP.md SOURCE_SNAPSHOT.md 2>/dev/null || true
+
+      - name: Audit materialized tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f bot/package.json
+          test -f bot/src/index.js
+          test -f bot/scripts/bootstrap-server.js
+          test -f quizzes/schema/question-schema.json
+          test -d quizzes/question-banks
+          test -f CONTINUE.md
+          test -f HANDOFF.md
+          test -f PROJECT_STATUS.md
+          test -f PHASE_STATUS.md
+          test -f SECURITY.md
+          test -f .gitignore
+
+          if find . -type f \( -name '.env' -o -name '.env.*' \) -not -name '.env.example' | grep -q .; then
+            echo 'ERROR: secret environment file detected in repository tree'
+            find . -type f \( -name '.env' -o -name '.env.*' \) -not -name '.env.example'
+            exit 1
+          fi
+
+          if find . -type d -name node_modules -prune -print | grep -q .; then
+            echo 'ERROR: node_modules must not be committed'
+            exit 1
+          fi
+
+      - name: Commit materialized source tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No source-tree changes to commit.'
+            exit 0
+          fi
+          git commit -m 'chore: materialize Academy handoff'
+          git push origin HEAD:main
