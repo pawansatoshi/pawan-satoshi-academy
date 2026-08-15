@@ -1,35 +1,41 @@
 # Phase Status
 
-This is a focused phase-tracker, distinct from `PROJECT_STATUS.md`
-(which has full per-subject detail). Read both — this one is the
-quick-glance summary.
+This is the focused phase-tracker for Pawan Satoshi Academy.
 
 ## Phase Checklist
 
 | Phase | Description | Status |
 |---|---|---|
 | 0 | Planning & Scaffold | ✅ COMPLETE |
-| 1 | Discord Foundation (core infra, bootstrap script, welcome/verification/roles, Event Management) | ✅ COMPLETE |
+| 1 | Discord Foundation (core infra, bootstrap, welcome/verification, roles, Event Management) | ✅ COMPLETE |
 | 2 | Security Engine (permissions, AutoMod, anti-raid, anti-spam, anti-phishing, NSFW, logging, audit) | ✅ COMPLETE |
-| 2 (remainder) | XP & Leveling, Suggestions & Polls | ⬜ NOT STARTED — queued after content phase |
-| 3A | Quiz Engine (schema, validator, loader, randomizer, session engine, required Chapter/Final assessment gating) | ✅ COMPLETE |
-| 3B | Question Bank Content (22 subjects, mastery-based) | 🟡 IN PROGRESS — 17/22 subjects, 537 questions |
-| 3C | Academy Lesson Content (long-form Markdown for website) | ⬜ NOT STARTED |
-| 3D | Certificate Generation | ⬜ NOT STARTED — queued after content phase |
-| 4 | Ticket System, Study Groups, Meeting Reminders, Activities, DB→website export pipeline | ⬜ NOT STARTED — queued after content phase |
-| 5 | Website (folder structure only, zero content) | ⬜ NOT STARTED |
-| 6 | AI Helper (needs Phase 3C lesson content first) | ⬜ NOT STARTED |
-| 7 | Growth (mentors, contributors, partnerships) | ⬜ NOT STARTED |
+| 2 (remainder) | XP & Leveling, Suggestions & Polls | ⬜ PENDING |
+| 3A | Quiz Engine (schema, validator, loader, randomizer, session engine, Chapter/Final assessment gating) | ✅ COMPLETE |
+| 3B | Question Bank Content | ✅ COMPLETE — 22/22 subjects, 637 questions |
+| 3C | Academy Lesson Content (long-form Markdown for website) | ⬜ PENDING |
+| 3D | Certificate Generation | ⬜ PENDING |
+| 4 | Ticket System, Study Groups, Meeting Reminders, Activities, DB→website export pipeline | ⬜ PENDING |
+| 5 | Website (mobile-first GitHub Pages) | ⬜ PENDING |
+| 6 | AI Helper (retrieval-first) | ⬜ PENDING |
+| 7 | Growth / engagement / launch hardening | ⬜ PENDING |
 
-## This Is a PAUSE Checkpoint
+## Live deployment
 
-Per explicit instruction, active development is paused at this exact
-state for a handoff/audit package. See `HANDOFF.md` for the full
-engineering handoff and `CONTINUE.md` for the exact resume state.
+The Discord server bootstrap has now been applied successfully and the bot is running on the live server. The live logs confirmed all 7 mapped roles and all 32 mapped channels were created and synchronized.
 
-## Immediately Next (when development resumes)
+The bot also starts the event scheduler with a 60-second tick and now seeds a `daily-community-quiz` event automatically on first startup when `#quiz-arena` exists. The daily quiz time is configurable with `DAILY_QUIZ_HOUR_IST` (default 09:00 IST) and the number of questions with `DAILY_QUIZ_COUNT` (default 1).
 
-1. Wallet Security question bank (subject #18)
-2. Web3 (#19), Testnets (#20), Ambassador Programs (#21), Community Management (#22)
-3. Resolve the open "Graduation" question (dedicated question set vs. relying on existing Final Exam design)
-4. Then: XP & Leveling → Certificates → AI Helper → Tickets → Study Groups → Meeting Reminders → Activities → Suggestions & Polls, in that order, per standing instruction
+## Immediate engineering queue
+
+1. XP / levels / leaderboard and quiz XP rewards
+2. Suggestions and polls
+3. Academy lesson corpus
+4. Certificate generation + public verification
+5. Tickets / study groups / reminders / activities / export
+6. Website
+7. Retrieval-first AI helper
+8. Engagement, security, dependency, permission and mobile audits
+
+## Working rule
+
+A phase is complete only when implementation, tests, documentation and deployment instructions are present. Do not mark scaffolding as implemented.
