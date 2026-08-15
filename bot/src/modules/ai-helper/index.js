@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
-const LESSON_ROOT = new URL("../../../academy/lessons/", import.meta.url).pathname;
+const LESSON_ROOT = new URL("../../../../academy/lessons/", import.meta.url).pathname;
 
 function loadLessons(dir = LESSON_ROOT, result = []) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
