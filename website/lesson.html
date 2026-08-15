@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Pawan Satoshi Academy lesson">
+  <title>Academy Lesson</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./index.html">Pawan Satoshi Academy</a><nav><a href="./index.html#curriculum">Curriculum</a><a href="./index.html#verify">Verify</a></nav></header>
+  <main class="lesson-page">
+    <a class="lesson-back" href="./index.html#curriculum">← Back to curriculum</a>
+    <article id="lesson" class="lesson-card" aria-live="polite"><p class="eyebrow">ACADEMY LESSON</p><h1>Loading lesson…</h1></article>
+  </main>
+  <script>
+    const target=document.querySelector('#lesson');
+    const params=new URLSearchParams(location.search);
+    const source=params.get('src');
+    const titleFromPath=source?decodeURIComponent(source).split('/').pop().replace(/\.md$/,'').replace(/[-_]+/g,' '):'lesson';
+    document.title=`${titleFromPath.replace(/\b\w/g,c=>c.toUpperCase())} — Pawan Satoshi Academy`;
+
+    function addInline(parent,text){
+      const parts=text.split(/(\[[^\]]+\]\([^\)]+\)|`[^`]+`|\*\*[^*]+\*\*)/g);
+      for(const part of parts){
+        if(!part) continue;
+        const link=part.match(/^\[([^\]]+)\]\(([^\)]+)\)$/);
+        if(link){const a=document.createElement('a');a.textContent=link[1];a.href=link[2];a.target='_blank';a.rel='noopener';parent.appendChild(a);continue;}
+        const code=part.match(/^`([^`]+)`$/);
+        if(code){const el=document.createElement('code');el.textContent=code[1];parent.appendChild(el);continue;}
+        const bold=part.match(/^\*\*([^*]+)\*\*$/);
+        if(bold){const el=document.createElement('strong');el.textContent=bold[1];parent.appendChild(el);continue;}
+        parent.appendChild(document.createTextNode(part));
+      }
+    }
+
+    function render(markdown){
+      target.replaceChildren();
+      const eyebrow=document.createElement('p'); eyebrow.className='eyebrow'; eyebrow.textContent='ACADEMY LESSON'; target.appendChild(eyebrow);
+      const lines=markdown.replace(/\r/g,'').split('\n');
+      let inCode=false,codeLines=[];
+      let list=null;
+      for(const line of lines){
+        if(line.trim().startsWith('```')){
+          if(inCode){const pre=document.createElement('pre');const code=document.createElement('code');code.textContent=codeLines.join('\n');pre.appendChild(code);target.appendChild(pre);codeLines=[];inCode=false;}
+          else inCode=true;
+          continue;
+        }
+        if(inCode){codeLines.push(line);continue;}
+        if(!line.trim()){list=null;continue;}
+        const heading=line.match(/^(#{1,6})\s+(.+)$/);
+        if(heading){list=null;const level=Math.min(heading[1].length,3);const el=document.createElement(`h${level}`);addInline(el,heading[2]);target.appendChild(el);continue;}
+        const bullet=line.match(/^[-*]\s+(.+)$/);
+        if(bullet){if(!list){list=document.createElement('ul');target.appendChild(list);}const li=document.createElement('li');addInline(li,bullet[1]);list.appendChild(li);continue;}
+        list=null;const p=document.createElement('p');addInline(p,line);target.appendChild(p);
+      }
+      if(inCode){const pre=document.createElement('pre');const code=document.createElement('code');code.textContent=codeLines.join('\n');pre.appendChild(code);target.appendChild(pre);}
+    }
+
+    if(!source){target.querySelector('h1').textContent='Lesson not specified';target.insertAdjacentHTML('beforeend','<p>Return to the curriculum and choose a lesson.</p>');}
+    else fetch(`./${source}`,{cache:'no-store'}).then(r=>{if(!r.ok) throw new Error(`HTTP ${r.status}`);return r.text();}).then(render).catch(error=>{target.replaceChildren();const e=document.createElement('p');e.className='eyebrow';e.textContent='LOAD ERROR';target.appendChild(e);const h=document.createElement('h1');h.textContent='Lesson unavailable';target.appendChild(h);const p=document.createElement('p');p.textContent=`Unable to load this lesson right now (${error.message}). Return to the curriculum and try again.`;target.appendChild(p);});
+  </script>
+</body>
+</html>
