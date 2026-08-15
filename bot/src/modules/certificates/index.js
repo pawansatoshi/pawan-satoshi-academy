@@ -26,14 +26,15 @@ export function issueCertificate(memberId, username = "Academy Graduate") {
   if (existing) return existing;
   if (!isEligible(memberId)) return null;
 
+  const id = certificateId(memberId);
   const member = getMember(memberId);
   const certificate = {
-    id: certificateId(memberId),
+    id,
     memberId,
     name: member?.username || username,
     issuedAt: new Date().toISOString(),
     title: "Pawan Satoshi Academy Graduation Certificate",
-    verificationPath: `/verify/certificate/${certificateId}`
+    verificationPath: `/verify/certificate/${id}`
   };
   writeStore(STORE, [...readStore(STORE, []), certificate]);
   return certificate;
@@ -50,12 +51,11 @@ export async function buildCertificatePdf(certificate) {
     doc.rect(24, 24, 793, 545).lineWidth(2).stroke();
     doc.fontSize(28).font("Helvetica-Bold").text("PAWAN SATOSHI ACADEMY", { align: "center", y: 90 });
     doc.fontSize(16).font("Helvetica").text("CERTIFICATE OF GRADUATION", { align: "center", y: 140 });
-    doc.moveDown(2);
-    doc.fontSize(13).text("This certificate recognizes the successful completion of the Academy curriculum and required final examination.", { align: "center", width: 650, x: 95 });
+    doc.fontSize(13).text("This certificate recognizes successful completion of the Academy curriculum and required final examination.", { align: "center", width: 650, x: 95, y: 205 });
     doc.fontSize(30).font("Helvetica-Bold").text(certificate.name, { align: "center", y: 260 });
     doc.fontSize(12).font("Helvetica").text(`Certificate ID: ${certificate.id}`, { align: "center", y: 330 });
     doc.text(`Issued: ${new Date(certificate.issuedAt).toUTCString()}`, { align: "center" });
-    doc.fontSize(11).text("Verification: use the certificate ID with the Academy verification endpoint.", { align: "center", y: 455 });
+    doc.fontSize(11).text("Verification is available through the Academy public verification endpoint.", { align: "center", y: 455 });
     doc.end();
   });
 }
