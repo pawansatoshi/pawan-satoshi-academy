@@ -46,6 +46,10 @@ function loadConfig() {
     meeting: {
       day: process.env.WEEKLY_MEETING_DAY || "SUNDAY",
       hourIst: Number(process.env.WEEKLY_MEETING_HOUR_IST || 19)
+    },
+    academyAutomation: {
+      dailyQuizHourIst: Number(process.env.DAILY_QUIZ_HOUR_IST || 9),
+      dailyQuizCount: Number(process.env.DAILY_QUIZ_COUNT || 1)
     }
   });
 }
