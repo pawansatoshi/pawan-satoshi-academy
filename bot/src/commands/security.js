@@ -3,9 +3,14 @@
 // /security status  — shows current security posture
 // /security raidmode — manually enable/disable raid mode
 
-import { SlashCommandBuilder, EmbedBuilder, GuildExplicitContentFilterLevel } from "discord.js";
+import { SlashCommandBuilder, EmbedBuilder } from "discord.js";
 import { requireAtLeast } from "../core/permissions.js";
 import { isRaidModeActive } from "../modules/moderation-automod/index.js";
+
+// Discord API enum value for GuildExplicitContentFilterLevel.AllMembers.
+// Kept numeric here because discord.js may be loaded as CommonJS by the
+// runtime and this enum is not available as a stable named ESM export.
+const EXPLICIT_CONTENT_FILTER_ALL_MEMBERS = 2;
 
 export const data = new SlashCommandBuilder()
   .setName("security")
@@ -25,7 +30,7 @@ export async function execute(interaction) {
 
   if (sub === "status" || sub === "raidmode") {
     const raiding = isRaidModeActive(guild.id);
-    const explicitFilter = guild.explicitContentFilter === GuildExplicitContentFilterLevel.AllMembers
+    const explicitFilter = guild.explicitContentFilter === EXPLICIT_CONTENT_FILTER_ALL_MEMBERS
       ? "✅ Scanning all members"
       : "⚠️ Not set to strictest level";
 
