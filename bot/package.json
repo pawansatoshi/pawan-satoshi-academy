@@ -5,9 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "license": "MIT",
-  "engines": {
-    "node": "22.22.0"
-  },
+  "engines": { "node": "22.22.0" },
   "scripts": {
     "start": "node src/index.js",
     "prestart": "node scripts/bootstrap-server.js --confirm && node scripts/deploy-commands.js",
@@ -22,7 +20,8 @@
     "discord.js": "^14.16.3",
     "better-sqlite3": "^11.5.0",
     "dotenv": "^16.4.5",
-    "pino": "^9.5.0"
+    "pino": "^9.5.0",
+    "pdfkit": "^0.17.1"
   },
   "devDependencies": {
     "eslint": "^9.15.0",
