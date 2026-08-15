@@ -26,9 +26,9 @@ export async function execute(interaction) {
     const isModerator = interaction.memberPermissions?.has(PermissionFlagsBits.ManageChannels);
     if (!ticket || (ticket.userId !== interaction.user.id && !isModerator)) { await interaction.reply({ content: "Open ticket not found or you are not allowed to close it.", ephemeral: true }); return; }
     closeTicket(id, interaction.user.id);
+    await interaction.reply({ content: `Closed **${ticket.id}**.`, ephemeral: true });
     const channel = interaction.guild.channels.cache.get(ticket.channelId);
     if (channel) await channel.delete(`Ticket ${ticket.id} closed`).catch(() => {});
-    await interaction.reply({ content: `Closed **${ticket.id}**.`, ephemeral: true });
     return;
   }
   if (sub === "ticket-list") {
