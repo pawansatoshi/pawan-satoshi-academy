@@ -35,6 +35,15 @@ jobs:
           rm -rf .handoff-materialized
           git checkout -- MASTER_BLUEPRINT.md ROADMAP.md SOURCE_SNAPSHOT.md 2>/dev/null || true
 
+          # The GitHub App token used by this workflow cannot push new workflow
+          # files without the workflows permission. Keep the handoff workflow
+          # itself in-repo and add the other CI workflows through the GitHub
+          # contents API after source materialization is complete.
+          rm -f .github/workflows/deploy-pages.yml
+          rm -f .github/workflows/link-check.yml
+          rm -f .github/workflows/test.yml
+          rm -f .github/workflows/mlc-config.json
+
       - name: Audit materialized tree
         shell: bash
         run: |
