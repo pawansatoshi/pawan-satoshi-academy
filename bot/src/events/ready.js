@@ -10,6 +10,7 @@ import { setupSecurity } from "../modules/moderation-automod/index.js";
 import { startEventScheduler } from "../automation/scheduler/index.js";
 import { createEvent } from "../modules/events/index.js";
 import { getRecurringEventByKey } from "../core/database.js";
+import { istHourToUtcHour } from "../modules/events/recurrence.js";
 
 const logger = getLogger("ready");
 
@@ -17,7 +18,7 @@ export const name = Events.ClientReady;
 export const once = true;
 
 async function ensureDefaultAcademyEvents(client) {
-  const quizChannelId = (await import("../core/database.js")).getConfigValue("channel.quiz-arena");
+  const quizChannelId = getConfigValue("channel.quiz-arena");
   if (!quizChannelId) {
     logger.warn("Quiz channel is not configured — automatic daily quiz was not seeded");
     return;
@@ -26,8 +27,8 @@ async function ensureDefaultAcademyEvents(client) {
   if (getRecurringEventByKey("daily-community-quiz")) return;
 
   const hour = Math.min(23, Math.max(0, config.academyAutomation.dailyQuizHourIst));
-  const utcHour = (hour - 5 + 24) % 24;
-  const timeUtc = `${String(utcHour).padStart(2, "0")}:30`;
+  const { hour: utcHour, minute: utcMinute } = istHourToUtcHour(hour);
+  const timeUtc = `${String(utcHour).padStart(2, "0")}:${String(utcMinute).padStart(2, "0")}`;
 
   createEvent({
     eventKey: "daily-community-quiz",
@@ -42,7 +43,7 @@ async function ensureDefaultAcademyEvents(client) {
     quizCount: Math.min(10, Math.max(1, config.academyAutomation.dailyQuizCount))
   });
 
-  logger.info({ hourIst: hour, quizCount: config.academyAutomation.dailyQuizCount }, "Default daily community quiz scheduled");
+  logger.info({ hourIst: hour, timeUtc, quizCount: config.academyAutomation.dailyQuizCount }, "Default daily community quiz scheduled");
 }
 
 export async function execute(client) {
