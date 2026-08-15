@@ -15,7 +15,7 @@ const lessons=[
 ['Graduation','Responsible Digital Builder','academy/lessons/graduation.md']
 ];
 
-document.querySelector('#lesson-grid').innerHTML=lessons.map(([k,title,url])=>`<article class="card"><h3>${k}</h3><p>${title}</p><a href="../${url}" target="_blank" rel="noopener">Read lesson →</a></article>`).join('');
+document.querySelector('#lesson-grid').innerHTML=lessons.map(([k,title,url])=>`<article class="card"><h3>${k}</h3><p>${title}</p><a href="./${url}" target="_blank" rel="noopener">Read lesson →</a></article>`).join('');
 
 document.querySelector('#verify-form').addEventListener('submit',async(event)=>{
  event.preventDefault();
