@@ -9,11 +9,18 @@ import {
   handleSessionAnswer,
   handleCommunityAnswer
 } from "../modules/quiz-engine/index.js";
+import { getQuestionBank } from "../modules/quiz-engine/loader.js";
+import { awardQuizXp } from "../modules/xp/index.js";
 
 const logger = getLogger("interactionCreate");
 
 export const name = Events.InteractionCreate;
 export const once = false;
+
+function questionWasCorrect(questionId, optionIndex) {
+  const question = getQuestionBank().questions.find((q) => q.id === questionId);
+  return !!question && Number(optionIndex) === question.correctAnswer;
+}
 
 export async function execute(interaction) {
   try {
@@ -37,6 +44,10 @@ export async function execute(interaction) {
         // Format: quiz_session:<sessionId>:<questionId>:<optionIndex>
         const [, sessionId, questionId, optionIndex] = interaction.customId.split(":");
         await handleSessionAnswer(interaction, sessionId, questionId, Number(optionIndex));
+        if (interaction.replied || interaction.deferred) {
+          const result = awardQuizXp(interaction.user.id, questionWasCorrect(questionId, optionIndex));
+          logger.info({ memberId: interaction.user.id, gained: result.gained, level: result.level }, "Quiz XP awarded");
+        }
         return;
       }
 
@@ -44,6 +55,10 @@ export async function execute(interaction) {
         // Format: quiz_community:<questionId>:<optionIndex>
         const [, questionId, optionIndex] = interaction.customId.split(":");
         await handleCommunityAnswer(interaction, questionId, optionIndex);
+        if (interaction.replied || interaction.deferred) {
+          const result = awardQuizXp(interaction.user.id, questionWasCorrect(questionId, optionIndex));
+          logger.info({ memberId: interaction.user.id, gained: result.gained, level: result.level }, "Quiz XP awarded");
+        }
         return;
       }
     }
