@@ -31,3 +31,4 @@ jobs:
         run: npm test
 
       # Test command intentionally uses an explicit glob for Node compatibility.
+      # Integration fixtures initialize their required in-memory dependencies.
