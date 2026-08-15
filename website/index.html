@@ -8,14 +8,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="#top">Pawan Satoshi Academy</a><nav><a href="#curriculum">Curriculum</a><a href="#verify">Verify</a><a href="#about">About</a></nav></header>
+  <header class="topbar">
+    <a class="brand" href="#top">Pawan Satoshi Academy</a>
+    <nav><a href="#curriculum">Curriculum</a><a href="#verify">Verify</a><a href="#about">About</a></nav>
+    <div class="global-tools" data-global-tools aria-label="Global learning controls"></div>
+    <div id="google_translate_element" class="google-translate-hidden" aria-hidden="true"></div>
+  </header>
   <main id="top">
-    <section class="hero"><div><p class="eyebrow">FREE DIGITAL LEARNING</p><h1>Learn the systems behind the internet, security and Web3.</h1><p class="lead">A structured curriculum from digital literacy and cybersecurity to programming, blockchain, DeFi and community operations.</p><div class="actions"><a class="button" href="#curriculum">Start learning</a><a class="button secondary" href="#verify">Verify certificate</a></div></div><div class="hero-card"><strong>22 subjects</strong><span>637 validated quiz questions</span><span>12 progressive classes</span><span>Required assessments + graduation</span></div></section>
-    <section id="curriculum" class="section"><div class="section-head"><p class="eyebrow">CURRICULUM</p><h2>Progressive, practical learning</h2></div><div id="lesson-grid" class="grid"></div></section>
-    <section id="verify" class="section verify"><div><p class="eyebrow">PUBLIC VERIFICATION</p><h2>Check a graduation certificate</h2><p>Enter a certificate ID and the Academy runtime API. The API returns a signed-by-registry verification record and the generated PDF.</p></div><form id="verify-form"><label>Certificate ID<input id="cert-id" required placeholder="PSA-2026-XXXXXXXXXXXX"></label><label>Verification API<input id="api-base" placeholder="https://your-academy-runtime.example"></label><button class="button" type="submit">Verify certificate</button></form><pre id="verify-result" aria-live="polite"></pre></section>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">FREE GLOBAL DIGITAL LEARNING</p>
+        <h1>Learn the systems behind the internet, security and Web3.</h1>
+        <p class="lead">A structured school-style curriculum from digital literacy and cybersecurity to wallets, blockchain, DeFi, programming, AI and professional Web3 skills.</p>
+        <div class="actions"><a class="button" href="#curriculum">Start learning</a><a class="button secondary" href="#verify">Verify certificate</a></div>
+        <p class="global-note">Choose your language anytime. Lessons are designed for reading, listening and practical learning on phone or desktop.</p>
+      </div>
+      <div class="hero-card">
+        <strong>12 progressive classes</strong>
+        <span>7 chapters per class</span>
+        <span>637 validated quiz questions</span>
+        <span>Required assessments + graduation</span>
+        <span>Multilingual + voice-ready learning architecture</span>
+      </div>
+    </section>
+
+    <section id="curriculum" class="section">
+      <div class="section-head"><p class="eyebrow">CURRICULUM</p><h2>Progressive, practical learning</h2><p class="section-copy">Start simple. Build confidence. Move from digital literacy to real Web3 usage, research, AI, content, community and coding.</p></div>
+      <div id="lesson-grid" class="grid"></div>
+    </section>
+
+    <section class="section learning-model">
+      <div class="section-head"><p class="eyebrow">INTERACTIVE CLASSROOM</p><h2>Learn → practice → check → progress</h2></div>
+      <div class="learning-steps">
+        <article><b>01</b><h3>Explain</h3><p>Simple language, examples and source-aware lessons.</p></article>
+        <article><b>02</b><h3>Practice</h3><p>Guided exercises and safe testnet/sandbox activities.</p></article>
+        <article><b>03</b><h3>Knowledge check</h3><p>Immediate feedback, explanations and references.</p></article>
+        <article><b>04</b><h3>Assessment</h3><p>Pass the required chapter assessment to unlock the next level.</p></article>
+      </div>
+    </section>
+
+    <section id="verify" class="section verify">
+      <div><p class="eyebrow">PUBLIC VERIFICATION</p><h2>Check a graduation certificate</h2><p>Enter a certificate ID and the Academy runtime API. The API returns a signed-by-registry verification record and the generated PDF.</p></div>
+      <form id="verify-form"><label>Certificate ID<input id="cert-id" required placeholder="PSA-2026-XXXXXXXXXXXX"></label><label>Verification API<input id="api-base" placeholder="https://your-academy-runtime.example"></label><button class="button" type="submit">Verify certificate</button></form><pre id="verify-result" aria-live="polite"></pre>
+    </section>
+
     <section id="about" class="section about"><h2>Built for learning, not hype.</h2><p>The Academy emphasizes source-aware education, operational security, responsible community participation and hands-on practice. Practice quizzes are optional; chapter assessments and the final examination demonstrate progression.</p></section>
   </main>
-  <footer><span>© Pawan Satoshi Academy</span><span>Open curriculum · responsible use · community learning</span></footer>
+  <footer><span>© Pawan Satoshi Academy</span><span>Open curriculum · responsible use · global learning</span></footer>
   <script src="app.js"></script>
+  <script src="global.js"></script>
 </body>
 </html>
