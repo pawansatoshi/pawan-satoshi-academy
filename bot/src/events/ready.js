@@ -9,7 +9,7 @@ import { BOT_RECOMMENDED_PERMISSIONS } from "../core/server-map.js";
 import { setupSecurity } from "../modules/moderation-automod/index.js";
 import { startEventScheduler } from "../automation/scheduler/index.js";
 import { createEvent } from "../modules/events/index.js";
-import { getRecurringEventByKey } from "../core/database.js";
+import { getConfigValue, getRecurringEventByKey } from "../core/database.js";
 import { istHourToUtcHour } from "../modules/events/recurrence.js";
 
 const logger = getLogger("ready");
