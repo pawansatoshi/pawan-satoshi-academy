@@ -13,7 +13,7 @@
     "dev": "node --watch src/index.js",
     "lint": "eslint src tests scripts",
     "lint:fix": "eslint src tests scripts --fix",
-    "test": "node --test tests/",
+    "test": "node --test tests/*.test.js",
     "deploy:commands": "node scripts/deploy-commands.js",
     "bootstrap:server": "node scripts/bootstrap-server.js"
   },
