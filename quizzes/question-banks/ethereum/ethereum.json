@@ -1,0 +1,506 @@
+[
+  {
+    "id": "ethereum-001",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ethereum-history",
+    "difficulty": "beginner",
+    "question": "Who proposed Ethereum, and when was the original whitepaper written?",
+    "options": [
+      "Vitalik Buterin, then 19 years old, conceived the idea in late 2013 and published the whitepaper in 2014, before the network's 2015 launch",
+      "A large bank invented Ethereum in the 1990s",
+      "Satoshi Nakamoto created both Bitcoin and Ethereum together",
+      "Ethereum has no known founder or origin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vitalik Buterin conceived Ethereum's core idea in late 2013 and published the whitepaper in 2014. Ethereum had eight co-founders total, including Gavin Wood (who wrote the technical 'Yellow Paper' and created the Solidity language).",
+    "tags": ["history", "vitalik-buterin"],
+    "reference": "https://ethereum.org/ethereum-history-founder-and-ownership/"
+  },
+  {
+    "id": "ethereum-002",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ethereum-launch-date",
+    "difficulty": "beginner",
+    "question": "When did the Ethereum network officially launch (the 'Frontier' release)?",
+    "options": [
+      "July 30, 2015",
+      "January 3, 2009",
+      "September 15, 2022",
+      "October 31, 2008"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ethereum's mainnet went live on July 30, 2015, under the codename 'Frontier' — roughly a year and a half after the whitepaper was published and after a 2014 public crowdsale that raised funding in Bitcoin.",
+    "tags": ["history", "launch-date"],
+    "reference": "https://ethereum.org/ethereum-history-founder-and-ownership/"
+  },
+  {
+    "id": "ethereum-003",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "world-computer-vision",
+    "difficulty": "beginner",
+    "question": "How did Ethereum's original vision differ from Bitcoin's, as described in Ethereum's own whitepaper?",
+    "options": [
+      "Ethereum aimed to be a general-purpose, programmable 'world computer' supporting a wide range of applications, not just peer-to-peer currency transactions",
+      "Ethereum's whitepaper described an identical goal to Bitcoin's whitepaper with no distinction",
+      "Ethereum was designed exclusively as a faster version of email",
+      "Ethereum's original goal was to replace all internet browsers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While Bitcoin was purpose-built for peer-to-peer electronic cash, Ethereum's whitepaper proposed a programmable blockchain capable of running arbitrary code (smart contracts), enabling a much broader range of applications beyond simple payments.",
+    "tags": ["fundamentals", "purpose"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-004",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "smart-contracts-on-ethereum",
+    "difficulty": "intermediate",
+    "question": "How do smart contracts on Ethereum specifically work, building on the general concept from the Blockchain subject?",
+    "options": [
+      "Developers write smart contract code (commonly in Solidity) that gets deployed to and executed by the Ethereum network itself, with the results recorded on-chain",
+      "Ethereum smart contracts are only theoretical and have never actually been deployed on the network",
+      "Smart contracts on Ethereum require a lawyer to manually approve every execution",
+      "Ethereum doesn't support smart contracts; that's a feature exclusive to other networks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ethereum was the first major blockchain to make smart contracts broadly practical and widely used — Solidity is the most common programming language for writing them, and deployed contracts run automatically according to their code.",
+    "tags": ["smart-contracts", "solidity"],
+    "reference": "https://ethereum.org/en/developers/docs/smart-contracts/"
+  },
+  {
+    "id": "ethereum-005",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "evm-concept",
+    "difficulty": "intermediate",
+    "question": "What is the EVM (Ethereum Virtual Machine)?",
+    "options": [
+      "The runtime environment that executes smart contract code consistently across every node on the Ethereum network",
+      "A physical computer manufactured by the Ethereum Foundation",
+      "A cryptocurrency exchange platform",
+      "A term with no real technical function"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The EVM ensures that smart contract code executes identically and deterministically on every participating node, which is essential for the network to reach consensus on the results of contract execution.",
+    "tags": ["evm", "technical-architecture"],
+    "reference": "https://ethereum.org/en/developers/docs/evm/"
+  },
+  {
+    "id": "ethereum-006",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "solidity-language",
+    "difficulty": "intermediate",
+    "question": "What is Solidity?",
+    "options": [
+      "The most widely used programming language for writing Ethereum smart contracts, created by Gavin Wood",
+      "The name of Ethereum's native cryptocurrency",
+      "A hardware wallet brand",
+      "A consensus mechanism used by Ethereum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solidity is a purpose-built language designed for writing smart contracts that run on the EVM — since its creation, it has become the dominant language in Ethereum smart contract development.",
+    "tags": ["solidity", "development-tools"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-007",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "eth-native-asset",
+    "difficulty": "beginner",
+    "question": "What is 'ETH' (Ether)?",
+    "options": [
+      "The native cryptocurrency of the Ethereum network, used to pay for transactions and computation (gas), among other uses",
+      "A stablecoin pegged to the US dollar",
+      "The name of Ethereum's official corporate entity",
+      "A synonym for Bitcoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ETH is Ethereum's native asset — beyond being a tradeable currency, it also serves the essential functional role of paying for computation and storage (gas fees) on the network.",
+    "tags": ["eth-asset", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-008",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "gas-fees-on-ethereum",
+    "difficulty": "intermediate",
+    "question": "How does the general 'gas fee' concept (introduced in the Blockchain subject) apply specifically to Ethereum?",
+    "options": [
+      "Every operation performed by a smart contract or transaction on Ethereum consumes 'gas,' paid in ETH, with more complex operations costing more gas",
+      "Ethereum has no fee mechanism of any kind, unlike other blockchains",
+      "Gas fees on Ethereum are always a single, permanently fixed amount that never changes",
+      "Gas exclusively refers to fuel used to power Ethereum's physical mining hardware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Gas measures computational effort — simple transfers cost less gas than complex smart contract interactions — and gas prices fluctuate based on network demand, which is why fees can vary significantly over time.",
+    "tags": ["gas-fees", "transaction-costs"],
+    "reference": "https://ethereum.org/en/developers/docs/gas/"
+  },
+  {
+    "id": "ethereum-009",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "account-model-vs-utxo",
+    "difficulty": "advanced",
+    "question": "How does Ethereum's account-based model for tracking balances differ from Bitcoin's UTXO model (covered in the Bitcoin subject)?",
+    "options": [
+      "Ethereum tracks a simple running balance per account, similar to a bank account; Bitcoin tracks discrete unspent transaction outputs that get consumed and recombined",
+      "Ethereum and Bitcoin use the exact same balance-tracking model with no differences",
+      "Ethereum has no way of tracking balances at all",
+      "Bitcoin uses an account model, while Ethereum uses the UTXO model"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuine architectural difference between the two networks — Ethereum's account model is generally considered more intuitive for supporting complex smart contract state, while Bitcoin's UTXO model has different tradeoffs suited to its simpler transaction-focused design.",
+    "tags": ["account-model", "technical-comparison"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-010",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "erc-20-standard",
+    "difficulty": "intermediate",
+    "question": "What is the ERC-20 token standard?",
+    "options": [
+      "A widely-adopted technical standard defining a common set of rules for creating fungible tokens on Ethereum, allowing them to work consistently across wallets and applications",
+      "A physical Ethereum-branded credit card",
+      "A law requiring all Ethereum users to register with the government",
+      "A standard that applies exclusively to Bitcoin, not Ethereum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ERC-20 defines a common interface (like functions for checking balances and transferring tokens) that token creators follow, which is a major reason why so many different tokens can be supported consistently across the same wallets and exchanges.",
+    "tags": ["erc-20", "token-standards"],
+    "reference": "https://ethereum.org/en/developers/docs/standards/tokens/erc-20/"
+  },
+  {
+    "id": "ethereum-011",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "erc-721-nft-standard",
+    "difficulty": "intermediate",
+    "question": "How does the ERC-721 token standard differ from ERC-20?",
+    "options": [
+      "ERC-721 defines 'non-fungible' tokens, where each token is unique and not interchangeable — unlike ERC-20's fungible, identical/interchangeable tokens",
+      "ERC-721 and ERC-20 are exactly the same standard with two different names",
+      "ERC-721 tokens cannot be transferred once created",
+      "ERC-721 only applies to physical, not digital, assets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fungible tokens (ERC-20) are interchangeable, like currency units. Non-fungible tokens (ERC-721) each have unique properties or identity, commonly used to represent distinct digital items or collectibles.",
+    "tags": ["erc-721", "token-standards"],
+    "reference": "https://ethereum.org/en/developers/docs/standards/tokens/erc-721/"
+  },
+  {
+    "id": "ethereum-012",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "the-merge-date",
+    "difficulty": "intermediate",
+    "question": "On what date did Ethereum's 'Merge' — its transition from Proof of Work to Proof of Stake — occur?",
+    "options": [
+      "September 15, 2022",
+      "July 30, 2015",
+      "August 2021",
+      "January 10, 2024"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Merge, completed on September 15, 2022, combined Ethereum's original execution layer with the Proof-of-Stake Beacon Chain (which had been running in parallel since December 2020), permanently ending Proof-of-Work mining on Ethereum.",
+    "tags": ["the-merge", "history"],
+    "reference": "https://ethereum.org/roadmap/merge/"
+  },
+  {
+    "id": "ethereum-013",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "the-merge-impact",
+    "difficulty": "intermediate",
+    "question": "What was one major measurable impact of Ethereum's Merge?",
+    "options": [
+      "It reduced Ethereum's energy consumption by approximately 99.95%, since Proof of Stake doesn't require competitive computational mining",
+      "It increased Ethereum's energy consumption by 99.95%",
+      "It had no measurable effect on energy consumption whatsoever",
+      "It permanently doubled the maximum supply of ETH"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This dramatic energy reduction, confirmed by the Ethereum Foundation itself, is one of the most cited outcomes of the Merge — Proof of Stake replaces competitive computational mining with a system based on staked capital.",
+    "tags": ["the-merge", "energy-impact"],
+    "reference": "https://ethereum.org/roadmap/merge/"
+  },
+  {
+    "id": "ethereum-014",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "validators-and-staking",
+    "difficulty": "intermediate",
+    "question": "Since the Merge, how does Ethereum select who validates transactions and proposes new blocks?",
+    "options": [
+      "Through Proof of Stake — participants ('validators') who have staked ETH as collateral are selected to propose and validate blocks, replacing the previous mining-based process",
+      "Through the exact same Proof of Work mining process Ethereum has always used",
+      "Through a single central company that manually approves every block",
+      "Through a fixed, unchanging list of validators set at Ethereum's launch in 2015"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Validators lock up ETH as stake and are chosen (with an element of randomness weighted by stake) to propose and attest to blocks — as documented on ethereum.org, validators replaced miners entirely after the Merge.",
+    "tags": ["validators", "proof-of-stake"],
+    "reference": "https://ethereum.org/ethereum-history-founder-and-ownership/"
+  },
+  {
+    "id": "ethereum-015",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "staking-minimum-requirement",
+    "difficulty": "advanced",
+    "question": "As of the current Ethereum protocol design, what is the minimum amount of ETH required to run an independent validator?",
+    "options": [
+      "32 ETH",
+      "1 ETH",
+      "1,000 ETH",
+      "0.01 ETH"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Running a solo validator requires staking 32 ETH. Note this is a protocol parameter that could theoretically change through future upgrades, and various staking pool services also let people participate with smaller amounts by pooling funds together.",
+    "tags": ["staking", "validators"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-016",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "eip-1559-fee-burning",
+    "difficulty": "advanced",
+    "question": "What change did EIP-1559 (part of the August 2021 London upgrade) introduce to Ethereum's fee structure?",
+    "options": [
+      "It introduced a base fee that is algorithmically adjusted based on network demand and then burned (permanently removed from circulation), alongside an optional tip paid to validators",
+      "It eliminated all transaction fees on Ethereum entirely",
+      "It doubled every transaction fee permanently with no adjustment mechanism",
+      "It has no relationship to how Ethereum's fees work"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EIP-1559 replaced Ethereum's previous first-price auction fee model with a more predictable base-fee-plus-tip system, where the base fee portion is burned rather than paid to validators — this burning mechanism can make ETH's net issuance lower, or even negative, during periods of high network usage.",
+    "tags": ["eip-1559", "fee-mechanism"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-017",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "eth-supply-not-capped",
+    "difficulty": "intermediate",
+    "question": "Unlike Bitcoin's fixed 21 million cap (covered in the Bitcoin subject), does Ethereum have a hard maximum supply limit?",
+    "options": [
+      "No — Ethereum does not have a fixed maximum supply cap built into its protocol the way Bitcoin does, though EIP-1559's fee-burning mechanism can offset new issuance, sometimes resulting in periods of net-negative supply growth",
+      "Yes, Ethereum has an identical 21 million coin hard cap, just like Bitcoin",
+      "Ethereum's supply is permanently frozen and has never changed since 2015",
+      "Ethereum's supply cap is exactly double Bitcoin's at 42 million"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is an important, sometimes-misunderstood distinction — Ethereum's monetary policy differs fundamentally from Bitcoin's fixed-cap design. Note that Ethereum's exact issuance mechanics have been adjusted through protocol upgrades over time and could continue to evolve through future governance.",
+    "tags": ["monetary-policy", "supply-comparison"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-018",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "the-dao-hack-history",
+    "difficulty": "advanced",
+    "question": "What was 'The DAO,' and what significant event happened to it in 2016?",
+    "options": [
+      "The DAO was an early, prominent decentralized investment fund built on Ethereum smart contracts; it suffered a major hack in 2016 that led to a highly contentious hard fork, splitting the network into Ethereum and Ethereum Classic",
+      "The DAO was a physical Ethereum office building that was robbed in 2016",
+      "The DAO was Ethereum's original name before being renamed in 2016",
+      "Nothing significant happened to The DAO; this is not a real historical event"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The DAO hack exploited a vulnerability in its smart contract code, and the community's decision to hard-fork Ethereum to effectively reverse the theft was deeply controversial — the portion of the community that rejected this intervention continued the original chain as Ethereum Classic.",
+    "tags": ["the-dao", "history", "hard-fork"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-019",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "dao-general-concept",
+    "difficulty": "intermediate",
+    "question": "What does 'DAO' (Decentralized Autonomous Organization) mean as a general concept enabled by platforms like Ethereum?",
+    "options": [
+      "An organization whose rules and fund management are largely encoded in smart contracts and governed by member voting, rather than by traditional centralized management",
+      "A government regulatory agency overseeing cryptocurrency",
+      "A synonym for any company that happens to accept cryptocurrency payments",
+      "A term with no real connection to smart contracts or blockchain technology"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DAOs use smart contracts to encode organizational rules (like voting and treasury management), aiming for more transparent, member-driven governance than traditional organizational structures — the concept was popularized significantly by (though predates the failure of) The DAO example above.",
+    "tags": ["dao-concept", "governance"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-020",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ethereum-improvement-proposals",
+    "difficulty": "intermediate",
+    "question": "What is an EIP (Ethereum Improvement Proposal)?",
+    "options": [
+      "A formal document proposing new features, standards, or process changes for Ethereum, discussed openly by the community before potential implementation",
+      "A type of Ethereum wallet application",
+      "A mandatory registration required to use Ethereum",
+      "A term unrelated to how Ethereum's protocol evolves"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EIPs are Ethereum's equivalent of Bitcoin's BIPs — a structured, public process for proposing and discussing protocol changes. EIP-1559 (covered above) is a well-known example of an EIP that was ultimately implemented.",
+    "tags": ["eips", "governance"],
+    "reference": "https://ethereum.org/en/eips/"
+  },
+  {
+    "id": "ethereum-021",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ethereum-foundation",
+    "difficulty": "beginner",
+    "question": "What is the general role of the Ethereum Foundation?",
+    "options": [
+      "A nonprofit organization that supports Ethereum's research, development, and ecosystem growth — though it doesn't unilaterally control the decentralized network itself",
+      "A for-profit company that owns exclusive rights to the Ethereum blockchain",
+      "A government agency responsible for regulating Ethereum globally",
+      "The sole entity capable of approving every Ethereum transaction"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Ethereum Foundation supports the ecosystem's development, but Ethereum's actual governance and operation is decentralized — no single entity, including the Foundation, unilaterally controls the network or forces changes onto it.",
+    "tags": ["ethereum-foundation", "governance"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-022",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "dapps-concept",
+    "difficulty": "beginner",
+    "question": "What is a 'dApp' (decentralized application)?",
+    "options": [
+      "An application whose backend logic runs on a blockchain (often via smart contracts) rather than on servers controlled by a single central company",
+      "Any mobile app that can be downloaded from an app store",
+      "An application that has no connection to blockchain technology whatsoever",
+      "A synonym for a traditional, centrally-hosted website"
+    ],
+    "correctAnswer": 0,
+    "explanation": "dApps typically combine a conventional user interface with backend logic executed via smart contracts on a blockchain like Ethereum, reducing (though not always eliminating) reliance on a centralized company controlling the core logic.",
+    "tags": ["dapps", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-023",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "spot-ethereum-etfs",
+    "difficulty": "advanced",
+    "question": "In May 2024, what significant regulatory development occurred for Ethereum in the United States?",
+    "options": [
+      "The SEC approved spot Ethereum ETF applications, following its earlier approval of spot Bitcoin ETFs in January 2024",
+      "The SEC banned all Ethereum-related financial products outright",
+      "Ethereum was declared illegal to own in the United States",
+      "This event did not actually happen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Following the January 2024 spot Bitcoin ETF approvals, the SEC issued approval for spot Ethereum ETF applications in May 2024, extending regulated, exchange-traded exposure to a second major cryptocurrency.",
+    "tags": ["etfs", "regulatory-history"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-024",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "gas-fee-volatility",
+    "difficulty": "intermediate",
+    "question": "Why can Ethereum gas fees vary significantly at different times?",
+    "options": [
+      "Fees respond to network demand — when many people want their transactions processed simultaneously, competition for limited block space drives fees higher, and they fall when demand is lower",
+      "Gas fees are set once at Ethereum's launch and have never changed since",
+      "Gas fees are entirely random with no relationship to network activity",
+      "Gas fees are fixed by a single government agency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This demand-driven fee volatility is a well-documented characteristic of Ethereum's base layer — it's a major motivation behind Layer 2 scaling solutions, which the Base subject explores in depth.",
+    "tags": ["gas-fees", "network-demand"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-025",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ethereum-vs-bitcoin-comparison",
+    "difficulty": "intermediate",
+    "question": "What's a fair, balanced way to compare Ethereum and Bitcoin's core design goals?",
+    "options": [
+      "Bitcoin was designed primarily as peer-to-peer digital cash with a fixed monetary policy; Ethereum was designed as a broader programmable platform supporting smart contracts and diverse applications — different design goals rather than one being objectively 'better'",
+      "Ethereum and Bitcoin have always had identical goals and technical designs",
+      "Bitcoin is objectively useless compared to Ethereum in every possible way",
+      "Ethereum is objectively useless compared to Bitcoin in every possible way"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Presenting this comparison evenhandedly matters — both networks have different founding goals and tradeoffs, and reasonable evaluations depend on what specific properties (security model, programmability, monetary policy) matter most for a given use case.",
+    "tags": ["ethereum-vs-bitcoin", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-026",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "dencun-upgrade",
+    "difficulty": "advanced",
+    "question": "What was a key focus of Ethereum's Dencun upgrade (March 2024)?",
+    "options": [
+      "Introducing 'blobs' — a new way to handle data availability — specifically aimed at reducing costs for Layer 2 networks built on top of Ethereum",
+      "Permanently reverting Ethereum back to Proof of Work mining",
+      "Eliminating gas fees on Ethereum entirely and permanently",
+      "Merging Ethereum with the Bitcoin network"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dencun's blob mechanism specifically targeted reducing data costs for Layer 2 rollups (like Base, covered in the next subject), reflecting Ethereum's ongoing strategy of scaling primarily through Layer 2 solutions rather than only base-layer changes.",
+    "tags": ["dencun-upgrade", "protocol-evolution"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-027",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "layer-2-ecosystem-intro",
+    "difficulty": "intermediate",
+    "question": "Why has Ethereum's ecosystem increasingly relied on Layer 2 networks (a concept introduced generally in the Blockchain subject)?",
+    "options": [
+      "To help address base-layer scalability and cost limitations, by processing many transactions off the main Ethereum chain while still relying on it for underlying security",
+      "Layer 2 networks have no actual relationship to Ethereum whatsoever",
+      "Layer 2 networks were created to replace Ethereum entirely and make it obsolete",
+      "Ethereum has never had any Layer 2 networks built on top of it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This sets up the next subject in the curriculum — Base is one prominent example of an Ethereum Layer 2 network, built specifically to address these scalability and cost considerations while inheriting Ethereum's underlying security.",
+    "tags": ["layer-2-intro", "scaling-strategy"],
+    "reference": null
+  },
+  {
+    "id": "ethereum-028",
+    "class": "class-9",
+    "subject": "ethereum",
+    "topic": "ico-2014-crowdsale",
+    "difficulty": "advanced",
+    "question": "How was Ethereum's initial development funded?",
+    "options": [
+      "Through a 2014 public crowdsale (an early form of what's now often called an ICO), which raised funding paid in Bitcoin",
+      "Through a bank loan from a single traditional financial institution",
+      "Ethereum required no funding at all to develop",
+      "Through a government grant program"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 2014 crowdsale raised funding (commonly cited as around $18 million in Bitcoin) to support Ethereum's development ahead of its 2015 launch — an early and influential example of what later became widely known as an ICO (Initial Coin Offering).",
+    "tags": ["history", "funding"],
+    "reference": null
+  }
+]

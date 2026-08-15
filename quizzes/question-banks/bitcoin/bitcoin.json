@@ -1,0 +1,813 @@
+[
+  {
+    "id": "bitcoin-001",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "whitepaper-history",
+    "difficulty": "beginner",
+    "question": "When was the Bitcoin whitepaper, 'Bitcoin: A Peer-to-Peer Electronic Cash System,' published?",
+    "options": [
+      "October 31, 2008",
+      "January 3, 2009",
+      "January 9, 2009",
+      "May 22, 2010"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The whitepaper was published by the pseudonymous Satoshi Nakamoto on October 31, 2008, distributed via a cryptography mailing list before Bitcoin's network actually launched.",
+    "tags": ["history", "whitepaper"],
+    "reference": "https://bitcoin.org/bitcoin.pdf"
+  },
+  {
+    "id": "bitcoin-002",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "genesis-block",
+    "difficulty": "beginner",
+    "question": "When was the Bitcoin genesis block (the very first block) mined?",
+    "options": [
+      "January 3, 2009",
+      "October 31, 2008",
+      "November 28, 2012",
+      "March 24, 2009"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The genesis block was mined by Satoshi Nakamoto on January 3, 2009, roughly two months after the whitepaper's publication — this is considered Bitcoin's operational launch date.",
+    "tags": ["history", "genesis-block"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-003",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "genesis-block",
+    "difficulty": "intermediate",
+    "question": "What message did Satoshi Nakamoto embed in the Bitcoin genesis block?",
+    "options": [
+      "A newspaper headline: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'",
+      "The complete text of the Bitcoin whitepaper",
+      "Satoshi Nakamoto's real legal name",
+      "A list of every early Bitcoin miner's name"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This headline from The Times of London is widely understood to serve two purposes: proving the block wasn't created before that date, and commenting on the instability of the traditional banking system.",
+    "tags": ["history", "genesis-block"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-004",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "satoshi-nakamoto-identity",
+    "difficulty": "beginner",
+    "question": "Who is Satoshi Nakamoto?",
+    "options": [
+      "The pseudonymous creator of Bitcoin, whose real identity has never been definitively confirmed publicly",
+      "A well-known, publicly identified software company",
+      "The current CEO of Bitcoin",
+      "A government agency that regulates Bitcoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Satoshi Nakamoto is the name used by Bitcoin's creator (whether an individual or group is also unconfirmed). Despite considerable speculation over the years, the real identity behind the pseudonym has never been definitively, publicly proven.",
+    "tags": ["history", "satoshi-nakamoto"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-005",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "what-is-bitcoin",
+    "difficulty": "beginner",
+    "question": "What was Bitcoin's whitepaper title, and what does it reveal about its original purpose?",
+    "options": [
+      "'Bitcoin: A Peer-to-Peer Electronic Cash System' — designed as a form of direct, peer-to-peer digital money without needing a bank or payment processor",
+      "'Bitcoin: A Central Bank Alternative' — designed to replace central banks entirely with a single company",
+      "'Bitcoin: A Social Media Platform' — designed primarily for online communication",
+      "'Bitcoin: A Gaming Currency' — designed exclusively for video game purchases"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The whitepaper's actual title frames Bitcoin's original design goal precisely: peer-to-peer electronic cash, removing the need for a trusted third party (like a bank) to process payments.",
+    "tags": ["fundamentals", "purpose"],
+    "reference": "https://bitcoin.org/bitcoin.pdf"
+  },
+  {
+    "id": "bitcoin-006",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "max-supply",
+    "difficulty": "beginner",
+    "question": "What is Bitcoin's maximum total supply, as fixed by its protocol?",
+    "options": [
+      "21 million BTC",
+      "100 million BTC",
+      "There is no maximum; Bitcoin can be created without limit",
+      "1 million BTC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin's protocol hard-caps the total supply at 21 million coins — a core, deliberately fixed design choice contrasting with currencies that can be issued without a hard limit.",
+    "tags": ["monetary-policy", "supply-cap"],
+    "reference": "https://bitcoin.org/en/faq"
+  },
+  {
+    "id": "bitcoin-007",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "mining-basics",
+    "difficulty": "beginner",
+    "question": "What is Bitcoin 'mining'?",
+    "options": [
+      "The process by which specialized computers compete to validate transactions and add new blocks to the blockchain, earning new bitcoin as a reward",
+      "The physical act of digging for Bitcoin in the ground",
+      "A method for permanently deleting old Bitcoin transactions",
+      "A customer support role at cryptocurrency exchanges"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mining is Bitcoin's mechanism for both securing the network and issuing new coins — miners compete to solve a computational puzzle, and the winner adds the next block and receives the block reward.",
+    "tags": ["mining", "fundamentals"],
+    "reference": "https://bitcoin.org/en/how-it-works"
+  },
+  {
+    "id": "bitcoin-008",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "proof-of-work",
+    "difficulty": "intermediate",
+    "question": "What is 'Proof of Work,' the consensus mechanism Bitcoin uses?",
+    "options": [
+      "A system requiring miners to expend real computational effort to solve a difficult puzzle before adding a block, making it costly to cheat or rewrite history",
+      "A system where the wealthiest participant automatically controls the network",
+      "A voting system where every Bitcoin holder casts one vote per coin owned",
+      "A system with no computational requirement at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Proof of Work ties block creation to real, verifiable computational effort — this makes attacking the network (like rewriting transaction history) prohibitively expensive, since it would require out-competing the network's total honest computing power.",
+    "tags": ["proof-of-work", "consensus"],
+    "reference": "https://bitcoin.org/bitcoin.pdf"
+  },
+  {
+    "id": "bitcoin-009",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "block-time",
+    "difficulty": "intermediate",
+    "question": "Approximately how often does Bitcoin target producing a new block?",
+    "options": [
+      "About every 10 minutes on average",
+      "About every 10 seconds",
+      "Exactly once per day",
+      "About every 10 hours"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin's protocol targets a roughly 10-minute average block time — actual times vary block-to-block, but the network's difficulty adjustment mechanism keeps the long-run average close to this target.",
+    "tags": ["block-time", "protocol-design"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-010",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "difficulty-adjustment",
+    "difficulty": "advanced",
+    "question": "What is the purpose of Bitcoin's mining 'difficulty adjustment'?",
+    "options": [
+      "It periodically recalibrates how hard the mining puzzle is, keeping the average block time close to 10 minutes even as the total mining power on the network changes",
+      "It randomly changes the maximum supply of Bitcoin",
+      "It determines which individual miner gets to mine every block",
+      "It has no real function and is purely symbolic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As more (or less) computing power joins the network, the difficulty adjusts to compensate, so blocks keep arriving at roughly the same target pace regardless of fluctuations in total mining power.",
+    "tags": ["difficulty-adjustment", "protocol-design"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-011",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "halving-mechanics",
+    "difficulty": "intermediate",
+    "question": "What is a Bitcoin 'halving'?",
+    "options": [
+      "A programmed event, occurring roughly every four years (every 210,000 blocks), that cuts the block reward given to miners in half",
+      "An event that cuts the total number of bitcoin in existence in half",
+      "A one-time event that already happened and will never happen again",
+      "An event that doubles transaction fees permanently"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Halvings reduce the rate at which new bitcoin enters circulation (the block reward), not existing holdings — this is Bitcoin's built-in mechanism for gradually slowing new supply issuance over time.",
+    "tags": ["halving", "monetary-policy"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-012",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "halving-history",
+    "difficulty": "intermediate",
+    "question": "What was the original Bitcoin block reward when mining began in 2009, before any halvings occurred?",
+    "options": [
+      "50 BTC per block",
+      "21 BTC per block",
+      "1 BTC per block",
+      "100 BTC per block"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The genesis block and early blocks rewarded miners 50 BTC each — this reward has since been cut in half four times (2012, 2016, 2020, 2024) as of this curriculum's writing.",
+    "tags": ["halving", "history"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-013",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "halving-history",
+    "difficulty": "advanced",
+    "question": "As of the most recent halving (April 2024), what is the current Bitcoin block reward?",
+    "options": [
+      "3.125 BTC per block",
+      "50 BTC per block",
+      "6.25 BTC per block",
+      "0 BTC per block"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The fourth halving (April 2024) reduced the block reward from 6.25 BTC to 3.125 BTC per block. The reward will continue halving roughly every four years — the next is expected around 2028 — until it approaches zero around the year 2140.",
+    "tags": ["halving", "history"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-014",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "satoshi-denomination",
+    "difficulty": "beginner",
+    "question": "What is a 'satoshi' (often abbreviated 'sat'), in the context of Bitcoin?",
+    "options": [
+      "The smallest unit of Bitcoin, equal to one hundred-millionth (0.00000001) of a single BTC",
+      "Another name for a Bitcoin mining company",
+      "A unit exactly equal to one whole Bitcoin",
+      "A type of Bitcoin wallet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Named after Bitcoin's creator, a satoshi is the smallest divisible unit — 100,000,000 satoshis make up 1 BTC — allowing Bitcoin to be divided into very small fractional amounts.",
+    "tags": ["satoshi-unit", "denominations"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-015",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "double-spend-problem",
+    "difficulty": "intermediate",
+    "question": "What is the 'double-spending problem' that Bitcoin's design specifically solves for digital money?",
+    "options": [
+      "The risk that the same digital currency could be spent more than once, since digital data can normally be copied — Bitcoin prevents this without needing a central authority to check balances",
+      "The problem of Bitcoin transactions costing exactly double their intended amount",
+      "A bug that has never actually been solved on the Bitcoin network",
+      "The problem of two people accidentally choosing the same wallet password"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Before Bitcoin, preventing someone from spending the same digital money twice typically required a trusted central party (like a bank) to check balances. Bitcoin's blockchain and consensus mechanism solve this in a decentralized way, without a central authority.",
+    "tags": ["double-spend", "core-innovation"],
+    "reference": "https://bitcoin.org/bitcoin.pdf"
+  },
+  {
+    "id": "bitcoin-016",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "decentralization",
+    "difficulty": "intermediate",
+    "question": "What does it mean that Bitcoin is 'decentralized'?",
+    "options": [
+      "No single company, government, or individual controls the network — it operates through a distributed network of independent participants following shared rules",
+      "Bitcoin is controlled entirely by one specific bank",
+      "Bitcoin's servers are all located in exactly one physical building",
+      "Decentralization means Bitcoin has no rules at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin's decentralization means transaction validation and network operation are distributed across many independent participants (nodes and miners) worldwide, rather than depending on any single controlling entity.",
+    "tags": ["decentralization", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-017",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "full-nodes",
+    "difficulty": "intermediate",
+    "question": "What is a Bitcoin 'full node'?",
+    "options": [
+      "A computer running Bitcoin software that independently downloads and verifies the entire blockchain, enforcing the network's rules",
+      "A physical Bitcoin coin you can hold",
+      "A customer service representative for a Bitcoin exchange",
+      "A device used exclusively for mining, with no verification function"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Full nodes independently verify that every transaction and block follows Bitcoin's rules — this is distinct from mining, and anyone can run a full node to help enforce and validate the network's rules without needing to mine.",
+    "tags": ["full-nodes", "network-participation"],
+    "reference": "https://bitcoin.org/en/full-node"
+  },
+  {
+    "id": "bitcoin-018",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "pseudonymity-not-anonymity",
+    "difficulty": "intermediate",
+    "question": "Is Bitcoin genuinely 'anonymous'?",
+    "options": [
+      "Not exactly — Bitcoin is more accurately described as pseudonymous: transactions are publicly recorded and traceable on the blockchain, tied to addresses rather than directly to real-world identities by default",
+      "Yes, Bitcoin transactions are completely untraceable and impossible to analyze under any circumstances",
+      "Bitcoin transactions are recorded privately and never visible to anyone",
+      "Anonymity is not a relevant concept for Bitcoin at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Every Bitcoin transaction is recorded on a public ledger, viewable by anyone — addresses aren't inherently linked to real names, but blockchain analysis techniques can often trace activity, especially when addresses are linked to real-world identity through exchanges or other means. 'Pseudonymous,' not 'anonymous,' is the more accurate description.",
+    "tags": ["pseudonymity", "misconceptions"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-019",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "block-explorers",
+    "difficulty": "beginner",
+    "question": "What is a Bitcoin 'block explorer'?",
+    "options": [
+      "A website or tool that lets you search and view public blockchain data, like transactions, addresses, and blocks",
+      "A physical device for mining Bitcoin",
+      "A type of Bitcoin wallet exclusively for storing funds",
+      "A tool for permanently deleting transactions from the blockchain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Block explorers provide a readable, searchable interface into the public blockchain data — letting anyone verify a transaction, check an address's balance and history, or view details about a specific block.",
+    "tags": ["block-explorers", "tools"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-020",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "transaction-confirmations",
+    "difficulty": "intermediate",
+    "question": "What does it mean for a Bitcoin transaction to have multiple 'confirmations'?",
+    "options": [
+      "Each additional block mined after the one containing your transaction adds a confirmation, increasing confidence that the transaction is permanent and won't be reversed",
+      "Confirmations refer to how many people have personally approved your transaction by hand",
+      "A transaction needs zero confirmations before it's considered valid on the network",
+      "Confirmations are a fee you pay directly to Bitcoin's creator"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As more blocks are added on top of the block containing a transaction, reversing that transaction becomes increasingly computationally impractical — more confirmations generally mean greater certainty the transaction is final.",
+    "tags": ["confirmations", "transaction-finality"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-021",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "transaction-fees",
+    "difficulty": "intermediate",
+    "question": "Why do Bitcoin transactions often include a fee paid to miners?",
+    "options": [
+      "Fees incentivize miners to include a transaction in the next block, and increasingly supplement (and will eventually replace) the diminishing block reward as Bitcoin's primary miner incentive",
+      "Fees are a mandatory tax collected by a central government",
+      "Fees are always exactly the same fixed amount regardless of network conditions",
+      "Fees are optional and have no effect on transaction processing speed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Miners prioritize transactions with higher fees, especially when network demand is high. As block rewards continue shrinking through halvings, transaction fees are expected to become an increasingly important part of miner compensation over time.",
+    "tags": ["transaction-fees", "mining-incentives"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-022",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "utxo-model",
+    "difficulty": "advanced",
+    "question": "What is the basic idea behind Bitcoin's 'UTXO' (Unspent Transaction Output) model?",
+    "options": [
+      "Rather than tracking simple account balances, Bitcoin tracks discrete 'unspent outputs' from past transactions, which are consumed and recombined to create new transactions",
+      "UTXO refers to a specific brand of Bitcoin mining hardware",
+      "It's a model where Bitcoin balances are stored as a single number in one central database",
+      "UTXO is an outdated model no longer used by Bitcoin at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike an account-balance model, Bitcoin represents your holdings as a collection of distinct, unspent transaction outputs — when you spend, you consume specific UTXOs and create new ones, which is fundamentally different from how a traditional bank account tracks a single balance.",
+    "tags": ["utxo", "technical-design"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-023",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "public-private-keys",
+    "difficulty": "intermediate",
+    "question": "At a conceptual level, what role do public and private keys play in a Bitcoin wallet?",
+    "options": [
+      "A private key proves ownership and authorizes spending; a public key (or an address derived from it) can be shared to receive funds without exposing the private key",
+      "Public and private keys are two names for the exact same thing",
+      "The public key is used to spend funds; the private key is meant to be shared freely",
+      "Keys have no functional role in Bitcoin ownership"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This asymmetric cryptography (connecting back to the Cyber Security subject) is what secures Bitcoin ownership — your private key must stay secret, since whoever controls it can spend the associated funds. Detailed wallet safety practices are covered in the Wallet Security subject later in this curriculum.",
+    "tags": ["public-private-keys", "ownership"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-024",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "mining-hardware-evolution",
+    "difficulty": "advanced",
+    "question": "How has Bitcoin mining hardware evolved since 2009?",
+    "options": [
+      "It progressed from ordinary CPUs, to more powerful GPUs, and eventually to ASICs (specialized chips built specifically for Bitcoin mining) as competition for block rewards increased",
+      "Mining hardware has remained completely unchanged since Bitcoin's launch",
+      "Bitcoin has never required any specialized computing hardware at any point",
+      "Mining moved from ASICs down to basic calculators over time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As mining became more competitive, increasingly specialized and efficient hardware emerged — ASICs (Application-Specific Integrated Circuits) are now the dominant hardware for Bitcoin mining, far outperforming general-purpose CPUs or GPUs for this specific task.",
+    "tags": ["mining-hardware", "history"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-025",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "mining-pools",
+    "difficulty": "intermediate",
+    "question": "What is a 'mining pool'?",
+    "options": [
+      "A group of miners who combine their computational power and share block rewards proportionally, reducing the variance/unpredictability of individual mining income",
+      "A physical swimming pool located at a mining facility",
+      "A single, centrally-controlled entity that owns all Bitcoin mining hardware worldwide",
+      "A pool of money used exclusively to buy Bitcoin, unrelated to mining"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Individual miners often can't reliably win blocks alone, given the network's total computing power — pools let participants combine resources and share rewards more predictably and proportionally to their contributed effort.",
+    "tags": ["mining-pools", "mining-economics"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-026",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "digital-gold-narrative",
+    "difficulty": "intermediate",
+    "question": "What is the general idea behind the 'digital gold' comparison sometimes used to describe Bitcoin?",
+    "options": [
+      "Some view Bitcoin's fixed, scarce supply and independence from any government as functionally similar to gold's role as a store of value — though this is a debated framing, not a settled, universal fact",
+      "Bitcoin is literally backed by physical gold reserves held by a bank",
+      "Bitcoin can be physically melted down like gold",
+      "This comparison is an official, formal classification recognized universally by all governments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 'digital gold' framing reflects one common way people describe Bitcoin's scarcity-driven value proposition — it's a widely discussed comparison and perspective, not an official classification, and reasonable people disagree about how apt the analogy is.",
+    "tags": ["digital-gold", "store-of-value-debate"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-027",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "lightning-network-intro",
+    "difficulty": "advanced",
+    "question": "What is the general purpose of the Lightning Network, as it relates to Bitcoin?",
+    "options": [
+      "A 'Layer 2' payment protocol built on top of Bitcoin, designed to enable faster and cheaper transactions by handling many payments off the main blockchain before settling",
+      "A separate cryptocurrency entirely unrelated to Bitcoin",
+      "A method for physically speeding up internet connections",
+      "The original name for the Bitcoin blockchain itself"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Lightning Network addresses Bitcoin's base-layer transaction throughput limitations by enabling off-chain payment channels, aiming to make small, frequent transactions faster and cheaper than settling every single one directly on the main Bitcoin blockchain.",
+    "tags": ["lightning-network", "scaling"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-028",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "no-central-issuer",
+    "difficulty": "beginner",
+    "question": "Unlike traditional currencies issued by central banks, how does new Bitcoin come into existence?",
+    "options": [
+      "Through the mining process, following a fixed, predetermined issuance schedule written into the protocol — no company or government decides to print more",
+      "A single company manually creates new Bitcoin whenever it decides to",
+      "New Bitcoin is created by government decree in each country",
+      "Bitcoin's supply is decided by a yearly vote among all internet users"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is one of Bitcoin's defining features: its issuance schedule is fixed by code, not subject to discretionary decisions by any central authority — a fundamentally different monetary policy than traditional fiat currencies.",
+    "tags": ["monetary-policy", "issuance"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-029",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "bitcoin-improvement-proposals",
+    "difficulty": "advanced",
+    "question": "What is a 'BIP' (Bitcoin Improvement Proposal)?",
+    "options": [
+      "A formal document proposing a change or new feature for the Bitcoin protocol, which the community and developers discuss and potentially adopt",
+      "A type of Bitcoin wallet",
+      "A tax form required for Bitcoin transactions",
+      "A mandatory subscription fee for using Bitcoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BIPs are the standard mechanism through which changes to Bitcoin's protocol are proposed, discussed, and (if there's sufficient consensus) eventually implemented — reflecting Bitcoin's decentralized, no-single-authority governance approach.",
+    "tags": ["bips", "governance"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-030",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "first-transaction-history",
+    "difficulty": "intermediate",
+    "question": "Who received the first-ever Bitcoin transaction from Satoshi Nakamoto, shortly after Bitcoin's launch?",
+    "options": [
+      "Hal Finney, a cryptographer and early Bitcoin participant",
+      "A large bank's official Bitcoin division",
+      "An anonymous exchange platform",
+      "The government of a specific country"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In January 2009, Satoshi Nakamoto sent 10 BTC to Hal Finney, a well-known cryptographer who was among the first people to run the Bitcoin software after its public release.",
+    "tags": ["history", "early-transactions"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-031",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "bitcoin-pizza-day",
+    "difficulty": "intermediate",
+    "question": "What is 'Bitcoin Pizza Day,' commemorated annually by the Bitcoin community?",
+    "options": [
+      "The anniversary of the first known commercial Bitcoin transaction — a programmer paying 10,000 BTC for two pizzas in May 2010",
+      "The day Bitcoin's maximum supply was first reached",
+      "An official company-sponsored holiday created by Bitcoin's founders",
+      "The day Bitcoin mining first became illegal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This transaction is widely cited as the first real-world commercial use of Bitcoin to purchase a physical good — now famous largely because those 10,000 BTC would be worth an enormous amount at later Bitcoin valuations.",
+    "tags": ["history", "bitcoin-pizza-day"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-032",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "not-illegal-by-default",
+    "difficulty": "intermediate",
+    "question": "Is owning or using Bitcoin illegal?",
+    "options": [
+      "Not inherently — legal treatment of Bitcoin varies significantly by country, and many countries permit its use and ownership, sometimes with specific regulations",
+      "Yes, Bitcoin is illegal in every country in the world without exception",
+      "Bitcoin has no legal status anywhere and exists entirely outside any law",
+      "Bitcoin ownership requires special government-issued licensing everywhere"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Legal treatment of Bitcoin varies by jurisdiction — some countries have embraced it, some regulate it heavily, and a smaller number restrict it — but the common misconception that it's universally illegal is inaccurate. Checking current, local regulations for your specific jurisdiction is always worthwhile, since this landscape continues to evolve.",
+    "tags": ["misconceptions", "legal-status"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-033",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "not-backed-by-nothing",
+    "difficulty": "advanced",
+    "question": "Bitcoin critics sometimes claim it's 'backed by nothing.' What's a more precise way to describe what gives Bitcoin its value?",
+    "options": [
+      "Bitcoin's value derives from its fixed, verifiable scarcity, decentralized security, and market demand — similar in some ways to how other assets derive value from scarcity and utility rather than a physical backing",
+      "Bitcoin is directly backed by a specific quantity of gold held in a vault",
+      "Bitcoin's value is fixed permanently by law in every country",
+      "This is not a genuinely debated or nuanced topic at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuinely debated topic in economics — Bitcoin isn't backed by a physical commodity, but its proponents point to verifiable scarcity, decentralization, and network security as sources of value, similar to arguments made about other scarce assets. Presenting this evenhandedly (rather than asserting a single definitive answer) reflects the actual state of ongoing discussion.",
+    "tags": ["misconceptions", "value-debate"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-034",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "hard-fork-vs-soft-fork",
+    "difficulty": "advanced",
+    "question": "What's the general difference between a 'hard fork' and a 'soft fork' in Bitcoin's protocol?",
+    "options": [
+      "A hard fork introduces changes incompatible with the old rules, potentially splitting the network into two separate chains; a soft fork tightens the rules in a way that remains backward-compatible with nodes that haven't upgraded",
+      "They are exactly the same type of protocol change with no meaningful difference",
+      "A soft fork always creates an entirely new, separate cryptocurrency",
+      "Hard forks and soft forks are terms unrelated to Bitcoin's protocol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This distinction matters for how protocol upgrades happen — a soft fork is compatible with non-upgraded nodes, while a hard fork requires all participants to upgrade or risk following a diverged chain, as happened historically when Bitcoin Cash split from Bitcoin in 2017.",
+    "tags": ["forks", "protocol-changes"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-035",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "bitcoin-cash-fork-example",
+    "difficulty": "advanced",
+    "question": "What is Bitcoin Cash, in relation to Bitcoin?",
+    "options": [
+      "A separate cryptocurrency that resulted from a 2017 hard fork of the Bitcoin blockchain, created by participants who disagreed with Bitcoin's approach to a specific protocol design decision",
+      "Another name for Bitcoin itself, with no actual distinction",
+      "A physical form of Bitcoin you can hold as cash",
+      "A Bitcoin wallet application, not a separate cryptocurrency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin Cash emerged from a 2017 hard fork, driven primarily by disagreement over how to scale Bitcoin's transaction capacity — it shares Bitcoin's history up to the fork point but has operated as an independent cryptocurrency with its own rules since.",
+    "tags": ["forks", "bitcoin-cash"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-036",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "custodial-vs-noncustodial",
+    "difficulty": "intermediate",
+    "question": "What's the basic difference between a 'custodial' and a 'non-custodial' way of holding Bitcoin?",
+    "options": [
+      "With a custodial service (like an exchange account), a third party holds your private keys on your behalf; with non-custodial (self-custody) wallets, you alone control your own private keys",
+      "There is no real difference between the two approaches",
+      "Custodial wallets are always physically located in your home",
+      "Non-custodial means the Bitcoin doesn't actually belong to anyone"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This distinction has significant implications for control and risk — detailed safety practices for each approach are covered in depth in the Wallet Security subject later in this curriculum, but understanding the basic difference matters even at this conceptual stage.",
+    "tags": ["custody", "wallets-intro"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-037",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "not-your-keys-not-your-coins",
+    "difficulty": "intermediate",
+    "question": "What does the common Bitcoin community phrase 'not your keys, not your coins' mean?",
+    "options": [
+      "If you don't personally control the private keys to your Bitcoin (e.g., it's held on an exchange), you're ultimately trusting that third party's custody rather than having direct, independent control",
+      "It means Bitcoin transactions require a physical metal key",
+      "It refers to a specific Bitcoin mining requirement",
+      "It's a phrase with no real meaning, used only as a joke"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This phrase captures a core philosophical point in the Bitcoin community: holding funds on a custodial platform means depending on that platform's solvency and security, rather than having direct cryptographic control yourself.",
+    "tags": ["custody", "community-principles"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-038",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "sha-256-hashing",
+    "difficulty": "advanced",
+    "question": "What role does the SHA-256 hashing algorithm play in Bitcoin?",
+    "options": [
+      "It's the cryptographic hash function used in Bitcoin's mining process and for linking blocks together securely",
+      "It's the name of Bitcoin's official mobile wallet app",
+      "It's a unit of Bitcoin currency",
+      "It has no actual role in how Bitcoin functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SHA-256 is a cryptographic hash function central to Bitcoin's Proof of Work mining process and to how each block cryptographically references the previous one, forming the security backbone of the 'chain' in blockchain.",
+    "tags": ["sha-256", "cryptography"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-039",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "energy-consumption-debate",
+    "difficulty": "advanced",
+    "question": "Bitcoin mining's energy consumption is a frequently debated topic. What's a fair, balanced way to characterize this debate?",
+    "options": [
+      "Proof of Work mining does consume significant real-world energy, and reasonable people disagree about how to weigh that cost against Bitcoin's claimed benefits — this is an active, legitimate area of discussion, not a settled question",
+      "Bitcoin mining uses no meaningful energy whatsoever",
+      "This topic has no legitimate debate and one side is simply, objectively correct",
+      "Energy consumption concerns apply only to Bitcoin and no other computing activity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin's energy use is real and measurable, and its implications are genuinely debated — presenting this as an open, ongoing discussion (rather than picking a side) is the appropriate way to handle a contested topic in educational content.",
+    "tags": ["energy-debate", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-040",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "spot-bitcoin-etfs",
+    "difficulty": "advanced",
+    "question": "What happened on January 10, 2024, regarding Bitcoin and U.S. financial markets?",
+    "options": [
+      "The U.S. Securities and Exchange Commission (SEC) approved the first spot Bitcoin exchange-traded funds (ETFs), allowing investors to gain Bitcoin price exposure through a regulated brokerage product",
+      "The U.S. government banned Bitcoin entirely nationwide",
+      "Bitcoin's maximum supply was permanently increased",
+      "Bitcoin mining was outlawed across the United States"
+    ],
+    "correctAnswer": 0,
+    "explanation": "After more than a decade of prior rejected applications, the SEC approved 11 spot Bitcoin ETF applications on January 10, 2024 — a significant development in mainstream, regulated access to Bitcoin price exposure without directly holding the asset.",
+    "tags": ["etfs", "regulatory-history"],
+    "reference": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
+  },
+  {
+    "id": "bitcoin-041",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "price-volatility",
+    "difficulty": "beginner",
+    "question": "What is Bitcoin generally known for in terms of its price behavior?",
+    "options": [
+      "Significant price volatility — its value has historically fluctuated substantially over both short and long time periods",
+      "Perfectly stable, unchanging value since its creation",
+      "A price that is fixed by law in every country",
+      "A value that only ever increases and has never decreased"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin's price history shows substantial volatility — significant rises and falls over various timeframes — an important, well-established characteristic to understand rather than assume price stability.",
+    "tags": ["volatility", "market-behavior"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-042",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "coinbase-transaction",
+    "difficulty": "advanced",
+    "question": "What is the 'coinbase transaction' in a Bitcoin block (not to be confused with the Coinbase exchange company)?",
+    "options": [
+      "The special first transaction in each block that creates new bitcoin and pays it to the miner who successfully mined that block",
+      "A transaction fee paid exclusively to the Coinbase exchange company",
+      "A type of transaction that is always rejected by the network",
+      "A transaction that only exists in the genesis block"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a specific technical term predating the Coinbase company's founding — the coinbase transaction is how new bitcoin enters circulation, crediting the block reward (plus collected fees) to the successful miner.",
+    "tags": ["coinbase-transaction", "mining-mechanics"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-043",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "block-size-scaling-debate",
+    "difficulty": "advanced",
+    "question": "What was the general subject of Bitcoin's historical 'block size debate'?",
+    "options": [
+      "Disagreement within the community over how to best scale Bitcoin's transaction capacity — including whether to increase the block size limit directly versus pursuing other scaling approaches",
+      "A debate about the physical size of Bitcoin mining hardware",
+      "A disagreement about Bitcoin's logo design",
+      "A debate that had no real consequences for Bitcoin's development"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This was a significant, contentious period in Bitcoin's history around differing visions for scaling transaction throughput — it eventually contributed to events like the Bitcoin Cash fork, reflecting genuine, substantive disagreement rather than a trivial dispute.",
+    "tags": ["scaling-debate", "history"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-044",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "spv-light-clients",
+    "difficulty": "advanced",
+    "question": "What is a Bitcoin 'light client' (or SPV — Simplified Payment Verification — client), as distinct from a full node?",
+    "options": [
+      "A wallet that verifies transactions using a partial, streamlined method rather than downloading and validating the entire blockchain itself",
+      "A client that uses no security verification at all",
+      "Another name for a full node with no real difference",
+      "A type of mining hardware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Light clients trade some independence and verification thoroughness for convenience — practical for mobile wallets with limited storage, but relying more on trusting other network participants than a full node does.",
+    "tags": ["spv-clients", "wallet-types"],
+    "reference": null
+  },
+  {
+    "id": "bitcoin-045",
+    "class": "class-8",
+    "subject": "bitcoin",
+    "topic": "el-salvador-legal-tender-history",
+    "difficulty": "advanced",
+    "question": "In September 2021, El Salvador became the first country to adopt Bitcoin as legal tender. What changed regarding this policy in early 2025?",
+    "options": [
+      "Following an agreement with the IMF tied to a loan package, El Salvador's Congress amended the law so that businesses were no longer legally required to accept Bitcoin",
+      "El Salvador banned Bitcoin outright with no further use permitted",
+      "No changes have ever been made to El Salvador's original Bitcoin policy",
+      "El Salvador increased Bitcoin's mandatory acceptance requirements further"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuinely evolving situation — El Salvador adopted Bitcoin as legal tender in September 2021, and in early 2025 amended the law (as a condition tied to IMF financing) to remove the mandatory business-acceptance requirement, making acceptance voluntary. Given how quickly policy in this specific area has changed, checking current, dated sources is worthwhile if precise up-to-date status matters for your purpose.",
+    "tags": ["el-salvador", "regulatory-history"],
+    "reference": null
+  }
+]
+

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ai-001",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "what-is-ai",
+    "difficulty": "beginner",
+    "question": "What is Artificial Intelligence (AI), in broad terms?",
+    "options": [
+      "The field of building systems that can perform tasks normally requiring human intelligence, like recognizing patterns or making decisions",
+      "A single specific software product made by one company",
+      "Any computer program, regardless of what it does",
+      "A term that only applies to robots with physical bodies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AI is a broad field, not one product — it covers many techniques and applications aimed at getting computers to perform tasks that typically require human-like intelligence, from recognizing images to generating text.",
+    "tags": ["ai-fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "ai-002",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-ml-dl-relationship",
+    "difficulty": "intermediate",
+    "question": "How do 'Artificial Intelligence,' 'Machine Learning,' and 'Deep Learning' relate to each other?",
+    "options": [
+      "Machine Learning is a subset of AI, and Deep Learning is a subset of Machine Learning — each is a narrower, more specific approach within the broader one",
+      "They are three completely unrelated, separate fields",
+      "Deep Learning is the broadest term, containing AI and Machine Learning",
+      "They are just three different names for the exact same thing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Think of them as nested circles: AI is the broad goal, Machine Learning is one major approach to achieving it (learning from data rather than explicit rules), and Deep Learning is a specific ML technique using layered neural networks.",
+    "tags": ["ai-fundamentals", "machine-learning", "deep-learning"],
+    "reference": null
+  },
+  {
+    "id": "ai-003",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "narrow-vs-general-ai",
+    "difficulty": "intermediate",
+    "question": "What is the difference between 'narrow AI' and 'general AI' (AGI)?",
+    "options": [
+      "Narrow AI is designed for a specific task (like chess or translation); general AI would match human-level ability across virtually any intellectual task — which doesn't exist yet",
+      "Narrow AI is simply an older, outdated version of general AI",
+      "General AI already exists and is widely deployed in every app",
+      "There is no meaningful difference between the two terms"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All AI systems in wide use today — including large language models — are narrow AI: highly capable at specific types of tasks, but not possessing general, human-like intelligence across all domains. AGI remains a research goal, not a current reality.",
+    "tags": ["narrow-ai", "agi"],
+    "reference": null
+  },
+  {
+    "id": "ai-004",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "machine-learning-basics",
+    "difficulty": "beginner",
+    "question": "What is the core idea behind 'machine learning'?",
+    "options": [
+      "A system learns patterns from data, rather than being explicitly programmed with fixed rules for every situation",
+      "A computer that physically moves and learns to walk",
+      "A method for making software run faster with no relation to data",
+      "A way to manually write out every possible rule a program should follow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Traditional programming follows explicit, hand-written rules. Machine learning instead trains a model on examples (data), letting it learn patterns and make predictions on new, unseen inputs.",
+    "tags": ["machine-learning", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "ai-005",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "supervised-vs-unsupervised",
+    "difficulty": "intermediate",
+    "question": "What's the basic difference between 'supervised' and 'unsupervised' learning?",
+    "options": [
+      "Supervised learning trains on labeled examples (input paired with a known correct answer); unsupervised learning finds patterns in data without labeled answers",
+      "Supervised learning requires no data at all",
+      "Unsupervised learning means a human watches every training step in real time",
+      "They are two names for the identical process"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Supervised learning is like studying with an answer key (e.g., labeled photos of 'cat' or 'dog'). Unsupervised learning looks for structure or groupings in data where no such labels exist.",
+    "tags": ["supervised-learning", "unsupervised-learning"],
+    "reference": null
+  },
+  {
+    "id": "ai-006",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "neural-networks-basics",
+    "difficulty": "intermediate",
+    "question": "At a conceptual level, what is a 'neural network'?",
+    "options": [
+      "A computing structure loosely inspired by connected neurons in the brain, made of layers of nodes that process and pass along information",
+      "A literal, biological network of human brain cells wired into a computer",
+      "A type of computer virus",
+      "A network cable used for faster internet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Neural networks are a mathematical/computational structure loosely inspired by biological neurons — layers of interconnected 'nodes' that transform input data through learned weighted connections to produce an output.",
+    "tags": ["neural-networks", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "ai-007",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "training-data",
+    "difficulty": "beginner",
+    "question": "Why does the quality of 'training data' matter so much for an AI model's behavior?",
+    "options": [
+      "A model learns patterns directly from its training data, so flawed, biased, or unrepresentative data tends to produce a model with similar flaws",
+      "Training data has no real effect on the resulting model's behavior",
+      "AI models don't actually use any data to learn",
+      "Higher-quality training data always guarantees a perfect, error-free model"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Models learn statistical patterns from what they're trained on. Gaps, imbalances, or biases in that data tend to surface as gaps or biases in the model's outputs — 'garbage in, garbage out' applies broadly here.",
+    "tags": ["training-data", "ai-limitations"],
+    "reference": null
+  },
+  {
+    "id": "ai-008",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-bias",
+    "difficulty": "intermediate",
+    "question": "What does 'bias' mean in the context of an AI system?",
+    "options": [
+      "Systematic skew in a model's outputs, often traceable to imbalances or patterns present in its training data",
+      "A deliberate political opinion programmed by the developers with no connection to data",
+      "A technical bug that only affects the model's loading speed",
+      "Something that only affects AI systems built by one specific company"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AI bias typically stems from patterns in training data (or how a problem was framed) leading to systematically skewed outputs — for example, underrepresentation of certain groups in training data leading to worse performance for them.",
+    "tags": ["ai-bias", "ai-ethics"],
+    "reference": null
+  },
+  {
+    "id": "ai-009",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-hallucinations",
+    "difficulty": "beginner",
+    "question": "What does it mean when an AI language model 'hallucinates'?",
+    "options": [
+      "It generates confident-sounding output that is factually incorrect or entirely made up, without any indication of uncertainty",
+      "The AI is malfunctioning in a way that requires a hardware repair",
+      "The AI has gained genuine self-awareness",
+      "The AI is displaying an actual visual hallucination on your screen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hallucination refers to an AI model producing plausible-sounding but false or fabricated information — a well-documented limitation of current generative AI systems, which is why verifying important AI-generated claims against reliable sources matters.",
+    "tags": ["ai-hallucinations", "ai-limitations"],
+    "reference": null
+  },
+  {
+    "id": "ai-010",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "verifying-ai-output",
+    "difficulty": "beginner",
+    "question": "Given that AI models can hallucinate, what's a responsible habit when using AI for factual research?",
+    "options": [
+      "Independently verify important facts, statistics, or citations the AI provides, especially for anything consequential",
+      "Trust every AI output completely with no verification, always",
+      "Only use AI for tasks with zero factual content, ever",
+      "Assume AI is only ever wrong about topics you already know well"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treating AI output as a helpful draft or starting point — rather than an infallible authority — and verifying important claims independently is a core AI literacy skill, directly connected to the source-evaluation habits from Digital Literacy.",
+    "tags": ["ai-hallucinations", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "ai-011",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "generative-ai",
+    "difficulty": "beginner",
+    "question": "What does 'generative AI' refer to?",
+    "options": [
+      "AI systems that create new content — text, images, audio, code — rather than only classifying or analyzing existing content",
+      "AI that can only generate random numbers",
+      "A type of AI exclusively used for spreadsheet calculations",
+      "AI that generates electricity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Generative AI produces new content (like text responses, images, or music) based on patterns learned during training, as opposed to 'discriminative' AI that primarily classifies or labels existing input.",
+    "tags": ["generative-ai", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "ai-012",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "large-language-models",
+    "difficulty": "intermediate",
+    "question": "What is a 'Large Language Model' (LLM), at a conceptual level?",
+    "options": [
+      "A type of AI model trained on vast amounts of text to predict and generate human-like language",
+      "A physical dictionary stored digitally",
+      "A model that can only translate between two specific languages",
+      "A tool exclusively for checking grammar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "LLMs are trained on massive text datasets to learn statistical patterns of language, enabling them to generate coherent, contextually relevant text — the underlying technology behind most modern AI chat assistants.",
+    "tags": ["llms", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "ai-013",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "how-llms-predict-text",
+    "difficulty": "advanced",
+    "question": "At a very basic level, how does a language model generate its next word/token when responding?",
+    "options": [
+      "It statistically predicts the most likely next piece of text based on patterns learned during training and the context provided so far",
+      "It looks up the exact answer from a fixed, hardcoded lookup table for every possible question",
+      "It randomly selects words with absolutely no relationship to context",
+      "It sends your question to a human who types the answer in real time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "LLMs generate output by predicting likely continuations based on learned statistical patterns and the given context — this is also part of why they can produce fluent-sounding but sometimes factually wrong text (hallucination).",
+    "tags": ["llms", "how-it-works"],
+    "reference": null
+  },
+  {
+    "id": "ai-014",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-knowledge-cutoffs",
+    "difficulty": "intermediate",
+    "question": "Why might an AI language model not know about very recent events?",
+    "options": [
+      "Its training data has a cutoff point in time, so events after that point aren't part of what it learned from, unless it has a separate way to access current information",
+      "AI models are updated with every new event instantly and automatically, with no delay",
+      "AI models are incapable of ever discussing any past events either",
+      "This limitation applies only to one specific AI company's products"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Most language models are trained on data up to a certain point in time (a 'knowledge cutoff'). Without a separate tool for retrieving current information, they may not know about events after that point — a general limitation across this class of technology.",
+    "tags": ["ai-limitations", "knowledge-cutoff"],
+    "reference": null
+  },
+  {
+    "id": "ai-015",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-ethics-overview",
+    "difficulty": "intermediate",
+    "question": "Why has 'AI ethics' become an important field of study alongside AI development?",
+    "options": [
+      "As AI systems increasingly influence real decisions (hiring, lending, content moderation), questions of fairness, accountability, and harm become practically important, not just theoretical",
+      "AI ethics is purely a philosophical exercise with no real-world relevance",
+      "AI systems are inherently incapable of causing any harm",
+      "Ethics only applies to AI used in scientific research, nowhere else"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As AI is deployed in higher-stakes contexts, questions about bias, transparency, accountability, and potential harms become concretely important — AI ethics studies how to develop and deploy these systems responsibly.",
+    "tags": ["ai-ethics", "societal-impact"],
+    "reference": null
+  },
+  {
+    "id": "ai-016",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-alignment-intro",
+    "difficulty": "advanced",
+    "question": "What does 'AI alignment' broadly refer to, as a research area?",
+    "options": [
+      "The challenge of ensuring an AI system's behavior and goals actually match what its designers/users genuinely intend, especially as systems become more capable",
+      "The process of physically arranging computer hardware in a data center",
+      "A term for synchronizing multiple AI models to run at the same speed",
+      "A marketing term with no real technical meaning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alignment research studies how to make sure increasingly capable AI systems reliably do what their developers and users actually intend, rather than pursuing goals in unintended or harmful ways — an active, ongoing area of research.",
+    "tags": ["ai-alignment", "ai-safety"],
+    "reference": null
+  },
+  {
+    "id": "ai-017",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "overfitting-basics",
+    "difficulty": "advanced",
+    "question": "What is 'overfitting' in machine learning?",
+    "options": [
+      "When a model learns the training data too specifically (including its noise/quirks), performing well on that data but poorly on new, unseen data",
+      "When a model is physically too large to fit on a hard drive",
+      "A term for when a model refuses to generate any output",
+      "When training data is deleted accidentally"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An overfit model essentially 'memorizes' its training examples rather than learning generalizable patterns, so it performs well on familiar data but fails to generalize to new situations.",
+    "tags": ["overfitting", "machine-learning"],
+    "reference": null
+  },
+  {
+    "id": "ai-018",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-in-everyday-products",
+    "difficulty": "beginner",
+    "question": "Which of these is a common, everyday example of AI most people already interact with regularly?",
+    "options": [
+      "Spam email filters and recommendation systems (like 'suggested videos' or 'suggested products')",
+      "AI is exclusively used in advanced scientific laboratories, never in consumer products",
+      "AI only exists in movies and has no real-world applications",
+      "Only chatbots count as AI; nothing else qualifies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AI/ML already powers many everyday tools — spam filtering, recommendation engines, voice assistants, photo tagging, and predictive text are all common, often invisible applications people use daily.",
+    "tags": ["ai-applications", "everyday-ai"],
+    "reference": null
+  },
+  {
+    "id": "ai-019",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "turing-test-concept",
+    "difficulty": "intermediate",
+    "question": "What was the original idea behind the 'Turing Test,' proposed by Alan Turing?",
+    "options": [
+      "A thought experiment for evaluating whether a machine's conversational responses are indistinguishable from a human's, as judged by a human evaluator",
+      "A test that measures a computer's processing speed in calculations per second",
+      "A modern legal requirement for releasing any AI product",
+      "A specific benchmark score that all AI companies must publish today"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alan Turing proposed this thought experiment in 1950 as a way to think about machine intelligence — if a human judge can't reliably distinguish a machine's conversation from a human's, the machine could be considered to exhibit intelligent behavior by that measure. It's a philosophical framework, not a formal certification.",
+    "tags": ["turing-test", "ai-history"],
+    "reference": null
+  },
+  {
+    "id": "ai-020",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-vs-automation",
+    "difficulty": "intermediate",
+    "question": "What's a meaningful difference between simple rule-based automation and AI/machine learning?",
+    "options": [
+      "Rule-based automation follows fixed, explicitly programmed logic; ML-based AI learns patterns from data and can handle situations not explicitly anticipated by a programmer",
+      "There is no meaningful difference; the terms are always interchangeable",
+      "Automation is always more advanced and capable than any AI system",
+      "AI systems never involve any form of automation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A simple 'if-this-then-that' script is automation but not AI/ML in the modern sense — it follows fixed rules. ML-based systems learn from data and can generalize to situations not explicitly programmed for.",
+    "tags": ["ai-vs-automation", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "ai-021",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-content-labeling",
+    "difficulty": "intermediate",
+    "question": "Why is there growing interest in labeling or disclosing when content (images, text, audio) was AI-generated?",
+    "options": [
+      "Transparency helps audiences make informed judgments about a piece of content's origin and potential reliability",
+      "Labeling AI content is purely decorative and serves no practical purpose",
+      "It's technically impossible to ever identify AI-generated content",
+      "AI-generated content never needs any special consideration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As AI-generated content becomes harder to distinguish from human-created content, transparency about its origin helps people apply appropriate scrutiny — connecting directly to the media-literacy skills from the Digital Literacy subject.",
+    "tags": ["ai-content", "transparency"],
+    "reference": null
+  },
+  {
+    "id": "ai-022",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-copyright-questions",
+    "difficulty": "advanced",
+    "question": "Why has AI-generated content raised complex copyright and intellectual property questions?",
+    "options": [
+      "Questions include whether AI training on copyrighted material requires permission, and whether AI-generated output itself can be copyrighted — areas still evolving legally in different jurisdictions",
+      "Copyright law has always been perfectly clear and settled for AI, with no open questions",
+      "AI-generated content is automatically exempt from all copyright law everywhere",
+      "This topic has no real-world relevance or ongoing discussion"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These are genuinely active, evolving legal questions across different countries — training data sourcing and AI-output ownership are both areas without fully settled, universal answers, which is why this is presented as an open question rather than a fixed rule.",
+    "tags": ["ai-copyright", "legal-considerations"],
+    "reference": null
+  },
+  {
+    "id": "ai-023",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "job-impact-awareness",
+    "difficulty": "intermediate",
+    "question": "What's a balanced way to think about AI's impact on jobs, rather than an all-or-nothing view?",
+    "options": [
+      "AI is likely to automate some specific tasks while creating new roles and changing how other jobs are done — the effect varies significantly by industry and role",
+      "AI will definitely eliminate all human jobs within the next year with certainty",
+      "AI has zero effect on any job or industry whatsoever",
+      "Only entry-level jobs are affected by AI; senior roles are completely immune"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The realistic picture is nuanced — some tasks get automated, some jobs are transformed rather than eliminated, and new types of roles emerge. Sweeping absolute claims in either direction tend to oversimplify a genuinely complex, evolving situation.",
+    "tags": ["ai-jobs", "societal-impact"],
+    "reference": null
+  },
+  {
+    "id": "ai-024",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "computer-vision-basics",
+    "difficulty": "beginner",
+    "question": "What is 'computer vision' as a field of AI?",
+    "options": [
+      "AI focused on enabling computers to interpret and understand visual information from images or video",
+      "A term for computer monitors with higher resolution",
+      "A field exclusively about eye surgery",
+      "AI that can only process audio, not images"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Computer vision covers tasks like image recognition, object detection, and facial recognition — enabling machines to extract meaningful information from visual data.",
+    "tags": ["computer-vision", "ai-subfields"],
+    "reference": null
+  },
+  {
+    "id": "ai-025",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "natural-language-processing",
+    "difficulty": "beginner",
+    "question": "What does 'Natural Language Processing' (NLP) refer to?",
+    "options": [
+      "A branch of AI focused on enabling computers to understand, interpret, and generate human language",
+      "A programming language used exclusively for AI development",
+      "A method for compressing text files",
+      "A field concerned only with translating dead languages"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NLP covers tasks like translation, sentiment analysis, summarization, and text generation — the broader field that language models and chatbots fall under.",
+    "tags": ["nlp", "ai-subfields"],
+    "reference": null
+  },
+  {
+    "id": "ai-026",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-confidence-vs-accuracy",
+    "difficulty": "intermediate",
+    "question": "Why is it risky to equate an AI's confident tone with the accuracy of its answer?",
+    "options": [
+      "Language models often generate fluent, confident-sounding text regardless of whether the underlying factual content is correct",
+      "AI systems only ever sound confident when they are correct",
+      "Confidence and accuracy are mathematically guaranteed to always match in AI systems",
+      "This concern doesn't actually apply to modern AI systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A model's fluent, assertive writing style is a byproduct of how it generates text — it isn't a reliable signal of factual correctness, which is precisely why hallucinations can be so convincing and easy to miss.",
+    "tags": ["ai-hallucinations", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "ai-027",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "closed-vs-open-source-ai",
+    "difficulty": "advanced",
+    "question": "What's the general distinction between a 'closed' and an 'open-weight/open-source' AI model?",
+    "options": [
+      "Closed models are typically only accessible via a provider's API/service with restricted access to internals; open models make some or all of the model's weights/code publicly available for others to run, inspect, or modify",
+      "There is no meaningful difference between the two categories",
+      "Open-source AI models are always more capable than closed ones in every case",
+      "Closed models are free to use, while open models always require payment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is an important, evolving distinction in the AI landscape — closed models are typically accessed only through a controlled interface, while open models let developers download, inspect, and self-host them, which matters for the open-source-first values covered elsewhere in this curriculum.",
+    "tags": ["open-source-ai", "ai-ecosystem"],
+    "reference": null
+  },
+  {
+    "id": "ai-028",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "ai-tool-selection",
+    "difficulty": "beginner",
+    "question": "Why might someone use a specialized AI tool for a specific task (like image generation) rather than a general-purpose chatbot?",
+    "options": [
+      "Tools built or fine-tuned for a specific type of task often perform better at that task than a general-purpose system",
+      "All AI tools are always functionally identical, regardless of what they were designed for",
+      "Specialized tools are always slower than general-purpose ones",
+      "There's never a practical reason to choose one AI tool over another"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AI tools vary in what they're optimized for — image generation, code assistance, general conversation, and specialized data analysis often benefit from tools purpose-built or fine-tuned for that specific use case.",
+    "tags": ["ai-tools", "practical-use"],
+    "reference": null
+  },
+  {
+    "id": "ai-029",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "data-privacy-and-ai-tools",
+    "difficulty": "intermediate",
+    "question": "Why should you think carefully before pasting sensitive personal or confidential information into a public AI chat tool?",
+    "options": [
+      "Depending on the tool's data policy, your input may be stored, reviewed, or used in ways you haven't fully considered — the same privacy caution from Digital Literacy applies here",
+      "AI chat tools never retain any input under any circumstances, across every provider",
+      "This concern only applies to information typed in all capital letters",
+      "There is no privacy consideration at all when using AI tools"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Data handling practices vary by provider and product settings — treating sensitive information with the same caution you'd apply to any third-party service (checking the privacy policy, avoiding unnecessary sharing) is a sound default habit.",
+    "tags": ["ai-privacy", "data-handling"],
+    "reference": null
+  },
+  {
+    "id": "ai-030",
+    "class": "class-7",
+    "subject": "ai",
+    "topic": "reinforcement-learning-basics",
+    "difficulty": "advanced",
+    "question": "What is the basic idea behind 'reinforcement learning'?",
+    "options": [
+      "A system learns by taking actions in an environment and receiving rewards or penalties, gradually improving its behavior to maximize reward",
+      "A method where a model is given the exact correct answer for every single input, with no exploration involved",
+      "A technique used exclusively for organizing spreadsheet data",
+      "A learning method that requires no data or feedback whatsoever"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reinforcement learning is inspired by trial-and-error learning — an agent takes actions, receives feedback (reward/penalty), and adjusts its behavior over time to achieve better outcomes, distinct from supervised learning's labeled-example approach.",
+    "tags": ["reinforcement-learning", "machine-learning"],
+    "reference": null
+  }
+]

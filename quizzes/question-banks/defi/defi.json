@@ -1,0 +1,452 @@
+[
+  {
+    "id": "defi-001",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "what-is-defi",
+    "difficulty": "beginner",
+    "question": "What does 'DeFi' (Decentralized Finance) refer to?",
+    "options": [
+      "Financial applications and services (lending, trading, borrowing) built on blockchains using smart contracts, rather than relying on traditional banks or brokers",
+      "A single company that provides all decentralized financial services",
+      "A term with no connection to blockchain technology",
+      "A government program for distributing currency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DeFi aims to replicate and extend traditional financial services — lending, trading, asset management — using self-executing smart contracts instead of centralized intermediaries like banks.",
+    "tags": ["fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "defi-002",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "defi-vs-traditional-finance",
+    "difficulty": "beginner",
+    "question": "What's a core structural difference between DeFi and traditional ('TradFi') finance?",
+    "options": [
+      "DeFi protocols typically operate via open smart contracts anyone can inspect and interact with directly, without needing approval from a central institution like a bank",
+      "There is no meaningful structural difference between DeFi and traditional finance",
+      "Traditional finance has always operated using public blockchains",
+      "DeFi requires a government-issued license before any individual can use it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This permissionless, transparent-by-default structure is DeFi's defining characteristic — though it's worth noting this doesn't mean DeFi is automatically risk-free; it trades certain traditional-finance protections for different tradeoffs, explored throughout this subject.",
+    "tags": ["defi-vs-tradfi", "comparisons"],
+    "reference": null
+  },
+  {
+    "id": "defi-003",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "decentralized-exchanges",
+    "difficulty": "beginner",
+    "question": "What is a 'decentralized exchange' (DEX)?",
+    "options": [
+      "A platform for trading cryptocurrencies directly through smart contracts, without a centralized company holding custody of user funds during the process",
+      "A physical stock exchange building",
+      "A synonym for a centralized cryptocurrency exchange",
+      "A term with no real meaning in crypto"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike centralized exchanges where a company holds and matches trades on your behalf, DEXs let trades happen directly through smart contract logic — this connects to the custodial-vs-non-custodial concept from the Bitcoin subject.",
+    "tags": ["dex", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "defi-004",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "automated-market-makers",
+    "difficulty": "intermediate",
+    "question": "What is an 'Automated Market Maker' (AMM)?",
+    "options": [
+      "A DEX mechanism that uses a mathematical formula and pooled funds (rather than a traditional order book matching buyers and sellers) to determine prices and enable trading",
+      "A human trader employed to manually set prices",
+      "A term unrelated to how decentralized exchanges function",
+      "A type of centralized banking software"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AMMs replace the traditional buyer/seller order book model with algorithmic pricing based on the ratio of assets in a liquidity pool — a foundational innovation that made permissionless, always-available trading practical in DeFi.",
+    "tags": ["amm", "dex-mechanics"],
+    "reference": null
+  },
+  {
+    "id": "defi-005",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "liquidity-pools",
+    "difficulty": "intermediate",
+    "question": "What is a 'liquidity pool' in DeFi?",
+    "options": [
+      "A collection of funds locked in a smart contract, supplied by users, that enables trading or lending on a DeFi protocol",
+      "A physical swimming pool at a company's headquarters",
+      "A single individual's personal cryptocurrency wallet",
+      "A term with no real function in DeFi protocols"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Liquidity pools are the backbone of AMM-based DEXs and many lending protocols — users ('liquidity providers') contribute assets to these pools, enabling others to trade or borrow against them.",
+    "tags": ["liquidity-pools", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "defi-006",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "impermanent-loss",
+    "difficulty": "advanced",
+    "question": "What is 'impermanent loss,' as it relates to providing liquidity to an AMM pool?",
+    "options": [
+      "A potential difference in value between depositing assets into a liquidity pool versus simply holding those same assets separately, caused by the pool's price-rebalancing mechanism as prices diverge",
+      "A permanent, guaranteed loss that always occurs immediately upon depositing any liquidity",
+      "A type of loss that only ever affects centralized exchange users, never DeFi",
+      "A benefit that always increases a liquidity provider's returns"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuine, well-documented structural risk of AMM liquidity provision — the pool's automatic rebalancing can leave a liquidity provider with a different (sometimes lower) value than they would have had by simply holding the original assets, particularly when relative prices diverge significantly.",
+    "tags": ["impermanent-loss", "liquidity-provider-risk"],
+    "reference": null
+  },
+  {
+    "id": "defi-007",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "lending-borrowing-protocols",
+    "difficulty": "intermediate",
+    "question": "How do DeFi lending and borrowing protocols generally work?",
+    "options": [
+      "Users can supply crypto assets to earn interest, while others can borrow against posted collateral — all governed automatically by smart contract logic rather than a bank's manual approval process",
+      "DeFi lending protocols require a formal credit check and government-issued ID before any loan can be issued",
+      "DeFi has no lending or borrowing functionality of any kind",
+      "Borrowers on DeFi protocols never need to provide any collateral"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DeFi lending typically relies on collateral (often over-collateralized) rather than traditional creditworthiness checks, since the protocol has no reliable way to assess a pseudonymous borrower's identity or credit history the way a bank would.",
+    "tags": ["lending-protocols", "borrowing-mechanics"],
+    "reference": null
+  },
+  {
+    "id": "defi-008",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "overcollateralization",
+    "difficulty": "advanced",
+    "question": "Why do many DeFi lending protocols require borrowers to post collateral worth MORE than the amount they're borrowing?",
+    "options": [
+      "Since there's typically no traditional credit-check mechanism, over-collateralization protects the protocol and lenders against the borrower defaulting or the collateral's value dropping before repayment",
+      "Over-collateralization is a purely arbitrary requirement with no underlying risk-management reasoning",
+      "This requirement applies only to traditional bank loans, never to DeFi",
+      "Borrowers are always required to post collateral worth exactly one-tenth of the loan amount"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Over-collateralization compensates for the absence of traditional credit assessment and the volatility of crypto collateral — if collateral value falls too far, protocols typically trigger automatic liquidation to protect the pool.",
+    "tags": ["overcollateralization", "risk-management"],
+    "reference": null
+  },
+  {
+    "id": "defi-009",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "liquidation-mechanism",
+    "difficulty": "advanced",
+    "question": "What does 'liquidation' mean in the context of a DeFi lending position?",
+    "options": [
+      "When a borrower's collateral value falls too close to their borrowed amount, the protocol automatically sells (liquidates) some or all of the collateral to repay the loan and protect the pool",
+      "A voluntary process where a borrower manually decides to repay their loan early",
+      "A term describing a protocol converting all its holdings into cash and shutting down",
+      "A process that only happens once per year, on a fixed schedule"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Automated liquidation is a key risk-management mechanism — it's triggered algorithmically when a position becomes under-collateralized, and borrowers who don't want this to happen need to monitor and manage their collateral ratio.",
+    "tags": ["liquidation", "risk-management"],
+    "reference": null
+  },
+  {
+    "id": "defi-010",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "yield-farming",
+    "difficulty": "intermediate",
+    "question": "What is 'yield farming,' at a conceptual level?",
+    "options": [
+      "The practice of moving crypto assets between different DeFi protocols to earn rewards, such as interest, fees, or additional tokens, in exchange for providing liquidity or capital",
+      "A literal agricultural farming practice using cryptocurrency",
+      "A guaranteed, risk-free way to earn money with no possible downside",
+      "A term with no real meaning in the DeFi ecosystem"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yield farming involves actively seeking opportunities across protocols to earn rewards — importantly, advertised yields can come with real risks (smart contract risk, impermanent loss, token price volatility) and are never guaranteed.",
+    "tags": ["yield-farming", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "defi-011",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "smart-contract-risk",
+    "difficulty": "intermediate",
+    "question": "What is 'smart contract risk,' in the context of using DeFi protocols?",
+    "options": [
+      "The risk that a bug, vulnerability, or design flaw in a protocol's smart contract code could be exploited, potentially leading to loss of user funds",
+      "A risk that only applies to protocols with no smart contracts at all",
+      "A risk that has never actually materialized in DeFi's history",
+      "A term unrelated to the actual security of DeFi protocols"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since smart contracts often control significant pooled funds directly, a coding flaw can be catastrophic if exploited — this is a genuine, well-documented category of risk distinct from market price risk.",
+    "tags": ["smart-contract-risk", "security"],
+    "reference": null
+  },
+  {
+    "id": "defi-012",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "major-defi-exploit-examples",
+    "difficulty": "advanced",
+    "question": "What happened in the August 2021 Poly Network exploit, and the March 2022 Ronin Network (Axie Infinity) exploit?",
+    "options": [
+      "Both were major DeFi/cross-chain bridge exploits resulting in the theft of several hundred million dollars worth of crypto assets each, illustrating real, large-scale smart contract and infrastructure security risk in the space",
+      "Both events involved zero financial loss of any kind",
+      "These were purely theoretical scenarios that never actually happened",
+      "Both exploits targeted traditional banks, not any blockchain-based system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These are among the largest documented crypto exploits — Poly Network exploited a smart contract vulnerability (with most funds later returned by the attacker), while Ronin's bridge was compromised through stolen private keys. Both illustrate genuine, historically-realized risks rather than hypothetical concerns.",
+    "tags": ["historical-exploits", "case-studies"],
+    "reference": null
+  },
+  {
+    "id": "defi-013",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "cross-chain-bridge-risk",
+    "difficulty": "advanced",
+    "question": "Why have cross-chain 'bridges' (connecting different blockchain networks) historically been a particularly attractive target for attackers?",
+    "options": [
+      "Bridges often hold large amounts of locked value to back assets on the other chain, and their added technical complexity can introduce additional points of potential vulnerability",
+      "Bridges have never held any value and therefore present no attack incentive",
+      "Bridges are technically impossible to attack under any circumstances",
+      "This risk applies only to centralized exchanges, never to bridges"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Both the Poly Network and Ronin incidents involved bridge infrastructure specifically — the combination of large locked value and additional cross-chain technical complexity has made bridges a recurring target in DeFi's exploit history.",
+    "tags": ["bridge-risk", "cross-chain-security"],
+    "reference": null
+  },
+  {
+    "id": "defi-014",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "flash-loans",
+    "difficulty": "advanced",
+    "question": "What is a 'flash loan' in DeFi?",
+    "options": [
+      "An uncollateralized loan that must be borrowed and repaid within the same single blockchain transaction, or the entire transaction is automatically reversed",
+      "A traditional bank loan processed unusually quickly",
+      "A loan that never needs to be repaid under any circumstances",
+      "A type of loan requiring months of identity verification"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flash loans are a uniquely DeFi-native concept, made possible by blockchain's atomic transaction execution — if the loan (plus any required conditions) isn't repaid by the end of the transaction, the entire transaction fails as if it never happened.",
+    "tags": ["flash-loans", "defi-innovations"],
+    "reference": null
+  },
+  {
+    "id": "defi-015",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "flash-loan-attack-risk",
+    "difficulty": "advanced",
+    "question": "How have flash loans sometimes been used maliciously in DeFi exploits?",
+    "options": [
+      "Attackers have used flash loans to temporarily access large amounts of capital within a single transaction, exploiting price manipulation or logic flaws in vulnerable protocols before repaying the loan",
+      "Flash loans have never been involved in any DeFi exploit",
+      "Flash loans can only ever be used for entirely benign, risk-free purposes",
+      "Flash loans require months of planning and cannot be executed quickly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ability to temporarily wield large capital within a single transaction, without upfront collateral, has been exploited to manipulate vulnerable protocols' pricing or logic — a documented attack pattern specific to DeFi's technical design.",
+    "tags": ["flash-loans", "attack-patterns"],
+    "reference": null
+  },
+  {
+    "id": "defi-016",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "oracles-concept",
+    "difficulty": "advanced",
+    "question": "What is a blockchain 'oracle,' as relevant to many DeFi protocols?",
+    "options": [
+      "A service that supplies external, real-world data (like asset prices) to smart contracts, which otherwise cannot natively access information outside the blockchain",
+      "A person who claims to predict future cryptocurrency prices",
+      "A term with no relevance to how DeFi protocols function",
+      "A type of cryptocurrency wallet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Smart contracts operate in an isolated blockchain environment and can't natively 'see' outside data like current market prices — oracles bridge this gap, which is why many lending and liquidation mechanisms depend on reliable oracle price feeds.",
+    "tags": ["oracles", "infrastructure"],
+    "reference": null
+  },
+  {
+    "id": "defi-017",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "oracle-manipulation-risk",
+    "difficulty": "advanced",
+    "question": "Why can a compromised or manipulated price oracle be dangerous for a DeFi protocol?",
+    "options": [
+      "If a protocol relies on a manipulable or inaccurate price feed, attackers may be able to trigger incorrect liquidations or exploit mispriced trades based on the false data",
+      "Oracle manipulation has no real consequence for any DeFi protocol",
+      "Oracles have no connection to price data at all",
+      "This risk applies only to protocols with no smart contracts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since so much DeFi logic (liquidations, trades, collateral valuations) depends on accurate external price data, a manipulated oracle feed can cascade into significant financial exploitation — a distinct risk category from smart contract code bugs.",
+    "tags": ["oracle-manipulation", "security-risk"],
+    "reference": null
+  },
+  {
+    "id": "defi-018",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "governance-tokens",
+    "difficulty": "intermediate",
+    "question": "What is a 'governance token' in the context of a DeFi protocol?",
+    "options": [
+      "A token that grants holders voting rights on decisions about the protocol's future development, parameters, or treasury — connecting to the DAO concept from the Ethereum subject",
+      "A token required by law to use any DeFi protocol",
+      "A token with no functional purpose beyond decoration",
+      "A physical government-issued identification document"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Many DeFi protocols distribute governance tokens to decentralize decision-making — building on the general DAO concept already introduced, now applied specifically to how DeFi protocols are often collectively governed.",
+    "tags": ["governance-tokens", "protocol-governance"],
+    "reference": null
+  },
+  {
+    "id": "defi-019",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "rug-pulls",
+    "difficulty": "intermediate",
+    "question": "What is a 'rug pull' in the DeFi/crypto space?",
+    "options": [
+      "A scam where developers of a project abandon it and abscond with invested funds, often by draining liquidity or exploiting privileged control they retained over the project",
+      "A legitimate, routine protocol maintenance procedure",
+      "A term describing a completely risk-free type of DeFi transaction",
+      "A method for safely withdrawing your own funds from a protocol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rug pulls exploit user trust and often retained developer privileges (like control over a liquidity pool or contract upgrade keys) — a significant, real risk category distinct from smart contract bugs or oracle manipulation, and one worth genuine caution around.",
+    "tags": ["rug-pulls", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "defi-020",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "composability-money-legos",
+    "difficulty": "advanced",
+    "question": "What does the phrase 'DeFi composability' (sometimes called 'money legos') refer to?",
+    "options": [
+      "The ability for different DeFi protocols to interoperate and be combined together, since they're all built on open, interconnected smart contract infrastructure",
+      "A rule prohibiting any two DeFi protocols from ever interacting",
+      "A term describing physical Lego construction toys, unrelated to finance",
+      "A single monolithic protocol that does everything with no interoperability at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Because DeFi protocols are typically open and interoperable, developers can combine them like building blocks (e.g., using a lending protocol's output as input to a yield strategy) — a distinctive feature of the ecosystem's design, though this same interconnectedness can also propagate risk between protocols.",
+    "tags": ["composability", "ecosystem-design"],
+    "reference": null
+  },
+  {
+    "id": "defi-021",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "composability-risk-propagation",
+    "difficulty": "advanced",
+    "question": "How can DeFi's composability (money legos) also introduce risk, alongside its benefits?",
+    "options": [
+      "If one interconnected protocol fails or is exploited, the effects can potentially cascade into other protocols that depend on or interact with it",
+      "Composability has no downside of any kind, only benefits",
+      "Interconnected protocols are always completely isolated from each other's problems",
+      "This risk concern is purely theoretical and has never actually occurred"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The same interconnectedness that enables powerful combinations also means risk isn't always contained to a single protocol — an important balanced consideration alongside composability's benefits.",
+    "tags": ["composability", "systemic-risk"],
+    "reference": null
+  },
+  {
+    "id": "defi-022",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "total-value-locked-concept",
+    "difficulty": "intermediate",
+    "question": "What does 'TVL' (Total Value Locked) generally measure for a DeFi protocol?",
+    "options": [
+      "The total value of crypto assets currently deposited or staked within a given protocol",
+      "The total number of individual transactions a protocol has ever processed",
+      "A fixed, unchanging number set once when a protocol launches",
+      "The market price of the protocol's own token specifically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "TVL is a commonly cited metric for gauging a protocol's scale and usage — note that specific TVL figures constantly fluctuate with market conditions and protocol activity, so any particular snapshot number quickly becomes outdated.",
+    "tags": ["tvl", "protocol-metrics"],
+    "reference": null
+  },
+  {
+    "id": "defi-023",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "slippage-concept",
+    "difficulty": "intermediate",
+    "question": "What is 'slippage,' in the context of trading on a DEX?",
+    "options": [
+      "The difference between a trade's expected price and the actual executed price, often caused by price movement or limited liquidity during the transaction",
+      "A fee charged exclusively by centralized exchanges, never DEXs",
+      "A guaranteed bonus added to every trade automatically",
+      "A term with no relevance to decentralized exchange trading"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Slippage tends to be more pronounced in pools with lower liquidity or during large trades relative to pool size — many DEX interfaces let users set a slippage tolerance to control how much price deviation they're willing to accept.",
+    "tags": ["slippage", "trading-mechanics"],
+    "reference": null
+  },
+  {
+    "id": "defi-024",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "defi-regulatory-uncertainty",
+    "difficulty": "advanced",
+    "question": "What's an accurate, balanced way to describe DeFi's regulatory status across different jurisdictions?",
+    "options": [
+      "Regulatory treatment varies significantly by country and continues to evolve — some aspects remain genuinely uncertain or unsettled in many jurisdictions, making this an actively developing area rather than a fixed, settled landscape",
+      "DeFi regulation is completely identical and fully settled in every country worldwide",
+      "DeFi has no relationship to any regulatory considerations anywhere",
+      "DeFi is universally illegal in every jurisdiction without exception"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Presenting DeFi's regulatory landscape honestly as evolving and jurisdiction-dependent (rather than asserting a single fixed global answer) matches this curriculum's evenhandedness standard for genuinely unsettled topics — checking current, local guidance matters more than relying on any fixed claim.",
+    "tags": ["regulatory-uncertainty", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "defi-025",
+    "class": "class-11",
+    "subject": "defi",
+    "topic": "defi-risk-summary",
+    "difficulty": "intermediate",
+    "question": "Taken together, what should someone genuinely understand before interacting with any DeFi protocol?",
+    "options": [
+      "DeFi carries real, documented risks — including smart contract vulnerabilities, oracle manipulation, impermanent loss, rug pulls, and regulatory uncertainty — alongside its genuine benefits like permissionless access and composability",
+      "DeFi is entirely risk-free and guaranteed to be profitable in every situation",
+      "There are no meaningful risks specific to DeFi beyond those of traditional finance",
+      "Understanding DeFi's risks is unnecessary before using any protocol"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This question deliberately synthesizes the subject's risk-focused content — genuine, informed understanding of both the benefits and real risks is the goal here, not a recommendation for or against using any specific protocol, which would cross into investment advice this curriculum doesn't provide.",
+    "tags": ["risk-summary", "informed-participation"],
+    "reference": null
+  }
+]

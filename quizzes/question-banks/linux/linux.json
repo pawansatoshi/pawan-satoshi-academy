@@ -1,0 +1,542 @@
+[
+  {
+    "id": "linux-001",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "what-is-linux",
+    "difficulty": "beginner",
+    "question": "What is Linux?",
+    "options": [
+      "A free, open-source operating system kernel, around which many complete operating systems ('distributions') are built",
+      "A single company that sells one specific operating system",
+      "A web browser",
+      "A programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linux, originally created by Linus Torvalds, is the kernel (core) at the heart of many operating systems. It's open-source, meaning its source code is publicly available for anyone to inspect, use, and modify.",
+    "tags": ["linux-fundamentals", "definitions"],
+    "reference": "https://www.kernel.org"
+  },
+  {
+    "id": "linux-002",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "distributions",
+    "difficulty": "beginner",
+    "question": "What is a Linux 'distribution' (or 'distro')?",
+    "options": [
+      "A complete operating system package built around the Linux kernel, bundled with software, package management, and configuration choices — examples include Ubuntu, Fedora, and Debian",
+      "A single file you download to install Linux",
+      "A paid subscription service required to run Linux",
+      "A term for a Linux-related virus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since the Linux kernel alone isn't a full usable system, distributions package it with additional software, desktop environments, and tools — different distros make different choices about defaults and philosophy.",
+    "tags": ["distributions", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "linux-003",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "open-source-nature",
+    "difficulty": "beginner",
+    "question": "Why is Linux's open-source nature relevant to this Academy's own values?",
+    "options": [
+      "The Academy is explicitly 'open-source first,' and Linux is one of the most prominent, successful examples of that philosophy in practice",
+      "Linux has no connection to open-source software at all",
+      "Open-source software is always lower quality than proprietary software",
+      "This subject was included by random chance with no reasoning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linux demonstrates open-source development at massive scale — publicly available source code, community contributions, and free redistribution — directly mirroring the Academy's own open-source-first principle.",
+    "tags": ["open-source", "academy-connection"],
+    "reference": null
+  },
+  {
+    "id": "linux-004",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "why-linux-for-servers",
+    "difficulty": "intermediate",
+    "question": "Why is Linux extremely common as the operating system running servers, including much of the infrastructure behind websites and cloud services?",
+    "options": [
+      "It's free, highly stable, customizable, and has strong community and enterprise support — making it cost-effective and reliable for server workloads",
+      "Linux cannot actually be used for servers at all",
+      "Servers are legally required to run Linux in every country",
+      "Linux is the only operating system that has ever existed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linux's combination of being free, stable, lightweight, and highly configurable makes it the dominant choice for servers — including the kind of infrastructure that could eventually host this Academy's own bot or services.",
+    "tags": ["linux-servers", "practical-use"],
+    "reference": null
+  },
+  {
+    "id": "linux-005",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "terminal-basics",
+    "difficulty": "beginner",
+    "question": "What is a 'terminal' (or command line / shell) in the context of using Linux?",
+    "options": [
+      "A text-based interface for typing commands directly to interact with the operating system, instead of using a graphical point-and-click interface",
+      "A physical piece of hardware you must purchase separately",
+      "A type of computer virus",
+      "A feature exclusive to Linux, not found on any other operating system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The terminal lets you type text commands to run programs, manage files, and configure the system — often faster and more powerful than clicking through menus once you're comfortable with it. (macOS and Windows also have their own terminal/command-line tools.)",
+    "tags": ["terminal", "command-line"],
+    "reference": null
+  },
+  {
+    "id": "linux-006",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "basic-navigation-commands",
+    "difficulty": "beginner",
+    "question": "What does the `pwd` command do in a Linux terminal?",
+    "options": [
+      "Prints the full path of your current working directory (folder)",
+      "Permanently deletes your working directory",
+      "Changes your account password",
+      "Downloads a file from the internet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`pwd` (print working directory) tells you exactly where you currently are in the filesystem — a basic but essential orientation command.",
+    "tags": ["pwd", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-007",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "basic-navigation-commands",
+    "difficulty": "beginner",
+    "question": "What does the `ls` command do?",
+    "options": [
+      "Lists the files and folders in the current directory",
+      "Logs you out of the system immediately",
+      "Locks the screen",
+      "Launches a web browser"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`ls` (list) shows the contents of the current directory — often used with options like `ls -la` to show hidden files and detailed information.",
+    "tags": ["ls", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-008",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "basic-navigation-commands",
+    "difficulty": "beginner",
+    "question": "What does the `cd` command do?",
+    "options": [
+      "Changes your current directory (folder) to a different one",
+      "Copies a file to a new location",
+      "Creates a new directory",
+      "Deletes the current directory"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`cd` (change directory) is how you navigate the filesystem from the terminal — e.g., `cd Documents` moves into a folder named Documents.",
+    "tags": ["cd", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-009",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "file-management-commands",
+    "difficulty": "beginner",
+    "question": "What does `mkdir` do?",
+    "options": [
+      "Creates a new directory (folder)",
+      "Permanently deletes a directory and everything inside it",
+      "Moves a file to a different location",
+      "Displays the contents of a text file"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`mkdir` (make directory) creates a new folder — e.g., `mkdir projects` creates a folder named 'projects' in your current location.",
+    "tags": ["mkdir", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-010",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "dangerous-commands-caution",
+    "difficulty": "intermediate",
+    "question": "Why should beginners be especially cautious with the command `rm -rf` (and similar variations)?",
+    "options": [
+      "It forcefully and recursively deletes files/folders WITHOUT sending them to a recycle bin — mistakes can be permanent and unrecoverable",
+      "This command is completely harmless and safe to run without any thought",
+      "`rm -rf` only works on files that are already empty",
+      "This command requires an internet connection to function at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike deleting a file in a graphical interface (which often goes to a recycle bin/trash), `rm -rf` bypasses that safety net entirely — a mistyped path can permanently destroy important data with no built-in undo.",
+    "tags": ["rm-command", "safety-caution"],
+    "reference": null
+  },
+  {
+    "id": "linux-011",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "file-permissions",
+    "difficulty": "intermediate",
+    "question": "What do Linux file permissions generally control?",
+    "options": [
+      "Who can read, write, or execute a given file or directory — typically defined separately for the owner, a group, and everyone else",
+      "The exact color a file appears in a file browser",
+      "How much storage space a file uses on disk",
+      "The date a file was originally created"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linux permissions are a foundational security concept — each file/directory has read, write, and execute permissions, defined separately for the owner, a group, and all other users.",
+    "tags": ["file-permissions", "security"],
+    "reference": null
+  },
+  {
+    "id": "linux-012",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "chmod-command",
+    "difficulty": "advanced",
+    "question": "What does the `chmod` command do?",
+    "options": [
+      "Changes the permissions (read/write/execute) on a file or directory",
+      "Changes a file's name",
+      "Compresses a file to save storage space",
+      "Downloads updates for the operating system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`chmod` (change mode) modifies who can read, write, or execute a file — an important but powerful command that should be used carefully, especially with broad permission changes.",
+    "tags": ["chmod", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-013",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "sudo-and-root",
+    "difficulty": "intermediate",
+    "question": "What does `sudo` do when placed before a command?",
+    "options": [
+      "Runs that specific command with elevated (administrator/root) privileges",
+      "Permanently grants you administrator access forever after one use",
+      "Slows down the command's execution intentionally",
+      "Has no actual effect on how the command runs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`sudo` ('superuser do') temporarily elevates privileges for a single command, letting you perform actions normal users can't — like installing system-wide software. It should be used deliberately, not by default, since elevated commands can cause more damage if wrong.",
+    "tags": ["sudo", "root-privileges"],
+    "reference": null
+  },
+  {
+    "id": "linux-014",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "sudo-and-root",
+    "difficulty": "intermediate",
+    "question": "Why is it generally considered bad practice to operate as the 'root' user for everyday tasks, rather than only when specifically needed?",
+    "options": [
+      "Root has unrestricted system access, so an accidental command or compromised session can cause far more damage than under a regular limited-permission account",
+      "Root accounts are technically incapable of running any commands",
+      "There is no meaningful difference between root and a regular user account",
+      "Using root is required for every single command on Linux"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This mirrors the least-privilege principle from the Security subject — operating with only the permissions you need for a given task limits the blast radius of mistakes or compromises, whether it's a Discord bot's permissions or a Linux user account.",
+    "tags": ["root-privileges", "least-privilege"],
+    "reference": null
+  },
+  {
+    "id": "linux-015",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "package-managers",
+    "difficulty": "intermediate",
+    "question": "What is a Linux 'package manager' (like `apt`, `dnf`, or `pacman`, depending on the distribution)?",
+    "options": [
+      "A tool for installing, updating, and removing software packages, along with automatically handling their dependencies",
+      "A tool for physically shipping computer hardware",
+      "A feature exclusive to managing email attachments",
+      "A method for compressing video files"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Package managers simplify software installation by handling downloads, installation, updates, and dependency resolution automatically — different distributions typically use their own package manager.",
+    "tags": ["package-managers", "software-installation"],
+    "reference": null
+  },
+  {
+    "id": "linux-016",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "filesystem-hierarchy",
+    "difficulty": "intermediate",
+    "question": "What does the `/` (forward slash) represent at the very top of a Linux filesystem?",
+    "options": [
+      "The root directory — the top-level starting point that contains every other file and folder on the system",
+      "A division/math operation performed by the terminal",
+      "A shortcut to your personal home folder specifically",
+      "A symbol with no actual meaning in the filesystem"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Everything in a Linux filesystem branches out from the root directory (`/`) — this is different from Windows' separate drive-letter system (like C:\\).",
+    "tags": ["filesystem-hierarchy", "root-directory"],
+    "reference": null
+  },
+  {
+    "id": "linux-017",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "home-directory",
+    "difficulty": "beginner",
+    "question": "What is a user's 'home directory' on Linux?",
+    "options": [
+      "The personal folder (often `/home/username`) where a user's own files and personal configuration are typically stored",
+      "The literal, physical location of the computer",
+      "A folder that only exists on Windows, not Linux",
+      "A directory that automatically deletes itself weekly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Each user typically has their own home directory for personal files and settings, separate from system-wide files — similar in concept to a personal user folder on other operating systems.",
+    "tags": ["home-directory", "filesystem"],
+    "reference": null
+  },
+  {
+    "id": "linux-018",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "piping-and-redirection",
+    "difficulty": "advanced",
+    "question": "What does the pipe symbol `|` generally do when used between two commands in a Linux terminal?",
+    "options": [
+      "Takes the output of the first command and feeds it as the input to the second command",
+      "Runs both commands at the exact same time with no connection between them",
+      "Deletes the output of the first command entirely",
+      "Has no functional purpose and is purely cosmetic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Piping lets you chain commands together — for example, `ls | grep txt` lists files and then filters that output to only show ones containing 'txt' — a powerful way to combine simple tools.",
+    "tags": ["piping", "advanced-commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-019",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "environment-variables",
+    "difficulty": "advanced",
+    "question": "What is an 'environment variable' in a Linux (or general computing) context?",
+    "options": [
+      "A named value stored outside your code that programs can read, often used for configuration like file paths or, in software projects, sensitive settings",
+      "A variable that controls the room temperature of a data center",
+      "A type of Linux distribution",
+      "A permanent, unchangeable part of the operating system's core code"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Environment variables store configuration data accessible to running programs — this Academy's own bot uses them (via `.env` files) to keep secrets like tokens out of the actual source code.",
+    "tags": ["environment-variables", "configuration"],
+    "reference": null
+  },
+  {
+    "id": "linux-020",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "processes",
+    "difficulty": "intermediate",
+    "question": "What is a 'process' in an operating system context?",
+    "options": [
+      "An instance of a running program, with its own allocated resources like memory and CPU time",
+      "A type of file format",
+      "A method for permanently deleting files",
+      "A synonym for a user account"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Every running program is one or more processes — the operating system manages these processes, allocating CPU time and memory, and letting multiple programs run seemingly at once.",
+    "tags": ["processes", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "linux-021",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "text-editors",
+    "difficulty": "beginner",
+    "question": "What is the purpose of a terminal-based text editor like `nano` or `vim`?",
+    "options": [
+      "To create and edit text files directly from the command line, without needing a graphical application",
+      "To edit video files",
+      "To manage a computer's hardware drivers",
+      "To browse the internet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Terminal text editors let you view and modify configuration files or scripts without leaving the command line — `nano` is generally considered more beginner-friendly than `vim`, which has a steeper learning curve.",
+    "tags": ["text-editors", "tools"],
+    "reference": null
+  },
+  {
+    "id": "linux-022",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "ssh-basics",
+    "difficulty": "intermediate",
+    "question": "What is SSH (Secure Shell) used for?",
+    "options": [
+      "Securely connecting to and controlling a remote computer/server over a network, typically via an encrypted terminal session",
+      "A method for compressing files before emailing them",
+      "A type of Linux distribution",
+      "A tool exclusively for editing images"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SSH provides an encrypted way to remotely access and manage a server's command line — commonly used to administer Linux servers without needing physical access to the machine.",
+    "tags": ["ssh", "remote-access"],
+    "reference": null
+  },
+  {
+    "id": "linux-023",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "man-pages",
+    "difficulty": "beginner",
+    "question": "What does typing `man <command>` (like `man ls`) do in a Linux terminal?",
+    "options": [
+      "Displays the manual/documentation page for that command, explaining what it does and its available options",
+      "Deletes the specified command from the system permanently",
+      "Downloads a completely different program",
+      "Sends an email to the command's original developer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Man (manual) pages are built-in, offline documentation — a genuinely useful habit is checking `man <command>` when you're unsure what a command does or which options it supports.",
+    "tags": ["man-pages", "documentation"],
+    "reference": null
+  },
+  {
+    "id": "linux-024",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "case-sensitivity",
+    "difficulty": "beginner",
+    "question": "Is the Linux filesystem generally case-sensitive (treating 'File.txt' and 'file.txt' as different files)?",
+    "options": [
+      "Yes, typically — this differs from how Windows commonly handles file names, which is usually case-insensitive by default",
+      "No, Linux treats all filenames as completely identical regardless of case",
+      "Case sensitivity doesn't exist as a concept in any operating system",
+      "This only applies to folder names, never to individual files"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Standard Linux filesystems are typically case-sensitive, meaning 'File.txt' and 'file.txt' are treated as two distinct files — a common source of confusion for people coming from Windows, where this usually isn't the case by default.",
+    "tags": ["case-sensitivity", "filesystem-behavior"],
+    "reference": null
+  },
+  {
+    "id": "linux-025",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "why-academy-teaches-linux",
+    "difficulty": "beginner",
+    "question": "Why does this Academy include Linux in its curriculum, even for members who don't plan to become system administrators?",
+    "options": [
+      "Basic command-line comfort is broadly useful across programming, running servers/bots, and understanding how much of the internet's infrastructure actually works",
+      "Linux knowledge has no practical connection to anything else in this curriculum",
+      "It's included purely as a historical curiosity with no modern relevance",
+      "Only professional system administrators ever benefit from any Linux knowledge"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Basic Linux/command-line literacy connects directly to other subjects in this curriculum — Git, GitHub Actions, and eventually running or understanding server-side infrastructure all build on this foundation.",
+    "tags": ["curriculum-connection", "practical-relevance"],
+    "reference": null
+  },
+  {
+    "id": "linux-026",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "cp-mv-commands",
+    "difficulty": "beginner",
+    "question": "What's the difference between the `cp` and `mv` commands?",
+    "options": [
+      "`cp` copies a file, leaving the original in place; `mv` moves (or renames) a file, removing it from its original location",
+      "They are two identical commands with different names",
+      "`cp` only works on folders; `mv` only works on individual files",
+      "`mv` permanently deletes the file with no new copy created anywhere"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`cp source destination` duplicates a file. `mv source destination` relocates it (and is also commonly used to rename a file by 'moving' it to a new name in the same location).",
+    "tags": ["cp", "mv", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-027",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "cat-command",
+    "difficulty": "beginner",
+    "question": "What does the `cat` command commonly do (e.g., `cat file.txt`)?",
+    "options": [
+      "Displays the contents of a file directly in the terminal",
+      "Deletes the specified file",
+      "Compresses the file into a smaller size",
+      "Launches an image viewer for the file"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`cat` (concatenate) is commonly used to quickly print a file's contents to the screen — useful for short files, though not ideal for very large ones.",
+    "tags": ["cat", "commands"],
+    "reference": null
+  },
+  {
+    "id": "linux-028",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "grep-command",
+    "difficulty": "intermediate",
+    "question": "What does the `grep` command do?",
+    "options": [
+      "Searches for lines matching a specific text pattern within one or more files (or piped input)",
+      "Permanently deletes lines matching a pattern from a file",
+      "Compiles source code into a runnable program",
+      "Downloads files from a remote server"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`grep` is a powerful text-search tool — e.g., `grep \"error\" logfile.txt` finds every line containing 'error' in that file, extremely useful for searching logs or code.",
+    "tags": ["grep", "text-search"],
+    "reference": null
+  },
+  {
+    "id": "linux-029",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "background-services",
+    "difficulty": "advanced",
+    "question": "What is a 'service' (or 'daemon') in the context of a Linux server?",
+    "options": [
+      "A program that runs continuously in the background, typically without direct user interaction, often to provide an ongoing function like a web server or database",
+      "A one-time command that runs and immediately exits",
+      "A paid feature exclusive to certain distributions",
+      "A type of file compression format"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Background services (or daemons) handle ongoing tasks — like keeping a Discord bot connected and responsive continuously — as opposed to a command you run once and it finishes immediately.",
+    "tags": ["background-services", "daemons"],
+    "reference": null
+  },
+  {
+    "id": "linux-030",
+    "class": "class-5",
+    "subject": "linux",
+    "topic": "linux-vs-windows-macos",
+    "difficulty": "beginner",
+    "question": "What's a reasonable, balanced way to think about Linux compared to Windows or macOS?",
+    "options": [
+      "They're different operating systems with different strengths, defaults, and typical use cases — none is universally 'better' for every single purpose",
+      "Linux is objectively useless and has no legitimate real-world applications",
+      "Windows and macOS are identical to Linux with no meaningful differences at all",
+      "Only Linux is capable of running any kind of software"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Each operating system has different strengths — Linux's openness and server dominance, versus the different design priorities of Windows and macOS for general consumer desktop use — a balanced view avoids absolute claims in any direction.",
+    "tags": ["os-comparison", "critical-thinking"],
+    "reference": null
+  }
+]

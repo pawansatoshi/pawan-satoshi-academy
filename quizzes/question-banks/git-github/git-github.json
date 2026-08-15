@@ -1,0 +1,632 @@
+[
+  {
+    "id": "git-github-001",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "what-is-git",
+    "difficulty": "beginner",
+    "question": "What is Git?",
+    "options": [
+      "A distributed version control system that tracks changes to files over time",
+      "A website for hosting code",
+      "A programming language",
+      "A type of database management system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Git is version control software, created by Linus Torvalds, that tracks changes to files over time, letting you see history, revert changes, and collaborate with others. GitHub is a separate, hosted platform built around Git.",
+    "tags": ["git-fundamentals", "definitions"],
+    "reference": "https://git-scm.com/doc"
+  },
+  {
+    "id": "git-github-002",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "git-vs-github",
+    "difficulty": "beginner",
+    "question": "What is the relationship between Git and GitHub?",
+    "options": [
+      "Git is the version control software itself; GitHub is a company/platform that hosts Git repositories online and adds collaboration features",
+      "They are two names for the exact same tool",
+      "GitHub is required to use Git at all, even locally",
+      "Git is a product made and owned by GitHub"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Git works entirely locally on its own — GitHub (and similar services like GitLab or Bitbucket) is a hosting platform that stores Git repositories remotely and adds features like pull requests, issues, and Actions.",
+    "tags": ["git-vs-github", "definitions"],
+    "reference": "https://docs.github.com/en/get-started"
+  },
+  {
+    "id": "git-github-003",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "repository-basics",
+    "difficulty": "beginner",
+    "question": "What is a 'repository' (or 'repo')?",
+    "options": [
+      "A project's folder tracked by Git, containing its files and the complete history of changes",
+      "A single file containing all of a project's code",
+      "A type of programming error",
+      "A cloud storage service unrelated to version control"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A repository is the tracked project itself — the working files plus the hidden `.git` folder storing the complete history of every tracked change.",
+    "tags": ["repositories", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "git-github-004",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "git-init-clone",
+    "difficulty": "beginner",
+    "question": "What's the difference between `git init` and `git clone`?",
+    "options": [
+      "`git init` creates a brand new, empty local repository; `git clone` copies an existing remote repository (and its history) to your machine",
+      "They are two identical commands with different names",
+      "`git init` only works on GitHub; `git clone` only works locally",
+      "`git clone` deletes the remote repository after copying it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`git init` starts tracking a new project from scratch. `git clone <url>` downloads a full copy of an existing repository, including its entire commit history, from a remote location.",
+    "tags": ["git-init", "git-clone", "commands"],
+    "reference": "https://git-scm.com/docs/git-clone"
+  },
+  {
+    "id": "git-github-005",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "commits",
+    "difficulty": "beginner",
+    "question": "What is a 'commit' in Git?",
+    "options": [
+      "A saved snapshot of your project's tracked changes at a specific point in time, with an associated message",
+      "A permanent, unchangeable copy of the entire internet",
+      "A synonym for deleting a file",
+      "A type of GitHub subscription plan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A commit records a snapshot of your staged changes, along with metadata like the author, timestamp, and a descriptive message — commits form the building blocks of a project's history.",
+    "tags": ["commits", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "git-github-006",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "staging-area",
+    "difficulty": "intermediate",
+    "question": "What is the purpose of Git's 'staging area' (accessed via `git add`)?",
+    "options": [
+      "It lets you choose exactly which changes to include in your next commit, rather than committing every modified file automatically",
+      "It's a place to permanently delete files",
+      "It automatically publishes your changes to the internet",
+      "It has no functional purpose and is purely decorative"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The staging area (or 'index') lets you selectively prepare specific changes for the next commit — useful when you've made several unrelated changes but want to commit them separately and logically.",
+    "tags": ["staging-area", "git-add"],
+    "reference": "https://git-scm.com/docs/git-add"
+  },
+  {
+    "id": "git-github-007",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "commit-workflow",
+    "difficulty": "beginner",
+    "question": "What is the typical basic workflow to save a change in Git?",
+    "options": [
+      "Modify a file, then `git add` it to staging, then `git commit` with a message",
+      "Simply saving the file in your text editor automatically creates a Git commit",
+      "Deleting the file and recreating it from scratch",
+      "Renaming the entire repository folder"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Git doesn't automatically track every save — you explicitly stage changes with `git add`, then create a snapshot with `git commit -m \"message\"`.",
+    "tags": ["basic-workflow", "commands"],
+    "reference": null
+  },
+  {
+    "id": "git-github-008",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "git-status-log",
+    "difficulty": "beginner",
+    "question": "What does `git status` show you?",
+    "options": [
+      "The current state of your working directory: which files are modified, staged, or untracked",
+      "The complete history of every commit ever made",
+      "Your GitHub account's follower count",
+      "The internet connection speed of your machine"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`git status` is one of the most frequently used commands — it gives a snapshot of what's changed, what's staged, and what's untracked at that moment.",
+    "tags": ["git-status", "commands"],
+    "reference": "https://git-scm.com/docs/git-status"
+  },
+  {
+    "id": "git-github-009",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "git-status-log",
+    "difficulty": "beginner",
+    "question": "What does `git log` show you?",
+    "options": [
+      "The commit history of the repository, including messages, authors, and timestamps",
+      "A list of every file currently in the repository",
+      "The repository's remote URL only",
+      "Real-time error logs from a running application"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`git log` displays the chronological commit history, which is essential for reviewing what changed, when, and by whom.",
+    "tags": ["git-log", "commands"],
+    "reference": "https://git-scm.com/docs/git-log"
+  },
+  {
+    "id": "git-github-010",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "branches",
+    "difficulty": "beginner",
+    "question": "What is a 'branch' in Git?",
+    "options": [
+      "An independent line of development, letting you work on changes without affecting the main codebase until you're ready to merge",
+      "A physical copy of the repository stored on a different computer",
+      "A type of file format",
+      "A permanent, unchangeable snapshot of the entire project"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Branches let multiple lines of work happen in parallel — you can experiment or build a feature on a branch without disturbing the main/stable codebase until it's ready to be merged in.",
+    "tags": ["branches", "fundamentals"],
+    "reference": "https://git-scm.com/docs/git-branch"
+  },
+  {
+    "id": "git-github-011",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "merging",
+    "difficulty": "intermediate",
+    "question": "What does `git merge` do?",
+    "options": [
+      "Combines the changes from one branch into another",
+      "Permanently deletes a branch with no way to recover it",
+      "Creates a brand new, completely empty repository",
+      "Uploads your entire repository to a cloud backup service"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Merging integrates the commit history and changes of one branch into another, typically bringing a completed feature branch's work back into the main branch.",
+    "tags": ["merging", "commands"],
+    "reference": "https://git-scm.com/docs/git-merge"
+  },
+  {
+    "id": "git-github-012",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "merge-conflicts",
+    "difficulty": "intermediate",
+    "question": "What causes a 'merge conflict'?",
+    "options": [
+      "Git can't automatically reconcile two competing changes made to the same part of a file across different branches, requiring manual resolution",
+      "You've run out of disk space",
+      "Your internet connection dropped during a merge",
+      "You've used an invalid commit message format"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When the same lines of a file have been changed differently on two branches being merged, Git flags a conflict and asks you to manually decide which changes to keep.",
+    "tags": ["merge-conflicts", "troubleshooting"],
+    "reference": null
+  },
+  {
+    "id": "git-github-013",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "remotes",
+    "difficulty": "beginner",
+    "question": "What is a 'remote' in Git?",
+    "options": [
+      "A reference to a version of your repository hosted elsewhere, such as on GitHub",
+      "A physical remote control device",
+      "A command that deletes your local repository",
+      "A synonym for 'branch'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A remote (commonly named 'origin') points to a repository hosted somewhere else, like GitHub, that your local repository can push to or pull from.",
+    "tags": ["remotes", "fundamentals"],
+    "reference": "https://git-scm.com/docs/git-remote"
+  },
+  {
+    "id": "git-github-014",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "push-pull",
+    "difficulty": "beginner",
+    "question": "What's the difference between `git push` and `git pull`?",
+    "options": [
+      "`git push` uploads your local commits to a remote repository; `git pull` downloads and integrates changes from the remote into your local repository",
+      "They are the exact same command with different names",
+      "`git push` deletes the remote repository",
+      "`git pull` only works on Mondays"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Push sends your local commits up to the remote (e.g., GitHub). Pull fetches and merges changes from the remote down into your local branch.",
+    "tags": ["push", "pull", "commands"],
+    "reference": "https://git-scm.com/docs/git-push"
+  },
+  {
+    "id": "git-github-015",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "gitignore",
+    "difficulty": "beginner",
+    "question": "What is the purpose of a `.gitignore` file?",
+    "options": [
+      "It tells Git which files or folders to intentionally exclude from tracking, such as secrets, build output, or dependency folders",
+      "It permanently deletes all files listed inside it",
+      "It's a file for writing project documentation",
+      "It has no real function and is purely optional decoration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`.gitignore` prevents specified files/patterns (like `.env` secrets, `node_modules/`, or build artifacts) from ever being tracked or accidentally committed to the repository.",
+    "tags": ["gitignore", "best-practices"],
+    "reference": "https://git-scm.com/docs/gitignore"
+  },
+  {
+    "id": "git-github-016",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "never-commit-secrets",
+    "difficulty": "intermediate",
+    "question": "Why is it critical to never commit files containing passwords, API keys, or tokens to a Git repository?",
+    "options": [
+      "Once committed, sensitive data remains in the project's history even if deleted later, and can be exposed publicly if the repo is or becomes public",
+      "Committed secrets are automatically encrypted by Git with no risk",
+      "This concern only applies to private repositories, never public ones",
+      "Git automatically detects and removes secrets before every commit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Git preserves full history — deleting a secret in a later commit doesn't remove it from earlier commits, which remain accessible. This is exactly why `.gitignore` and environment variables (not hardcoded secrets) matter so much.",
+    "tags": ["secrets-management", "security"],
+    "reference": null
+  },
+  {
+    "id": "git-github-017",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "readme-files",
+    "difficulty": "beginner",
+    "question": "What is the purpose of a README file in a repository?",
+    "options": [
+      "It provides an overview of the project — what it does, how to set it up, and how to use it — usually the first thing visitors see",
+      "It's a required file that Git itself needs to function",
+      "It automatically runs the project's code",
+      "It stores the project's secret configuration values"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A README (typically `README.md`) is the front door to a project — GitHub automatically displays it on the repository's main page, making it essential for helping others understand and use the project.",
+    "tags": ["readme", "documentation"],
+    "reference": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
+  },
+  {
+    "id": "git-github-018",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "forking",
+    "difficulty": "beginner",
+    "question": "What does it mean to 'fork' a repository on GitHub?",
+    "options": [
+      "Create your own copy of someone else's repository under your own account, which you can freely modify without affecting the original",
+      "Permanently delete the original repository",
+      "Merge two unrelated repositories into one automatically",
+      "Report the repository to GitHub for review"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Forking is central to open-source collaboration — it gives you your own copy to experiment with or propose changes to, without needing direct write access to the original repository.",
+    "tags": ["forking", "open-source-workflow"],
+    "reference": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks"
+  },
+  {
+    "id": "git-github-019",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "pull-requests",
+    "difficulty": "beginner",
+    "question": "What is a 'pull request' (PR) on GitHub?",
+    "options": [
+      "A formal proposal to merge changes from one branch (often a fork) into another, allowing review and discussion before merging",
+      "A request to permanently delete a branch",
+      "A private message sent to the repository owner",
+      "An automatic process with no human review involved"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A pull request is the standard mechanism for proposing changes on GitHub — it shows the differences, allows comments/review, and lets maintainers approve and merge (or request changes) before anything is integrated.",
+    "tags": ["pull-requests", "collaboration"],
+    "reference": "https://docs.github.com/en/pull-requests"
+  },
+  {
+    "id": "git-github-020",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "fork-vs-clone",
+    "difficulty": "intermediate",
+    "question": "What's the difference between forking a repository and cloning it?",
+    "options": [
+      "Forking creates a new, separate copy on GitHub under your account; cloning downloads a copy (of the original or your fork) to your local machine",
+      "They are exactly the same action, just different terminology",
+      "Cloning only works for private repositories",
+      "Forking deletes your local files"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A common open-source workflow is to fork (create your own GitHub-hosted copy) AND clone (download that fork locally to work on) — the two steps serve different, complementary purposes.",
+    "tags": ["forking", "cloning", "workflow"],
+    "reference": null
+  },
+  {
+    "id": "git-github-021",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "issues",
+    "difficulty": "beginner",
+    "question": "What are GitHub 'Issues' used for?",
+    "options": [
+      "Tracking bugs, feature requests, tasks, and discussions related to a repository",
+      "Reporting a user's account for violating GitHub's terms of service",
+      "Automatically fixing bugs in your code",
+      "Storing a repository's commit history"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Issues are GitHub's built-in tool for tracking project work — bug reports, feature requests, and general to-dos — providing a structured way for contributors to communicate about what needs attention.",
+    "tags": ["issues", "project-management"],
+    "reference": "https://docs.github.com/en/issues"
+  },
+  {
+    "id": "git-github-022",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "commit-messages",
+    "difficulty": "beginner",
+    "question": "Why does writing a clear, descriptive commit message matter?",
+    "options": [
+      "It helps you and collaborators understand what changed and why when reviewing history later, without having to re-read the actual code diff",
+      "Commit messages have no effect on anything and are purely optional text",
+      "Git automatically generates perfect commit messages, making manual ones unnecessary",
+      "Longer commit messages always slow down the repository"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A vague message like 'fix stuff' provides little value months later. A clear message ('Fix null pointer error in login form validation') makes the project history genuinely useful for understanding past decisions.",
+    "tags": ["commit-messages", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "git-github-023",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "git-diff",
+    "difficulty": "intermediate",
+    "question": "What does `git diff` show you?",
+    "options": [
+      "The specific line-by-line differences between your current changes and the last commit (or between other specified points)",
+      "The total number of files in your repository",
+      "A list of all GitHub users who starred your repository",
+      "Your repository's total storage size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`git diff` highlights exactly what's changed — added, removed, or modified lines — helping you review your work before staging or committing.",
+    "tags": ["git-diff", "commands"],
+    "reference": "https://git-scm.com/docs/git-diff"
+  },
+  {
+    "id": "git-github-024",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "reset-vs-revert",
+    "difficulty": "advanced",
+    "question": "What's the key difference between `git reset` and `git revert`?",
+    "options": [
+      "`git reset` moves your branch pointer, potentially rewriting history; `git revert` creates a new commit that undoes a previous one without altering existing history",
+      "They accomplish identical results with no meaningful difference",
+      "`git revert` permanently deletes the entire repository",
+      "`git reset` only works on remote repositories, never locally"
+    ],
+    "correctAnswer": 0,
+    "explanation": "`git revert` is generally safer for shared history, since it adds a new 'undo' commit rather than rewriting existing commits — `git reset` can rewrite history, which is riskier once changes have been shared with others.",
+    "tags": ["git-reset", "git-revert", "advanced-commands"],
+    "reference": "https://git-scm.com/docs/git-revert"
+  },
+  {
+    "id": "git-github-025",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "head-concept",
+    "difficulty": "advanced",
+    "question": "What does 'HEAD' generally refer to in Git?",
+    "options": [
+      "A pointer to your current position in the repository's history — typically the latest commit on your currently checked-out branch",
+      "The name of the repository's owner",
+      "A required file that must be manually created for every project",
+      "The very first commit ever made in the repository's history"
+    ],
+    "correctAnswer": 0,
+    "explanation": "HEAD tracks 'where you are' in the repository — usually pointing to the tip of your current branch, and it moves as you switch branches or create new commits.",
+    "tags": ["head", "advanced-concepts"],
+    "reference": null
+  },
+  {
+    "id": "git-github-026",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "checkout-switch",
+    "difficulty": "intermediate",
+    "question": "What does switching to a different branch typically do to your working files?",
+    "options": [
+      "Your working files update to reflect the state of that branch, showing its version of the code instead",
+      "It deletes all your files permanently with no way to recover them",
+      "Nothing happens to your files; only the branch name label changes",
+      "It automatically merges every branch into one"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Switching branches (via `git switch` or `git checkout`) updates your working directory's files to match that branch's latest commit — this is how you move between different lines of development.",
+    "tags": ["branch-switching", "commands"],
+    "reference": null
+  },
+  {
+    "id": "git-github-027",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "collaborators-permissions",
+    "difficulty": "intermediate",
+    "question": "On a private GitHub repository, why would you add someone as a 'collaborator'?",
+    "options": [
+      "To grant them specific access permissions to view, and potentially push changes to, the repository",
+      "Collaborators have no actual effect on repository access",
+      "Adding a collaborator automatically makes the repository public",
+      "This only applies to organizations, never individual repositories"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Private repositories restrict access by default — adding collaborators (with configurable permission levels) is how you explicitly grant others the ability to view or contribute.",
+    "tags": ["collaborators", "access-control"],
+    "reference": "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories"
+  },
+  {
+    "id": "git-github-028",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "github-actions",
+    "difficulty": "intermediate",
+    "question": "What is GitHub Actions used for?",
+    "options": [
+      "Automating workflows directly in your repository, such as running tests, linting code, or deploying a website when certain events happen",
+      "A feature for messaging other GitHub users privately",
+      "A tool exclusively for editing README files",
+      "A method for permanently backing up your entire GitHub account"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GitHub Actions lets you define automated workflows (in YAML files under `.github/workflows/`) that run in response to events like a push or pull request — commonly used for CI/CD, testing, and deployment.",
+    "tags": ["github-actions", "automation"],
+    "reference": "https://docs.github.com/en/actions"
+  },
+  {
+    "id": "git-github-029",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "github-pages",
+    "difficulty": "beginner",
+    "question": "What is GitHub Pages used for?",
+    "options": [
+      "Hosting a static website directly from a GitHub repository, often for free",
+      "A feature for creating video content",
+      "A private messaging system between GitHub users",
+      "A tool for managing GitHub billing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GitHub Pages serves static site content (HTML/CSS/JS) directly from a repository, which is exactly the mechanism this Academy's own website is built to use.",
+    "tags": ["github-pages", "hosting"],
+    "reference": "https://docs.github.com/en/pages"
+  },
+  {
+    "id": "git-github-030",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "markdown-basics",
+    "difficulty": "beginner",
+    "question": "What is 'Markdown,' as commonly used in README files and GitHub Issues?",
+    "options": [
+      "A lightweight markup language using plain-text syntax (like # for headings, ** for bold) that renders as formatted text",
+      "A programming language for building full applications",
+      "A type of image file format",
+      "A GitHub-exclusive proprietary format that works nowhere else"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Markdown is a widely-used, simple formatting syntax — GitHub renders `.md` files (like README.md) into nicely formatted text automatically, and it's also used across Issues, Pull Requests, and many other platforms beyond GitHub.",
+    "tags": ["markdown", "documentation"],
+    "reference": "https://docs.github.com/en/get-started/writing-on-github"
+  },
+  {
+    "id": "git-github-031",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "license-files",
+    "difficulty": "intermediate",
+    "question": "Why does adding a LICENSE file to a public repository matter?",
+    "options": [
+      "It clarifies the legal terms under which others may use, modify, or distribute your code — without one, default copyright law leaves usage rights unclear",
+      "GitHub requires every repository to have a LICENSE file or it won't function",
+      "A LICENSE file has no legal significance whatsoever",
+      "Adding a license automatically makes your code paid/commercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Without an explicit license, default copyright applies, technically leaving others without clear permission to reuse your code even if it's publicly visible. A LICENSE file (like MIT, used by this Academy's project) makes usage rights explicit.",
+    "tags": ["licensing", "open-source"],
+    "reference": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"
+  },
+  {
+    "id": "git-github-032",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "branch-protection",
+    "difficulty": "advanced",
+    "question": "What is the purpose of a 'protected branch' setting on GitHub (often applied to `main`)?",
+    "options": [
+      "It enforces rules like requiring pull request reviews or passing status checks before changes can be merged, preventing direct, unreviewed pushes",
+      "It makes the branch completely invisible to all repository visitors",
+      "It automatically deletes the branch after 30 days",
+      "It has no practical effect on how the repository functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Branch protection rules help maintain code quality and stability on important branches by requiring review, passing tests, or other conditions before changes can be merged directly.",
+    "tags": ["branch-protection", "repository-settings"],
+    "reference": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches"
+  },
+  {
+    "id": "git-github-033",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "cloning-vs-downloading-zip",
+    "difficulty": "intermediate",
+    "question": "Why would you clone a repository with Git rather than just downloading it as a ZIP file from GitHub?",
+    "options": [
+      "Cloning preserves the full commit history and lets you pull future updates or contribute changes back; a ZIP is just a snapshot with no ongoing connection",
+      "There is no functional difference between the two options",
+      "Downloading a ZIP is always technically impossible on GitHub",
+      "Cloning is only available to GitHub's paid subscribers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A ZIP download gives you a static snapshot of the files at that moment. Cloning keeps the connection to the project's full history and lets you stay updated or contribute back — essential for any ongoing collaboration.",
+    "tags": ["cloning", "downloading"],
+    "reference": null
+  },
+  {
+    "id": "git-github-034",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "mobile-github-workflow",
+    "difficulty": "beginner",
+    "question": "What can you do directly from the GitHub mobile app without needing a computer or the command line?",
+    "options": [
+      "Browse repositories, edit files, review and merge pull requests, and manage issues",
+      "Nothing at all — the mobile app is read-only with zero editing capability",
+      "Only view your profile picture",
+      "Run complex Git commands via a built-in terminal exclusively"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The GitHub mobile app supports meaningful editing and collaboration workflows — browsing code, editing files directly, and managing issues/pull requests — which is exactly why this Academy's contribution workflow supports mobile-only participation.",
+    "tags": ["mobile-github", "accessibility"],
+    "reference": "https://docs.github.com/en/get-started/using-github/github-mobile"
+  },
+  {
+    "id": "git-github-035",
+    "class": "class-4",
+    "subject": "git-github",
+    "topic": "stars-and-watching",
+    "difficulty": "beginner",
+    "question": "What does 'starring' a repository on GitHub do?",
+    "options": [
+      "Bookmarks it for easy access later and signals appreciation/interest — it's a lightweight way to save and show support for a project",
+      "Automatically clones the repository to your account",
+      "Grants you write access to the repository",
+      "Permanently subscribes you to receive every single code change by email"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Starring is a simple bookmarking/appreciation feature. 'Watching' a repository is the separate feature for actually subscribing to notifications about its activity.",
+    "tags": ["stars", "github-features"],
+    "reference": null
+  }
+]

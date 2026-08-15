@@ -1,0 +1,398 @@
+[
+  {
+    "id": "prompt-engineering-001",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "what-is-prompt-engineering",
+    "difficulty": "beginner",
+    "question": "What is 'prompt engineering'?",
+    "options": [
+      "The practice of crafting clear, effective inputs (prompts) to get better, more useful outputs from an AI system",
+      "The process of physically building AI hardware",
+      "A job title exclusive to one specific company",
+      "A method for writing traditional software code, unrelated to AI"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prompt engineering is the practical skill of communicating clearly and strategically with an AI system so it produces more accurate, relevant, and useful responses.",
+    "tags": ["prompt-engineering-fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-002",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "specificity-in-prompts",
+    "difficulty": "beginner",
+    "question": "Why does a vague prompt like 'write something about business' tend to produce a less useful response than a specific one?",
+    "options": [
+      "Without specific context, goals, or constraints, the AI has to guess what you actually want, often producing generic output",
+      "Vague prompts always produce identical output to specific ones",
+      "AI systems refuse to answer vague prompts entirely",
+      "Specificity has no effect on AI output quality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The more relevant context and specificity you provide (what, for whom, in what format, with what goal), the less the AI has to guess — reducing the gap between what you meant and what it generates.",
+    "tags": ["specificity", "prompt-structure"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-003",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "prompt-structure",
+    "difficulty": "beginner",
+    "question": "Which of these is generally a stronger prompt structure?",
+    "options": [
+      "Clearly stating the task, relevant context, and the desired format/length together",
+      "A single vague word with no other information",
+      "Copy-pasting an unrelated document with no instruction attached",
+      "Asking the AI to guess what you want without telling it anything"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Combining a clear task description, relevant context, and format expectations gives the AI what it needs to produce a targeted, useful response, rather than a generic guess.",
+    "tags": ["prompt-structure", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-004",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "zero-shot-vs-few-shot",
+    "difficulty": "intermediate",
+    "question": "What is the difference between 'zero-shot' and 'few-shot' prompting?",
+    "options": [
+      "Zero-shot gives the AI a task with no examples; few-shot includes a small number of examples demonstrating the desired input/output pattern",
+      "Zero-shot means the AI refuses to respond at all",
+      "Few-shot requires providing thousands of examples before the AI can respond",
+      "They are two names for the exact same technique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zero-shot prompting asks directly with no examples. Few-shot prompting includes a handful of example input/output pairs to help the AI understand the exact pattern or format you want, often improving consistency.",
+    "tags": ["zero-shot", "few-shot", "prompting-techniques"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-005",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "few-shot-example",
+    "difficulty": "intermediate",
+    "question": "You want an AI to consistently format your notes as 'Topic: [X], Summary: [Y]'. What technique would help most?",
+    "options": [
+      "Provide one or two example notes already formatted that exact way, then ask it to continue the pattern with new content",
+      "Simply describe the format in one abstract sentence with no example",
+      "Give it 500 unrelated examples of formatting from other contexts",
+      "Ask it to guess the format without any guidance at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a practical application of few-shot prompting — showing the AI a concrete example of the exact pattern you want is often more reliable than an abstract description alone.",
+    "tags": ["few-shot", "practical-application"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-006",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "chain-of-thought-basics",
+    "difficulty": "advanced",
+    "question": "What is the general idea behind asking an AI to 'think step by step' before giving a final answer?",
+    "options": [
+      "Encouraging the model to work through intermediate reasoning steps can improve accuracy on tasks that benefit from structured reasoning, like math or logic problems",
+      "This phrase has no effect on the AI's output whatsoever",
+      "It guarantees a 100% accurate answer every single time",
+      "It only works for creative writing tasks, never for reasoning tasks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prompting a model to reason through steps before concluding — often called chain-of-thought prompting — has been observed to help with multi-step reasoning tasks, though it's not a guarantee of correctness and works better for some task types than others.",
+    "tags": ["chain-of-thought", "reasoning-prompts"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-007",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "role-prompting",
+    "difficulty": "intermediate",
+    "question": "What is 'role prompting' (e.g., 'Act as an experienced editor and review this text')?",
+    "options": [
+      "Framing the AI's response through a specific perspective or persona, which can shape the tone, focus, and style of its output",
+      "A technique that only works for video game character design",
+      "A way to permanently change what the AI is fundamentally capable of doing",
+      "A method for verifying someone's real-world job title"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Asking an AI to respond 'as' a particular role or perspective can influence the tone, vocabulary, and focus of its output — useful for tailoring responses to a specific style, though it doesn't grant genuinely new capabilities the model doesn't otherwise have.",
+    "tags": ["role-prompting", "prompting-techniques"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-008",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "iterative-refinement",
+    "difficulty": "beginner",
+    "question": "Your first prompt didn't get the result you wanted. What's a productive next step?",
+    "options": [
+      "Refine the prompt based on what was missing or wrong, and try again — prompting is often an iterative process",
+      "Give up immediately, since the first attempt is always final",
+      "Assume the AI is completely broken and can never help with this task",
+      "Repeat the exact same prompt word-for-word expecting a different structural approach"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective prompting is often iterative — reviewing what the output got wrong or missed, and adjusting your instructions accordingly, usually gets you closer to what you actually need.",
+    "tags": ["iterative-refinement", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-009",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "specifying-output-format",
+    "difficulty": "beginner",
+    "question": "If you need a response as a bulleted list of exactly 5 items, what should your prompt include?",
+    "options": [
+      "An explicit instruction stating the desired format and exact count, e.g. 'Provide exactly 5 bullet points'",
+      "No format instruction at all, hoping the AI guesses correctly",
+      "A request phrased as vaguely as possible",
+      "A format request written in a different, unrelated language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicitly specifying format constraints — count, structure, length — reduces ambiguity and makes it far more likely you'll get output matching what you actually need.",
+    "tags": ["output-format", "constraints"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-010",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "breaking-down-complex-tasks",
+    "difficulty": "intermediate",
+    "question": "You need an AI's help with a large, multi-part task (e.g., planning an entire event). What's often more effective than one giant prompt?",
+    "options": [
+      "Breaking the task into smaller, sequential prompts/steps, building on each result",
+      "Always cramming every possible detail into a single massive prompt",
+      "Asking the AI to read your mind about the full scope with zero detail",
+      "Avoiding AI entirely for anything with more than one step"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Complex, multi-part tasks are often easier to manage — and produce better results — when broken into smaller, focused prompts handled step by step, rather than one overwhelming request.",
+    "tags": ["task-decomposition", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-011",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "providing-context",
+    "difficulty": "beginner",
+    "question": "Why does providing relevant background context (like your audience or purpose) improve an AI's response?",
+    "options": [
+      "Context helps the AI tailor tone, depth, and content to your actual situation, rather than defaulting to a generic, one-size-fits-all answer",
+      "Context has no measurable effect on AI responses",
+      "Providing context always makes responses longer with no other benefit",
+      "AI systems ignore any context provided, always"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Telling the AI who the response is for, or what you'll use it for, lets it calibrate tone and depth appropriately — a technical explanation for a beginner reads very differently than one for an expert.",
+    "tags": ["providing-context", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-012",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "negative-constraints",
+    "difficulty": "intermediate",
+    "question": "What's the value of telling an AI what NOT to include, in addition to what you want?",
+    "options": [
+      "Explicit exclusions (e.g., 'don't include technical jargon') help steer the output away from common but unwanted patterns",
+      "Negative instructions are always ignored completely",
+      "This technique only works for image generation, never text",
+      "There is no practical difference between positive and negative instructions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicitly stating what to avoid — jargon, a certain tone, specific topics — can help prevent common default patterns the model might otherwise fall back on.",
+    "tags": ["negative-constraints", "prompting-techniques"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-013",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "ambiguous-prompts",
+    "difficulty": "beginner",
+    "question": "The prompt 'write about apple' is ambiguous. Why?",
+    "options": [
+      "It's unclear whether you mean the fruit, the technology company, or something else entirely — the AI has to guess",
+      "The word 'apple' has no possible ambiguity at all",
+      "This prompt is already perfectly clear and specific",
+      "Ambiguity never affects how an AI responds to a prompt"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Words with multiple meanings, without disambiguating context, force the AI to guess your intent — clarifying ('write about apple, the fruit, for a nutrition blog') removes that guesswork.",
+    "tags": ["ambiguity", "common-mistakes"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-014",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "temperature-concept",
+    "difficulty": "advanced",
+    "question": "Many AI text-generation tools offer a setting sometimes called 'temperature.' What does it generally control?",
+    "options": [
+      "How random/creative versus predictable/focused the output tends to be — lower values are more deterministic, higher values more varied",
+      "The literal physical temperature of the computer running the AI",
+      "How fast the AI responds to your prompt",
+      "The font size of the AI's response"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Temperature is a common (though not universal across every tool) setting influencing output randomness — lower settings tend toward more predictable, focused responses; higher settings toward more varied, creative ones. Exact implementation can vary by tool.",
+    "tags": ["temperature", "generation-settings"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-015",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "evaluating-ai-output",
+    "difficulty": "intermediate",
+    "question": "After getting a response from an AI, what's a good habit before using it for something important?",
+    "options": [
+      "Critically review it for accuracy, tone, and whether it actually addresses what you asked — don't assume it's automatically correct or complete",
+      "Use it immediately with zero review, regardless of the stakes",
+      "Assume any AI response is automatically publication-ready",
+      "Only review AI output if it's longer than 1000 words"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reviewing AI output — checking for accuracy, appropriateness, and whether it actually solves your problem — connects prompt engineering back to the AI-literacy skill of not over-trusting confident-sounding output.",
+    "tags": ["evaluating-output", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-016",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "prompt-injection-awareness",
+    "difficulty": "advanced",
+    "question": "What is 'prompt injection,' as a security concern relevant to AI systems that process external content?",
+    "options": [
+      "An attempt to manipulate an AI's behavior by embedding hidden or malicious instructions within content it processes (like a webpage or document), rather than instructions coming from the legitimate user",
+      "A legitimate feature that lets users customize their own AI experience safely",
+      "A term unrelated to AI, describing a medical injection procedure",
+      "A method for making AI models run faster"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prompt injection is a real, actively studied security concern where malicious instructions hidden in external content (a webpage, a document, an email) attempt to override the intended behavior of an AI system processing that content — worth being aware of as AI tools increasingly read and act on external data.",
+    "tags": ["prompt-injection", "ai-security"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-017",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "system-vs-user-instructions",
+    "difficulty": "advanced",
+    "question": "In many AI chat platforms, what's the general distinction between a 'system' instruction and a regular 'user' message?",
+    "options": [
+      "A system-level instruction typically sets overarching behavior/context for the whole conversation, while user messages are the ongoing back-and-forth requests within that context",
+      "There is no distinction; every message type behaves identically on every platform",
+      "System instructions are always visible and identical to user messages in every interface",
+      "User messages always override every system-level instruction with no exceptions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Many platforms let you set broader context or persistent instructions (sometimes called a system prompt) that shapes the whole conversation, separate from the individual back-and-forth user messages — though exact behavior and terminology can vary between different tools.",
+    "tags": ["system-prompts", "prompt-structure"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-018",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "providing-examples-of-tone",
+    "difficulty": "intermediate",
+    "question": "You want an AI to write in a very specific tone/voice that's hard to describe in words. What's an effective approach?",
+    "options": [
+      "Provide a sample of writing in that tone/voice and ask the AI to match its style",
+      "Describe the tone using only a single abstract adjective with no example",
+      "Avoid specifying tone entirely and hope for the best",
+      "Ask the AI to invent a completely random, unrelated tone"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Showing a concrete writing sample is often more effective than trying to fully describe a tone in the abstract — it's easier for the AI to match a demonstrated pattern than to interpret a vague adjective.",
+    "tags": ["tone-matching", "few-shot"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-019",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "context-window-awareness",
+    "difficulty": "advanced",
+    "question": "What does it generally mean for an AI model to have a limited 'context window'?",
+    "options": [
+      "There's a limit to how much text (from the conversation, documents, etc.) the model can actively consider at once when generating a response",
+      "The model can only be used during certain hours of the day",
+      "The model can only respond to questions about windows and architecture",
+      "There is no such limitation in any AI system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Models process a finite amount of input text at once. Very long conversations or documents may exceed this limit, meaning earlier content could be dropped or unavailable — worth keeping in mind for long, ongoing tasks. Exact limits vary by tool and model.",
+    "tags": ["context-window", "ai-limitations"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-020",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "asking-for-alternatives",
+    "difficulty": "beginner",
+    "question": "If an AI's first response is decent but not quite right, what's a useful follow-up request?",
+    "options": [
+      "Ask for 2-3 alternative approaches or variations, then pick or combine the best elements",
+      "Assume the first response is the only possible one and stop there",
+      "Start an entirely new, unrelated conversation from scratch every time",
+      "Never ask for revisions under any circumstances"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Requesting alternatives or variations is a simple, effective technique — comparing a few different angles on the same request often surfaces a better result than accepting the very first output.",
+    "tags": ["iterative-refinement", "practical-technique"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-021",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "prompting-for-code",
+    "difficulty": "intermediate",
+    "question": "When asking an AI for help with code, why is it useful to specify the programming language and relevant constraints (like a specific library version)?",
+    "options": [
+      "It reduces ambiguity and the chance of receiving code that doesn't fit your actual environment or requirements",
+      "Programming language never matters when asking an AI for code",
+      "AI tools can only ever write code in one universal language",
+      "Specifying constraints always makes the response less accurate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Just like any other prompt, more relevant specificity (language, framework, version, constraints) helps the AI generate code that's actually usable in your specific situation, rather than a generic example that needs significant rework.",
+    "tags": ["prompting-for-code", "specificity"],
+    "reference": null
+  },
+  {
+    "id": "prompt-engineering-022",
+    "class": "class-7",
+    "subject": "prompt-engineering",
+    "topic": "avoiding-overreliance",
+    "difficulty": "intermediate",
+    "question": "What's a healthy mindset for using AI as a learning tool, rather than a shortcut that skips learning entirely?",
+    "options": [
+      "Use it to explain concepts, check your understanding, or get unstuck — while still actively engaging with and understanding the material yourself",
+      "Have the AI complete every assignment and quiz on your behalf with zero personal engagement",
+      "Never use AI for learning under any circumstances",
+      "Only use AI to memorize answers without understanding the reasoning behind them"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AI can be a genuinely useful learning aid — explaining concepts differently, offering practice questions, clarifying confusion — but leaning on it to bypass actual understanding undermines the point of learning in the first place.",
+    "tags": ["responsible-use", "learning-mindset"],
+    "reference": null
+  }
+]

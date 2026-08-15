@@ -1,0 +1,506 @@
+[
+  {
+    "id": "programming-001",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "what-is-a-program",
+    "difficulty": "beginner",
+    "question": "What is a computer program, in simple terms?",
+    "options": [
+      "A set of instructions written in a language a computer can understand and execute to perform a task",
+      "A physical piece of computer hardware",
+      "A type of file that can never be modified",
+      "A synonym for the entire operating system"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A program is fundamentally a sequence of instructions telling the computer exactly what steps to perform — from a simple calculator to a complex application, it's all built from instructions like this.",
+    "tags": ["programming-fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "programming-002",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "variables",
+    "difficulty": "beginner",
+    "question": "What is a 'variable' in programming?",
+    "options": [
+      "A named container that stores a value, which can often be changed as the program runs",
+      "A fixed value that can never change under any circumstances",
+      "A type of programming error",
+      "The name of a specific programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Variables let a program store and reference data — like a name, a number, or a result — using a label instead of the raw value itself, making code more readable and flexible.",
+    "tags": ["variables", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-003",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "data-types",
+    "difficulty": "beginner",
+    "question": "What is a 'data type' (like string, number, or boolean)?",
+    "options": [
+      "A classification that tells the program what kind of value a piece of data is, and what operations make sense on it",
+      "A type of computer hardware component",
+      "A synonym for a variable's name",
+      "A feature that only exists in one specific programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Data types (text/strings, numbers, true-or-false booleans, and more) tell the program how to interpret and work with a piece of data — you can add two numbers, but adding a number to a word doesn't inherently make sense without conversion.",
+    "tags": ["data-types", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-004",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "booleans",
+    "difficulty": "beginner",
+    "question": "What is a 'boolean' value?",
+    "options": [
+      "A data type that can only be one of two values: true or false",
+      "A number with decimal points",
+      "A type of text/string data",
+      "A value that represents a color"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Booleans represent binary true/false logic — foundational for decision-making in code, like checking whether a condition is met.",
+    "tags": ["booleans", "data-types"],
+    "reference": null
+  },
+  {
+    "id": "programming-005",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "conditionals",
+    "difficulty": "beginner",
+    "question": "What does a conditional statement (like 'if...else') let a program do?",
+    "options": [
+      "Execute different blocks of code depending on whether a specific condition is true or false",
+      "Repeat the same code forever with no way to stop",
+      "Permanently delete a variable",
+      "Automatically fix any errors in the code"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Conditionals are how programs make decisions — 'if this condition is true, do X, otherwise do Y' — enabling code to respond differently to different situations.",
+    "tags": ["conditionals", "control-flow"],
+    "reference": null
+  },
+  {
+    "id": "programming-006",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "loops",
+    "difficulty": "beginner",
+    "question": "What is the purpose of a 'loop' in programming?",
+    "options": [
+      "To repeat a block of code multiple times, either a set number of times or until a condition is met",
+      "To permanently stop a program from running",
+      "To create a new variable",
+      "To connect to the internet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Loops (like `for` or `while` loops) let you avoid repeating the same code manually — for example, processing every item in a list without writing separate code for each one.",
+    "tags": ["loops", "control-flow"],
+    "reference": null
+  },
+  {
+    "id": "programming-007",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "infinite-loops",
+    "difficulty": "intermediate",
+    "question": "What is an 'infinite loop,' and why is it usually a bug?",
+    "options": [
+      "A loop whose stopping condition is never met, causing it to run forever and often freeze or crash the program",
+      "A loop that is intentionally designed to run exactly once",
+      "A feature that makes programs run faster",
+      "A loop that only exists in theoretical computer science, never in practice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An infinite loop usually happens by accident — often because the condition meant to stop the loop never actually becomes false — consuming resources indefinitely and typically requiring the program to be forcibly stopped.",
+    "tags": ["infinite-loops", "debugging"],
+    "reference": null
+  },
+  {
+    "id": "programming-008",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "functions",
+    "difficulty": "beginner",
+    "question": "What is a 'function' in programming?",
+    "options": [
+      "A reusable, named block of code that performs a specific task and can be called whenever needed",
+      "A synonym for a variable",
+      "A type of error message",
+      "A feature exclusive to one specific programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Functions let you package a piece of logic once and reuse it many times, rather than copying and pasting the same code repeatedly — a core building block for organized, maintainable programs.",
+    "tags": ["functions", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-009",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "arrays-lists",
+    "difficulty": "beginner",
+    "question": "What is an 'array' (or 'list'), as a basic programming concept?",
+    "options": [
+      "An ordered collection that can hold multiple values together, accessed by their position",
+      "A single value that can never be part of a group",
+      "A type of programming error",
+      "A tool exclusively for storing images"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Arrays/lists let you group related values together — like a list of quiz questions or usernames — and work with them collectively rather than needing a separate variable for every single item.",
+    "tags": ["arrays", "data-structures"],
+    "reference": null
+  },
+  {
+    "id": "programming-010",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "algorithms",
+    "difficulty": "intermediate",
+    "question": "What is an 'algorithm'?",
+    "options": [
+      "A step-by-step procedure or set of rules for solving a specific problem or accomplishing a task",
+      "A type of programming language",
+      "A synonym for a computer bug",
+      "A piece of computer hardware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An algorithm is the logical plan behind a solution — like a recipe — independent of any specific programming language. Code is one way to implement an algorithm; the algorithm itself is the underlying logic.",
+    "tags": ["algorithms", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-011",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "syntax-vs-logic-errors",
+    "difficulty": "intermediate",
+    "question": "What's the difference between a 'syntax error' and a 'logic error'?",
+    "options": [
+      "A syntax error breaks the language's grammatical rules and usually prevents the program from running at all; a logic error runs fine but produces incorrect results",
+      "They are exactly the same type of error",
+      "Syntax errors are always more serious and impossible to fix",
+      "Logic errors always crash the entire computer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A syntax error is like a grammatical mistake in a sentence — the program usually won't even run. A logic error is more subtle — the program runs, but the actual behavior doesn't match what you intended.",
+    "tags": ["syntax-errors", "logic-errors", "debugging"],
+    "reference": null
+  },
+  {
+    "id": "programming-012",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "debugging",
+    "difficulty": "beginner",
+    "question": "What does 'debugging' mean in programming?",
+    "options": [
+      "The process of finding and fixing errors (bugs) in code",
+      "Writing brand new code from scratch with no relation to fixing errors",
+      "Deleting a program entirely and starting over every time",
+      "A term exclusively used in hardware repair, not software"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Debugging is the systematic process of identifying why code isn't behaving as expected and correcting it — an essential, ongoing skill for anyone who writes code.",
+    "tags": ["debugging", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-013",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "comments",
+    "difficulty": "beginner",
+    "question": "What is the purpose of 'comments' in code?",
+    "options": [
+      "Human-readable notes within the code that explain what it does, ignored by the computer when running the program",
+      "Instructions the computer must execute as part of the program's logic",
+      "A way to permanently delete a section of code",
+      "A required element that every single line of code must include"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Comments help humans (including your future self) understand the reasoning behind code — the computer skips over them entirely; they exist purely for readability and documentation.",
+    "tags": ["comments", "code-readability"],
+    "reference": null
+  },
+  {
+    "id": "programming-014",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "code-readability",
+    "difficulty": "intermediate",
+    "question": "Why does code readability (clear naming, consistent formatting) matter, even if messy code can technically still run correctly?",
+    "options": [
+      "Code is read and maintained by humans far more often than it's written — unclear code makes future changes, debugging, and collaboration much harder",
+      "Readability has zero practical impact on anything",
+      "Only the original author will ever need to read the code again",
+      "Messy code always runs faster than clean code"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Code is typically read many more times than it's written — by teammates, or by yourself months later. Clear naming and formatting dramatically reduce the time and risk involved in future changes.",
+    "tags": ["code-readability", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "programming-015",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "pseudocode",
+    "difficulty": "intermediate",
+    "question": "What is 'pseudocode'?",
+    "options": [
+      "An informal, human-readable way of describing a program's logic, without following the strict syntax of any specific programming language",
+      "A type of malicious code designed to hide its true purpose",
+      "Code written in a language that no longer exists",
+      "A synonym for a fully completed, working program"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pseudocode is useful for planning logic before worrying about exact syntax — writing out the steps in plain language first, then translating that structure into actual code afterward.",
+    "tags": ["pseudocode", "planning"],
+    "reference": null
+  },
+  {
+    "id": "programming-016",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "compiled-vs-interpreted",
+    "difficulty": "advanced",
+    "question": "What's the general difference between a 'compiled' and an 'interpreted' programming language?",
+    "options": [
+      "A compiled language is translated into machine code ahead of time before running; an interpreted language is translated and executed line-by-line at runtime",
+      "There is no meaningful difference between the two approaches",
+      "Interpreted languages can never be used to build real applications",
+      "Compiled languages don't require any code to be written at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This distinction affects things like execution speed and how errors are caught — compiled languages (like C) translate the whole program before running; interpreted languages (like Python, or JavaScript in a browser) translate and run code more dynamically. Many modern languages use hybrid approaches.",
+    "tags": ["compiled-languages", "interpreted-languages"],
+    "reference": null
+  },
+  {
+    "id": "programming-017",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "choosing-a-first-language",
+    "difficulty": "beginner",
+    "question": "What's a reasonable way to think about which programming language to learn first?",
+    "options": [
+      "Consider what you want to build and what's commonly recommended for beginners — many find languages with simpler, readable syntax like Python approachable as a starting point",
+      "It's mathematically impossible to ever learn more than one programming language in a lifetime",
+      "The specific first language you choose locks you out of ever learning any other language",
+      "There is only one single 'correct' language that everyone must learn first"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Programming concepts (variables, loops, functions) transfer between languages — the specific first language matters less than actually starting and building genuine understanding of core concepts.",
+    "tags": ["learning-programming", "beginner-guidance"],
+    "reference": null
+  },
+  {
+    "id": "programming-018",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "ide-vs-text-editor",
+    "difficulty": "intermediate",
+    "question": "What is an IDE (Integrated Development Environment)?",
+    "options": [
+      "A software application that combines a code editor with helpful tools like debugging, error-checking, and project management in one place",
+      "A type of programming language",
+      "A physical device used exclusively for writing code",
+      "A synonym for a simple text file"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An IDE bundles a code editor with features like syntax highlighting, error detection, and debugging tools — offering more built-in support than a plain text editor, though both can technically be used to write code.",
+    "tags": ["ide", "development-tools"],
+    "reference": null
+  },
+  {
+    "id": "programming-019",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "input-output",
+    "difficulty": "beginner",
+    "question": "In basic programming terms, what does 'output' generally refer to?",
+    "options": [
+      "Information the program displays or produces as a result, such as printed text or a returned value",
+      "Information a user types into the program",
+      "A type of programming error",
+      "The physical computer screen itself"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Output is what a program produces or displays — as opposed to 'input,' which is data the program receives, often from a user or another source.",
+    "tags": ["input-output", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-020",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "concatenation",
+    "difficulty": "beginner",
+    "question": "What does 'string concatenation' mean?",
+    "options": [
+      "Joining two or more pieces of text together into a single combined string",
+      "Deleting part of a text string",
+      "Converting text into a number",
+      "A term for encrypting a piece of text"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concatenation combines strings — for example, joining 'Hello, ' and 'World!' into 'Hello, World!' — a very common basic operation across programming languages.",
+    "tags": ["concatenation", "strings"],
+    "reference": null
+  },
+  {
+    "id": "programming-021",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "off-by-one-errors",
+    "difficulty": "advanced",
+    "question": "What is an 'off-by-one error'?",
+    "options": [
+      "A common bug where a loop or calculation is incorrect by exactly one — often from miscounting a starting or ending point",
+      "An error that occurs exactly once and never again",
+      "A type of hardware malfunction",
+      "An error that only affects the very last user of a program"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Off-by-one errors are a classic, common bug category — e.g., a loop that runs one time too many or too few because of a miscounted starting index or boundary condition.",
+    "tags": ["off-by-one-errors", "common-bugs"],
+    "reference": null
+  },
+  {
+    "id": "programming-022",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "testing-basics",
+    "difficulty": "intermediate",
+    "question": "Why do programmers write 'tests' for their code?",
+    "options": [
+      "To automatically verify that code behaves as expected, catching bugs or unintended changes before they cause real problems",
+      "Tests are purely optional busywork with no practical benefit",
+      "Testing replaces the need to write the actual program entirely",
+      "Tests are only relevant for extremely large companies, never small projects"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Automated tests check that code produces expected results, which becomes especially valuable when making changes later — catching accidental breakage before it reaches real users. This Academy's own bot codebase includes real tests for exactly this reason.",
+    "tags": ["testing", "software-quality"],
+    "reference": null
+  },
+  {
+    "id": "programming-023",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "recursion-basics",
+    "difficulty": "advanced",
+    "question": "What is 'recursion' in programming, at a basic conceptual level?",
+    "options": [
+      "A technique where a function calls itself to solve a smaller version of the same problem, eventually reaching a base case that stops the repetition",
+      "A type of syntax error",
+      "A method for permanently deleting a function",
+      "A feature that only exists in one specific programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Recursion solves a problem by breaking it into smaller instances of the same problem, with a function calling itself until it reaches a simple 'base case' that doesn't need further recursion.",
+    "tags": ["recursion", "advanced-concepts"],
+    "reference": null
+  },
+  {
+    "id": "programming-024",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "object-oriented-basics",
+    "difficulty": "advanced",
+    "question": "At a very basic level, what is the idea behind 'object-oriented programming' (OOP)?",
+    "options": [
+      "Organizing code around 'objects' that bundle related data and behavior (functions) together, often modeling real-world things or concepts",
+      "A programming style that avoids using any variables whatsoever",
+      "A method that only works for building video games",
+      "A term with no real meaning in modern software"
+    ],
+    "correctAnswer": 0,
+    "explanation": "OOP structures code around objects (like a 'Member' object with data such as XP and functions like 'levelUp') — one of several common paradigms for organizing larger programs, alongside others.",
+    "tags": ["object-oriented-programming", "paradigms"],
+    "reference": null
+  },
+  {
+    "id": "programming-025",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "apis-conceptual",
+    "difficulty": "intermediate",
+    "question": "What is an API (Application Programming Interface), at a conceptual level?",
+    "options": [
+      "A defined way for different software programs to communicate and exchange data or functionality with each other",
+      "A type of computer keyboard",
+      "A physical network cable",
+      "A synonym for a programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "APIs let separate pieces of software talk to each other in a structured way — for example, this Academy's Discord bot interacts with Discord's own API to send messages, manage roles, and more.",
+    "tags": ["apis", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "programming-026",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "learning-by-building",
+    "difficulty": "beginner",
+    "question": "Why is actively writing and experimenting with code generally more effective for learning programming than only reading about it?",
+    "options": [
+      "Programming is a practical, hands-on skill — actually writing code, making mistakes, and fixing them builds understanding that passive reading alone doesn't provide",
+      "Reading about programming is always sufficient and equally effective on its own",
+      "Writing code has no relationship to actually learning to program",
+      "It's technically impossible to learn programming through practice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Like many practical skills, programming is best learned by doing — actually writing code and debugging your own mistakes builds a kind of understanding that reading alone can't fully replicate.",
+    "tags": ["learning-programming", "practice"],
+    "reference": null
+  },
+  {
+    "id": "programming-027",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "whitespace-and-indentation",
+    "difficulty": "intermediate",
+    "question": "Why does consistent indentation matter in code, even in languages where it isn't strictly required by the syntax?",
+    "options": [
+      "It visually reveals the code's structure (which blocks are nested inside others), making it much easier for humans to read and understand",
+      "Indentation has no effect on readability in any programming language",
+      "Consistent indentation always makes code run faster",
+      "This concept only applies to a single specific programming language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Indentation visually shows nesting and structure — even where a language's parser doesn't strictly require it, consistent indentation makes code dramatically easier for humans to follow. Some languages (like Python) even make indentation part of the required syntax itself.",
+    "tags": ["code-readability", "indentation"],
+    "reference": null
+  },
+  {
+    "id": "programming-028",
+    "class": "class-6",
+    "subject": "programming",
+    "topic": "constants-vs-variables",
+    "difficulty": "intermediate",
+    "question": "What's the general difference between a 'constant' and a 'variable' in programming?",
+    "options": [
+      "A constant's value is set once and not meant to change afterward; a variable's value can be reassigned as the program runs",
+      "They are exactly the same concept with two different names",
+      "Constants can only ever hold numbers, never text",
+      "Variables cannot be used inside functions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using a constant signals intent — 'this value shouldn't change' — which helps prevent accidental modification and makes code easier to reason about, compared to a general-purpose variable.",
+    "tags": ["constants", "variables"],
+    "reference": null
+  }
+]

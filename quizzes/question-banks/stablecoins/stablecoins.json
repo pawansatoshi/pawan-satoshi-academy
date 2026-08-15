@@ -1,0 +1,380 @@
+[
+  {
+    "id": "stablecoins-001",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "what-are-stablecoins",
+    "difficulty": "beginner",
+    "question": "What is a 'stablecoin'?",
+    "options": [
+      "A type of cryptocurrency designed to maintain a stable value, typically pegged to a fiat currency like the US dollar",
+      "A cryptocurrency with no relationship to price stability at all",
+      "A physical, non-digital form of currency",
+      "A synonym for Bitcoin specifically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike Bitcoin or Ethereum, which can be highly volatile, stablecoins are specifically designed to hold a steady value — most commonly targeting a 1:1 peg with the US dollar.",
+    "tags": ["fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-002",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "why-stablecoins-matter",
+    "difficulty": "beginner",
+    "question": "Why are stablecoins useful within the crypto ecosystem?",
+    "options": [
+      "They let users hold and transact value without exposure to the high price volatility typical of many other cryptocurrencies, while still benefiting from blockchain-based transfers",
+      "Stablecoins have no practical use case whatsoever",
+      "Stablecoins are used exclusively for illegal activity",
+      "Stablecoins are only usable outside of any blockchain network"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stablecoins serve as a practical bridge — enabling trading, payments, and DeFi participation without needing to convert back to traditional fiat currency for every transaction, while avoiding the volatility of assets like Bitcoin.",
+    "tags": ["use-cases", "practical-value"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-003",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "fiat-collateralized-stablecoins",
+    "difficulty": "beginner",
+    "question": "What is a 'fiat-collateralized' stablecoin?",
+    "options": [
+      "A stablecoin backed by reserves of traditional currency (or equivalent liquid assets) held by the issuer, aiming to maintain a 1:1 redemption value",
+      "A stablecoin backed by another, more volatile cryptocurrency",
+      "A stablecoin with no backing or reserves of any kind",
+      "A stablecoin that is physically printed as paper currency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is the most common stablecoin model — the issuer holds reserves (cash, government bonds, and similar liquid assets) intended to back each token in circulation, at least in principle, at a 1:1 ratio.",
+    "tags": ["fiat-collateralized", "stablecoin-types"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-004",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "crypto-collateralized-stablecoins",
+    "difficulty": "intermediate",
+    "question": "What is a 'crypto-collateralized' stablecoin?",
+    "options": [
+      "A stablecoin backed by other cryptocurrencies as collateral, typically over-collateralized to absorb the backing assets' own price volatility",
+      "A stablecoin that has no connection to any blockchain",
+      "A stablecoin backed exclusively by physical gold",
+      "A term with no real meaning in the stablecoin space"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since the backing cryptocurrency itself can be volatile, this model typically requires locking up more collateral value than the stablecoin issued (over-collateralization) to maintain the peg even if the collateral's value drops.",
+    "tags": ["crypto-collateralized", "stablecoin-types"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-005",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "algorithmic-stablecoins",
+    "difficulty": "intermediate",
+    "question": "What is an 'algorithmic' stablecoin?",
+    "options": [
+      "A stablecoin that attempts to maintain its peg through automated supply adjustments and market incentives, rather than through direct asset-backed reserves",
+      "A stablecoin that is backed 1:1 by physical cash reserves",
+      "A stablecoin that requires no code or algorithm of any kind",
+      "A stablecoin whose value is set manually by a government"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rather than direct collateral backing, algorithmic stablecoins rely on programmed incentive mechanisms (like minting/burning a companion token) to try to keep the peg stable — a model with historically demonstrated vulnerability, as explored in the Terra/UST case study.",
+    "tags": ["algorithmic-stablecoins", "stablecoin-types"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-006",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "pegging-mechanism-concept",
+    "difficulty": "beginner",
+    "question": "What does it mean for a stablecoin to be 'pegged' to the US dollar?",
+    "options": [
+      "The stablecoin is designed to consistently trade at a value approximately equal to one US dollar",
+      "The stablecoin is physically stapled to a dollar bill",
+      "Pegging means the stablecoin's value is completely unrelated to the dollar",
+      "Pegging is a term exclusive to stock markets, not cryptocurrency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 'peg' is the target value a stablecoin aims to maintain — most commonly $1 USD — through whichever backing mechanism (fiat reserves, crypto collateral, or algorithmic design) the specific stablecoin uses.",
+    "tags": ["pegging", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-007",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "depegging-concept",
+    "difficulty": "intermediate",
+    "question": "What does it mean when a stablecoin 'depegs'?",
+    "options": [
+      "The stablecoin's market price diverges significantly from its intended target value (like $1), which can happen temporarily or, in severe cases, permanently",
+      "Depegging refers to a stablecoin being officially discontinued by its issuer with advance notice",
+      "Depegging means the stablecoin's value has increased exactly according to plan",
+      "This term has no established meaning in the stablecoin space"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Depegging events range from brief, minor fluctuations that quickly recover to catastrophic, permanent collapses — understanding this spectrum matters for evaluating real-world stablecoin risk.",
+    "tags": ["depegging", "risk-concepts"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-008",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "terra-ust-collapse-case-study",
+    "difficulty": "advanced",
+    "question": "What happened to TerraUSD (UST), a prominent algorithmic stablecoin, in May 2022?",
+    "options": [
+      "UST catastrophically lost its dollar peg over several days, ultimately becoming worthless alongside its companion token LUNA, in what became one of the largest failures in crypto history",
+      "UST successfully maintained its peg throughout 2022 with no issues",
+      "UST was voluntarily and safely shut down by its creators with full user refunds",
+      "This event never actually occurred"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Beginning around May 7-9, 2022, UST depegged and entered a collapse spiral alongside its algorithmic companion token LUNA, with total losses across the ecosystem estimated at tens of billions of dollars — a widely studied case of algorithmic stablecoin failure.",
+    "tags": ["terra-ust-collapse", "case-study"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-009",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "terra-ust-mechanism-failure",
+    "difficulty": "advanced",
+    "question": "At a conceptual level, why was UST's algorithmic design particularly vulnerable during its 2022 collapse?",
+    "options": [
+      "Its peg relied on market confidence and an arbitrage relationship with its companion token LUNA, rather than direct asset reserves — when confidence broke down, the mechanism itself accelerated the decline rather than absorbing it",
+      "UST's design had no algorithmic component and was purely fiat-backed",
+      "The collapse was caused entirely by a hardware failure unrelated to the stablecoin's design",
+      "UST's mechanism was identical to a fully-reserved fiat-backed stablecoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This case is frequently cited as a cautionary example of how algorithmic stability mechanisms, which work well under normal conditions, can become self-reinforcing failure spirals once confidence is sufficiently shaken — a key lesson connecting to broader risk literacy in this curriculum.",
+    "tags": ["terra-ust-collapse", "design-vulnerability"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-010",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "reserve-attestations",
+    "difficulty": "intermediate",
+    "question": "What is the purpose of a stablecoin issuer publishing regular 'reserve attestations' or audits?",
+    "options": [
+      "To provide evidence and transparency that the stablecoin's claimed reserves genuinely exist and match the amount of stablecoin in circulation",
+      "Attestations are purely a marketing formality with no substantive content",
+      "Attestations are required to change a stablecoin's peg target",
+      "Reserve attestations are illegal in every jurisdiction"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since fiat-collateralized stablecoins depend on trusting that the issuer genuinely holds sufficient reserves, regular, credible attestations (ideally full audits) are an important transparency mechanism for evaluating that trust.",
+    "tags": ["reserve-attestations", "transparency"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-011",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "counterparty-risk",
+    "difficulty": "advanced",
+    "question": "What is 'counterparty risk,' as it applies to a fiat-collateralized stablecoin?",
+    "options": [
+      "The risk that the entity holding and managing the stablecoin's reserves fails to actually maintain sufficient, accessible backing — whether through mismanagement, insolvency, or other issuer-side failure",
+      "The risk that a stablecoin's blockchain network experiences downtime",
+      "A risk that only applies to algorithmic stablecoins, never fiat-collateralized ones",
+      "A term with no real relevance to stablecoins"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Holding a fiat-collateralized stablecoin means trusting a specific issuer's claims and management practices — this is a fundamentally different risk profile than, say, holding Bitcoin, which doesn't depend on any single issuing entity's solvency.",
+    "tags": ["counterparty-risk", "risk-concepts"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-012",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "genius-act-regulation",
+    "difficulty": "advanced",
+    "question": "What is the GENIUS Act, signed into law in the United States on July 18, 2025?",
+    "options": [
+      "The first comprehensive U.S. federal regulatory framework for payment stablecoins, requiring issuers to maintain 100% reserve backing with liquid assets like U.S. dollars or short-term Treasuries",
+      "A law that made all stablecoins illegal in the United States",
+      "A law unrelated to cryptocurrency or stablecoins",
+      "An international treaty with no connection to U.S. law"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The GENIUS Act (Guiding and Establishing National Innovation for U.S. Stablecoins Act) established federal oversight requirements for payment stablecoin issuers, including reserve, disclosure, and compliance obligations — a significant regulatory milestone for the industry.",
+    "tags": ["genius-act", "regulation"],
+    "reference": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/"
+  },
+  {
+    "id": "stablecoins-013",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "genius-act-effective-timeline",
+    "difficulty": "advanced",
+    "question": "Does the GENIUS Act's regulatory framework apply to stablecoin issuers immediately upon its July 2025 signing?",
+    "options": [
+      "No — the Act specifies a phased effective date (the earlier of 18 months after enactment, or 120 days after regulators finalize implementing rules), meaning there was a transition period before full requirements applied",
+      "Yes, every requirement became immediately, fully binding the moment the law was signed",
+      "The Act has no effective date specified at all",
+      "The Act will never actually take effect under any circumstances"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a good example of a fact worth checking against current, dated sources — the Act's phased implementation timeline means the practical regulatory landscape continued evolving after the initial signing, so verifying current status is worthwhile if precision matters for your purpose.",
+    "tags": ["genius-act", "regulatory-timeline"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-014",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "genius-act-reserve-requirements",
+    "difficulty": "advanced",
+    "question": "What reserve requirement does the GENIUS Act impose on permitted payment stablecoin issuers?",
+    "options": [
+      "100% reserve backing using liquid assets such as U.S. dollars or short-term Treasury instruments",
+      "No reserve backing requirement of any kind",
+      "A requirement to back stablecoins exclusively with other, more volatile cryptocurrencies",
+      "A requirement to back stablecoins with real estate holdings only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This reserve requirement directly addresses the transparency and backing concerns highlighted by prior stablecoin failures — codifying into federal law a standard that some issuers had previously followed only voluntarily.",
+    "tags": ["genius-act", "reserve-requirements"],
+    "reference": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/"
+  },
+  {
+    "id": "stablecoins-015",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "stablecoins-vs-cbdc",
+    "difficulty": "advanced",
+    "question": "How does a privately-issued stablecoin fundamentally differ from a Central Bank Digital Currency (CBDC)?",
+    "options": [
+      "A stablecoin is typically issued by a private company; a CBDC is a digital currency issued and directly backed by a country's central bank/government itself",
+      "They are exactly the same thing with two different names",
+      "CBDCs are always built by private companies, never governments",
+      "Stablecoins are always issued directly by central banks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This distinction matters for understanding the crypto/digital-currency landscape broadly — CBDCs represent official, sovereign digital currency, while most stablecoins in wide circulation today are issued by private companies (subject to whatever regulatory framework applies, like the GENIUS Act).",
+    "tags": ["cbdc-comparison", "stablecoin-vs-cbdc"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-016",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "redemption-process-concept",
+    "difficulty": "intermediate",
+    "question": "What does 'redemption' generally mean for a fiat-collateralized stablecoin?",
+    "options": [
+      "The process of exchanging the stablecoin back for the underlying fiat currency (or equivalent) from the issuer, at (ideally) the pegged rate",
+      "A synonym for permanently destroying the stablecoin with no value returned",
+      "A process exclusive to algorithmic stablecoins",
+      "A term unrelated to how stablecoins function"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Redemption is a core mechanism supporting the peg — the ability (in principle) to reliably convert the stablecoin back to its underlying value helps anchor its market price near the target peg.",
+    "tags": ["redemption", "peg-mechanism"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-017",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "stablecoins-in-trading",
+    "difficulty": "beginner",
+    "question": "Why are stablecoins commonly used as a trading pair on cryptocurrency exchanges?",
+    "options": [
+      "They let traders move in and out of volatile positions while holding value in a relatively stable form, without needing to fully cash out to traditional banking each time",
+      "Stablecoins cannot be used for trading under any circumstances",
+      "Exchanges are legally required to use only Bitcoin as their sole trading pair",
+      "Stablecoins are exclusively used for long-term storage, never trading"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stablecoins offer a practical 'parking spot' for value within the crypto ecosystem — avoiding the friction and delay of converting to traditional fiat currency every time a trader wants to reduce exposure to a volatile asset.",
+    "tags": ["trading-use-case", "practical-value"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-018",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "remittances-use-case",
+    "difficulty": "intermediate",
+    "question": "How have stablecoins been used in the context of international remittances (sending money across borders)?",
+    "options": [
+      "As a potentially faster and cheaper alternative for certain cross-border transfers compared to some traditional remittance channels, though outcomes and practical usability vary by corridor and use case",
+      "Stablecoins have never been used for any cross-border payment purpose",
+      "Stablecoins are legally required for all international money transfers worldwide",
+      "Stablecoins guarantee instant, free transfers in every country with no exceptions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuinely explored use case with real potential benefits in some contexts, but it's presented here with appropriate hedging rather than a sweeping claim — actual practicality depends heavily on specific corridors, regulations, and on/off-ramp availability in each situation.",
+    "tags": ["remittances", "use-cases"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-019",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "stablecoin-market-leaders",
+    "difficulty": "intermediate",
+    "question": "As of recent years, which two stablecoins have generally held the largest market capitalization among fiat-collateralized stablecoins?",
+    "options": [
+      "USDT (Tether) and USDC (USD Coin)",
+      "Bitcoin and Ethereum",
+      "Two stablecoins that have never actually existed",
+      "Only one stablecoin has ever existed at any time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "USDT and USDC have consistently been cited as the largest fiat-collateralized stablecoins by market capitalization — note that specific rankings and market caps change over time, so this reflects a general, sustained pattern rather than a fixed, permanent snapshot.",
+    "tags": ["market-overview", "major-stablecoins"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-020",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "not-all-stablecoins-equal-risk",
+    "difficulty": "intermediate",
+    "question": "Is it accurate to say all stablecoins carry the exact same level of risk, simply because they're all labeled 'stablecoin'?",
+    "options": [
+      "No — risk varies significantly based on the specific backing mechanism (fiat reserves, crypto collateral, or algorithmic design), issuer transparency, and regulatory compliance",
+      "Yes, every stablecoin carries identical risk with no meaningful distinctions",
+      "Stablecoins carry zero risk of any kind, always",
+      "Risk assessment is irrelevant when evaluating any stablecoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Terra/UST case study demonstrates this clearly — 'stablecoin' describes an intended design goal, not a guarantee, and the underlying mechanism and issuer practices matter enormously for actual risk.",
+    "tags": ["risk-assessment", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "stablecoins-021",
+    "class": "class-10",
+    "subject": "stablecoins",
+    "topic": "stablecoins-and-defi-connection",
+    "difficulty": "intermediate",
+    "question": "How do stablecoins commonly connect to the DeFi (Decentralized Finance) ecosystem covered in the next subject?",
+    "options": [
+      "Stablecoins are frequently used within DeFi protocols as a relatively stable unit of account, for lending, borrowing, and providing liquidity",
+      "Stablecoins have no relationship to DeFi whatsoever",
+      "DeFi protocols are legally prohibited from using any stablecoin",
+      "Stablecoins can only be used outside of any DeFi context"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This connection sets up the next subject in the curriculum — stablecoins' relative price stability makes them a foundational building block within many DeFi applications, which are explored in much greater depth next.",
+    "tags": ["defi-connection", "curriculum-bridge"],
+    "reference": null
+  }
+]

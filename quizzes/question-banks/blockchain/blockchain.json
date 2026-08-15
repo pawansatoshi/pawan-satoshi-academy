@@ -1,0 +1,452 @@
+[
+  {
+    "id": "blockchain-001",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "what-is-blockchain",
+    "difficulty": "beginner",
+    "question": "What is a 'blockchain,' as a general technology concept (beyond any one specific cryptocurrency)?",
+    "options": [
+      "A distributed digital ledger that records data in linked, cryptographically-secured blocks, maintained across many participants rather than one central authority",
+      "A single company's private database with no distributed component",
+      "A term that only ever refers to Bitcoin specifically, with no broader meaning",
+      "A type of computer hardware chip"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blockchain is the broader underlying technology category — Bitcoin is one specific, well-known implementation of it, but the concept itself (a distributed, tamper-resistant ledger) has applications and other implementations beyond Bitcoin, as this subject explores.",
+    "tags": ["blockchain-fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-002",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "distributed-ledger-concept",
+    "difficulty": "beginner",
+    "question": "What does it mean for a blockchain to be a 'distributed ledger'?",
+    "options": [
+      "Copies of the ledger (record of transactions/data) are maintained across many independent participants, rather than stored in one central location controlled by a single party",
+      "The ledger is physically distributed by mail to random addresses",
+      "Only one single computer in the entire world holds the ledger",
+      "The ledger changes completely every time someone views it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Distribution across many independent nodes is central to blockchain's resilience — there's no single point of failure or single party that can unilaterally alter the historical record without the network noticing.",
+    "tags": ["distributed-ledger", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-003",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "block-chain-structure",
+    "difficulty": "beginner",
+    "question": "Why is it called a 'blockchain' — what does the basic structure look like?",
+    "options": [
+      "Data is grouped into 'blocks,' and each new block is cryptographically linked to the previous one, forming a connected chain of blocks in sequence",
+      "It refers to a chain used to physically secure computer hardware",
+      "Each block is completely disconnected and unrelated to every other block",
+      "The term has no relationship to the technology's actual structure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Each block contains a reference (a cryptographic hash) to the block before it — this linking is what forms the 'chain' and is fundamental to why altering historical data becomes extremely difficult without being detected.",
+    "tags": ["block-structure", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-004",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "hash-linking-blocks",
+    "difficulty": "intermediate",
+    "question": "How does each block's link to the previous block make the historical record tamper-resistant?",
+    "options": [
+      "Each block includes a hash derived from the previous block's data — changing any earlier block would change its hash, breaking the chain of references in every subsequent block",
+      "Blocks are linked using a physical wire connecting different computers",
+      "Blocks have no actual cryptographic connection to each other at all",
+      "Only the very first block in the chain has any security measures applied"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Because each block's hash depends on the data of the block before it, tampering with old data would cascade — invalidating every subsequent block's hash — making unauthorized changes to history immediately detectable across the network.",
+    "tags": ["hash-linking", "immutability-mechanism"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-005",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "merkle-trees",
+    "difficulty": "advanced",
+    "question": "What is a 'Merkle tree,' at a conceptual level, and why is it useful in blockchain systems?",
+    "options": [
+      "A data structure that efficiently summarizes many individual transactions into a single combined hash, allowing quick and efficient verification without needing to check every transaction individually",
+      "A physical tree used to grow computer hardware components",
+      "A type of malware that specifically targets blockchain networks",
+      "A term unrelated to any blockchain technology"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Merkle trees let a block efficiently represent and verify a large number of transactions through a single summary hash, without every participant needing to process each individual transaction to confirm the block's integrity.",
+    "tags": ["merkle-trees", "technical-structure"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-006",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "immutability-concept",
+    "difficulty": "intermediate",
+    "question": "What does 'immutability' mean in the context of blockchain data?",
+    "options": [
+      "Once data is confirmed and added to the chain (with enough subsequent blocks), it becomes extremely impractical to alter or remove without the change being obvious to the network",
+      "It means blockchain data can be freely edited by anyone at any time with no consequence",
+      "Immutability means the blockchain physically cannot be accessed by anyone",
+      "It's a term with no real technical meaning in blockchain systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Immutability is a practical property (extremely difficult and costly to alter, not literally physically impossible in absolute theory) that emerges from the combination of cryptographic linking and distributed consensus — a key reason blockchains are trusted for maintaining historical records.",
+    "tags": ["immutability", "core-properties"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-007",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "consensus-mechanisms-overview",
+    "difficulty": "intermediate",
+    "question": "What is the general purpose of a 'consensus mechanism' in a blockchain network?",
+    "options": [
+      "A method for the network's participants to agree on the valid, single version of the ledger, without needing to trust each other individually or rely on a central authority",
+      "A mechanism that only exists to slow down transaction processing",
+      "A voting system exclusively controlled by a single company",
+      "A term with no actual function in blockchain systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consensus mechanisms solve the core challenge of decentralized agreement — different blockchains use different approaches (Proof of Work, Proof of Stake, and others), each with different tradeoffs, but all aiming to achieve reliable agreement without central coordination.",
+    "tags": ["consensus-mechanisms", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-008",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "proof-of-stake-concept",
+    "difficulty": "intermediate",
+    "question": "What is the basic idea behind 'Proof of Stake' as a consensus mechanism, as a general alternative to Proof of Work?",
+    "options": [
+      "Instead of competing through computational work, participants ('validators') lock up ('stake') a quantity of the network's own cryptocurrency as collateral, gaining the right to validate transactions and blocks in proportion to their stake",
+      "Proof of Stake requires no cryptocurrency or collateral of any kind",
+      "It's a mechanism identical to Proof of Work in every way",
+      "Proof of Stake was the very first consensus mechanism ever created, before Proof of Work"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Proof of Stake ties validation rights to economic stake rather than computational competition — generally associated with significantly lower energy consumption than Proof of Work, though it introduces its own distinct tradeoffs and design considerations. Ethereum's own transition to this mechanism is covered in more depth in the Ethereum subject.",
+    "tags": ["proof-of-stake", "consensus-mechanisms"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-009",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "permissionless-vs-permissioned",
+    "difficulty": "intermediate",
+    "question": "What's the difference between a 'permissionless' and a 'permissioned' blockchain?",
+    "options": [
+      "A permissionless blockchain allows anyone to join and participate without approval; a permissioned blockchain restricts participation to specific, approved participants, often controlled by an organization",
+      "There is no meaningful difference between the two categories",
+      "Permissioned blockchains are always faster than every permissionless blockchain in every case",
+      "Permissionless blockchains require a government license to use"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bitcoin and Ethereum are examples of permissionless (public) blockchains anyone can join. Permissioned (often 'private' or 'consortium') blockchains are used by organizations wanting the technology's benefits with controlled access — each approach fits different use cases.",
+    "tags": ["permissionless", "permissioned", "blockchain-types"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-010",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "public-vs-private-blockchains",
+    "difficulty": "intermediate",
+    "question": "Why might a company choose a private/permissioned blockchain instead of a public one like Bitcoin or Ethereum?",
+    "options": [
+      "For use cases needing controlled access, faster transaction processing among known participants, or specific privacy/compliance requirements not suited to a fully public, open network",
+      "Private blockchains are technically impossible to build",
+      "There is never a legitimate reason to choose a private blockchain over a public one",
+      "Private blockchains always have exactly the same properties as public ones with no tradeoffs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Different use cases call for different tradeoffs — a public blockchain maximizes openness and censorship-resistance, while a private one might prioritize speed, controlled membership, or specific regulatory/business requirements among trusted participants.",
+    "tags": ["public-private-blockchains", "use-case-tradeoffs"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-011",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "smart-contracts-intro",
+    "difficulty": "intermediate",
+    "question": "At a basic conceptual level, what is a 'smart contract'?",
+    "options": [
+      "Self-executing code stored on a blockchain that automatically carries out predefined actions when specific conditions are met",
+      "A traditional paper legal contract that has been scanned into a computer",
+      "A contract that requires a lawyer to manually execute every single clause",
+      "A term exclusive to Bitcoin, unrelated to any other blockchain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Smart contracts let blockchains do more than just record transfers of currency — they can encode programmable logic and conditions. This concept is explored in much greater depth in the Ethereum subject, where smart contracts play a central role.",
+    "tags": ["smart-contracts", "programmable-blockchains"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-012",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "blockchain-trilemma",
+    "difficulty": "advanced",
+    "question": "What does the 'blockchain trilemma' generally describe?",
+    "options": [
+      "A widely-discussed idea that blockchain systems tend to face tradeoffs between three properties — decentralization, security, and scalability — with design choices often strengthening one at some cost to the others",
+      "A rule that legally requires every blockchain to have exactly three developers",
+      "A guarantee that all three properties can always be maximized simultaneously with no tradeoffs",
+      "A term with no real relevance to blockchain design"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a widely referenced framework (not a strict mathematical law) for discussing the genuine design tradeoffs blockchain architects navigate — different projects make different choices about where to prioritize along these three dimensions.",
+    "tags": ["blockchain-trilemma", "design-tradeoffs"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-013",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "51-percent-attack",
+    "difficulty": "advanced",
+    "question": "What is a '51% attack' on a blockchain network?",
+    "options": [
+      "A scenario where a single entity or coalition gains control of a majority of the network's mining power (or stake), potentially allowing them to manipulate transaction ordering or reverse recent transactions",
+      "An attack that requires exactly 51 individual hackers working together",
+      "A type of attack that is mathematically impossible on any blockchain",
+      "A feature intentionally built into every blockchain by its designers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a genuine theoretical (and in some smaller networks, historically realized) risk — the larger and more distributed a network's total computing power or stake, the more expensive and impractical such an attack becomes, which is part of why network size and decentralization matter for security.",
+    "tags": ["51-percent-attack", "security-risks"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-014",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "blockchain-vs-traditional-database",
+    "difficulty": "intermediate",
+    "question": "How does a blockchain fundamentally differ from a typical centralized database (like one a single company might run)?",
+    "options": [
+      "A blockchain distributes control and verification across many independent participants with no single administrator, while a traditional database is typically controlled and can be altered by whoever administers it",
+      "There is no meaningful difference between the two at all",
+      "Traditional databases are always distributed across thousands of independent computers",
+      "Blockchains can never store any type of data that a traditional database can store"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The key distinction is trust and control — a traditional database ultimately depends on trusting whoever administers it, while a blockchain's distributed verification reduces (though doesn't eliminate) the need for that kind of centralized trust.",
+    "tags": ["blockchain-vs-database", "comparisons"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-015",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "blockchain-use-cases-beyond-currency",
+    "difficulty": "intermediate",
+    "question": "Beyond cryptocurrency, what are some other areas where blockchain technology has been explored or applied?",
+    "options": [
+      "Supply chain tracking, digital identity, voting systems research, and record-keeping for things like property titles or academic credentials, among others",
+      "Blockchain technology has no applications outside of cryptocurrency whatsoever",
+      "Blockchain can only ever be used to store financial transaction data",
+      "Every real-world blockchain use case beyond currency has already proven a complete success with zero challenges"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blockchain's properties (tamper-resistance, distributed verification) have motivated exploration in various non-currency domains — though it's worth noting many of these remain exploratory or face real practical challenges, rather than being uniformly proven, widely-adopted solutions.",
+    "tags": ["use-cases", "applications"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-016",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "layer-1-vs-layer-2-general",
+    "difficulty": "advanced",
+    "question": "In general blockchain terminology, what's the difference between a 'Layer 1' and a 'Layer 2' solution?",
+    "options": [
+      "Layer 1 refers to the base blockchain protocol itself; Layer 2 refers to a separate protocol built on top of it, often designed to improve scalability or reduce costs while relying on the base layer for security",
+      "Layer 1 and Layer 2 are two completely unrelated, competing technologies with no connection",
+      "Layer 2 always replaces Layer 1 entirely once implemented",
+      "This distinction has no real meaning in blockchain design"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This general framing applies across different blockchain ecosystems — Bitcoin's Lightning Network and various Ethereum scaling solutions (explored further in the Base subject) are both examples of Layer 2 approaches built on their respective Layer 1 base chains.",
+    "tags": ["layer-1", "layer-2", "scaling-concepts"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-017",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "asset-tokenization",
+    "difficulty": "intermediate",
+    "question": "What does 'tokenization' mean in a blockchain context (distinct from the payment-card tokenization covered in Digital Payments)?",
+    "options": [
+      "Representing ownership or rights to an asset (which could be a currency, a digital collectible, or even a real-world asset) as a digital token recorded on a blockchain",
+      "The exact same concept as payment card tokenization, with no distinction whatsoever",
+      "A process that only applies to physical gold specifically",
+      "A term with no actual technical meaning in blockchain systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While the word 'tokenization' is used in both payments and blockchain contexts, the underlying concepts differ — here it refers to representing an asset's ownership or attributes as a blockchain-based token, a concept explored further when this curriculum reaches Web3 and DeFi.",
+    "tags": ["tokenization", "digital-assets"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-018",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "network-nodes-general",
+    "difficulty": "beginner",
+    "question": "What is a 'node,' generally, in a blockchain network?",
+    "options": [
+      "A computer that participates in the network, typically holding a copy of the blockchain and helping validate or relay data",
+      "A physical piece of jewelry containing cryptocurrency",
+      "A term exclusive to Bitcoin with no broader blockchain meaning",
+      "A synonym for a blockchain's total maximum data storage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nodes are the participants that collectively make a blockchain network function — this general concept applies across different blockchain systems, not just Bitcoin's specific full-node implementation covered in that subject.",
+    "tags": ["nodes", "network-participants"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-019",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "interoperability-concept",
+    "difficulty": "advanced",
+    "question": "What does 'interoperability' refer to, in the context of multiple different blockchain networks?",
+    "options": [
+      "The ability for different, separate blockchain networks to communicate, share data, or transfer assets between each other",
+      "A single blockchain's ability to run twice as fast as normal",
+      "A term describing when a blockchain has no way to interact with anything else",
+      "A feature that only theoretically exists but has never been attempted in practice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since different blockchains are often independent, separate systems by default, interoperability solutions (like bridges) aim to let value or data move between them — an active, evolving area of blockchain technology with genuine technical challenges.",
+    "tags": ["interoperability", "cross-chain"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-020",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "blockchain-forks-general",
+    "difficulty": "advanced",
+    "question": "In general blockchain terminology (beyond Bitcoin's specific fork history), what causes a blockchain 'fork'?",
+    "options": [
+      "A divergence in the blockchain's history or rules, which can happen due to a protocol upgrade, a disagreement among the community, or even temporarily due to normal network conditions before resolving",
+      "Forks only ever happen due to a hardware malfunction",
+      "The term 'fork' has no meaning outside of Bitcoin specifically",
+      "A fork always and immediately destroys the entire original blockchain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Forks are a general blockchain phenomenon, not unique to Bitcoin — they can be brief and self-resolving (temporary forks during normal operation) or more significant and lasting (like intentional protocol upgrades or contentious community splits).",
+    "tags": ["forks-general", "protocol-evolution"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-021",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "gas-fees-concept",
+    "difficulty": "intermediate",
+    "question": "What is the general idea behind 'gas fees' on programmable blockchains?",
+    "options": [
+      "A cost paid by users to have the network process their transaction or execute their smart contract code, often varying with network demand and the computational complexity involved",
+      "A literal fee for purchasing gasoline",
+      "A fee that is always exactly zero on every blockchain",
+      "A one-time fee paid only when a blockchain is first created"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Gas fees compensate the network for the computational resources a transaction consumes — this concept is central to Ethereum specifically and is explored in much more detail in that subject.",
+    "tags": ["gas-fees", "transaction-costs"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-022",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "scalability-challenges",
+    "difficulty": "advanced",
+    "question": "Why do many blockchain networks face 'scalability' challenges as they grow more popular?",
+    "options": [
+      "Design choices that support strong decentralization and security (like requiring broad network agreement) can limit how many transactions the network can process quickly, especially compared to centralized systems",
+      "Scalability has never been a real challenge for any blockchain network in practice",
+      "Scalability challenges only ever affect private, permissioned blockchains",
+      "More users always automatically make a blockchain network faster with no downsides"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This connects directly to the blockchain trilemma — achieving high transaction throughput while maintaining strong decentralization and security is a genuine, ongoing engineering challenge across the blockchain space, motivating solutions like Layer 2 scaling.",
+    "tags": ["scalability", "design-challenges"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-023",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "transparency-property",
+    "difficulty": "intermediate",
+    "question": "What does 'transparency' typically mean for a public blockchain?",
+    "options": [
+      "Transaction data is generally visible to anyone who wants to inspect it, though this doesn't necessarily reveal the real-world identity behind an address (see the Pseudonymity concept in the Bitcoin subject)",
+      "Transparency means every user's real name and address is automatically published",
+      "Transparency is a property found only in private, permissioned blockchains",
+      "Transparency has no relevance to how public blockchains function"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Public blockchain transparency means the transaction history itself is openly auditable by anyone — this is distinct from identity transparency, which is a separate consideration explored in the Bitcoin subject's pseudonymity discussion.",
+    "tags": ["transparency", "public-ledgers"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-024",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "why-blockchain-matters-conceptually",
+    "difficulty": "beginner",
+    "question": "What core problem does blockchain technology, as a general concept, attempt to solve?",
+    "options": [
+      "Enabling multiple parties who don't necessarily trust each other to agree on and maintain a shared, tamper-resistant record — without relying on one single trusted central authority",
+      "Making internet connections faster for everyday web browsing",
+      "Replacing the need for any kind of digital communication",
+      "Blockchain technology doesn't attempt to solve any particular problem"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is the foundational value proposition across virtually all blockchain applications — establishing trust and agreement in a distributed way, which is why the technology has been explored well beyond its original cryptocurrency use case.",
+    "tags": ["core-purpose", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "blockchain-025",
+    "class": "class-8",
+    "subject": "blockchain",
+    "topic": "blockchain-not-automatically-anonymous",
+    "difficulty": "intermediate",
+    "question": "Is it accurate to describe blockchain technology in general as inherently 'anonymous'?",
+    "options": [
+      "Not necessarily — this varies significantly by specific blockchain design; many public blockchains are actually pseudonymous and transparent rather than anonymous, while some specialized privacy-focused designs aim for stronger anonymity",
+      "Yes, all blockchains without exception guarantee complete, total anonymity",
+      "No blockchain has ever offered any privacy features of any kind",
+      "Anonymity is a concept that doesn't apply to blockchain technology at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blockchain privacy properties vary considerably by specific design — this general subject and the earlier Bitcoin subject both emphasize that 'anonymous' is often a misapplied label; the more accurate and nuanced picture depends on the specific blockchain in question.",
+    "tags": ["privacy-misconceptions", "critical-thinking"],
+    "reference": null
+  }
+]

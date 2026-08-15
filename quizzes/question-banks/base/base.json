@@ -1,0 +1,362 @@
+[
+  {
+    "id": "base-001",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "what-is-base",
+    "difficulty": "beginner",
+    "question": "What is Base?",
+    "options": [
+      "An Ethereum Layer 2 blockchain developed by Coinbase, designed to offer lower fees and faster transactions while relying on Ethereum for underlying security",
+      "A completely independent Layer 1 blockchain with no connection to Ethereum",
+      "A cryptocurrency exchange, unrelated to any blockchain network",
+      "A hardware wallet manufactured by Coinbase"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Base is a Layer 2 network — it doesn't replace Ethereum, but extends it, processing transactions more cheaply and quickly while ultimately settling and inheriting security from the Ethereum mainnet.",
+    "tags": ["fundamentals", "definitions"],
+    "reference": "https://www.coinbase.com/blog/introducing-base"
+  },
+  {
+    "id": "base-002",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "base-launch-timeline",
+    "difficulty": "beginner",
+    "question": "When did Base's testnet and public mainnet launch?",
+    "options": [
+      "Testnet in February 2023, public mainnet on August 9, 2023",
+      "Both launched simultaneously in 2015",
+      "Testnet in 2020, mainnet in 2021",
+      "Base has never actually launched a mainnet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coinbase announced Base and launched its testnet on February 23, 2023, followed by the public mainnet launch on August 9, 2023 — notably, Base was the first blockchain launched by a publicly traded company.",
+    "tags": ["history", "launch-timeline"],
+    "reference": "https://www.coinbase.com/blog/introducing-base"
+  },
+  {
+    "id": "base-003",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "who-created-base",
+    "difficulty": "beginner",
+    "question": "Which company developed and incubated Base?",
+    "options": [
+      "Coinbase",
+      "The Ethereum Foundation",
+      "A government agency",
+      "Bitcoin Core developers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coinbase, one of the largest cryptocurrency exchanges, built Base internally — leading it was Jesse Pollak, described in Coinbase's own materials as the creator of Base.",
+    "tags": ["history", "coinbase"],
+    "reference": "https://www.coinbase.com/blog/introducing-base"
+  },
+  {
+    "id": "base-004",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "op-stack-origin",
+    "difficulty": "intermediate",
+    "question": "What technology was Base originally built on when it launched?",
+    "options": [
+      "The OP Stack, an open-source framework originally developed by Optimism (another Ethereum Layer 2 project)",
+      "A completely proprietary, closed-source codebase built entirely from scratch by Coinbase alone",
+      "The exact same codebase as the original Bitcoin protocol",
+      "No underlying framework of any kind was used"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Base launched using the OP Stack, and Coinbase became a core development team alongside OP Labs. Note: as with any actively developed protocol, this technical relationship can evolve over time — verify current architecture details from official sources if precision matters for your purpose.",
+    "tags": ["op-stack", "technical-origin"],
+    "reference": null
+  },
+  {
+    "id": "base-005",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "superchain-vision",
+    "difficulty": "intermediate",
+    "question": "What is the 'Superchain' vision that Base was originally built to be part of?",
+    "options": [
+      "A concept for a network of interconnected Layer 2 chains (built on the OP Stack) sharing standards, governance, and bridging infrastructure, aiming for interoperability between them",
+      "A single, physically larger version of a normal server",
+      "A term with no actual technical meaning",
+      "A completely separate cryptocurrency exchange"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Superchain concept envisions multiple OP Stack-based chains working together more seamlessly than fully independent blockchains typically do — this is a stated architectural vision, and its practical realization is an ongoing, evolving effort rather than a fully completed system.",
+    "tags": ["superchain", "op-stack"],
+    "reference": null
+  },
+  {
+    "id": "base-006",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "base-architecture-evolution-2026",
+    "difficulty": "advanced",
+    "question": "Has Base's technical relationship with the OP Stack remained completely static since its 2023 launch?",
+    "options": [
+      "No — this is an example of a network-dependent detail that can change over time; reporting from February 2026 indicated Base was moving toward consolidating more of its own codebase rather than depending on the original OP Stack partnership structure",
+      "Yes, the relationship has been contractually frozen and unchangeable since 2023",
+      "Base has never had any relationship with the OP Stack at any point",
+      "This kind of architectural detail could never realistically change for any blockchain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This question is included specifically as an example of why version/network-dependent technical details shouldn't be treated as permanent facts — always check current, dated sources for the latest architecture rather than assuming a launch-era description still applies unchanged.",
+    "tags": ["base-architecture-evolution-2026", "evolving-technology"],
+    "reference": null
+  },
+  {
+    "id": "base-007",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "no-native-token",
+    "difficulty": "intermediate",
+    "question": "Does Base have its own native cryptocurrency token (separate from ETH)?",
+    "options": [
+      "No — Coinbase has explicitly stated it has no plans to issue a native Base network token; gas fees on Base are paid in ETH",
+      "Yes, Base has always had a mandatory native token required for every transaction",
+      "Base uses Bitcoin exclusively for all of its gas fees",
+      "This has never been publicly addressed by Coinbase in any way"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is an important, explicitly stated fact directly from Coinbase's own announcement — and a critical scam-awareness point, since the absence of an official Base token makes any 'Base token' offered elsewhere inherently suspicious.",
+    "tags": ["no-native-token", "scam-awareness"],
+    "reference": "https://www.coinbase.com/blog/introducing-base"
+  },
+  {
+    "id": "base-008",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "fake-token-scam-awareness",
+    "difficulty": "intermediate",
+    "question": "Given that Base has no official native token, what should you do if you see an offer to buy or claim a 'Base token' or 'Base coin'?",
+    "options": [
+      "Treat it with extreme suspicion — since Base has no official token, any such offer is very likely a scam impersonating the project",
+      "Trust it automatically since it references a real, legitimate Layer 2 network",
+      "Assume it must be legitimate if it has a professional-looking website",
+      "Purchase it immediately before the supposed opportunity disappears"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This directly connects the Bitcoin subject's phishing-awareness principles to a Base-specific scenario — scammers frequently exploit the existence of a legitimate, well-known project name to sell fake associated tokens.",
+    "tags": ["scam-awareness", "fake-tokens"],
+    "reference": null
+  },
+  {
+    "id": "base-009",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "evm-equivalence",
+    "difficulty": "intermediate",
+    "question": "What does it mean that Base is 'EVM-equivalent'?",
+    "options": [
+      "Smart contracts written for Ethereum (in Solidity or Vyper) can generally run on Base without needing modification",
+      "Base has no relationship to the Ethereum Virtual Machine whatsoever",
+      "EVM-equivalence means Base and Ethereum are the exact same network with no distinction",
+      "It means Base can only run contracts written in a language exclusive to Coinbase"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This compatibility is a major practical benefit — developers already familiar with Ethereum smart contract development (covered in the Ethereum subject) don't need to learn a fundamentally new environment to build on Base.",
+    "tags": ["evm-equivalence", "developer-experience"],
+    "reference": null
+  },
+  {
+    "id": "base-010",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "optimistic-rollups",
+    "difficulty": "advanced",
+    "question": "What type of Layer 2 scaling technology does Base use?",
+    "options": [
+      "Optimistic rollups — transactions are assumed valid by default, with a window of time during which they can be challenged if fraud is suspected",
+      "A technology completely unrelated to rollups of any kind",
+      "A system requiring every transaction to be manually approved by a human before processing",
+      "The identical Proof of Work mining system used by Bitcoin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Optimistic rollups bundle many transactions together and post summarized data to Ethereum, assuming validity unless challenged — this 'optimistic' approach is what necessitates the withdrawal challenge period covered next.",
+    "tags": ["optimistic-rollups", "scaling-technology"],
+    "reference": null
+  },
+  {
+    "id": "base-011",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "withdrawal-challenge-period",
+    "difficulty": "advanced",
+    "question": "Why can withdrawing funds from Base back to Ethereum mainnet take about a week, rather than being instant?",
+    "options": [
+      "The optimistic rollup design includes a challenge window (commonly around 7 days) during which a fraud proof could theoretically be submitted, before a withdrawal is considered fully final",
+      "This delay exists purely due to unrelated banking regulations",
+      "Withdrawals from Base are always instant with no waiting period at all",
+      "The delay is caused entirely by internet connection speed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This waiting period is a direct consequence of the optimistic rollup security model — it gives time for anyone to challenge a fraudulent transaction before withdrawals are treated as fully settled and irreversible.",
+    "tags": ["withdrawal-delays", "security-model"],
+    "reference": null
+  },
+  {
+    "id": "base-012",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "sequencer-concept",
+    "difficulty": "advanced",
+    "question": "What is a 'sequencer,' as relevant to how Base (and similar rollups) currently process transactions?",
+    "options": [
+      "An entity responsible for ordering and batching transactions before they're posted to Ethereum — Base's sequencer has been operated by Coinbase, representing a degree of centralization the project has stated intent to progressively reduce",
+      "A physical piece of computer hardware unrelated to transaction processing",
+      "A term with no actual technical function on Base",
+      "A fully decentralized system with thousands of independent, anonymous sequencers from day one"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Many rollups, including Base at launch, initially rely on a single sequencer for practical reasons — this represents a genuine centralization tradeoff that Base has publicly stated an intention to address through progressive decentralization over time.",
+    "tags": ["sequencer", "decentralization-tradeoffs"],
+    "reference": null
+  },
+  {
+    "id": "base-013",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "progressive-decentralization",
+    "difficulty": "advanced",
+    "question": "What does 'progressive decentralization' mean in the context of Base's stated roadmap?",
+    "options": [
+      "An intent to gradually reduce reliance on centralized components (like a single sequencer) over time, moving toward greater decentralization as the network matures",
+      "A promise that Base was fully, completely decentralized from the very first day of its launch",
+      "A plan to make Base more centralized over time, not less",
+      "A term with no connection to Base's actual roadmap"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coinbase's own announcement materials describe incubating Base with a stated plan to progressively decentralize the chain over time — worth understanding as a stated intent and ongoing process, not a fully realized end-state, and one worth checking current status on if precise decentralization details matter for your purpose.",
+    "tags": ["progressive-decentralization", "roadmap"],
+    "reference": "https://help.coinbase.com/en/coinbase/other-topics/other/base"
+  },
+  {
+    "id": "base-014",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "why-layer-2-lower-fees",
+    "difficulty": "intermediate",
+    "question": "Why can transactions on Base generally cost significantly less than transactions directly on Ethereum mainnet?",
+    "options": [
+      "By batching many transactions together and posting compressed data to Ethereum rather than processing each one individually on the base layer, the cost per individual transaction is substantially reduced",
+      "Base transactions cost less because they receive no security guarantees whatsoever",
+      "There is no actual fee difference between Base and Ethereum mainnet",
+      "Base transactions are cheaper because they are not real, verifiable transactions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This batching/rollup efficiency is the core mechanism behind Layer 2 cost savings — users still benefit from Ethereum's underlying security, but the shared, batched processing spreads the base-layer cost across many transactions.",
+    "tags": ["fee-efficiency", "rollup-mechanics"],
+    "reference": null
+  },
+  {
+    "id": "base-015",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "gas-paid-in-eth",
+    "difficulty": "beginner",
+    "question": "What currency is used to pay gas fees for transactions on Base?",
+    "options": [
+      "ETH",
+      "A dedicated Base-only token",
+      "Bitcoin",
+      "US Dollars directly, with no cryptocurrency involved"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consistent with having no native token, Base uses ETH for gas fees — the same asset used on Ethereum mainnet, simplifying the experience for users already familiar with ETH.",
+    "tags": ["gas-fees", "eth-usage"],
+    "reference": null
+  },
+  {
+    "id": "base-016",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "base-not-a-separate-l1",
+    "difficulty": "intermediate",
+    "question": "Is Base a completely separate, independent Layer 1 blockchain, unrelated to Ethereum?",
+    "options": [
+      "No — Base is a Layer 2 network that depends on and settles to Ethereum; it is not an independent Layer 1",
+      "Yes, Base operates with zero technical or security relationship to Ethereum",
+      "Base and Ethereum are actually the exact same single network",
+      "Base predates Ethereum and Ethereum was built on top of it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a common point of confusion worth being explicit about — Base's security and finality ultimately depend on the Ethereum mainnet, distinguishing it fundamentally from an independent Layer 1 like Bitcoin or Ethereum itself.",
+    "tags": ["layer-2-clarification", "misconceptions"],
+    "reference": null
+  },
+  {
+    "id": "base-017",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "why-notable-public-company",
+    "difficulty": "intermediate",
+    "question": "Why was Base's launch considered notable within the crypto industry?",
+    "options": [
+      "It was widely reported as the first blockchain launched by a publicly traded company, given Coinbase's status as a major, publicly listed exchange",
+      "It was the very first blockchain ever created in history",
+      "It was the first blockchain to ever process a single transaction",
+      "There was nothing notable about its launch"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A major, publicly traded financial company building and operating its own blockchain infrastructure was seen as a significant milestone, reflecting mainstream institutional engagement with blockchain technology.",
+    "tags": ["significance", "industry-milestone"],
+    "reference": null
+  },
+  {
+    "id": "base-018",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "coinbase-ecosystem-access",
+    "difficulty": "intermediate",
+    "question": "What practical advantage did Base's connection to Coinbase's existing platform offer developers building on it?",
+    "options": [
+      "Potential access and exposure to Coinbase's large existing user base, alongside integration with Coinbase's broader product ecosystem",
+      "Access to Coinbase's user base has no relevance to why developers might choose to build on Base",
+      "Developers building on Base are legally barred from having any users",
+      "Base offers no practical advantages of any kind over any other network"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This distribution advantage — potential exposure to Coinbase's substantial verified user base — was cited as one of the strategic reasons for Base's design and positioning within the broader Layer 2 landscape.",
+    "tags": ["ecosystem-advantages", "distribution"],
+    "reference": null
+  },
+  {
+    "id": "base-019",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "base-security-inheritance",
+    "difficulty": "intermediate",
+    "question": "In what sense does Base 'inherit' security from Ethereum?",
+    "options": [
+      "Base's transaction data and dispute-resolution mechanisms ultimately rely on and settle to Ethereum's underlying, highly secure consensus layer",
+      "Base has an entirely separate security model with no relationship to Ethereum whatsoever",
+      "Security inheritance means Base literally copies Ethereum's private keys",
+      "Base's security is based entirely on Coinbase's corporate reputation alone, with no technical basis"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a core value proposition of Ethereum Layer 2s generally — by anchoring to Ethereum, they benefit from Ethereum's established, battle-tested security rather than needing to bootstrap an entirely independent security model from scratch.",
+    "tags": ["security-inheritance", "layer-2-design"],
+    "reference": null
+  },
+  {
+    "id": "base-020",
+    "class": "class-10",
+    "subject": "base",
+    "topic": "layer-2-use-cases-on-base",
+    "difficulty": "beginner",
+    "question": "What kinds of applications have been built on Base since its launch?",
+    "options": [
+      "A range of decentralized applications, including NFT platforms, DeFi protocols, and consumer-focused apps, benefiting from Base's lower transaction costs",
+      "Base can only ever be used for a single, fixed type of application",
+      "No applications have ever been successfully built on Base",
+      "Base exclusively supports applications built by Coinbase itself, with no outside developers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As an open, EVM-equivalent platform, Base has attracted a range of third-party developers building various application types — consistent with the general dApp/DeFi concepts covered in earlier subjects, now applied in a lower-cost Layer 2 context.",
+    "tags": ["use-cases", "ecosystem"],
+    "reference": null
+  }
+]

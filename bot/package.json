@@ -1,0 +1,30 @@
+{
+  "name": "pawan-satoshi-academy-bot",
+  "version": "0.1.0",
+  "description": "Discord bot for Pawan Satoshi Academy — free Web3 and digital literacy learning ecosystem",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "lint": "eslint src tests scripts",
+    "lint:fix": "eslint src tests scripts --fix",
+    "test": "node --test tests/",
+    "deploy:commands": "node scripts/deploy-commands.js",
+    "bootstrap:server": "node scripts/bootstrap-server.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "pino-pretty": "^11.3.0"
+  }
+}

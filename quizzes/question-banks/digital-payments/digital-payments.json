@@ -1,0 +1,561 @@
+[
+  {
+    "id": "digital-payments-001",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "what-are-digital-payments",
+    "difficulty": "beginner",
+    "question": "What does 'digital payments' broadly refer to?",
+    "options": [
+      "Any transfer of money conducted electronically, without physical cash changing hands",
+      "Only payments made using cryptocurrency",
+      "Payments that can only happen between banks, never individuals",
+      "A payment method that no longer exists"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Digital payments cover a broad range of electronic money movement — debit/credit cards, bank transfers, mobile wallets, UPI, and cryptocurrency are all forms of digital payments, not just crypto specifically.",
+    "tags": ["fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-002",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "debit-vs-credit-cards",
+    "difficulty": "beginner",
+    "question": "What is the key difference between a debit card and a credit card?",
+    "options": [
+      "A debit card draws directly from your own bank account balance; a credit card borrows money from the card issuer, which you repay later",
+      "They are functionally identical with no real difference",
+      "Debit cards can only be used online; credit cards only in physical stores",
+      "Credit cards can never charge interest"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Debit cards spend money you already have. Credit cards extend a line of credit that you borrow against and must repay, often with interest if not paid in full by the due date.",
+    "tags": ["debit-cards", "credit-cards"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-003",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "how-card-payments-work",
+    "difficulty": "intermediate",
+    "question": "At a high level, what happens when you tap or swipe a card to pay?",
+    "options": [
+      "The transaction request routes through the card network and your bank to verify funds/credit, then approves or declines the payment",
+      "The merchant instantly receives physical cash from your bank",
+      "The payment is processed entirely offline with no verification",
+      "Your card stores the actual money physically inside its chip"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Card payments involve a real-time authorization process between the merchant, card network (like Visa/Mastercard), and your bank, verifying you have sufficient funds/credit before approving the transaction.",
+    "tags": ["card-payments", "how-it-works"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-004",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "upi-basics",
+    "difficulty": "beginner",
+    "question": "What is UPI (Unified Payments Interface)?",
+    "options": [
+      "A real-time payment system (widely used in India) that lets you transfer money directly between bank accounts using a mobile app",
+      "A type of credit card exclusive to one bank",
+      "A cryptocurrency wallet",
+      "A method for withdrawing cash from an ATM without a card"
+    ],
+    "correctAnswer": 0,
+    "explanation": "UPI enables instant, direct bank-to-bank transfers using just a mobile app and a UPI ID or QR code, without needing to share full bank account or card details for each transaction.",
+    "tags": ["upi", "mobile-payments"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-005",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "upi-safety",
+    "difficulty": "intermediate",
+    "question": "A message asks you to 'enter your UPI PIN to RECEIVE money.' What should you know about this?",
+    "options": [
+      "This is a common scam pattern — you never need to enter your UPI PIN to receive money, only to send/approve outgoing payments",
+      "This is completely normal and required to receive any payment",
+      "UPI PINs are only used for withdrawing cash from ATMs",
+      "Entering your PIN in this scenario guarantees you'll receive money instantly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A UPI PIN authorizes outgoing/debit transactions, not incoming ones. Scammers exploit this misunderstanding by sending fake 'payment request' prompts disguised as 'receive money' actions — entering your PIN actually sends money TO the scammer.",
+    "tags": ["upi", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-006",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "mobile-wallets",
+    "difficulty": "beginner",
+    "question": "What is a 'mobile wallet' (like Apple Pay, Google Pay, or Paytm)?",
+    "options": [
+      "An app that securely stores payment information (cards, bank details) so you can pay without physically presenting a card",
+      "A physical wallet with a built-in phone charger",
+      "A type of cryptocurrency exchange",
+      "A wallet that can only hold cash, not card details"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mobile wallets digitize your payment methods, often using tokenization (see below) so you can pay via your phone without exposing your actual card number to every merchant.",
+    "tags": ["mobile-wallets", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-007",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "tokenization",
+    "difficulty": "advanced",
+    "question": "What is 'tokenization' in the context of mobile/digital payments?",
+    "options": [
+      "Replacing your actual card number with a unique, randomly generated token for each transaction/device, so the real number is never exposed to the merchant",
+      "Converting your money into cryptocurrency tokens automatically",
+      "A method for splitting a bill among multiple people",
+      "A loyalty points system used by retailers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tokenization protects your actual card number by substituting it with a device-specific token during transactions — even if that token is intercepted, it typically can't be reused elsewhere or reveal your real card number.",
+    "tags": ["tokenization", "payment-security"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-008",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "payment-gateways",
+    "difficulty": "intermediate",
+    "question": "What does a 'payment gateway' do for an online store?",
+    "options": [
+      "Securely captures and processes a customer's payment information, connecting the store to banks/card networks to complete the transaction",
+      "Physically ships products to customers",
+      "Designs the store's website layout",
+      "Manages the store's social media accounts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A payment gateway (like Stripe or Razorpay) securely handles the sensitive process of authorizing and processing a payment, so individual merchants don't need to build this infrastructure themselves.",
+    "tags": ["payment-gateways", "e-commerce"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-009",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "chargebacks",
+    "difficulty": "intermediate",
+    "question": "What is a 'chargeback'?",
+    "options": [
+      "A process where a cardholder disputes a transaction and the bank reverses the charge, often used for fraud or undelivered goods",
+      "A discount automatically applied at checkout",
+      "A fee charged for using a card internationally",
+      "The process of recharging your phone's mobile data"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chargebacks let cardholders formally dispute unauthorized or problematic transactions through their bank/card issuer, which can reverse the charge — an important consumer protection, though it can also be misused fraudulently.",
+    "tags": ["chargebacks", "consumer-protection"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-010",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "qr-code-payments",
+    "difficulty": "beginner",
+    "question": "What should you double-check before paying via a QR code at a shop?",
+    "options": [
+      "That the QR code and the payment amount/recipient shown match what you expect — QR codes can be tampered with or swapped",
+      "Nothing — QR codes are always guaranteed to be safe and correct",
+      "Only whether the QR code image is high resolution",
+      "QR code payments don't require any verification step at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "There have been real cases of fraudulent QR codes being placed over legitimate ones, redirecting payments elsewhere. Always confirm the recipient name and amount shown in your app before confirming payment.",
+    "tags": ["qr-codes", "payment-safety"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-011",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "payment-scams",
+    "difficulty": "intermediate",
+    "question": "A stranger overpays you for an item and asks you to refund the 'extra' amount separately. What is this a classic sign of?",
+    "options": [
+      "An overpayment scam — the original payment is often later reversed/fraudulent, leaving you having sent real money for nothing",
+      "A generous customer with no ulterior motive",
+      "A standard, safe refund process used by all payment platforms",
+      "A required step for all online marketplace transactions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In this common scam, the original 'overpayment' is often fraudulent (stolen card, fake check, or later reversed), while the refund you send back is real money leaving your account — the net result is you lose money.",
+    "tags": ["payment-scams", "fraud-patterns"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-012",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "buy-now-pay-later",
+    "difficulty": "intermediate",
+    "question": "What is 'Buy Now, Pay Later' (BNPL)?",
+    "options": [
+      "A payment option that lets you receive a purchase immediately while paying for it in installments over time",
+      "A feature that lets you buy items with no payment ever required",
+      "A type of cryptocurrency payment method exclusively",
+      "A loyalty rewards program"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BNPL services split a purchase into installments, often interest-free if paid on schedule — but late or missed payments can trigger fees or credit impacts, so it's still a form of credit requiring discipline.",
+    "tags": ["bnpl", "consumer-credit"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-013",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "recurring-payments-subscriptions",
+    "difficulty": "beginner",
+    "question": "Why should you periodically review your recurring subscriptions/auto-payments?",
+    "options": [
+      "It's easy to forget about small recurring charges that add up over time, or subscriptions you no longer use",
+      "Recurring payments automatically cancel themselves after 3 months",
+      "Reviewing subscriptions has no financial benefit",
+      "Subscriptions can never be canceled once started"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Small recurring charges are easy to lose track of, and 'subscription creep' can quietly drain money over months or years — a periodic review habit helps you catch and cancel what you no longer need.",
+    "tags": ["subscriptions", "financial-habits"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-014",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "transaction-notifications",
+    "difficulty": "beginner",
+    "question": "Why is it useful to enable real-time transaction alerts (SMS/app notifications) for your bank and cards?",
+    "options": [
+      "It lets you immediately spot unauthorized or unexpected transactions, so you can react quickly",
+      "Transaction alerts increase your bank fees",
+      "Alerts are purely for marketing purposes with no security value",
+      "Enabling alerts is required by law worldwide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Immediate alerts mean you're far more likely to notice fraudulent activity right away rather than discovering it weeks later during a statement review, giving you a much faster window to report and limit damage.",
+    "tags": ["transaction-alerts", "fraud-detection"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-015",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "otp-safety",
+    "difficulty": "beginner",
+    "question": "Someone calls claiming to be from your bank and asks you to share the OTP (one-time password) you just received. What should you do?",
+    "options": [
+      "Never share it — banks never legitimately need you to read them your OTP over a call",
+      "Share it immediately since they claimed to be from your bank",
+      "Share only half of the OTP digits as a compromise",
+      "Share it if they sound professional and confident"
+    ],
+    "correctAnswer": 0,
+    "explanation": "OTPs exist specifically to verify that YOU are authorizing a transaction — no legitimate bank employee needs you to read it to them. This is one of the most common and effective payment scam techniques.",
+    "tags": ["otp", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-016",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "international-transfers",
+    "difficulty": "intermediate",
+    "question": "Why might a traditional international bank wire transfer be slower and more expensive than some newer digital alternatives?",
+    "options": [
+      "Traditional wires often route through multiple intermediary banks, each adding time and fees, compared to some direct digital transfer services",
+      "International transfers are technically impossible through traditional banks",
+      "All transfer methods cost exactly the same amount, always",
+      "Speed and cost have nothing to do with how many institutions are involved"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Traditional cross-border wires can pass through a chain of correspondent banks, each taking a cut and adding processing time — this is part of the motivation behind newer digital payment rails, including certain crypto/stablecoin use cases covered later in the curriculum.",
+    "tags": ["international-transfers", "payment-infrastructure"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-017",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "digital-payment-reversibility",
+    "difficulty": "intermediate",
+    "question": "How does the reversibility of a typical bank/card payment compare to sending cryptocurrency?",
+    "options": [
+      "Bank/card payments often have dispute and reversal mechanisms (chargebacks); most cryptocurrency transactions are irreversible once confirmed",
+      "Both are always fully reversible under any circumstance",
+      "Both are always completely irreversible with no exceptions",
+      "Cryptocurrency transactions are always more reversible than card payments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a foundational difference to understand before reaching the Web3 subjects later in the curriculum: traditional digital payments often have consumer protections like chargebacks, while most blockchain transactions are final once confirmed — mistakes or scams typically can't be undone.",
+    "tags": ["reversibility", "web3-connection"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-018",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "digital-payment-fees",
+    "difficulty": "beginner",
+    "question": "Why might a merchant charge an extra fee for using a credit card versus cash or a direct bank transfer?",
+    "options": [
+      "Card networks and processors charge merchants a transaction fee (interchange fee), which some merchants pass on to customers",
+      "Credit card fees are entirely invented by merchants with no real cost basis",
+      "Cash transactions always cost more for merchants to process",
+      "This practice is illegal everywhere in the world"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Processing card payments isn't free for merchants — networks and banks charge a percentage-based fee per transaction, which is sometimes passed to the customer as a surcharge, depending on local regulations.",
+    "tags": ["payment-fees", "merchant-costs"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-019",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "safe-online-checkout-habits",
+    "difficulty": "beginner",
+    "question": "Before entering your card details on an unfamiliar online store, what's a reasonable safety check?",
+    "options": [
+      "Verify the site uses HTTPS, research the store's reputation, and consider using a virtual/temporary card number if available",
+      "Enter your details immediately without any further thought",
+      "Only worry about this if you're buying something expensive",
+      "There's no way to reduce risk when shopping at unfamiliar stores"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A combination of technical checks (HTTPS), reputation research (reviews, how long the store has existed), and tools like virtual card numbers (which limit exposure of your real card) all reduce risk on unfamiliar sites.",
+    "tags": ["online-checkout", "payment-safety"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-020",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "virtual-cards",
+    "difficulty": "intermediate",
+    "question": "What is a 'virtual card number,' and why might you use one for online purchases?",
+    "options": [
+      "A temporary, often single-use or limited card number linked to your real account, which limits exposure if it's ever compromised",
+      "A card that only exists inside a video game",
+      "A permanent replacement for your physical card everywhere",
+      "A card that cannot be used for any online purchase"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Virtual cards let you generate a disposable or merchant-locked card number for a specific purchase or subscription — if that number is ever leaked, your actual card details remain safe and the virtual number can simply be canceled.",
+    "tags": ["virtual-cards", "payment-safety"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-021",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "peer-to-peer-payment-apps",
+    "difficulty": "beginner",
+    "question": "When using a peer-to-peer payment app (like Venmo, Cash App, or UPI apps) to pay a stranger for goods, what's an important caution?",
+    "options": [
+      "These apps are designed for trusted transfers between people you know — using them for stranger transactions (like online marketplace sales) often lacks the buyer/seller protections of dedicated platforms",
+      "These apps offer identical fraud protection to a full e-commerce platform",
+      "There's no meaningful difference between paying a friend and paying a stranger via these apps",
+      "Peer-to-peer apps are never appropriate for any kind of payment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "P2P payment apps are built for trusted, known-party transfers. Using them for anonymous marketplace transactions removes the dispute-resolution protections a dedicated e-commerce/escrow platform would typically provide.",
+    "tags": ["p2p-payments", "marketplace-safety"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-022",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "advance-fee-scams",
+    "difficulty": "intermediate",
+    "question": "You're told you've won a prize, but must first pay a small 'processing fee' to receive it. What is this pattern called?",
+    "options": [
+      "An advance-fee scam — legitimate prizes and winnings never require you to pay money upfront to receive them",
+      "A standard, legitimate business practice used by all prize programs",
+      "A tax required by the government before any prize can be claimed",
+      "This is always a real and safe opportunity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Advance-fee scams convince victims to pay a small amount upfront for a promised larger reward that never actually arrives. Genuine prizes and refunds don't require you to pay money first to receive money.",
+    "tags": ["advance-fee-scams", "fraud-patterns"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-023",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "escrow-services",
+    "difficulty": "intermediate",
+    "question": "What is an 'escrow' service in the context of an online transaction?",
+    "options": [
+      "A trusted third party that holds payment until both the buyer and seller confirm the transaction terms have been met",
+      "A type of bank loan",
+      "A discount code applied at checkout",
+      "A feature that automatically doubles your payment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Escrow reduces risk in transactions between parties who don't fully trust each other — the payment is held neutrally until delivery/conditions are confirmed, protecting both sides from the other reneging.",
+    "tags": ["escrow", "transaction-safety"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-024",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "contactless-nfc-payments",
+    "difficulty": "beginner",
+    "question": "How does a 'tap to pay' (contactless/NFC) transaction generally work?",
+    "options": [
+      "Your card or phone communicates briefly with the payment terminal over short-range wireless signal (NFC) to authorize the transaction",
+      "It requires inserting the card and typing a PIN every time with no exceptions",
+      "It transmits your full card number in plain, unencrypted text over Wi-Fi",
+      "It only works if your phone has an active internet connection at that exact moment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NFC (Near Field Communication) allows short-range, secure data exchange between your card/phone and the terminal — combined with tokenization, this makes contactless payments both convenient and reasonably secure.",
+    "tags": ["contactless-payments", "nfc"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-025",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "bill-splitting-apps",
+    "difficulty": "beginner",
+    "question": "What's a practical benefit of using a bill-splitting feature in a payment app when dining with friends?",
+    "options": [
+      "It simplifies dividing a shared expense accurately and requesting each person's share directly through the app",
+      "It automatically pays the entire bill for free",
+      "It removes the need for anyone to actually pay anything",
+      "It only works if exactly two people are splitting the bill"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bill-splitting features calculate and request individual shares directly, avoiding the awkwardness and math errors of manually dividing a shared expense.",
+    "tags": ["bill-splitting", "practical-tools"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-026",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "reviewing-statements",
+    "difficulty": "beginner",
+    "question": "Why is it good practice to regularly review your bank/card statements, even if you also have transaction alerts enabled?",
+    "options": [
+      "Statements provide a complete record you can review for patterns or smaller charges you might not have noticed individually",
+      "Reviewing statements is purely a formality with zero practical benefit",
+      "Statements are only useful once a year during tax season",
+      "Transaction alerts make statement review completely unnecessary"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Individual alerts can be missed or ignored, but a periodic full statement review helps catch patterns — like a series of small, easy-to-overlook fraudulent charges — that might not stand out one at a time.",
+    "tags": ["statement-review", "financial-habits"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-027",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "reporting-fraud",
+    "difficulty": "intermediate",
+    "question": "You notice an unauthorized transaction on your account. What's the recommended immediate action?",
+    "options": [
+      "Contact your bank/card issuer immediately to report it and potentially freeze the card, then follow their dispute process",
+      "Wait until your next statement to see if it happens again",
+      "Post about it publicly on social media as the first step",
+      "Assume nothing can be done and ignore it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prompt reporting matters — most card issuers have time-sensitive fraud liability protections, and freezing the card quickly can prevent further unauthorized charges while the dispute is investigated.",
+    "tags": ["fraud-reporting", "incident-response"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-028",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "dark-patterns-in-subscriptions",
+    "difficulty": "advanced",
+    "question": "What is a 'dark pattern' as it relates to canceling a subscription?",
+    "options": [
+      "A deliberately confusing or obstructive design that makes canceling much harder than signing up, to discourage cancellation",
+      "A subscription that is only available at night",
+      "A required security feature that protects your payment info",
+      "A type of encryption used to protect subscription payments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Some services intentionally bury cancellation options behind confusing menus, phone-call requirements, or guilt-inducing prompts — recognizing this pattern helps you push through it rather than giving up and staying subscribed.",
+    "tags": ["dark-patterns", "consumer-awareness"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-029",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "currency-conversion-fees",
+    "difficulty": "intermediate",
+    "question": "When paying in a foreign currency online or while traveling, why might the final charged amount differ from the price you saw?",
+    "options": [
+      "Currency conversion fees and exchange rate markups from your card issuer or the merchant's payment processor can add to the cost",
+      "Foreign currency payments are always processed at zero additional cost",
+      "The price displayed is always guaranteed to be your exact final charge",
+      "Currency conversion is illegal and would never actually happen"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Both your card issuer and, sometimes, the merchant's payment system can apply conversion fees or a less favorable exchange rate — worth checking your card's foreign transaction fee policy before frequent international purchases.",
+    "tags": ["currency-conversion", "payment-fees"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-030",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "payment-app-two-factor",
+    "difficulty": "beginner",
+    "question": "Why is enabling extra authentication (PIN, biometric, or 2FA) specifically on your payment/wallet apps important, beyond your phone's general lock screen?",
+    "options": [
+      "It adds a dedicated layer of protection for financial actions specifically, in case your phone is ever unlocked by someone else briefly",
+      "Payment apps are automatically exempt from needing any additional security",
+      "It has no practical value if your phone already has a lock screen",
+      "This is only relevant for business accounts, never personal payment apps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A phone left briefly unlocked (handed to a child, glanced at by someone else) shouldn't automatically expose your ability to move money — app-level authentication adds a targeted extra barrier specifically around financial actions.",
+    "tags": ["app-security", "payment-apps"],
+    "reference": null
+  },
+  {
+    "id": "digital-payments-031",
+    "class": "class-3",
+    "subject": "digital-payments",
+    "topic": "refund-processing-expectations",
+    "difficulty": "beginner",
+    "question": "If a merchant issues you a refund, why might it not appear in your account instantly?",
+    "options": [
+      "Refunds typically take a few business days to process through the card network and your bank, even though the merchant initiated it right away",
+      "Refunds are always instant with zero exceptions",
+      "A delayed refund always means it's fraudulent",
+      "Refunds can only be processed once per calendar year"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike an instant payment, a refund reverses through the same multi-step network the original charge went through, which typically takes several business days — a normal delay, not necessarily a red flag on its own.",
+    "tags": ["refunds", "payment-processing"],
+    "reference": null
+  }
+]
+

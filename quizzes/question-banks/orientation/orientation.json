@@ -1,0 +1,759 @@
+[
+  {
+    "id": "orientation-001",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "academy-structure",
+    "difficulty": "beginner",
+    "question": "What is the correct learning path in Pawan Satoshi Academy, from start to finish?",
+    "options": [
+      "Orientation → Class 1 → Class 2 → ... → Class 12 → Graduation",
+      "Class 1 → Orientation → Graduation → Class 12",
+      "You can start at any class and finish in any order",
+      "Graduation → Orientation → Class 1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Academy follows one fixed sequence: Orientation first, then Class 1 through Class 12 in order, then Graduation. Each class builds on the one before it.",
+    "tags": ["structure", "curriculum"],
+    "reference": null
+  },
+  {
+    "id": "orientation-002",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "cost-policy",
+    "difficulty": "beginner",
+    "question": "How much does it cost to join, learn, take quizzes, and earn certificates in the Academy?",
+    "options": [
+      "Free for everything, forever",
+      "Free to join, but certificates cost money",
+      "A one-time fee to unlock all classes",
+      "Free for beginners, paid for advanced classes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Free Forever is a core principle of the Academy. Joining, learning, quizzes, and certificates never require payment — this is a permanent policy, not a promotional offer.",
+    "tags": ["cost-policy", "values"],
+    "reference": null
+  },
+  {
+    "id": "orientation-003",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "server-navigation",
+    "difficulty": "beginner",
+    "question": "Where do you go to find lessons for every subject, from Orientation through Graduation?",
+    "options": [
+      "The Academy Hub forum channel",
+      "A different text channel for each of the 22 subjects",
+      "Only the website — Discord has no lesson content at all",
+      "The #general-chat channel"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All curriculum content lives as organized threads inside one Academy Hub forum channel, rather than being spread across dozens of separate channels. This keeps navigation simple even though the curriculum is large.",
+    "tags": ["navigation", "academy-hub"],
+    "reference": null
+  },
+  {
+    "id": "orientation-004",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "verification-process",
+    "difficulty": "beginner",
+    "question": "What do you need to do before the rest of the server unlocks for you?",
+    "options": [
+      "Read the rules and complete verification in #verify",
+      "Wait 24 hours after joining",
+      "Message a moderator directly and ask for access",
+      "Post an introduction in #general-chat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "New members only see the START HERE category until they read the rules and click the verification button in #verify. That action assigns the Verified role, which unlocks the full server.",
+    "tags": ["verification", "onboarding"],
+    "reference": null
+  },
+  {
+    "id": "orientation-005",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "community-values",
+    "difficulty": "beginner",
+    "question": "Which of these best reflects the Academy's community philosophy?",
+    "options": [
+      "Learn before earn, and verify information before trusting it",
+      "Earn first, learning is optional",
+      "Trust every link and message from other members",
+      "Compete with other members rather than help them"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The community values state: learn before earn, verify before trusting, respect everyone, and help beginners. Especially in a Web3-adjacent community, verifying information before trusting it protects you from scams.",
+    "tags": ["values", "community-guidelines"],
+    "reference": null
+  },
+  {
+    "id": "orientation-006",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "safety-basics",
+    "difficulty": "beginner",
+    "question": "A staff member DMs you asking for your wallet seed phrase to 'verify your account.' What should you do?",
+    "options": [
+      "Never share it — no legitimate staff member will ever ask for this",
+      "Share it, since they said they're staff",
+      "Share only the first few words of the phrase",
+      "Ask them to prove they're staff first, then share it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nobody legitimate — not staff, not mentors, not the Owner — will ever ask for your seed phrase or private keys. This is always a scam, regardless of who appears to be asking.",
+    "tags": ["safety", "scam-awareness", "wallet-security"],
+    "reference": null
+  },
+  {
+    "id": "orientation-007",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "xp-and-roles",
+    "difficulty": "beginner",
+    "question": "How do you progress from the 'Verified' role to the 'Active' role?",
+    "options": [
+      "By earning XP through participation, quizzes, and challenges",
+      "By paying a membership fee",
+      "Automatically after 1 day in the server",
+      "By asking an Admin to manually promote you"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Role progression (Verified → Active → OG) is XP-based, earned through genuine participation like quizzes and daily challenges — not manual staff promotion or payment.",
+    "tags": ["xp", "roles", "gamification"],
+    "reference": null
+  },
+  {
+    "id": "orientation-008",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "getting-help",
+    "difficulty": "beginner",
+    "question": "You're stuck on a lesson and have a specific question. Where should you ask it?",
+    "options": [
+      "#questions or #help",
+      "DM the server Owner directly",
+      "Post it in #announcements",
+      "Wait until the next Sunday meeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "#questions and #help are the dedicated channels for getting unstuck. Mentors and other members actively watch these channels — you don't need to wait for a scheduled event or contact the Owner directly for routine questions.",
+    "tags": ["support", "navigation"],
+    "reference": null
+  },
+  {
+    "id": "orientation-009",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "mentor-system",
+    "difficulty": "beginner",
+    "question": "What is the role of a Mentor in the Academy?",
+    "options": [
+      "To help members learn — answering questions and holding office hours",
+      "To have the same authority as the server Owner",
+      "To decide who gets banned",
+      "To manage the GitHub repository"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mentors focus specifically on helping members learn: answering questions, encouraging progress, and holding office hours. They don't have Owner-level authority or repository management responsibilities by default.",
+    "tags": ["mentorship", "roles"],
+    "reference": null
+  },
+  {
+    "id": "orientation-010",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "weekly-meeting",
+    "difficulty": "beginner",
+    "question": "When does the Academy's regular community meeting happen?",
+    "options": [
+      "Sunday at 7 PM IST",
+      "Every day at midnight",
+      "Only once a month",
+      "There is no regular meeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The weekly community meeting — Q&A, quiz, announcements, roadmap updates — happens every Sunday at 7 PM IST in the #weekly-meeting voice channel.",
+    "tags": ["events", "meeting"],
+    "reference": null
+  },
+  {
+    "id": "orientation-011",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "certificates",
+    "difficulty": "beginner",
+    "question": "What do you need to do to earn a certificate at each level?",
+    "options": [
+      "Complete the required lessons and pass the required quizzes",
+      "Pay a certificate issuance fee",
+      "Simply join the server",
+      "Be nominated by another member"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Certificates are earned, not purchased or granted socially — you complete the required lessons and pass the quiz/exam threshold for that level (Orientation, Foundation, Intermediate, Advanced, Graduation).",
+    "tags": ["certificates", "progress"],
+    "reference": null
+  },
+  {
+    "id": "orientation-012",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "quiz-types",
+    "difficulty": "beginner",
+    "question": "Which of these is NOT one of the Academy's quiz types?",
+    "options": [
+      "Pay-to-skip Exam",
+      "Daily Quiz",
+      "Weekly Quiz",
+      "Monthly Exam"
+    ],
+    "correctAnswer": 0,
+    "explanation": "There is no way to pay to skip an exam — that would violate the Academy's free-forever, no-shortcuts policy. The real quiz types are Daily, Weekly, Monthly Exam, and Practice Mode.",
+    "tags": ["quizzes", "cost-policy"],
+    "reference": null
+  },
+  {
+    "id": "orientation-013",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "academy-scope",
+    "difficulty": "beginner",
+    "question": "Is Pawan Satoshi Academy only about cryptocurrency and Web3?",
+    "options": [
+      "No — it also covers digital literacy, cyber security, AI, and programming basics",
+      "Yes, it's exclusively focused on crypto trading",
+      "Yes, but only for advanced blockchain developers",
+      "No, it excludes Web3 entirely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The curriculum was deliberately expanded beyond crypto to serve absolute beginners: Internet Basics, Digital Literacy, Cyber Security, AI, Git/GitHub, Linux, and Programming are taught alongside Bitcoin, Blockchain, Ethereum, and other Web3 topics.",
+    "tags": ["curriculum", "scope"],
+    "reference": null
+  },
+  {
+    "id": "orientation-014",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "reporting-issues",
+    "difficulty": "beginner",
+    "question": "You spot a scam link posted in a channel. What's the best first action?",
+    "options": [
+      "Report it to a moderator/admin rather than clicking it or replying to it",
+      "Click the link to see if it's really a scam",
+      "Reply to the message warning others, then ignore it",
+      "DM the person who posted it asking why"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reporting suspicious content to staff is safer and more effective than investigating it yourself. The Academy also runs automated scam/phishing detection, but a human report is still the fastest way to get something reviewed.",
+    "tags": ["safety", "reporting", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "orientation-015",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "practice-mode",
+    "difficulty": "beginner",
+    "question": "What is the purpose of Practice Mode quizzes?",
+    "options": [
+      "Low-pressure practice on a subject of your choice, anytime",
+      "The only way to earn a certificate",
+      "A once-a-year mandatory exam",
+      "A leaderboard-only competitive mode"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Practice Mode lets you quiz yourself on any subject, anytime, without it counting toward a formal exam or deadline — it's there purely to help you learn and self-check understanding.",
+    "tags": ["quizzes", "practice-mode"],
+    "reference": null
+  },
+  {
+    "id": "orientation-016",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "discord-basics",
+    "difficulty": "beginner",
+    "question": "What does clicking 'I Accept the Rules' in #verify actually do, technically?",
+    "options": [
+      "It assigns you the Verified role, which unlocks other channels via permission settings",
+      "It sends your personal data to the Academy",
+      "It automatically enrolls you in Class 1",
+      "It changes your Discord username"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Behind the scenes, the button click triggers the bot to assign the Verified Discord role to your account. Every other category's visibility is controlled by permission overwrites tied to that role — that's the whole mechanism.",
+    "tags": ["discord-basics", "verification", "roles"],
+    "reference": "https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ"
+  },
+  {
+    "id": "orientation-017",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "leaderboard-hall-of-fame",
+    "difficulty": "beginner",
+    "question": "What's the difference between the Leaderboard and the Hall of Fame?",
+    "options": [
+      "Leaderboard shows current XP rankings; Hall of Fame recognizes standout achievements over time",
+      "They are the exact same thing with two different names",
+      "Leaderboard is for staff only; Hall of Fame is for everyone",
+      "Hall of Fame requires a paid subscription"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Leaderboard is a live, ongoing ranking based on XP. Hall of Fame is a more curated space recognizing notable achievements and contributions, updated periodically rather than in real time.",
+    "tags": ["gamification", "community"],
+    "reference": null
+  },
+  {
+    "id": "orientation-018",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "open-source",
+    "difficulty": "intermediate",
+    "question": "The Academy describes itself as 'open-source first.' What does that mean in practice?",
+    "options": [
+      "The bot and website code are maintained in a public GitHub repository anyone can inspect or contribute to",
+      "Only staff can ever see the source code",
+      "The curriculum content is kept secret until graduation",
+      "It means the Discord server itself is open to the public internet outside Discord"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Open-source first means the actual bot code, automation, and much of the documentation live in a public GitHub repository — anyone can read it, learn from it, and contribute improvements via pull requests.",
+    "tags": ["open-source", "github", "values"],
+    "reference": null
+  },
+  {
+    "id": "orientation-019",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "staff-hierarchy",
+    "difficulty": "intermediate",
+    "question": "In the Academy's role hierarchy, who has the final override authority over every automated action?",
+    "options": [
+      "The Owner",
+      "Any Moderator",
+      "The bot itself, with no human override",
+      "Whoever has been a member the longest"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Owner always retains full override control — no automation, bot, or staff role can act in a way the Owner cannot review, reverse, or disable. This is a deliberate, non-negotiable safety principle of the whole system.",
+    "tags": ["governance", "roles", "safety"],
+    "reference": null
+  },
+  {
+    "id": "orientation-020",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "why-forum-first",
+    "difficulty": "intermediate",
+    "question": "Why does the Academy use one Academy Hub forum channel instead of a separate text channel for each of the 22 subjects?",
+    "options": [
+      "To keep the server simple and beginner-friendly by avoiding channel overload, while still covering the full curriculum",
+      "Because Discord doesn't allow more than 10 channels per server",
+      "Because forum channels are cheaper to run",
+      "Because subjects are taught in a random, unstructured order"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A separate channel per subject would mean dozens of channels, which overwhelms new members. Forum threads let the full 22-subject curriculum exist without that channel sprawl — content is organized by topic within one forum instead.",
+    "tags": ["design-philosophy", "academy-hub", "beginner-friendly"],
+    "reference": null
+  },
+  {
+    "id": "orientation-021",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "long-form-content-location",
+    "difficulty": "intermediate",
+    "question": "Where should you go for long-form lessons, documentation, and downloadable study material?",
+    "options": [
+      "The GitHub Pages website",
+      "Discord voice channels",
+      "The #announcements channel",
+      "Direct messages from staff"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Discord is optimized for discussion, quizzes, and events — long-form reading material lives on the GitHub Pages website instead, since that's a better format for extended reading, especially on mobile.",
+    "tags": ["website", "content-strategy"],
+    "reference": null
+  },
+  {
+    "id": "orientation-022",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "ai-helper-intro",
+    "difficulty": "beginner",
+    "question": "If you type something like 'I am new' in a chat channel, what is the AI helper designed to do?",
+    "options": [
+      "Recognize the intent and guide you step by step starting from Orientation",
+      "Ignore it completely — the AI only responds to slash commands",
+      "Immediately assign you a certificate",
+      "Kick you from the server for testing the bot"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The AI helper is designed to recognize onboarding intent in natural language and proactively walk a new member through Orientation, rather than requiring them to already know which command or channel to use.",
+    "tags": ["ai-helper", "onboarding"],
+    "reference": null
+  },
+  {
+    "id": "orientation-023",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "existing-bots-transition",
+    "difficulty": "intermediate",
+    "question": "Why does the Academy keep its original third-party bots (like Welcomer or MEE6) running even while building a custom bot?",
+    "options": [
+      "So the community is never left without welcome/moderation/XP functionality during the transition",
+      "Because the custom bot is not allowed to have those features",
+      "Because third-party bots are mandatory forever",
+      "It doesn't — all old bots were removed immediately"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The migration follows a build → test → explicit approval → retire sequence. Old bots stay active until their custom replacement is proven to work, so the community never experiences a gap in functionality.",
+    "tags": ["migration", "governance"],
+    "reference": null
+  },
+  {
+    "id": "orientation-024",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "mobile-first",
+    "difficulty": "beginner",
+    "question": "The Academy is designed to be usable entirely from which kind of device?",
+    "options": [
+      "A mobile phone — no desktop required",
+      "Only a desktop computer with special software installed",
+      "A gaming console",
+      "It requires specialized hardware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mobile-first is a core design principle — every workflow, from learning to quizzes to server administration, is built to work from a phone browser or the Discord/GitHub mobile apps.",
+    "tags": ["accessibility", "design-philosophy"],
+    "reference": null
+  },
+  {
+    "id": "orientation-025",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "progressive-unlock",
+    "difficulty": "intermediate",
+    "question": "What is 'progressive unlock' as used in the Academy's server design?",
+    "options": [
+      "New members see only a small set of channels at first; more unlocks as they verify and progress",
+      "Every channel is visible to everyone from the moment they join",
+      "Channels unlock based on how much money a member has spent",
+      "It refers to unlocking Discord Nitro features"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Progressive unlock means the server doesn't show its full complexity at once. A brand-new member sees a small START HERE set; verifying unlocks the rest — this prevents the classic 'wall of channels' overwhelm.",
+    "tags": ["design-philosophy", "beginner-friendly"],
+    "reference": null
+  },
+  {
+    "id": "orientation-026",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "tickets",
+    "difficulty": "beginner",
+    "question": "What is the #tickets channel for?",
+    "options": [
+      "Opening a private support request that only you and staff can see",
+      "Buying event tickets for real-world meetups",
+      "Posting public complaints about other members",
+      "Submitting quiz answers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ticket system creates a private space for a member and staff to resolve something one-on-one, rather than airing account or personal issues in a public channel.",
+    "tags": ["support", "tickets"],
+    "reference": null
+  },
+  {
+    "id": "orientation-027",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "suggestions",
+    "difficulty": "beginner",
+    "question": "You have an idea to improve the Academy. Where should you post it?",
+    "options": [
+      "#suggestions",
+      "#scam-alerts",
+      "#hall-of-fame",
+      "Nowhere — members can't influence Academy decisions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "#suggestions exists specifically so members can propose improvements. The Academy explicitly describes itself as community-driven — member feedback is expected, not just tolerated.",
+    "tags": ["suggestions", "community-driven"],
+    "reference": null
+  },
+  {
+    "id": "orientation-028",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "showcase",
+    "difficulty": "beginner",
+    "question": "What would you post in #showcase?",
+    "options": [
+      "A project or achievement you're proud of, like a completed assignment or personal build",
+      "A complaint about another member",
+      "A scam link you found",
+      "Your private wallet address for donations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "#showcase is for celebrating what members have built or accomplished — it's a positive, achievement-focused space, distinct from general chat or support channels.",
+    "tags": ["community", "showcase"],
+    "reference": null
+  },
+  {
+    "id": "orientation-029",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "archive-policy",
+    "difficulty": "intermediate",
+    "question": "When a channel is no longer actively used, what does the Academy do with it?",
+    "options": [
+      "Moves it into the Archive category instead of deleting it",
+      "Deletes it immediately to save space",
+      "Leaves it exactly where it was, cluttering the active categories",
+      "Bans everyone who posted in it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Academy's policy is to archive old content rather than delete it — this preserves history and past discussions while keeping the active parts of the server uncluttered.",
+    "tags": ["archive", "data-preservation"],
+    "reference": null
+  },
+  {
+    "id": "orientation-030",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "study-groups",
+    "difficulty": "beginner",
+    "question": "What is the #study-groups forum for?",
+    "options": [
+      "Finding or forming a small group of members learning the same material together",
+      "Reporting bugs in the bot",
+      "Posting your final exam answers publicly",
+      "Requesting a refund"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Study groups let members pair up or form small groups to work through lessons together — peer learning is part of how the Academy supports members outside scheduled events.",
+    "tags": ["study-groups", "peer-learning"],
+    "reference": null
+  },
+  {
+    "id": "orientation-031",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "career-guidance",
+    "difficulty": "beginner",
+    "question": "At what point in the curriculum does Career Guidance content appear?",
+    "options": [
+      "At Graduation, alongside the capstone project and final exam",
+      "In Orientation only",
+      "It's not part of the curriculum at all",
+      "Randomly inserted between every class"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Career Guidance is part of the Graduation stage — by then, a member has the foundational and technical knowledge needed to make sense of career-oriented advice.",
+    "tags": ["career-guidance", "graduation"],
+    "reference": null
+  },
+  {
+    "id": "orientation-032",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "entertainment-channels",
+    "difficulty": "beginner",
+    "question": "Besides learning, what else does the Academy's #gaming channel and voice channels support?",
+    "options": [
+      "Free community activities like chess, to build community outside of coursework",
+      "Paid tournament entry",
+      "Gambling",
+      "Nothing — the Academy has no non-learning content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Academy intentionally includes free entertainment like chess and games, using Discord's built-in Activities where supported — never anything requiring payment or Nitro.",
+    "tags": ["community", "entertainment"],
+    "reference": null
+  },
+  {
+    "id": "orientation-033",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "data-privacy",
+    "difficulty": "intermediate",
+    "question": "What is the Academy's approach to collecting member data?",
+    "options": [
+      "Collect only the minimum needed to operate the community, and never sell it",
+      "Collect as much personal data as possible for analytics",
+      "Sell member data to advertisers to keep the Academy free",
+      "Require a government ID to join"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The privacy principle is minimal collection: only what's needed to run the community (like XP or quiz progress), and member data is never sold — this is explicit Academy policy, not just a default.",
+    "tags": ["privacy", "data-policy"],
+    "reference": null
+  },
+  {
+    "id": "orientation-034",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "warnings-and-appeals",
+    "difficulty": "intermediate",
+    "question": "If you receive a warning or ban you believe was a mistake, what can you do?",
+    "options": [
+      "Use the documented appeal process, reviewed by staff",
+      "Nothing — all moderation decisions are final and unappealable",
+      "Create a second account to bypass it",
+      "Post publicly attacking the moderator who issued it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Warnings and bans have a documented, staff-reviewed appeal process. Members are not left with no recourse if they believe a moderation action was wrong.",
+    "tags": ["moderation", "appeals", "fairness"],
+    "reference": null
+  },
+  {
+    "id": "orientation-035",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "self-promotion-rules",
+    "difficulty": "beginner",
+    "question": "Can you advertise your own project or channel in the Academy?",
+    "options": [
+      "Only in designated self-promotion channels, and never as unsolicited spam elsewhere",
+      "Yes, anywhere and anytime you want",
+      "No, self-promotion is completely banned everywhere",
+      "Only if you pay a promotion fee to the Academy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Self-promotion is allowed, but confined to designated spaces — it isn't free-for-all advertising in every channel, and unsolicited promotion outside those spaces is treated as spam.",
+    "tags": ["community-guidelines", "self-promotion"],
+    "reference": null
+  },
+  {
+    "id": "orientation-036",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "why-no-administrator-bots",
+    "difficulty": "intermediate",
+    "question": "Why does the Academy refuse to give the Administrator permission to any bot, including its own custom bot?",
+    "options": [
+      "Least-privilege security: a bot only gets exactly the permissions its features need, limiting damage if something goes wrong",
+      "Discord technically doesn't allow bots to have Administrator",
+      "Administrator permission costs extra on Discord",
+      "It's an arbitrary rule with no security reasoning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a deliberate least-privilege security principle: if a bot is ever compromised or bugged, its damage potential is limited to only the specific permissions it was granted — not full server control.",
+    "tags": ["security", "least-privilege", "governance"],
+    "reference": null
+  },
+  {
+    "id": "orientation-037",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "explicit-content-filter",
+    "difficulty": "intermediate",
+    "question": "How does the Academy protect the server from explicit/NSFW image content, without paying for a third-party image-scanning service?",
+    "options": [
+      "By using Discord's own built-in Explicit Content Filter, set to scan media from all members",
+      "By manually reviewing every image a member posts",
+      "By banning all image uploads entirely",
+      "It doesn't protect against this at all"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Discord provides a free, native Explicit Content Filter that can scan uploaded images. Setting it to the strictest level (scanning all members) satisfies NSFW protection without any paid API.",
+    "tags": ["security", "nsfw-protection"],
+    "reference": null
+  },
+  {
+    "id": "orientation-038",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "raid-protection-awareness",
+    "difficulty": "intermediate",
+    "question": "If a large number of suspicious new accounts join the server in a short burst, what is likely to happen automatically?",
+    "options": [
+      "The server temporarily raises its verification requirements and may remove very new accounts as a precaution",
+      "Nothing — the Academy has no automated protection against this",
+      "The entire server is deleted",
+      "All existing members are kicked"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Academy's anti-raid system detects unusually fast join bursts and responds automatically: temporarily raising verification level and removing very new accounts, then reverting once things are calm again.",
+    "tags": ["security", "anti-raid"],
+    "reference": null
+  },
+  {
+    "id": "orientation-039",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "audit-transparency",
+    "difficulty": "intermediate",
+    "question": "How does the Academy keep a record of important actions like role changes or moderation decisions?",
+    "options": [
+      "Through an audit log system that staff can review with a command",
+      "There is no record kept of anything",
+      "Only the Owner's personal memory",
+      "Screenshots posted manually by members"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Academy's audit system logs bot-driven actions and mirrors Discord's own native audit log into a staff-reviewable trail, so nothing important happens without a traceable record.",
+    "tags": ["audit", "transparency", "governance"],
+    "reference": null
+  },
+  {
+    "id": "orientation-040",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "no-guaranteed-returns",
+    "difficulty": "beginner",
+    "question": "If a mentor or member tells you a crypto investment is 'guaranteed' to make you money, what should you think?",
+    "options": [
+      "Be skeptical — Academy mentors are guided not to guarantee investment returns, and no legitimate source can promise that",
+      "Trust it completely since it came from inside the community",
+      "Invest everything you have immediately",
+      "Assume it must be true because they're a Mentor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mentor guidelines explicitly state mentors should never guarantee profits or investment returns. Any 'guaranteed returns' claim, from anyone, is a red flag worth treating with suspicion.",
+    "tags": ["safety", "scam-awareness", "mentorship"],
+    "reference": null
+  },
+  {
+    "id": "orientation-041",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "community-management-preview",
+    "difficulty": "beginner",
+    "question": "Community Management is one of the 22 curriculum subjects. What does it broadly prepare you for?",
+    "options": [
+      "Skills for helping run and grow an online community, like moderation basics and engagement",
+      "Only how to use Microsoft Excel",
+      "Physical event catering",
+      "Stock market day-trading"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Community Management, taught later in the curriculum, covers the practical skills behind running healthy online communities — directly useful given the Academy is itself a community members can help grow.",
+    "tags": ["curriculum-preview", "community-management"],
+    "reference": null
+  },
+  {
+    "id": "orientation-042",
+    "class": "orientation",
+    "subject": "orientation",
+    "topic": "why-mastery-based-quizzes",
+    "difficulty": "advanced",
+    "question": "Why does the Academy's quiz bank vary in size per subject (some subjects have far more questions than others) instead of a fixed number for every subject?",
+    "options": [
+      "Because question count should match how much genuine, non-repetitive content a topic actually supports — quality over an arbitrary quota",
+      "Because writing more questions is technically impossible for some subjects",
+      "Because larger subjects are more important and deserve more attention regardless of quality",
+      "The bank size is actually always identical for every subject"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A mastery-based approach avoids padding small topics with repetitive filler just to hit a quota, and avoids under-covering large topics just to keep things even. The right size is however many genuinely distinct, high-quality questions a topic supports.",
+    "tags": ["quiz-design", "quality-over-quantity"],
+    "reference": null
+  }
+]
+

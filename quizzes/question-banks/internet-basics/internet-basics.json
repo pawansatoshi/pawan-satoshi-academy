@@ -1,0 +1,812 @@
+[
+  {
+    "id": "internet-basics-001",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "what-is-the-internet",
+    "difficulty": "beginner",
+    "question": "What is the Internet, in simple terms?",
+    "options": [
+      "A global network of interconnected computers that can share information",
+      "A single website owned by one company",
+      "The same thing as the World Wide Web, with no difference at all",
+      "A type of computer hardware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Internet is the physical and logical network connecting billions of devices worldwide. It's the infrastructure that things like the Web, email, and apps run on top of.",
+    "tags": ["fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-002",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "internet-vs-web",
+    "difficulty": "beginner",
+    "question": "What is the difference between 'the Internet' and 'the World Wide Web'?",
+    "options": [
+      "The Internet is the network infrastructure; the Web is a service (websites/pages) that runs on top of it",
+      "They are exactly the same thing",
+      "The Web is older than the Internet",
+      "The Internet only refers to email"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Internet is the underlying global network. The World Wide Web is one of many services built on it — email, video calls, and file transfer are other services that also use the Internet but aren't 'the Web.'",
+    "tags": ["fundamentals", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-003",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "browsers",
+    "difficulty": "beginner",
+    "question": "What is a web browser?",
+    "options": [
+      "Software used to access and display websites, like Chrome, Firefox, or Safari",
+      "The company that owns the Internet",
+      "A type of computer virus",
+      "A physical cable that connects to the router"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A browser is the application you use to request and display web pages. Common examples include Chrome, Firefox, Safari, and Edge.",
+    "tags": ["browsers", "tools"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-004",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "browsers",
+    "difficulty": "beginner",
+    "question": "What does it mean to 'bookmark' a page in a browser?",
+    "options": [
+      "Save a shortcut to that page so you can revisit it quickly later",
+      "Permanently delete the page from the internet",
+      "Report the page as spam",
+      "Download the entire website to your device"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bookmarking saves a link to a page in your browser for quick access later, without needing to search for it again or remember the exact URL.",
+    "tags": ["browsers", "productivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-005",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "urls",
+    "difficulty": "beginner",
+    "question": "What does 'URL' stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Router Link",
+      "Unique Response Language",
+      "United Resource List"
+    ],
+    "correctAnswer": 0,
+    "explanation": "URL stands for Uniform Resource Locator — it's the full address used to find a specific resource (page, image, file) on the web.",
+    "tags": ["urls", "terminology"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-006",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "urls",
+    "difficulty": "beginner",
+    "question": "In the URL https://www.example.com/products, what is 'example.com' called?",
+    "options": [
+      "The domain name",
+      "The protocol",
+      "The file extension",
+      "The IP address"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'example.com' is the domain name — the human-readable address that identifies a specific website, which gets translated to an IP address behind the scenes by DNS.",
+    "tags": ["urls", "domains"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-007",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "http-vs-https",
+    "difficulty": "beginner",
+    "question": "What does the 'S' in HTTPS stand for, and why does it matter?",
+    "options": [
+      "Secure — it means the connection between you and the site is encrypted",
+      "Simple — it means the site loads faster",
+      "Standard — it means the site follows web design rules",
+      "Server — it means the site has its own server"
+    ],
+    "correctAnswer": 0,
+    "explanation": "HTTPS encrypts the data traveling between your browser and the website, protecting things like passwords and payment details from being intercepted. Always prefer HTTPS sites, especially for logins or payments.",
+    "tags": ["http-https", "security"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-008",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "http-vs-https",
+    "difficulty": "intermediate",
+    "question": "You're about to enter your password on a site whose address bar shows 'Not Secure' with plain http://. What should you do?",
+    "options": [
+      "Be cautious — avoid entering sensitive information, since the connection isn't encrypted",
+      "Proceed normally, it makes no difference",
+      "Enter your password twice to be extra safe",
+      "The warning only applies to online banking, not other logins"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 'Not Secure' warning on http:// means your data could be intercepted in transit. Treat this as a signal to be cautious about what information you submit on that page.",
+    "tags": ["http-https", "security", "safety"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-009",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "ip-addresses",
+    "difficulty": "beginner",
+    "question": "What is an IP address?",
+    "options": [
+      "A unique number that identifies a device on a network",
+      "A password used to log into websites",
+      "The name of your Internet browser",
+      "A type of computer virus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An IP (Internet Protocol) address is a numerical label assigned to each device connected to a network, allowing devices to find and communicate with each other.",
+    "tags": ["ip-addresses", "networking"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-010",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "dns",
+    "difficulty": "intermediate",
+    "question": "What does DNS do?",
+    "options": [
+      "Translates human-readable domain names (like google.com) into IP addresses computers use",
+      "Encrypts your internet traffic",
+      "Blocks pop-up advertisements",
+      "Speeds up your internet connection"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DNS (Domain Name System) acts like the internet's phone book — it converts domain names people type into the numerical IP addresses computers actually use to route traffic.",
+    "tags": ["dns", "networking"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-011",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "isps",
+    "difficulty": "beginner",
+    "question": "What is an ISP?",
+    "options": [
+      "Internet Service Provider — a company that provides your connection to the internet",
+      "Internal System Processor — a part of your computer's hardware",
+      "Internet Security Protocol — a type of antivirus software",
+      "International Software Program — a category of apps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An ISP (Internet Service Provider) is the company you pay for your internet connection, such as a cable, fiber, or mobile data provider.",
+    "tags": ["isps", "connectivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-012",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "wifi-vs-mobile-data",
+    "difficulty": "beginner",
+    "question": "What's a key difference between Wi-Fi and mobile data?",
+    "options": [
+      "Wi-Fi typically connects through a local router/network; mobile data connects directly through your carrier's cellular network",
+      "Wi-Fi only works on desktop computers",
+      "Mobile data is always faster than Wi-Fi",
+      "They are exactly the same technology"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Wi-Fi relies on a nearby router (often connected via an ISP), while mobile data connects your device directly to your carrier's cell towers — useful when you're away from a Wi-Fi network.",
+    "tags": ["wifi", "mobile-data", "connectivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-013",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "public-wifi-risks",
+    "difficulty": "intermediate",
+    "question": "Why should you be cautious using public Wi-Fi (like at a cafe or airport) for sensitive tasks like banking?",
+    "options": [
+      "Public networks are often less secure, making it easier for others on the same network to intercept your data",
+      "Public Wi-Fi is always slower, so it doesn't matter",
+      "Public Wi-Fi doesn't work with banking apps",
+      "There is no real risk — this is a myth"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Open, shared networks often lack the protections of a private home network, making certain kinds of data interception easier. It's safer to avoid sensitive logins or use a trusted VPN on public Wi-Fi.",
+    "tags": ["public-wifi", "safety", "security"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-014",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "bandwidth-and-speed",
+    "difficulty": "beginner",
+    "question": "What does 'bandwidth' refer to in an internet connection?",
+    "options": [
+      "The amount of data that can be transferred over the connection in a given time",
+      "The physical length of the network cable",
+      "The number of devices allowed to connect",
+      "The brand of your router"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bandwidth measures data transfer capacity (often in Mbps — megabits per second). Higher bandwidth generally means faster downloads/uploads and better performance for things like video streaming.",
+    "tags": ["bandwidth", "performance"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-015",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "downloading-uploading",
+    "difficulty": "beginner",
+    "question": "What's the difference between downloading and uploading?",
+    "options": [
+      "Downloading brings data from the internet to your device; uploading sends data from your device to the internet",
+      "They are two names for the exact same action",
+      "Downloading only applies to videos; uploading only applies to photos",
+      "Uploading is always faster than downloading"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Downloading = receiving data (e.g., saving a file to your phone). Uploading = sending data (e.g., posting a photo). Most home internet plans have different download and upload speeds.",
+    "tags": ["downloading", "uploading", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-016",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "email-basics",
+    "difficulty": "beginner",
+    "question": "What are the three main parts of a typical email address, using 'name@example.com' as an example?",
+    "options": [
+      "The username (name), the @ symbol, and the domain (example.com)",
+      "The subject line, the body, and the signature",
+      "The sender, the receiver, and the timestamp",
+      "The inbox, the outbox, and the spam folder"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An email address has a username, the @ symbol separating it from the domain, and the domain that hosts the mailbox — similar structure to a postal address with a name and a location.",
+    "tags": ["email", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-017",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "email-basics",
+    "difficulty": "intermediate",
+    "question": "What is the difference between 'CC' and 'BCC' when sending an email?",
+    "options": [
+      "CC recipients are visible to everyone; BCC recipients are hidden from other recipients",
+      "CC is for attachments; BCC is for the message body",
+      "They are the same, just different names",
+      "CC is only for internal company emails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CC (carbon copy) recipients can see who else received the email. BCC (blind carbon copy) recipients are hidden — other recipients won't know they were included.",
+    "tags": ["email", "etiquette"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-018",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "search-engines",
+    "difficulty": "beginner",
+    "question": "What is a search engine?",
+    "options": [
+      "A tool that helps you find information across the web by searching an index of pages",
+      "A type of computer virus",
+      "A device that speeds up your internet connection",
+      "A social media platform"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Search engines like Google or Bing crawl and index billions of pages, letting you search for relevant content using keywords instead of knowing exact web addresses.",
+    "tags": ["search-engines", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-019",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "search-engines",
+    "difficulty": "intermediate",
+    "question": "You want more precise search results for an exact phrase. What's an effective technique?",
+    "options": [
+      "Put the exact phrase in quotation marks, e.g. \"free Web3 courses\"",
+      "Type the query entirely in capital letters",
+      "Add as many unrelated keywords as possible",
+      "Search engines can't be made more precise"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Quotation marks tell most search engines to match that exact phrase, rather than treating each word independently — a simple but powerful way to narrow results.",
+    "tags": ["search-engines", "productivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-020",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "cloud-storage",
+    "difficulty": "beginner",
+    "question": "What is 'cloud storage'?",
+    "options": [
+      "Saving files on remote servers accessed over the internet, instead of only on your local device",
+      "A weather forecasting service",
+      "A type of computer virus protection",
+      "Storage that only works when it's raining, metaphorically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cloud storage (like Google Drive or Dropbox) keeps your files on remote servers, letting you access them from multiple devices anywhere with internet access, and often provides backup benefits.",
+    "tags": ["cloud-storage", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-021",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "file-types",
+    "difficulty": "beginner",
+    "question": "What does a file extension like '.pdf' or '.jpg' tell you?",
+    "options": [
+      "The type/format of the file, which determines what program is needed to open it",
+      "The exact size of the file in megabytes",
+      "The date the file was created",
+      "The owner of the file"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The extension after the dot indicates the file format — .pdf for documents, .jpg for images, .mp4 for video, etc. — which tells your device (and you) what kind of app can open it.",
+    "tags": ["file-types", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-022",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "file-types",
+    "difficulty": "intermediate",
+    "question": "Why might a scammer disguise a malicious file as something like 'invoice.pdf.exe'?",
+    "options": [
+      "To trick you into thinking it's a harmless document when it's actually an executable program",
+      "Because .exe files are always safe",
+      "Because double extensions make files load faster",
+      "This isn't a real technique used by scammers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Some systems hide the true (last) extension by default, so a file ending in '.pdf.exe' might display as just 'invoice.pdf' — tricking users into running a program instead of opening a document. Always check full file names carefully.",
+    "tags": ["file-types", "security", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-023",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "cookies",
+    "difficulty": "intermediate",
+    "question": "What are browser 'cookies'?",
+    "options": [
+      "Small pieces of data websites store on your device to remember information like login state or preferences",
+      "Malware that infects your computer",
+      "A snack you can order through certain websites",
+      "The cache of images your browser downloads"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cookies are small text files websites save in your browser to remember things like whether you're logged in, items in a shopping cart, or site preferences. They're normal, but can also be used for tracking.",
+    "tags": ["cookies", "privacy"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-024",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "tabs-and-windows",
+    "difficulty": "beginner",
+    "question": "What is the benefit of using multiple browser tabs instead of multiple separate windows?",
+    "options": [
+      "Tabs let you keep several pages open within one window, making it easier to switch between them without cluttering your screen",
+      "Tabs use significantly more device memory than separate windows",
+      "There is no difference at all",
+      "Tabs only work on mobile devices"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tabs let you organize multiple open pages within a single browser window, which is generally more space-efficient and easier to manage than juggling many separate windows.",
+    "tags": ["browsers", "productivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-025",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "browser-extensions",
+    "difficulty": "intermediate",
+    "question": "What's an important safety consideration before installing a browser extension?",
+    "options": [
+      "Check what permissions it requests and only install extensions from trustworthy sources — some can read everything you type or browse",
+      "All extensions are automatically safe since browsers review every single one perfectly",
+      "Extensions can't access any of your browsing data",
+      "You should install as many extensions as possible for convenience"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Some browser extensions request broad permissions (like reading all page content), which could be misused to capture sensitive data. Only install extensions you trust, and review their requested permissions.",
+    "tags": ["browser-extensions", "security"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-026",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "software-updates",
+    "difficulty": "beginner",
+    "question": "Why are software and browser updates important?",
+    "options": [
+      "They often include security fixes that patch vulnerabilities attackers could otherwise exploit",
+      "Updates exist only to add new visual themes",
+      "Updates always make your device slower with no other benefit",
+      "Updates are optional and never contain anything important"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Software updates frequently patch known security vulnerabilities. Delaying updates leaves you exposed to issues that have already been fixed by the developer but not yet applied to your device.",
+    "tags": ["software-updates", "security"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-027",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "backups",
+    "difficulty": "beginner",
+    "question": "What is a 'backup,' and why does it matter?",
+    "options": [
+      "A copy of your important data stored separately, so you don't lose everything if your device is lost, damaged, or hacked",
+      "A second internet connection in case your first one fails",
+      "A type of computer virus",
+      "The recycle bin/trash folder on your device"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Backups protect against data loss from device failure, theft, or ransomware — having your important files copied somewhere else (cloud or external drive) means one bad event doesn't mean losing everything.",
+    "tags": ["backups", "safety"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-028",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "netiquette",
+    "difficulty": "beginner",
+    "question": "What is 'netiquette'?",
+    "options": [
+      "Etiquette (polite, respectful behavior) applied to online communication",
+      "A type of network cable",
+      "A programming language",
+      "An internet speed measurement"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Netiquette refers to good manners and respectful behavior in online spaces — things like not typing in all caps (which reads as shouting), staying on topic, and being considerate of others.",
+    "tags": ["netiquette", "community"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-029",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "vpn-basics",
+    "difficulty": "intermediate",
+    "question": "In simple terms, what does a VPN do?",
+    "options": [
+      "Creates an encrypted connection that routes your internet traffic through another server, adding privacy and security",
+      "Physically speeds up your internet connection hardware",
+      "Automatically blocks all advertisements on every site",
+      "Guarantees you can never be tracked online under any circumstances"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A VPN (Virtual Private Network) encrypts your connection and routes it through another server, which can help protect data on untrusted networks (like public Wi-Fi) — though it isn't a total anonymity guarantee.",
+    "tags": ["vpn", "privacy", "security"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-030",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "troubleshooting-connectivity",
+    "difficulty": "beginner",
+    "question": "Your Wi-Fi suddenly stops working. What's a reasonable first troubleshooting step?",
+    "options": [
+      "Restart your router/modem, since this resolves many temporary connectivity issues",
+      "Immediately buy a new computer",
+      "Assume the entire internet is broken worldwide",
+      "Delete your browser and reinstall it"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Restarting the router clears many temporary glitches and is the standard first step for connectivity issues, before assuming something more serious is wrong.",
+    "tags": ["troubleshooting", "connectivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-031",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "understanding-loading-errors",
+    "difficulty": "beginner",
+    "question": "A website shows '404 Error.' What does that generally mean?",
+    "options": [
+      "The specific page you requested wasn't found on the server",
+      "Your internet connection is completely down",
+      "The website has been permanently shut down forever",
+      "Your device has a virus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 404 error means the server was reached, but the specific page/resource you requested doesn't exist at that address — often due to a broken link or mistyped URL, not a broader connection problem.",
+    "tags": ["troubleshooting", "http-status-codes"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-032",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "domains-and-registration",
+    "difficulty": "intermediate",
+    "question": "What is a domain name registrar?",
+    "options": [
+      "A company that lets you purchase and manage ownership of a domain name",
+      "A government agency that owns the entire internet",
+      "A type of web browser",
+      "The company that manufactures your router"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A domain registrar (like Namecheap or GoDaddy) is where individuals or organizations register and manage domain names, which then need to be pointed at a hosting server to actually serve a website.",
+    "tags": ["domains", "web-infrastructure"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-033",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "understanding-loading-errors",
+    "difficulty": "intermediate",
+    "question": "What does a '500 Internal Server Error' usually indicate?",
+    "options": [
+      "Something went wrong on the website's own server, not with your device or connection",
+      "Your password was entered incorrectly 500 times",
+      "The website has exactly 500 pages",
+      "Your internet plan has run out of data"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A 500 error is a server-side problem — the issue is on the website's end, not something wrong with your device, browser, or internet connection. Usually the best action is to try again later.",
+    "tags": ["troubleshooting", "http-status-codes"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-034",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "internet-of-things",
+    "difficulty": "intermediate",
+    "question": "What does 'IoT' (Internet of Things) refer to?",
+    "options": [
+      "Everyday physical devices (like smart bulbs, thermostats, or watches) that connect to the internet",
+      "A programming language for building websites",
+      "The original name for the World Wide Web",
+      "A type of computer virus targeting smart devices"
+    ],
+    "correctAnswer": 0,
+    "explanation": "IoT refers to the growing category of physical, everyday objects — thermostats, doorbells, watches — that are connected to the internet and can send/receive data, often to make them 'smart.'",
+    "tags": ["iot", "modern-internet"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-035",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "streaming-basics",
+    "difficulty": "beginner",
+    "question": "What does 'streaming' mean, as in streaming a video?",
+    "options": [
+      "Playing content continuously as it's delivered over the internet, rather than fully downloading it first",
+      "Permanently saving a video file to your device",
+      "Sending a video as an email attachment",
+      "A method of encrypting video files"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Streaming delivers content in a continuous flow that plays as it arrives, rather than requiring the whole file to download first — this is how services like YouTube or Netflix work.",
+    "tags": ["streaming", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-036",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "why-charge-your-device-matters",
+    "difficulty": "beginner",
+    "question": "You're trying to complete an online task, but your phone keeps disconnecting from Wi-Fi. Besides the router, what else is worth checking?",
+    "options": [
+      "Whether Wi-Fi is actually toggled on in your device's settings and whether you're within reasonable range of the router",
+      "Whether the website you're visiting has changed its logo recently",
+      "Whether your email password has been changed",
+      "Whether your browser's bookmarks are organized correctly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Basic device-side checks — Wi-Fi toggle, airplane mode, distance from the router, or other apps hogging bandwidth — are often the actual cause, not just the router or ISP.",
+    "tags": ["troubleshooting", "connectivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-037",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "incognito-private-browsing",
+    "difficulty": "intermediate",
+    "question": "What does 'Incognito' or 'Private Browsing' mode actually protect against?",
+    "options": [
+      "It prevents your browser from saving local history/cookies for that session — it does NOT make you anonymous to websites or your ISP",
+      "It makes you completely invisible and untraceable online",
+      "It blocks your ISP from seeing any of your traffic",
+      "It automatically encrypts every website you visit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Private browsing only affects what's stored locally on your device (history, cookies) — it doesn't hide your activity from websites, your ISP, or your employer/school network. This is a common misconception worth correcting.",
+    "tags": ["privacy", "browsers", "misconceptions"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-038",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "web-hosting-basics",
+    "difficulty": "intermediate",
+    "question": "What is 'web hosting'?",
+    "options": [
+      "A service that stores a website's files on a server so it can be accessed over the internet",
+      "The process of designing a website's visual layout",
+      "A type of internet browser",
+      "The act of registering a domain name"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Web hosting is the service that keeps a website's files on a server connected to the internet 24/7, so visitors can access it anytime by typing the domain name.",
+    "tags": ["web-hosting", "web-infrastructure"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-039",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "why-github-pages-is-free",
+    "difficulty": "intermediate",
+    "question": "How is a service like GitHub Pages able to host a static website for free?",
+    "options": [
+      "It only serves static files (HTML/CSS/JS, no server-side processing), which is inexpensive for the provider to offer at scale as part of the platform",
+      "It secretly charges hidden fees later",
+      "It's illegal and unsustainable",
+      "It only works for exactly one day per month"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Static hosting (no database or server-side code running) is relatively cheap to provide at scale, which is part of why platforms like GitHub Pages can offer it for free as a benefit of hosting your code there.",
+    "tags": ["web-hosting", "github-pages", "free-tools"],
+    "reference": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages"
+  },
+  {
+    "id": "internet-basics-040",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "understanding-loading-errors",
+    "difficulty": "beginner",
+    "question": "A page shows 'This site can't be reached.' What's a likely cause?",
+    "options": [
+      "You have no internet connection, mistyped the address, or the site's DNS couldn't be resolved",
+      "The website owner has deleted the domain name system entirely",
+      "You've been permanently banned from the internet",
+      "Your device's storage is full"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This generic browser error usually points to a connectivity issue, a typo in the URL, or a DNS resolution failure — it's a good moment to double-check your internet connection and the address you typed.",
+    "tags": ["troubleshooting", "connectivity"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-041",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "email-attachments-safety",
+    "difficulty": "intermediate",
+    "question": "You receive an unexpected email with an attachment from someone you don't recognize. What's the safest approach?",
+    "options": [
+      "Don't open the attachment — verify the sender through another channel first, or simply delete it",
+      "Open it immediately out of curiosity",
+      "Forward it to all your contacts to warn them, including the attachment",
+      "Reply asking them to send more attachments to confirm it's real"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unexpected attachments from unknown senders are a classic malware delivery method. When in doubt, don't open it — verify through a separate, trusted channel if you think it might be legitimate.",
+    "tags": ["email", "security", "scam-awareness"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-042",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "digital-footprint-intro",
+    "difficulty": "intermediate",
+    "question": "What is a 'digital footprint'?",
+    "options": [
+      "The trail of data you leave behind through your online activity — posts, searches, purchases, etc.",
+      "A type of computer keyboard shortcut",
+      "The physical size of a data center",
+      "A setting that shrinks images automatically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Every search, post, like, and purchase contributes to your digital footprint — a record of your online activity that can be seen by companies, and sometimes other people, long after you've forgotten about it.",
+    "tags": ["digital-footprint", "privacy"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-043",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "understanding-loading-errors",
+    "difficulty": "intermediate",
+    "question": "What's the difference between a 404 error and a 403 error?",
+    "options": [
+      "404 means the page wasn't found; 403 means you don't have permission to access it, even though it exists",
+      "They mean exactly the same thing",
+      "404 is a server problem; 403 is always a browser problem",
+      "403 means the site has been deleted permanently"
+    ],
+    "correctAnswer": 0,
+    "explanation": "404 (Not Found) means the resource doesn't exist at that address. 403 (Forbidden) means the resource exists, but you're not authorized to view it — an important distinction when troubleshooting access issues.",
+    "tags": ["troubleshooting", "http-status-codes"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-044",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "mobile-data-usage",
+    "difficulty": "beginner",
+    "question": "Why might streaming a lot of video use up your mobile data plan quickly?",
+    "options": [
+      "Video requires transferring much more data continuously than text or simple images",
+      "Video files are always exactly 1 megabyte, regardless of length",
+      "Mobile data doesn't apply to video, only to apps",
+      "Streaming video uses no data at all if you have 'unlimited' calling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Video is data-intensive — much more so than browsing text-based pages — so streaming can consume a mobile data allowance far faster than typical browsing or messaging.",
+    "tags": ["mobile-data", "streaming"],
+    "reference": null
+  },
+  {
+    "id": "internet-basics-045",
+    "class": "class-1",
+    "subject": "internet-basics",
+    "topic": "understanding-permissions-prompts",
+    "difficulty": "intermediate",
+    "question": "A website you've never visited asks to access your camera, microphone, and location all at once. What should you consider?",
+    "options": [
+      "Whether the site genuinely needs all of these for its function — deny anything that seems unnecessary or suspicious",
+      "Always click 'Allow' immediately to avoid the prompt reappearing",
+      "These prompts are purely decorative and don't actually grant access",
+      "It's impossible for a website to request this kind of access"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Browser permission prompts exist precisely so you can evaluate whether a request makes sense. A simple text-based site asking for camera, mic, AND location simultaneously is worth pausing on before allowing.",
+    "tags": ["browser-permissions", "privacy", "security"],
+    "reference": null
+  }
+]

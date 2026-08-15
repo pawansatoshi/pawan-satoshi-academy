@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+bot/node_modules/
+
+# Environment / secrets
+.env
+.env.local
+*.env
+!.env.example
+
+# Database (local dev data — never commit real member data)
+bot/data/*.db
+bot/data/*.sqlite
+bot/data/*.sqlite3
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Build output
+website/_site/
+dist/
+build/
+
+# Test coverage
+coverage/
+
+# Certificates generated locally (PDF output, not templates)
+certificates/generated/

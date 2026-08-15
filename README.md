@@ -1,49 +1,69 @@
 # Pawan Satoshi Academy
 
-A free, mobile-first Discord learning ecosystem for Web2, Web3, AI, cybersecurity and digital literacy.
+The world's best **free**, secure, open-source learning ecosystem — from
+absolute beginner to graduation, covering digital literacy, cyber
+security, AI, programming, Git/GitHub, Linux, and Web3/crypto.
 
-## Mission
+Everything here is 100% free, forever. No paid services are required to
+join, learn, take quizzes, or earn certificates.
 
-Transform the existing Pawan Satoshi Discord community into a safe, beginner-friendly Academy from Orientation through Class 12 and Graduation, with free quizzes, assessments, certificates, community activities and a public learning website.
+## What This Is
 
-## Non-negotiables
+Pawan Satoshi Academy is three things working together:
 
-- Existing Discord server only: https://discord.gg/hvHNpT4xX
-- Learning, quizzes and certificates remain free.
-- Least-privilege permissions; no unnecessary Administrator access.
-- Owner retains ultimate control.
-- No placeholder implementations.
-- Official documentation is preferred for technical and crypto facts.
-- Mobile-first administration.
+1. **An existing Discord community** ([join here](https://discord.gg/hvHNpT4xX)) — where learning, discussion, quizzes, and events happen. Designed to feel like a modern learning platform, not a folder structure: progressive unlocking, forum channels, and an AI guide instead of dozens of visible channels.
+2. **A website** (GitHub Pages) — the library. Long-form lessons, documentation, resources, and certificate verification live here.
+3. **A Discord bot** — the engine. Onboarding, XP, quizzes, certificates, moderation, and a step-by-step AI helper.
 
-## Current architecture
+## Curriculum
 
-- `bot/` — Discord bot and automation
-- `quizzes/` — validated question banks and schemas
-- `academy/` — long-form curriculum content
-- `certificates/` — certificate generation assets
-- `website/` — GitHub Pages application
-- `docs/` — architecture, setup and module documentation
-- `.github/` — CI/CD workflows
+Orientation → Class 1 → Class 12 → Graduation, covering: Internet
+Basics, Digital Literacy, Cyber Security, Password Safety, Digital
+Payments, Git & GitHub, Linux, Programming Basics, AI & Prompt
+Engineering, Bitcoin, Blockchain, Ethereum, Base, Stablecoins, DeFi,
+Wallet Security, Web3, Testnets, Ambassador Programs, Career Guidance,
+and Community Management.
 
-## Roadmap
+See [`docs/architecture/overview.md`](docs/architecture/overview.md)
+for the full system design.
 
-Read [`MASTER_BLUEPRINT.md`](MASTER_BLUEPRINT.md) for the product definition and [`ROADMAP.md`](ROADMAP.md) for the authoritative execution order.
+## Repository Structure
 
-`SOURCE_SNAPSHOT.md` records the historical ZIP checkpoints and the canonical handoff baseline.
+```
+bot/          Discord bot (Node.js, discord.js v14)
+academy/      Lesson content (Markdown), source of truth for the website
+quizzes/      Question banks
+certificates/ Certificate templates and generation assets
+website/      GitHub Pages static site
+docs/         Architecture, setup, and troubleshooting documentation
+scripts/      Setup and maintenance scripts
+```
 
-## Current baseline
+## Getting Started (Mobile-Friendly)
 
-The latest verified handoff contains 17 populated subjects and 537 validated quiz questions, plus the Discord foundation, security engine, quiz engine, assessment engine and curriculum progress tracking. The remaining product modules are explicitly tracked in the roadmap and status documents.
+Everything here can be set up from an Android phone using the GitHub
+app and a mobile browser — no desktop required. See
+[`docs/setup/quickstart.md`](docs/setup/quickstart.md).
 
-## Mobile workflow
+## Cost Policy
 
-The project is designed so the administrator can manage the repository from an Android phone using GitHub's web/mobile interfaces. A desktop PC or Codespace is not a project requirement.
+- No paid Discord bots required
+- No paid APIs required
+- No paid hosting required
+- No payment required to join, learn, quiz, or graduate
+
+If a feature has no free option, it becomes optional — never mandatory.
+See [`PROJECT_CONSTITUTION.md`](docs/architecture/PROJECT_CONSTITUTION.md)
+for the full set of governing principles.
+
+## Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Security
 
-Never commit Discord tokens, API keys, `.env` files or local databases. Use a supported secret store/environment for deployment.
+See [`SECURITY.md`](SECURITY.md) to report a vulnerability.
 
-## Important deployment note
+## License
 
-GitHub stores the source code and can host the static website. The Discord bot still needs a supported runtime to remain continuously online; repository storage alone does not run a Discord bot.
+[MIT](LICENSE) — free and open-source, forever.

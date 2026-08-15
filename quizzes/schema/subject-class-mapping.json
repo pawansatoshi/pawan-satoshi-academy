@@ -1,0 +1,48 @@
+{
+  "_comment": "Maps each of the 22 curriculum subjects to its class in the Orientation -> Class 1-12 -> Graduation sequence. This is the source of truth every question file's 'class' field must follow, and what Chapter Assessments use to pull questions from all subjects belonging to a class.",
+  "curriculumOrder": [
+    "orientation", "class-1", "class-2", "class-3", "class-4", "class-5",
+    "class-6", "class-7", "class-8", "class-9", "class-10", "class-11",
+    "class-12", "graduation"
+  ],
+  "subjectToClass": {
+    "orientation": "orientation",
+    "internet-basics": "class-1",
+    "digital-literacy": "class-1",
+    "cyber-security": "class-2",
+    "password-safety": "class-2",
+    "digital-payments": "class-3",
+    "git-github": "class-4",
+    "linux": "class-5",
+    "programming": "class-6",
+    "ai": "class-7",
+    "prompt-engineering": "class-7",
+    "bitcoin": "class-8",
+    "blockchain": "class-8",
+    "ethereum": "class-9",
+    "base": "class-10",
+    "stablecoins": "class-10",
+    "defi": "class-11",
+    "wallet-security": "class-11",
+    "web3": "class-12",
+    "testnets": "class-12",
+    "ambassador-programs": "class-12",
+    "community-management": "class-12"
+  },
+  "classToTitle": {
+    "orientation": "Orientation",
+    "class-1": "Internet Basics & Digital Literacy",
+    "class-2": "Cyber Security & Password Safety",
+    "class-3": "Digital Payments",
+    "class-4": "Git & GitHub",
+    "class-5": "Linux",
+    "class-6": "Programming Basics",
+    "class-7": "AI & Prompt Engineering",
+    "class-8": "Bitcoin & Blockchain",
+    "class-9": "Ethereum",
+    "class-10": "Base & Stablecoins",
+    "class-11": "DeFi & Wallet Security",
+    "class-12": "Web3, Testnets, Ambassador Programs & Community Management",
+    "graduation": "Graduation — Capstone, Final Exam, Career Guidance"
+  }
+}

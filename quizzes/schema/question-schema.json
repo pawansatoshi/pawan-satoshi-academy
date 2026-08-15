@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pawan Satoshi Academy Quiz Question",
+  "type": "object",
+  "required": [
+    "id", "class", "subject", "topic", "difficulty",
+    "question", "options", "correctAnswer", "explanation", "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Globally unique, e.g. 'orientation-001'"
+    },
+    "class": {
+      "type": "string",
+      "enum": [
+        "orientation", "class-1", "class-2", "class-3", "class-4",
+        "class-5", "class-6", "class-7", "class-8", "class-9",
+        "class-10", "class-11", "class-12", "graduation"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "description": "One of the 22 curriculum subjects, e.g. 'orientation', 'internet-basics', 'bitcoin'"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Narrower than subject, e.g. 'server-navigation', 'verification-process'"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "question": {
+      "type": "string",
+      "minLength": 10
+    },
+    "options": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 4,
+      "maxItems": 4,
+      "description": "Exactly 4 options, no duplicates"
+    },
+    "correctAnswer": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Index (0-3) into the options array"
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Shown after answering, regardless of correct/incorrect"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "reference": {
+      "type": ["string", "null"],
+      "description": "Official documentation URL, where one genuinely applies. Null if not applicable — never a fabricated link."
+    }
+  },
+  "additionalProperties": false
+}

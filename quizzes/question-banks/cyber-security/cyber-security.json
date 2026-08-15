@@ -1,0 +1,776 @@
+[
+  {
+    "id": "cyber-security-001",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "malware-types",
+    "difficulty": "beginner",
+    "question": "What is 'malware'?",
+    "options": [
+      "Any software designed to damage, disrupt, or gain unauthorized access to a system",
+      "A brand of antivirus software",
+      "Software that is simply outdated",
+      "A type of hardware component"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Malware (malicious software) is an umbrella term covering viruses, worms, trojans, ransomware, spyware, and more — any software built to cause harm or unauthorized access.",
+    "tags": ["malware", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-002",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "malware-types",
+    "difficulty": "intermediate",
+    "question": "What makes 'ransomware' distinct from other malware?",
+    "options": [
+      "It encrypts or locks your files/system and demands payment to restore access",
+      "It only displays annoying pop-up ads",
+      "It exclusively targets printers",
+      "It automatically deletes itself after 24 hours with no other effect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ransomware specifically encrypts a victim's data (or locks their system) and demands payment — often in cryptocurrency — for the decryption key. Paying doesn't guarantee recovery, and it funds further attacks.",
+    "tags": ["malware", "ransomware"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-003",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "malware-types",
+    "difficulty": "intermediate",
+    "question": "What is the key difference between a computer 'virus' and a 'worm'?",
+    "options": [
+      "A virus needs a host program/file to spread and requires some user action; a worm can self-replicate and spread across networks without user action",
+      "They are exactly the same thing with different names",
+      "Worms only affect smartphones; viruses only affect computers",
+      "A virus is always harmless; a worm is always harmful"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Viruses attach to files and typically need a user to run/open something to spread. Worms can replicate and spread autonomously across networks, often much faster, without needing a user to trigger anything.",
+    "tags": ["malware", "viruses", "worms"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-004",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "malware-types",
+    "difficulty": "beginner",
+    "question": "What does 'spyware' do?",
+    "options": [
+      "Secretly monitors and collects information about your activity without your knowledge",
+      "Speeds up your computer's performance",
+      "Only blocks unwanted advertisements",
+      "Automatically backs up your files to the cloud"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Spyware covertly gathers information — keystrokes, browsing habits, sometimes credentials — and sends it to a third party, all without the victim's awareness or consent.",
+    "tags": ["malware", "spyware"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-005",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "malware-types",
+    "difficulty": "intermediate",
+    "question": "What is a 'trojan' (or Trojan horse) in cybersecurity?",
+    "options": [
+      "Malware disguised as legitimate, harmless software to trick users into installing it",
+      "A type of firewall hardware",
+      "Malware that can only spread through USB drives",
+      "A security tool that detects other malware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Named after the ancient Greek story, a trojan presents itself as something desirable or harmless (a game, a tool) while secretly carrying out malicious actions once installed.",
+    "tags": ["malware", "trojans"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-006",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "phishing-recognition",
+    "difficulty": "beginner",
+    "question": "What is 'phishing'?",
+    "options": [
+      "A social engineering attack that tricks people into revealing sensitive information or clicking malicious links, often via fake emails or messages",
+      "A type of fishing-themed video game",
+      "A method for securely transferring files",
+      "A feature that filters spam automatically with 100% accuracy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Phishing attacks impersonate a trustworthy source (a bank, a company, even a friend) to trick you into giving up credentials, clicking a malicious link, or sending money.",
+    "tags": ["phishing", "social-engineering"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-007",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "phishing-recognition",
+    "difficulty": "intermediate",
+    "question": "You get an email that looks like it's from your bank, but the sender address is 'support@bank-secure-verify.com' instead of your bank's actual domain. What does this suggest?",
+    "options": [
+      "This is a classic phishing red flag — the sender domain doesn't match the real organization",
+      "This is completely normal since banks often use random-looking domains",
+      "The email is safe as long as the logo looks correct",
+      "You should reply immediately with your account details to verify"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A mismatched or suspicious sender domain is one of the most reliable phishing indicators — legitimate organizations send from their actual, consistent domain, not lookalike variations.",
+    "tags": ["phishing", "email-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-008",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "phishing-recognition",
+    "difficulty": "intermediate",
+    "question": "What is 'spear phishing'?",
+    "options": [
+      "A targeted phishing attack customized for a specific individual or organization, using personal details to appear more convincing",
+      "A phishing attack that only happens over phone calls",
+      "A type of phishing that targets fish-related businesses specifically",
+      "An outdated form of phishing that no longer works"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unlike generic mass phishing, spear phishing is tailored — the attacker researches the target (name, role, colleagues) to craft a highly convincing, personalized message.",
+    "tags": ["phishing", "targeted-attacks"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-009",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "phishing-recognition",
+    "difficulty": "beginner",
+    "question": "Before clicking a link in a suspicious email, what's a safe habit?",
+    "options": [
+      "Hover over the link (without clicking) to preview the actual destination URL",
+      "Click it immediately to see where it goes",
+      "Forward it to everyone in your contacts first",
+      "Reply asking the sender to confirm it's legitimate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hovering over a link (on desktop) or long-pressing it (on mobile, without opening) usually reveals the real destination URL, letting you spot a mismatch before you ever click through.",
+    "tags": ["phishing", "safe-browsing"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-010",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "social-engineering",
+    "difficulty": "beginner",
+    "question": "What is 'social engineering' in a cybersecurity context?",
+    "options": [
+      "Manipulating people psychologically into revealing information or performing actions that compromise security",
+      "The process of designing social media platforms",
+      "A university degree program",
+      "A type of network cable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Social engineering exploits human psychology — trust, urgency, fear, authority — rather than technical vulnerabilities, making it effective even against well-protected systems.",
+    "tags": ["social-engineering", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-011",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "social-engineering",
+    "difficulty": "intermediate",
+    "question": "Someone calls claiming to be from 'IT support' and urgently asks for your login credentials to 'fix an issue.' What should you do?",
+    "options": [
+      "Refuse and verify independently through official channels — legitimate IT support doesn't need your password",
+      "Give them your password immediately since they said it was urgent",
+      "Give them a slightly wrong password to test them",
+      "Assume all phone calls claiming to be IT support are automatically trustworthy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a classic pretexting attack. Real IT support can reset access without needing your actual password. Urgency and authority claims are common social engineering pressure tactics — verify independently.",
+    "tags": ["social-engineering", "pretexting"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-012",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "social-engineering",
+    "difficulty": "advanced",
+    "question": "What is 'baiting' as a social engineering technique?",
+    "options": [
+      "Luring a victim with something appealing (like a free download or a found USB drive) that actually delivers malware",
+      "Fishing for compliments on social media",
+      "A method of securely disposing of old hardware",
+      "A legitimate marketing technique with no security risk"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Baiting exploits curiosity or greed — e.g., a USB drive labeled 'Confidential Salaries' left in a parking lot, hoping someone plugs it in, unknowingly installing malware.",
+    "tags": ["social-engineering", "baiting"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-013",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "two-factor-authentication",
+    "difficulty": "beginner",
+    "question": "What is Two-Factor Authentication (2FA)?",
+    "options": [
+      "Requiring a second, separate proof of identity (like a code from your phone) in addition to your password",
+      "Having two different passwords for the same account",
+      "A type of encryption algorithm",
+      "Logging in twice in a row for extra safety"
+    ],
+    "correctAnswer": 0,
+    "explanation": "2FA adds a second, independent verification step (something you have, like your phone, or something you are, like a fingerprint) so a stolen password alone isn't enough to break in.",
+    "tags": ["2fa", "authentication"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-014",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "two-factor-authentication",
+    "difficulty": "intermediate",
+    "question": "Between SMS-based 2FA and an authenticator app (like Google Authenticator or Authy), which is generally considered more secure, and why?",
+    "options": [
+      "An authenticator app, because SMS can be intercepted via SIM-swapping attacks",
+      "SMS, because phone numbers can never be compromised",
+      "They are exactly equally secure in every scenario",
+      "Neither is secure; 2FA should never be used"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SMS-based codes are vulnerable to SIM-swapping, where an attacker convinces a carrier to transfer your number to their device. App-based or hardware-based 2FA doesn't depend on your phone number at all.",
+    "tags": ["2fa", "sim-swapping"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-015",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "device-security",
+    "difficulty": "beginner",
+    "question": "Why should you set a screen lock (PIN, pattern, or biometric) on your phone?",
+    "options": [
+      "It prevents someone who physically picks up your device from immediately accessing your accounts and data",
+      "It makes the phone charge faster",
+      "It's only useful for phones, never necessary for laptops",
+      "It has no real security benefit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A screen lock is your first line of defense against physical access — without one, anyone who picks up your unlocked phone has instant access to your apps, messages, and often stored passwords.",
+    "tags": ["device-security", "physical-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-016",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "device-security",
+    "difficulty": "intermediate",
+    "question": "What does 'device encryption' protect against?",
+    "options": [
+      "Someone accessing your data by physically removing storage or bypassing the lock screen through other means",
+      "Your device overheating",
+      "Slow Wi-Fi connections",
+      "Battery drain from background apps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Encryption scrambles data stored on your device so that even if someone extracts the storage directly (bypassing the normal lock screen), the data remains unreadable without the encryption key.",
+    "tags": ["device-security", "encryption"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-017",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "device-security",
+    "difficulty": "beginner",
+    "question": "If your phone is lost or stolen, what's a useful feature to have enabled beforehand?",
+    "options": [
+      "Remote 'find my device' / remote wipe capability",
+      "A loud ringtone, since that's the only real protection",
+      "Keeping your passwords written visibly on the lock screen",
+      "There is nothing you can do to prepare for this"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Remote-locate and remote-wipe features (built into most phones) let you find a lost device or erase its data remotely, limiting damage if it falls into the wrong hands.",
+    "tags": ["device-security", "incident-response"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-018",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "encryption-basics",
+    "difficulty": "intermediate",
+    "question": "In simple terms, what does 'encryption' do?",
+    "options": [
+      "Converts readable data into a scrambled form that can only be read again with the correct key",
+      "Permanently deletes data so it can never be recovered",
+      "Compresses files to save storage space",
+      "Automatically backs up files to multiple locations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Encryption transforms plain, readable data into ciphertext using a mathematical algorithm and a key — without the correct key, the scrambled data is effectively meaningless to an attacker.",
+    "tags": ["encryption", "fundamentals"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-019",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "encryption-basics",
+    "difficulty": "advanced",
+    "question": "What's the basic difference between symmetric and asymmetric encryption?",
+    "options": [
+      "Symmetric encryption uses the same key to encrypt and decrypt; asymmetric encryption uses a public key to encrypt and a different, private key to decrypt",
+      "Symmetric encryption is always weaker than asymmetric encryption in every case",
+      "Asymmetric encryption doesn't use any keys at all",
+      "They are two names for the exact same technique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Symmetric encryption is fast but requires securely sharing one key between parties. Asymmetric encryption (public/private key pairs) solves the key-sharing problem and underpins things like HTTPS and, later in this curriculum, crypto wallets.",
+    "tags": ["encryption", "cryptography"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-020",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "firewalls",
+    "difficulty": "beginner",
+    "question": "What is a firewall's basic job?",
+    "options": [
+      "Monitor and control incoming/outgoing network traffic based on security rules, blocking unauthorized access",
+      "Physically cool down an overheating computer",
+      "Compress large files for storage",
+      "Automatically write software updates"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A firewall acts as a gatekeeper between your device/network and the outside internet, filtering traffic according to defined rules to block unauthorized or malicious connections.",
+    "tags": ["firewalls", "network-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-021",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "antivirus-software",
+    "difficulty": "beginner",
+    "question": "What does antivirus software typically do?",
+    "options": [
+      "Scans for, detects, and removes known malware based on signatures and behavioral patterns",
+      "Makes your internet connection faster",
+      "Prevents all possible cyberattacks with 100% guaranteed effectiveness",
+      "Automatically encrypts every file on your device"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Antivirus software detects malware using known signatures and suspicious behavior patterns — it's an important layer of defense, but not a perfect guarantee against every possible threat, especially brand-new ones.",
+    "tags": ["antivirus", "malware-defense"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-022",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "software-patch-management",
+    "difficulty": "intermediate",
+    "question": "What does 'patch management' mean in a security context?",
+    "options": [
+      "The ongoing process of applying software updates that fix known security vulnerabilities in a timely way",
+      "Repairing torn clothing with a sewing patch",
+      "A one-time setup step needed only when you first buy a device",
+      "A feature exclusive to enterprise businesses, irrelevant to individuals"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Patch management is the discipline of applying security updates promptly and consistently — delayed patching is one of the most common reasons known vulnerabilities get exploited.",
+    "tags": ["patch-management", "software-updates"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-023",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "backup-strategy",
+    "difficulty": "intermediate",
+    "question": "What is the '3-2-1 backup rule'?",
+    "options": [
+      "Keep 3 copies of your data, on 2 different types of storage media, with 1 copy stored offsite/offline",
+      "Back up your data exactly 3 times per year, on the 2nd of January only",
+      "Use 3 different passwords for your backup, 2 of which are numbers",
+      "Keep backups for only 1 day before deleting them"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 3-2-1 rule is a widely recommended backup strategy: multiple copies, on different media types, with at least one copy physically or logically separated — this protects against device failure, theft, AND things like ransomware hitting connected backups too.",
+    "tags": ["backups", "best-practices"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-024",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "credential-stuffing",
+    "difficulty": "advanced",
+    "question": "What is 'credential stuffing'?",
+    "options": [
+      "Automated attacks that try leaked username/password pairs from one breach across many other sites, hoping people reused the same credentials",
+      "Manually guessing passwords one at a time by hand",
+      "A method for securely storing many passwords in one file",
+      "A legitimate login feature offered by most websites"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Credential stuffing exploits password reuse: attackers take credentials leaked from Breach A and automatically try them on Sites B, C, and D, succeeding whenever someone reused that password elsewhere.",
+    "tags": ["credential-stuffing", "password-reuse"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-025",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "brute-force-attacks",
+    "difficulty": "intermediate",
+    "question": "What is a 'brute-force attack'?",
+    "options": [
+      "Systematically trying many possible passwords or keys until the correct one is found",
+      "Physically breaking into a data center",
+      "A type of social engineering phone call",
+      "A method of encrypting data more strongly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Brute-force attacks rely on trying huge numbers of password combinations automatically. Longer, more complex passwords and account lockout policies (or rate limiting) make brute-forcing impractical.",
+    "tags": ["brute-force", "password-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-026",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "ddos-basics",
+    "difficulty": "advanced",
+    "question": "What is a DDoS (Distributed Denial of Service) attack, in simple terms?",
+    "options": [
+      "Overwhelming a website or service with massive amounts of traffic from many sources, making it unavailable to legitimate users",
+      "Deleting a website's database entirely",
+      "Stealing a website's source code",
+      "A method of encrypting a website's traffic for privacy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DDoS attacks flood a target with traffic from many distributed sources (often compromised devices, or 'botnets') to exhaust its resources and make it unavailable — the goal is disruption, not typically data theft.",
+    "tags": ["ddos", "availability-attacks"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-027",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "iot-device-security",
+    "difficulty": "intermediate",
+    "question": "Why are smart home devices (IoT) often considered a security risk if left with default settings?",
+    "options": [
+      "Many ship with weak, default, or well-known passwords that are rarely changed by users, making them easy targets",
+      "IoT devices are immune to all forms of hacking",
+      "They are physically too small to be attacked",
+      "Only IoT devices connected to a VPN can ever be at risk"
+    ],
+    "correctAnswer": 0,
+    "explanation": "IoT devices (cameras, smart plugs, routers) are frequently shipped with default, publicly documented passwords. Attackers scan for devices still using these defaults, often recruiting them into botnets.",
+    "tags": ["iot", "device-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-028",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "physical-security-awareness",
+    "difficulty": "beginner",
+    "question": "What is 'shoulder surfing'?",
+    "options": [
+      "Someone secretly watching over your shoulder to see your password, PIN, or sensitive screen content",
+      "A water sport unrelated to security",
+      "A technique for improving posture at a computer desk",
+      "A type of malware"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shoulder surfing is a low-tech but effective way to steal information — simply observing someone type a PIN or password in a public place like a cafe or ATM.",
+    "tags": ["physical-security", "shoulder-surfing"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-029",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "security-questions-weakness",
+    "difficulty": "intermediate",
+    "question": "Why are traditional security questions like 'What is your mother's maiden name?' considered weak account recovery methods?",
+    "options": [
+      "The answers are often discoverable through public records, social media, or social engineering",
+      "They are technically impossible for websites to implement",
+      "They are always encrypted so this concern doesn't apply",
+      "They provide stronger security than 2FA in every case"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Many 'secret' answers (pet names, schools, mother's maiden name) are guessable or findable through public information or social media oversharing — treat them as another password, or use deliberately false answers only you'd know.",
+    "tags": ["account-recovery", "security-questions"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-030",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "data-breach-awareness",
+    "difficulty": "intermediate",
+    "question": "You receive a notification that a service you use suffered a data breach. What's the most important immediate step?",
+    "options": [
+      "Change your password for that service, and for any other account where you reused the same password",
+      "Ignore it since breaches happen to every company eventually",
+      "Delete your device entirely as a precaution",
+      "Wait exactly 30 days before taking any action"
+    ],
+    "correctAnswer": 0,
+    "explanation": "After a breach, changing the affected password — and any reused passwords elsewhere — limits the damage. This is also a strong argument for never reusing passwords across services in the first place.",
+    "tags": ["data-breaches", "incident-response"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-031",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "public-wifi-vpn-usage",
+    "difficulty": "intermediate",
+    "question": "Beyond avoiding sensitive logins, what's another practical step to reduce risk on public Wi-Fi?",
+    "options": [
+      "Using a reputable VPN to encrypt your traffic while on the untrusted network",
+      "Turning your device volume all the way up",
+      "Connecting to as many public networks as possible simultaneously",
+      "Disabling your screen lock temporarily for convenience"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A VPN encrypts your traffic end-to-end to the VPN provider, reducing the risk of interception on an untrusted local network — a practical complement to simply avoiding sensitive tasks on public Wi-Fi.",
+    "tags": ["public-wifi", "vpn"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-032",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "browser-security-settings",
+    "difficulty": "intermediate",
+    "question": "Why might a browser warn you before letting you proceed to a site with an invalid or expired security certificate?",
+    "options": [
+      "It can't verify the site's identity or guarantee the connection is encrypted properly, which increases risk of interception or impersonation",
+      "The warning is purely cosmetic and can always be safely ignored",
+      "It means the website's content has been deleted",
+      "It means your device has run out of storage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Certificate warnings mean the browser can't confirm you're really talking to the site you think you are, or that the connection is properly encrypted — proceeding anyway should be a deliberate, informed choice, not a reflex click-through.",
+    "tags": ["browser-security", "certificates"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-033",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "account-security-social-media",
+    "difficulty": "beginner",
+    "question": "Why should you avoid granting third-party apps unnecessary permissions to your social media accounts?",
+    "options": [
+      "A compromised or malicious third-party app with broad permissions could act on your behalf, post content, or access your data",
+      "Third-party app permissions have no bearing on account security",
+      "Social media platforms don't allow any third-party app connections",
+      "Granting permissions always improves your account's security"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Every connected app is a potential attack surface. Regularly reviewing and revoking unused or overly broad app permissions on your accounts reduces your exposure if one of those apps is later compromised.",
+    "tags": ["account-security", "app-permissions"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-034",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "incident-response-basics",
+    "difficulty": "intermediate",
+    "question": "You strongly suspect your email account has been compromised. What's a reasonable first response?",
+    "options": [
+      "Change the password immediately, enable 2FA if not already on, and check for unfamiliar recent activity or forwarding rules",
+      "Delete the account permanently as the only option",
+      "Wait a week to see if the problem resolves itself",
+      "Post publicly asking the hacker to stop"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fast containment matters: changing the password locks out the attacker, enabling 2FA prevents easy re-entry, and checking for suspicious forwarding rules (a common way attackers maintain access) closes silent backdoors.",
+    "tags": ["incident-response", "account-compromise"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-035",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "zero-trust-concept",
+    "difficulty": "advanced",
+    "question": "What is the core idea behind the 'Zero Trust' security model?",
+    "options": [
+      "Never automatically trust any user or device, even inside your own network — verify every request explicitly",
+      "Trust every device on your home Wi-Fi network completely and without question",
+      "A model where no security measures are needed at all",
+      "A rule that says passwords should never be trusted, so accounts should have none"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zero Trust assumes no implicit trust based on network location alone — every access request is verified, regardless of whether it originates 'inside' or 'outside' a traditional network perimeter.",
+    "tags": ["zero-trust", "security-models"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-036",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "usb-device-risks",
+    "difficulty": "intermediate",
+    "question": "Why is plugging an unknown USB drive into your computer risky?",
+    "options": [
+      "It could be preloaded with malware designed to automatically infect your device",
+      "USB drives cannot carry any software of any kind",
+      "It will always immediately format your entire hard drive",
+      "There is no real risk as long as you don't open any files"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unknown USB drives are a classic attack vector — some malware can execute automatically or via disguised files the moment the drive is connected, without you deliberately opening anything.",
+    "tags": ["usb-security", "physical-security"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-037",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "security-awareness-culture",
+    "difficulty": "beginner",
+    "question": "Why do organizations (and communities, like the Academy) emphasize ongoing security education rather than a single one-time training?",
+    "options": [
+      "Threats and tactics constantly evolve, so staying informed is an ongoing process, not a one-time checkbox",
+      "Security education only needs to happen once in a person's lifetime",
+      "Ongoing training is purely a legal formality with no real benefit",
+      "New threats stopped emerging years ago"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Attackers constantly adapt their techniques, so security awareness needs to be reinforced over time — this is part of why the Academy weaves security topics throughout its curriculum rather than a single lesson.",
+    "tags": ["security-culture", "continuous-learning"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-038",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "https-and-certificates",
+    "difficulty": "intermediate",
+    "question": "What does a website's SSL/TLS certificate actually verify?",
+    "options": [
+      "That the connection is encrypted and that the site's identity has been validated by a trusted certificate authority",
+      "That the website contains no advertisements",
+      "That the website loads in under one second",
+      "That the website is guaranteed to be free of all scams"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A certificate confirms encrypted transport AND (depending on certificate type) some level of identity verification — but it does NOT guarantee the site's content is trustworthy or scam-free; a scam site can also have valid HTTPS.",
+    "tags": ["https", "certificates", "misconceptions"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-039",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "https-and-certificates",
+    "difficulty": "advanced",
+    "question": "Why is it a common misconception that 'HTTPS means the website is safe/legitimate'?",
+    "options": [
+      "Scam and phishing sites can also obtain valid HTTPS certificates — HTTPS only guarantees an encrypted connection, not the trustworthiness of who's on the other end",
+      "HTTPS is impossible for scam websites to obtain under any circumstances",
+      "HTTPS guarantees a website has been reviewed by a government agency",
+      "This isn't actually a misconception — HTTPS does guarantee full legitimacy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Getting an HTTPS certificate is relatively easy and doesn't vet business legitimacy — many phishing and scam sites use valid HTTPS specifically to appear more trustworthy. It protects the connection, not the destination's honesty.",
+    "tags": ["https", "misconceptions", "phishing"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-040",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "email-spoofing",
+    "difficulty": "advanced",
+    "question": "What is 'email spoofing'?",
+    "options": [
+      "Forging the sender address of an email to make it appear as though it came from someone else",
+      "A legitimate feature that lets you send email under an alias you own",
+      "An email client crash caused by too many messages",
+      "A method email providers use to block spam automatically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Email spoofing forges the 'From' field to impersonate a trusted sender — this is a common phishing technique, which is why verifying through a separate channel matters more than trusting the displayed sender name alone.",
+    "tags": ["email-spoofing", "phishing"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-041",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "least-privilege-principle",
+    "difficulty": "advanced",
+    "question": "What does the 'principle of least privilege' mean in security design?",
+    "options": [
+      "Give a user, app, or system only the minimum access/permissions needed to do its job, nothing more",
+      "Always give administrator access to every user for convenience",
+      "A rule that applies only to government systems",
+      "A principle stating passwords should be as short as possible"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Least privilege limits the potential damage if an account or system is compromised — this exact principle is why the Academy's own Discord bot never requests Administrator permission, only what each feature specifically needs.",
+    "tags": ["least-privilege", "security-design"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-042",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "quishing-qr-code-scams",
+    "difficulty": "intermediate",
+    "question": "What is 'quishing'?",
+    "options": [
+      "Phishing conducted through malicious QR codes that lead to fake or harmful websites when scanned",
+      "A type of fishing tournament",
+      "A secure method for sharing Wi-Fi passwords",
+      "An outdated attack technique no longer seen in practice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "QR codes hide their destination until scanned, making them an increasingly common phishing vector — always check the URL that appears after scanning before entering any information.",
+    "tags": ["quishing", "qr-codes", "phishing"],
+    "reference": null
+  },
+  {
+    "id": "cyber-security-043",
+    "class": "class-2",
+    "subject": "cyber-security",
+    "topic": "man-in-the-middle-basics",
+    "difficulty": "advanced",
+    "question": "What is a 'man-in-the-middle' (MITM) attack, conceptually?",
+    "options": [
+      "An attacker secretly intercepts and potentially alters communication between two parties who believe they're communicating directly",
+      "A referee-style role in online multiplayer games",
+      "A type of firewall configuration",
+      "A method for legitimately verifying two parties' identities"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In a MITM attack, the attacker positions themselves between two communicating parties (e.g., you and a website), potentially reading or modifying data — this is part of why encryption (like HTTPS) matters so much.",
+    "tags": ["mitm", "network-security"],
+    "reference": null
+  }
+]

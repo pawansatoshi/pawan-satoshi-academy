@@ -1,0 +1,596 @@
+[
+  {
+    "id": "digital-literacy-001",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "evaluating-source-credibility",
+    "difficulty": "beginner",
+    "question": "You find a surprising claim on a random blog with no author listed. What should you do before believing or sharing it?",
+    "options": [
+      "Check whether other credible, independent sources report the same thing",
+      "Share it immediately since it was interesting",
+      "Assume it's true because it was written confidently",
+      "Assume it's false just because it's a blog"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cross-checking a claim against independent, credible sources is a core digital literacy skill. A confident tone or a blog format alone tells you nothing about accuracy.",
+    "tags": ["source-evaluation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-002",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "evaluating-source-credibility",
+    "difficulty": "beginner",
+    "question": "Which of these is generally the WEAKEST signal of a source's credibility?",
+    "options": [
+      "How many likes or shares the post has",
+      "Whether the author has relevant expertise",
+      "Whether the claim is independently verifiable",
+      "Whether the publication has editorial standards"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Popularity (likes/shares) reflects how much attention something got, not whether it's accurate — misinformation often spreads faster than corrections. Expertise, verifiability, and editorial standards are far more meaningful signals.",
+    "tags": ["source-evaluation", "misinformation"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-003",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "identifying-misinformation",
+    "difficulty": "beginner",
+    "question": "What is the difference between 'misinformation' and 'disinformation'?",
+    "options": [
+      "Misinformation is false info shared without intent to deceive; disinformation is false info shared deliberately to deceive",
+      "They are exactly the same thing with no difference",
+      "Misinformation is always about politics; disinformation is always about health",
+      "Disinformation refers only to deleted social media posts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The key difference is intent. Someone can spread misinformation by honestly believing something false. Disinformation is created or spread specifically to mislead people.",
+    "tags": ["misinformation", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-004",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "identifying-misinformation",
+    "difficulty": "intermediate",
+    "question": "A headline seems designed to make you angry or shocked before you've even read the article. What's a useful literacy habit here?",
+    "options": [
+      "Pause and read the actual content critically before reacting or sharing, since emotional headlines are often designed to bypass careful thinking",
+      "React and share immediately, since strong emotional headlines are usually the most accurate",
+      "Assume the headline is a joke and ignore it entirely",
+      "Only read headlines and never the article content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Content engineered to provoke a strong emotional reaction is a known technique to reduce careful evaluation. Pausing before reacting or sharing is a practical literacy skill against this.",
+    "tags": ["misinformation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-005",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-identity",
+    "difficulty": "beginner",
+    "question": "What is a 'digital identity'?",
+    "options": [
+      "The collection of information and online presence that represents you across the internet (accounts, posts, profiles)",
+      "A government-issued ID card",
+      "A type of computer password",
+      "The brand name of a specific social media app"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Your digital identity is the sum of your online presence — usernames, profiles, posts, and activity — that others (and algorithms) use to understand who you are online.",
+    "tags": ["digital-identity", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-006",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-identity",
+    "difficulty": "intermediate",
+    "question": "Why might someone deliberately use different usernames/profiles for professional vs. personal online activity?",
+    "options": [
+      "To manage how different audiences perceive them and keep contexts appropriately separate",
+      "It's required by law in every country",
+      "Because using the same username everywhere is technically impossible",
+      "It has no real purpose or benefit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Separating professional and personal digital identities is a common, intentional practice to manage audience expectations — a potential employer and a close friend often don't need the same view into your life.",
+    "tags": ["digital-identity", "privacy"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-007",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "algorithmic-personalization",
+    "difficulty": "intermediate",
+    "question": "Why might two people searching the exact same term see different results or content feeds?",
+    "options": [
+      "Personalization algorithms tailor results based on each person's past activity, location, and inferred interests",
+      "Search engines randomly show different results with no logic at all",
+      "It's a technical error that should never happen",
+      "Only paid accounts get personalized results"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Most platforms personalize what they show based on your history and inferred preferences — this means everyone can experience a somewhat different version of the same platform, sometimes called a 'filter bubble.'",
+    "tags": ["algorithms", "personalization"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-008",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "algorithmic-personalization",
+    "difficulty": "advanced",
+    "question": "What is a 'filter bubble,' and why does it matter for digital literacy?",
+    "options": [
+      "A situation where personalization algorithms mostly show you content that matches what you already believe, narrowing your exposure to other viewpoints",
+      "A physical device that filters spam emails",
+      "A setting that blocks all advertisements",
+      "A type of internet connection speed limit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Filter bubbles happen when personalization consistently reinforces existing views rather than exposing you to a range of perspectives — being aware of this helps you seek out other viewpoints deliberately.",
+    "tags": ["algorithms", "filter-bubble", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-009",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "ads-vs-content",
+    "difficulty": "beginner",
+    "question": "What does 'sponsored content' or '#ad' typically indicate on a post?",
+    "options": [
+      "The creator was paid or given something to promote the product or service featured",
+      "The post has been fact-checked and verified as accurate",
+      "The post is free of any bias whatsoever",
+      "The platform selected it as the most popular post of the day"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sponsored/ad labels indicate a paid promotional relationship, which is useful context for evaluating potential bias — the creator has a financial incentive tied to the content.",
+    "tags": ["advertising", "media-literacy"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-010",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "ads-vs-content",
+    "difficulty": "intermediate",
+    "question": "What is 'native advertising'?",
+    "options": [
+      "Advertising designed to blend in with a platform's regular content, making it less obviously distinguishable as an ad",
+      "Advertising that only appears in a user's native/home country",
+      "A type of banner ad that appears at the top of every page",
+      "Advertising that is completely free for the advertiser"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Native ads are styled to match the surrounding content, which can make them harder to immediately recognize as paid promotion — a good reason to always check for disclosure labels.",
+    "tags": ["advertising", "media-literacy"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-011",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "copyright-fair-use-basics",
+    "difficulty": "intermediate",
+    "question": "You want to use someone else's photo in your own post. What's the safest approach regarding copyright?",
+    "options": [
+      "Check the license/permissions and credit the source, or use content explicitly licensed for reuse",
+      "Assume anything found via a search engine is free to use however you want",
+      "Copyright only applies to text, never to images",
+      "As long as you don't make money from it, copyright never applies"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Images found online are usually still copyrighted by default. Checking licensing terms (or using explicitly free-to-reuse content, like Creative Commons-licensed images) avoids infringing on someone else's rights.",
+    "tags": ["copyright", "digital-citizenship"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-012",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "copyright-fair-use-basics",
+    "difficulty": "advanced",
+    "question": "What is the general idea behind 'fair use' in copyright law?",
+    "options": [
+      "A legal doctrine that allows limited use of copyrighted material without permission, for purposes like commentary, criticism, or education, depending on specific factors",
+      "A rule that makes all copyrighted content free after one year",
+      "A guarantee that any non-commercial use is automatically legal everywhere",
+      "A type of software license for open-source code"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fair use (a concept that varies by country) can allow limited use of copyrighted work without explicit permission for things like commentary or education — but it's evaluated case-by-case, not an automatic blanket permission.",
+    "tags": ["copyright", "fair-use"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-013",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "terms-of-service-awareness",
+    "difficulty": "beginner",
+    "question": "Why does it matter to at least skim a Terms of Service or Privacy Policy before using a new app?",
+    "options": [
+      "It often explains what data the app collects and how it may be used or shared",
+      "Terms of Service are purely decorative and have no real content",
+      "Reading it is required by law to be done out loud",
+      "It guarantees the app has no bugs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Terms of Service and Privacy Policies describe what data is collected and how it's used — even a quick skim of key sections (like the data/privacy section) can inform whether you're comfortable with an app's practices.",
+    "tags": ["terms-of-service", "privacy"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-014",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-wellbeing",
+    "difficulty": "beginner",
+    "question": "What is 'digital wellbeing'?",
+    "options": [
+      "Being mindful and intentional about how technology use affects your mental health, focus, and daily life",
+      "A type of antivirus software",
+      "The physical health of your computer's hardware",
+      "A government program for internet access"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Digital wellbeing is about maintaining a healthy relationship with technology — being aware of screen time, notification overload, and how usage patterns affect focus, sleep, and mood.",
+    "tags": ["digital-wellbeing", "definitions"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-015",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-wellbeing",
+    "difficulty": "beginner",
+    "question": "Which of these is a practical digital wellbeing habit?",
+    "options": [
+      "Turning off non-essential notifications to reduce constant interruptions",
+      "Checking every notification the instant it arrives, always",
+      "Never taking breaks from screens under any circumstances",
+      "Keeping every app's notifications on maximum volume"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reducing unnecessary notifications is a simple, practical way to reduce constant interruption and reclaim focus — most phones have built-in tools to manage this per app.",
+    "tags": ["digital-wellbeing", "practical-skills"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-016",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "accessibility-features",
+    "difficulty": "beginner",
+    "question": "What is the purpose of accessibility features like screen readers or captions?",
+    "options": [
+      "To make digital content usable by people with disabilities, such as visual or hearing impairments",
+      "To make videos load faster on slow connections",
+      "To translate content into other languages automatically",
+      "To reduce a device's battery consumption"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Accessibility features exist specifically to make digital content usable for people with disabilities — for example, screen readers convert text to speech for visually impaired users, and captions help deaf or hard-of-hearing users.",
+    "tags": ["accessibility", "inclusion"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-017",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "accessibility-features",
+    "difficulty": "intermediate",
+    "question": "Why is adding 'alt text' (alternative text descriptions) to images a good digital literacy practice?",
+    "options": [
+      "It allows screen readers to describe the image to visually impaired users, making content more inclusive",
+      "It makes the image load in higher resolution",
+      "It's required to prevent copyright infringement",
+      "It automatically translates the image into other languages"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alt text gives screen readers something meaningful to read aloud in place of an image, making content accessible to visually impaired users who otherwise couldn't perceive the image content.",
+    "tags": ["accessibility", "inclusion"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-018",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "effective-online-research",
+    "difficulty": "intermediate",
+    "question": "You're researching a topic and want a well-rounded understanding. What's a stronger approach than reading just one article?",
+    "options": [
+      "Read multiple sources with different perspectives or origins, and compare what they agree and disagree on",
+      "Only read the first result that appears in a search engine",
+      "Only read sources that already match what you already believe",
+      "Skip reading entirely and rely on a single social media post"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Comparing multiple, varied sources helps you identify consensus, spot outliers, and notice potential bias — a single source, especially the first search result, doesn't guarantee completeness or accuracy.",
+    "tags": ["research-skills", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-019",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "effective-online-research",
+    "difficulty": "beginner",
+    "question": "When evaluating an article, why does the publication date matter?",
+    "options": [
+      "Older information may be outdated or superseded by more recent findings, especially in fast-changing fields",
+      "The date has no relevance to how accurate the content is",
+      "Only articles published today are ever worth reading",
+      "Publication date only matters for weather reports"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In rapidly evolving fields (like technology or Web3), an older article may describe something that's no longer accurate — checking the date helps you judge whether the information is still current.",
+    "tags": ["research-skills", "source-evaluation"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-020",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "image-video-manipulation-awareness",
+    "difficulty": "intermediate",
+    "question": "What should you keep in mind about photos and videos you see online?",
+    "options": [
+      "Images and videos can be edited, staged, taken out of context, or in more advanced cases entirely fabricated — visual content isn't automatically proof of anything",
+      "Photos and videos can never be edited or manipulated in any way",
+      "Only text content can ever be misleading, never visual content",
+      "If a video has many views, it's guaranteed to be authentic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Visual content can be edited, staged, or shown out of its original context — 'seeing is believing' isn't a reliable rule online. Reverse image searches and checking original sources can help verify authenticity.",
+    "tags": ["media-manipulation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-021",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "image-video-manipulation-awareness",
+    "difficulty": "advanced",
+    "question": "What is a 'deepfake,' at a basic conceptual level?",
+    "options": [
+      "AI-generated or AI-altered media (often video or audio) designed to convincingly depict someone saying or doing something they didn't actually say or do",
+      "A very deep, high-quality camera lens used by professional photographers",
+      "A term for any photo taken underwater",
+      "A file format specifically for compressed video"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Deepfakes use AI techniques to convincingly fabricate video or audio of real people. Being aware they exist is an important digital literacy baseline, even before diving into the technical AI content later in the curriculum.",
+    "tags": ["media-manipulation", "ai-awareness"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-022",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-divide-awareness",
+    "difficulty": "intermediate",
+    "question": "What does the term 'digital divide' refer to?",
+    "options": [
+      "The gap between people who have reliable access to technology/internet and those who don't",
+      "A disagreement between two software companies",
+      "The physical distance between a device and its nearest Wi-Fi router",
+      "The difference between Android and iOS operating systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The digital divide describes unequal access to technology and internet connectivity across different regions, income levels, or communities — a factor the Academy considers by keeping everything free and mobile-first.",
+    "tags": ["digital-divide", "equity"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-023",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "multiple-accounts-management",
+    "difficulty": "beginner",
+    "question": "What's a good reason to use a password manager across your many online accounts?",
+    "options": [
+      "It lets you use strong, unique passwords for every account without needing to memorize each one",
+      "It automatically posts on your behalf on social media",
+      "It's required by every website to create an account",
+      "It makes your internet connection faster"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reusing the same password everywhere means one breach can compromise every account. A password manager makes using strong, unique passwords per account realistic without memorizing dozens of them — more detail comes in the Password Safety subject.",
+    "tags": ["account-management", "password-hygiene"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-024",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "information-overload",
+    "difficulty": "intermediate",
+    "question": "What is 'information overload,' and why is it relevant to digital literacy?",
+    "options": [
+      "The state of being overwhelmed by too much information to process effectively, which can hurt decision-making and focus",
+      "A technical term for a computer running out of storage space",
+      "A type of internet outage affecting an entire country",
+      "A feature that automatically deletes old emails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Constant streams of notifications, articles, and posts can overwhelm your ability to process and evaluate information carefully — recognizing this helps you build habits like batching notifications or setting focused reading time.",
+    "tags": ["information-overload", "digital-wellbeing"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-025",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "citing-sources-basics",
+    "difficulty": "beginner",
+    "question": "Why is it good practice to cite or link the original source when sharing a claim or statistic?",
+    "options": [
+      "It lets others verify the claim themselves and gives credit to the original work",
+      "Citations are only required in university essays, never elsewhere",
+      "It makes your post load faster",
+      "It's purely a formality with no practical benefit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Citing sources lets your audience independently verify what you're claiming, builds trust, and properly credits the original creator or researcher — a core practice of good digital citizenship.",
+    "tags": ["citing-sources", "digital-citizenship"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-026",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "author-purpose-evaluation",
+    "difficulty": "intermediate",
+    "question": "When evaluating an article, why does it help to ask 'what is the author's purpose'?",
+    "options": [
+      "Content written to inform differs from content written to persuade, sell, or entertain — understanding the purpose helps you interpret it appropriately",
+      "All authors have exactly the same purpose: to inform objectively",
+      "Purpose is irrelevant; only the facts stated matter",
+      "Only news articles have a purpose worth considering"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An article meant to sell a product, win an argument, or entertain will be framed differently than one meant to neutrally inform. Identifying the purpose helps you calibrate how much skepticism to apply.",
+    "tags": ["source-evaluation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-027",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "author-purpose-evaluation",
+    "difficulty": "beginner",
+    "question": "An article about a financial product is written by the company that sells it, with no independent review mentioned. How should you treat its claims?",
+    "options": [
+      "With extra scrutiny — the author has a direct financial interest in you believing the claims",
+      "As completely unbiased, since companies always tell the full truth about their own products",
+      "As automatically false just because a company wrote it",
+      "The author's identity has no bearing on how to read the content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A company writing about its own product has an inherent conflict of interest. This doesn't mean everything they say is false, but it's a clear signal to seek independent confirmation before trusting the claims fully.",
+    "tags": ["source-evaluation", "conflict-of-interest"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-028",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-footprint-management",
+    "difficulty": "intermediate",
+    "question": "Before posting something publicly online, what's a useful literacy habit?",
+    "options": [
+      "Consider whether you'd be comfortable with a future employer, family member, or stranger seeing it years from now",
+      "Post immediately without any thought, since online content disappears after a day",
+      "Assume nothing you post is ever visible to anyone but your intended audience",
+      "Only worry about privacy settings after something goes wrong"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Content posted publicly can persist, be screenshotted, or resurface long after posting. A quick 'future visibility' check before posting is a practical digital footprint habit.",
+    "tags": ["digital-footprint", "digital-citizenship"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-029",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "understanding-app-permissions",
+    "difficulty": "intermediate",
+    "question": "A flashlight app requests access to your contacts and location. What should this signal to you?",
+    "options": [
+      "This is a red flag — the permissions requested don't match what the app actually needs to function",
+      "This is completely normal and expected for every app",
+      "Flashlight apps always need your location to work properly",
+      "Permissions requests are purely cosmetic and don't grant real access"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A mismatch between an app's stated function and its requested permissions is a classic warning sign — a flashlight app has no legitimate need for your contacts or precise location.",
+    "tags": ["app-permissions", "privacy", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-030",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "echo-chambers",
+    "difficulty": "advanced",
+    "question": "What is an 'echo chamber' in the context of online communities?",
+    "options": [
+      "An environment where a person mainly encounters opinions and information that reinforce their existing beliefs, with little exposure to opposing views",
+      "A physical room designed for recording podcasts",
+      "A feature that repeats your own messages back to you",
+      "A type of internet connection with poor audio quality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Echo chambers form when a person's online environment (chosen communities, followed accounts, algorithmic feeds) mostly reflects views they already hold — related to, but broader than, algorithmic filter bubbles.",
+    "tags": ["echo-chambers", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-031",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "screenshots-and-context",
+    "difficulty": "intermediate",
+    "question": "You see a screenshot of a message or post being shared as 'proof' of something. What's an important caution?",
+    "options": [
+      "Screenshots can be edited, taken out of context, or of content that has since been corrected or deleted — verify against the original where possible",
+      "Screenshots are always 100% reliable and impossible to fake",
+      "Screenshots can only be taken by the original poster",
+      "A screenshot is legally binding proof in all situations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Screenshots are easy to edit and can also be genuine but misleading if shown without surrounding context. When something important hinges on a screenshot, checking the original source is worthwhile.",
+    "tags": ["media-manipulation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-032",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "understanding-bots-and-fake-accounts",
+    "difficulty": "intermediate",
+    "question": "Why might the number of accounts supporting a viewpoint online NOT be a reliable measure of genuine popularity?",
+    "options": [
+      "Bot accounts or coordinated inauthentic activity can artificially inflate apparent support",
+      "Every social media account is required to be verified as a real, unique human",
+      "Vote/like counts are always audited by an independent authority in real time",
+      "This concern doesn't apply to any modern platform"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Automated bot accounts or coordinated campaigns can create a false impression of widespread organic support. High engagement numbers alone aren't proof of genuine, independent popularity.",
+    "tags": ["bots", "misinformation", "critical-thinking"],
+    "reference": null
+  },
+  {
+    "id": "digital-literacy-033",
+    "class": "class-1",
+    "subject": "digital-literacy",
+    "topic": "digital-literacy-and-web3",
+    "difficulty": "intermediate",
+    "question": "Why are strong digital literacy skills especially important before getting involved in Web3/crypto communities?",
+    "options": [
+      "Web3 spaces have a high volume of scams and hype-driven claims, so critical evaluation skills directly protect you financially",
+      "Digital literacy has no particular relevance to Web3 at all",
+      "Web3 platforms automatically verify all information for accuracy",
+      "Only technical skills matter in Web3, not evaluative skills"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Crypto and Web3 communities are frequent targets for scams and exaggerated claims. The evaluative skills taught in Digital Literacy — checking sources, spotting manipulation, questioning incentives — directly protect you as you continue through the Academy's later Web3 subjects.",
+    "tags": ["digital-literacy", "web3-connection"],
+    "reference": null
+  }
+]
