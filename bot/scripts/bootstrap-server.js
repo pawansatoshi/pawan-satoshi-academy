@@ -53,6 +53,7 @@ async function main() {
   }
   await guild.roles.fetch();
   await guild.channels.fetch();
+  await guild.members.fetchMe();
 
   logger.info({ guildName: guild.name, guildId: guild.id }, "Connected to guild — computing plan");
 
@@ -74,8 +75,6 @@ async function main() {
   logger.info("Done. Run the bot normally with `npm start` — it will pick up all IDs automatically.");
   await client.destroy();
 }
-
-// ── Planning (pure, no side effects) ───────────────────────────────
 
 function computePlan(guild) {
   const plan = {
@@ -146,31 +145,23 @@ function printPlan(plan) {
   lines.push("═══════════════════════════════════════════════════");
   lines.push("  BOOTSTRAP DRY RUN — Pawan Satoshi Academy");
   lines.push("═══════════════════════════════════════════════════");
-
   lines.push(`\nSERVER RENAME: ${plan.renameServer ? `"${plan.renameServer.from}" → "${plan.renameServer.to}"` : "no change needed"}`);
-
   lines.push(`\nROLES — create ${plan.rolesToCreate.length}, already exist ${plan.rolesExisting.length}`);
   plan.rolesToCreate.forEach((r) => lines.push(`  [CREATE] ${r.name}`));
   plan.rolesExisting.forEach((r) => lines.push(`  [SKIP]   ${r.name} (already exists)`));
-
   lines.push(`\nCATEGORIES — create ${plan.categoriesToCreate.length}, already exist ${plan.categoriesExisting.length}`);
   plan.categoriesToCreate.forEach((c) => lines.push(`  [CREATE] ${c.name}`));
   plan.categoriesExisting.forEach((c) => lines.push(`  [SKIP]   ${c.name} (already exists)`));
-
   lines.push(`\nCHANNELS — create ${plan.channelsToCreate.length}, already exist ${plan.channelsExisting.length}, remap ${plan.legacyRemaps.length}`);
   plan.channelsToCreate.forEach((c) => lines.push(`  [CREATE] #${c.name} (in ${c.categoryName})`));
   plan.legacyRemaps.forEach((r) => lines.push(`  [RENAME+MOVE] #${r.fromName} → #${r.toName} (into ${r.toCategoryKey})`));
   plan.channelsExisting.forEach((c) => lines.push(`  [SKIP]   #${c.name} (already exists)`));
-
   lines.push("\nNothing will be deleted. Nothing outside this list is touched.");
   lines.push(`\nMode: ${CONFIRM ? "APPLYING CHANGES" : "DRY RUN (no changes made)"}`);
   lines.push("═══════════════════════════════════════════════════\n");
-
   // eslint-disable-next-line no-console
   console.log(lines.join("\n"));
 }
-
-// ── Application (side effects, only runs with --confirm) ───────────
 
 async function applyPlan(plan, guild) {
   if (plan.renameServer) {
@@ -178,10 +169,9 @@ async function applyPlan(plan, guild) {
     logger.info({ to: SERVER_NAME }, "Server renamed");
   }
 
-  const createdRoleIds = {};
   for (const roleDef of plan.rolesToCreate) {
     const permissions = buildPermissions(roleDef.permissions, `role:${roleDef.key}`);
-    const role = await guild.roles.create({
+    await guild.roles.create({
       name: roleDef.name,
       color: roleDef.color,
       hoist: roleDef.hoist,
@@ -189,13 +179,14 @@ async function applyPlan(plan, guild) {
       permissions,
       reason: "Bootstrap: create Academy role hierarchy"
     });
-    createdRoleIds[roleDef.key] = role.id;
     logger.info({ role: roleDef.name }, "Role created");
   }
 
-  // Reorder: our roles should sit above the bot roles but never above
-  // each other's intended hierarchy. We only move OUR roles; existing
-  // bot-owned roles are left exactly where they are.
+  // Refresh role state after creation. Discord bot roles are managed
+  // roles and cannot be moved. Academy roles MUST remain below the
+  // bot's highest role so the bot can assign Verified/Member and
+  // manage the staff hierarchy safely.
+  await guild.roles.fetch();
   await reorderOwnedRoles(guild);
 
   const createdCategoryIds = {};
@@ -244,24 +235,27 @@ async function applyPlan(plan, guild) {
 
 async function reorderOwnedRoles(guild) {
   await guild.roles.fetch();
+  const botMember = guild.members.me || await guild.members.fetchMe();
+  const botHighestPosition = botMember.roles.highest.position;
   const ourRoleNames = ROLE_DEFINITIONS.map((r) => r.name.toLowerCase());
-  const ourRoles = guild.roles.cache.filter((r) => ourRoleNames.includes(r.name.toLowerCase()));
+  const ourRoles = guild.roles.cache.filter((r) => ourRoleNames.includes(r.name.toLowerCase()) && !r.managed);
 
-  // Highest rank = highest position. ROLE_DEFINITIONS is already
-  // ordered top-to-bottom, so reverse it for Discord's position scale.
-  const orderedByRank = [...ROLE_DEFINITIONS].reverse();
-  const basePosition = Math.max(1, ...guild.roles.cache.filter((r) => !r.managed && r.name !== "@everyone").map((r) => r.position)) + 1;
+  // Put Academy roles immediately below the bot's highest role. Never
+  // attempt to move an Academy role above the bot's managed role.
+  const orderedByRank = [...ROLE_DEFINITIONS];
+  const maxAssignablePosition = Math.max(1, botHighestPosition - 1);
+  const startPosition = Math.max(1, maxAssignablePosition - orderedByRank.length + 1);
 
   const positions = orderedByRank
     .map((def, idx) => {
       const role = ourRoles.find((r) => r.name.toLowerCase() === def.name.toLowerCase());
-      return role ? { role: role.id, position: basePosition + idx } : null;
+      return role ? { role: role.id, position: startPosition + (orderedByRank.length - 1 - idx) } : null;
     })
     .filter(Boolean);
 
   if (positions.length > 0) {
     await guild.roles.setPositions(positions).catch((err) => {
-      logger.warn({ err }, "Could not fully reorder roles — this can happen if the bot's own role is positioned too low. Reorder manually if needed, or move the bot's role above these.");
+      logger.warn({ err }, "Could not fully reorder Academy roles. Ensure the bot's highest role is above the Academy roles in Discord.");
     });
   }
 }
@@ -270,18 +264,10 @@ function buildCategoryOverwrites(guild, visibility) {
   const everyoneId = guild.roles.everyone.id;
 
   if (visibility === "public") {
-    return [
-      { id: everyoneId, allow: [PermissionsBitField.Flags.ViewChannel] }
-    ];
+    return [{ id: everyoneId, allow: [PermissionsBitField.Flags.ViewChannel] }];
   }
 
   if (visibility === "verified") {
-    // @everyone denied; Verified role (and above, since Discord
-    // permissions are additive per-role) explicitly allowed once it
-    // exists. If the Verified role doesn't exist yet at category-
-    // creation time, this category will simply be staff/owner visible
-    // until the roles pass creates it — re-run sync after role
-    // creation if needed.
     const verifiedRole = guild.roles.cache.find((r) => r.name.toLowerCase() === "verified");
     const overwrites = [{ id: everyoneId, deny: [PermissionsBitField.Flags.ViewChannel] }];
     if (verifiedRole) {
