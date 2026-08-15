@@ -1,95 +1,69 @@
 # Project Status
 
-Last updated: live Discord deployment + curriculum completion + XP/leaderboard implementation.
+Last updated: final product implementation + CI validation + launch hardening.
 
 ## Phase Progress
 
 | Phase | Status | Summary |
 |---|---|---|
-| 0 — Planning & Scaffold | ✅ Complete | Repo structure, governance files, CI |
+| 0 — Planning & Scaffold | ✅ Complete | Repo structure, governance and CI |
 | 1 — Discord Foundation | ✅ Complete | Core infra, bootstrap, welcome, verification, roles, Event Management |
 | 2 — Security Engine | ✅ Complete | Permissions, AutoMod, anti-raid, anti-spam, anti-phishing, NSFW, logging, audit |
-| 2 remainder — XP/Leaderboard | 🟡 Implemented, smoke-test pending | XP/levels/streaks are awarded from quiz button interactions; `/leaderboard` is available |
-| 3A — Quiz Engine | ✅ Complete | Schema, validator, loader, randomizer, sessions, `/quiz`, `/assessment`, event integration |
-| 3A-ext — Required Assessments & Progress | ✅ Complete | Chapter/Final assessment engine, curriculum unlocks, class completion tracking |
-| 3B — Question Bank Content | ✅ Complete — 22/22 subjects, 637 questions | Mastery-based question content |
-| 3C — Academy Lesson Content | ⬜ Pending | Long-form lesson Markdown |
-| 3D — Certificates | ⬜ Pending | PDF generation, unique IDs, public verification |
-| 4 — Automation & Community Operations | 🟡 Partial | Recurring quiz automation and leaderboard live; tickets, exports, study groups and activities remain |
-| 5 — Website | ⬜ Pending | Mobile-first GitHub Pages application |
-| 6 — AI Helper | ⬜ Pending | Retrieval-first assistant after lesson corpus |
-| 7 — Growth & Launch Hardening | ⬜ Pending | Badges, games, audits and final launch checklist |
-| Live Discord | ✅ Running | Server bootstrap applied; 7 roles + 32 mapped channels synchronized; bot online |
+| 2 remainder — XP/Leaderboard/Suggestions | ✅ Complete | XP, levels, streaks, leaderboard, suggestions and polls |
+| 3A — Quiz Engine | ✅ Complete | Schema, validator, loader, randomizer, sessions and assessment integration |
+| 3A-ext — Required Assessments & Progress | ✅ Complete | Chapter unlocks, final exam and graduation gate |
+| 3B — Question Bank Content | ✅ Complete | 22/22 subjects, 637 validated questions |
+| 3C — Academy Lesson Content | ✅ Complete | 14 lesson Markdown files including graduation synthesis |
+| 3D — Certificates | ✅ Complete | PDF generation, unique IDs, persistent registry and public verification API |
+| 4 — Automation & Community Operations | ✅ Complete | Daily quiz, weekly meeting, tickets, study groups, activities and exports |
+| 5 — Website | ✅ Implemented | Mobile-first static application + GitHub Pages workflow |
+| 6 — AI Helper | ✅ Complete | Retrieval-first `/ask` over Academy lesson corpus |
+| 7 — Growth & Launch Hardening | ✅ Complete | Badges, profile, knowledge game, permissions and final launch checklist |
+| Live Discord | 🟡 Existing runtime + new code ready | Existing deployment was previously confirmed healthy; latest product commits require the normal host redeploy/smoke test |
 
-## Question Bank Content
+## Content
 
-637 validated questions across all 22 curriculum subjects:
+**637 validated questions across all 22 subjects.**
 
-| # | Subject | Questions |
-|---|---|---:|
-| 1 | Orientation | 42 |
-| 2 | Internet Basics | 45 |
-| 3 | Digital Literacy | 33 |
-| 4 | Cyber Security | 43 |
-| 5 | Password Safety | 34 |
-| 6 | Digital Payments | 31 |
-| 7 | AI | 30 |
-| 8 | Prompt Engineering | 22 |
-| 9 | Git & GitHub | 35 |
-| 10 | Linux | 30 |
-| 11 | Programming | 28 |
-| 12 | Bitcoin | 45 |
-| 13 | Blockchain | 25 |
-| 14 | Ethereum | 28 |
-| 15 | Base | 20 |
-| 16 | Stablecoins | 21 |
-| 17 | DeFi | 25 |
-| 18 | Wallet Security | 20 |
-| 19 | Web3 | 20 |
-| 20 | Testnets | 20 |
-| 21 | Ambassador Programs | 20 |
-| 22 | Community Management | 20 |
+The lesson corpus now covers Orientation, Classes 1–12 and Graduation. It is the source corpus for the retrieval-first helper and website learning layer.
 
-## Automatic Quiz
+## Learner features
 
-The scheduler runs every 60 seconds and performs an immediate startup tick. On first successful startup after `#quiz-arena` is synchronized, the bot creates a persistent `daily-community-quiz` recurring event if one does not already exist.
+- Practice, Daily, Weekly and Monthly quizzes
+- Required Chapter Assessments at 70%
+- Required Final Examination at 75%
+- XP: 10 correct / 2 attempted incorrect
+- 100 XP per level
+- Persisted activity streaks
+- `/leaderboard`
+- `/profile` and achievement badges
+- `/game knowledge`
+- `/ask`
+- Graduation PDF certificate and verification
 
-Default schedule: **09:00 IST daily**, configurable with `DAILY_QUIZ_HOUR_IST`. Default question count: **1**, configurable with `DAILY_QUIZ_COUNT`. The event then lives in SQLite and can be managed with `/event list`, `/event edit`, `/event disable` and `/event resume` without redeploying.
+## Community features
 
-## XP / Leveling
+- Private support tickets with Moderator access
+- Study groups
+- Suggestions with manager status workflow
+- Interactive community activities/polls
+- Manager-only JSON export
+- Recurring daily quiz and weekly Academy meeting
 
-Quiz answers now award XP automatically through the interaction layer:
+## Website
 
-- Correct answer: 10 XP
-- Attempted incorrect answer: 2 XP
-- Level: 1 level per 100 XP
-- Daily activity streak is persisted on the member record
-- `/leaderboard` shows the top 10 members with XP
+The `website/` application is responsive and mobile-first. The GitHub Pages workflow copies the static application and lesson corpus into the Pages artifact.
 
-This is intentionally derived from actual quiz interactions rather than message count or arbitrary activity.
+**Repository-level Pages activation is the only external switch:** an administrator must select **Settings → Pages → Source → GitHub Actions** once. The repository currently has no Pages site configured, so GitHub's `configure-pages` action cannot proceed until that setting is enabled.
 
-## Live Deployment Verification
+## CI
 
-The live Render logs previously confirmed:
+The latest GitHub Actions Lint & Test run for the implementation passed successfully. The final launch checklist is in `docs/LAUNCH_CHECKLIST.md`.
 
-- database initialized
-- 537 questions loaded with zero rejected questions before the final five banks were added
-- all 7 roles created
-- all 32 mapped channels created
-- all IDs synchronized
-- slash commands registered successfully
-- health server listening on port 10000
-- bot logged in
-- security engine initialized
-- scheduler started with 60-second ticks
-- startup sequence completed
+## Security
 
-The current repository adds the remaining five question banks, daily quiz seeding and XP/leaderboard code. Render auto-deploy should run from the new commits; the resulting logs must be treated as the final runtime smoke-test evidence.
-
-## Security Rules
-
-- Never commit Discord tokens or API keys.
-- Never grant the bot Administrator for normal operation.
-- Never force-push deployment recovery.
-- Never automatically delete existing Discord channels, roles or bots.
-- Keep third-party bots untouched until replacement functionality is validated.
+- Secrets remain environment-only.
+- No Administrator permission is required.
+- Ticket and management actions enforce least-privilege checks.
+- Certificate PDFs are generated on demand.
+- Existing third-party Discord bots are not removed or modified by bootstrap code.
