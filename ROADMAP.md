@@ -1,6 +1,6 @@
 # Pawan Satoshi Academy — Master Roadmap
 
-This roadmap is the authoritative execution order. Completed handoff work is preserved; no completed feature should be regenerated.
+This roadmap is the authoritative execution order. Completed handoff work is preserved; no completed feature should be regenerated. Global-learning phases extend the existing system rather than replacing its working Discord, quiz, certificate or website foundations.
 
 ## Phase 0 — Governance & Architecture
 - Master blueprint
@@ -8,6 +8,7 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Repository conventions
 - CI/test policy
 - Mobile-first administration policy
+- Global accessibility and localization architecture
 
 ## Phase 1 — Discord Foundation
 - Existing-server migration/bootstrap
@@ -26,8 +27,10 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Practice quizzes
 - Chapter assessments and progression gating
 - Final examination
-- Complete 22-subject question bank
+- Complete subject/question bank
 - Long-form lessons, labs and assignments
+- Seven-chapter-per-class curriculum model
+- Progressive difficulty from Class 1 through Class 12
 
 ## Phase 4 — Credentials & Operations
 - Free certificate generation
@@ -38,7 +41,7 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Meeting/RSVP extensions
 - Public-data export pipeline
 
-## Phase 5 — Website
+## Phase 5 — Website Foundation
 - Mobile-first GitHub Pages site
 - Home/community/resources
 - Course catalogue
@@ -46,6 +49,7 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Quiz information
 - Certificate verification
 - FAQ/docs
+- Responsive Android/tablet/desktop validation
 
 ## Phase 6 — AI Learning Assistant
 - Local/rules/retrieval-first helper
@@ -65,10 +69,131 @@ This roadmap is the authoritative execution order. Completed handoff work is pre
 - Deployment verification
 - Launch checklist
 
-## Current baseline
+# Global Academy Expansion
 
-The latest handoff snapshot contains 92 actual project files and 17 populated subject banks with 537 questions. The handoff documents identify the next content subjects as Wallet Security, Web3, Testnets, Ambassador Programs and Community Management. Bitcoin is flagged for future mastery expansion rather than a fixed quota.
+## Phase 8 — Global Localization Foundation
+**Goal: make the Academy language-independent by architecture.**
+
+- Locale detection from browser/device
+- Persistent language preference
+- Translation resource schema
+- Locale-aware routing and lesson metadata
+- Unicode-first content handling
+- RTL layout support
+- Locale-aware dates, numbers, scores and certificates
+- Translation glossary for Web3/AI/security terminology
+- Source-language vs reviewed-translation status
+- Fallback strategy for missing strings
+- Translation validation tests
+
+**Exit condition:** switching locale never breaks navigation, lesson loading, scoring, certificates or accessibility, even when a translation is incomplete.
+
+## Phase 9 — Multilingual Curriculum
+**Goal: progressively publish professionally reviewed language packs.**
+
+- UI translation packs
+- Orientation and Class 1 first
+- Classes 2–4 foundation translation
+- Classes 5–8 practical Web3 translation
+- Classes 9–10 developer translation
+- Classes 11–12 professional/AI/community translation
+- Assessment questions and feedback localized with the same IDs
+- Certificate labels and verification pages localized
+- Translation review workflow and glossary enforcement
+- Architecture remains open to any Unicode language rather than a fixed language ceiling
+
+**Recommended initial production locales:** English, Hindi, Spanish, Portuguese, French, German, Arabic, Bengali, Urdu, Indonesian, Turkish, Vietnamese, Japanese, Korean and Chinese variants, followed by community-reviewed expansion.
+
+## Phase 10 — Dynamic Voice Learning
+**Goal: every learner can listen to lessons in a suitable available voice.**
+
+- Browser/device voice discovery
+- Dynamic language-to-voice matching
+- Play/pause/resume/stop
+- Rate and pitch controls
+- Read current section / read full lesson
+- Section navigation while listening
+- Skip code/URLs by default
+- Keyboard and touch support
+- RTL-compatible controls
+- No-audio fallback
+- Optional future server TTS adapter for environments with better voices
+
+**Exit condition:** voice never blocks text learning and never sends private learner data to an external provider without explicit configuration/consent.
+
+## Phase 11 — Interactive Classroom
+**Goal: transform static lessons into professional learning sessions.**
+
+Every chapter becomes:
+
+`Warm-up → Explain → Example → Visual/Scenario → Guided Practice → Knowledge Check → Reflection → Assessment`
+
+- Lesson progress bar
+- Chapter navigation
+- Interactive examples
+- Safe testnet/sandbox exercises
+- Inline knowledge checks
+- Instant explanations and references
+- Difficulty-aware practice
+- Resume where the learner stopped
+- Learning streaks without compulsive design
+- Personal progress dashboard
+- Optional audio mode
+- Accessibility-first controls
+
+## Phase 12 — Web Assessment & Unified Progress
+
+- Web chapter assessments
+- Web final examination
+- Same progression rules as Discord
+- Score history and best score
+- Class/chapter unlock state
+- Practical task evidence
+- Final capstone
+- Certificate issuance from verified completion
+- Public certificate verification
+
+## Phase 13 — Advanced Web3 Professional Track
+
+- Wallet/network/transaction mastery
+- Receive/send/swap/bridge/mint/staking workflows
+- Mining and consensus distinctions
+- Explorers and on-chain research
+- Project due diligence
+- Smart contracts and dApps
+- Git/GitHub development workflow
+- AI with ChatGPT/Claude
+- Article writing
+- X/Twitter educational communication
+- Discord roles, moderation and community management
+- Ethical ecosystem contribution and opportunity discovery
+- Growth/marketing fundamentals without spam or financial promises
+
+## Phase 14 — Global Capstone & Graduation
+
+- Multilingual final exam
+- Practical wallet/testnet task
+- Research task
+- Builder/content/community task
+- Portfolio evidence
+- Multilingual graduation certificate
+- Public verification
+- Graduate profile/achievement summary
+- Career and continued-learning pathways
+
+## Phase 15 — Global Scale & Quality
+
+- Translation coverage dashboard
+- Voice availability dashboard
+- Content freshness/review dates
+- Source/reference audits
+- Accessibility regression tests
+- Mobile/browser/device matrix
+- Performance budgets
+- Privacy/security review of all optional providers
+- Community translation contribution workflow
+- New-chain/new-tool curriculum update process
 
 ## Working rule
 
-Each phase is complete only when implementation, tests, documentation and deployment instructions are present. Do not mark scaffolding as implemented.
+Each phase is complete only when implementation, tests, documentation and deployment instructions are present. Do not mark scaffolding as implemented. For language support, “supported” means the actual learner path works; a locale is not marked complete merely because a language selector contains its name.
