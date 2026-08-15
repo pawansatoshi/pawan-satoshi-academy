@@ -1,14 +1,10 @@
 // bot/tests/antiPhishing.test.js
 //
-// Tests the pure domain-matching logic in antiPhishing.js. The
-// detection functions aren't exported directly (they're internal to
-// message handling), so this test re-implements the exact same
-// matching rules against the exported constants to verify the data
-// itself is well-formed and the heuristics behave as intended. This
-// keeps the test honest: it fails if BLOCKED_DOMAINS or
-// SUSPICIOUS_PATTERNS are edited in a way that breaks detection.
+// Integration tests for the real phishing detector using an in-memory
+// database so moderation logging and repeat-offense counting exercise
+// the same production code path used by the bot.
 
-import { test } from "node:test";
+import { test, before } from "node:test";
 import assert from "node:assert/strict";
 
 process.env.DISCORD_BOT_TOKEN ??= "test-token";
@@ -17,10 +13,12 @@ process.env.DISCORD_GUILD_ID ??= "test-guild-id";
 process.env.DATABASE_PATH ??= ":memory:";
 process.env.NODE_ENV = "test";
 
-// Re-derive the same URL regex and matching behavior by importing the
-// module and exercising it through a fake message object, rather than
-// duplicating private logic — this exercises the real code path.
+const { initDatabase } = await import("../src/core/database.js");
 const { checkMessageForPhishing } = await import("../src/modules/moderation-automod/antiPhishing.js");
+
+before(() => {
+  initDatabase();
+});
 
 function makeFakeMessage(content, { moderatable = true } = {}) {
   const deleted = { called: false };
@@ -69,8 +67,8 @@ test("checkMessageForPhishing: known blocked domain is deleted and flagged", asy
   assert.equal(msg._deleted.called, true);
 });
 
-test("checkMessageForPhishing: punycode homograph domain is flagged", async () => {
-  const msg = makeFakeMessage("look at this https://xn--discrd-l1a.com/gift");
+test("checkMessageForPhishing: valid punycode homograph domain is flagged", async () => {
+  const msg = makeFakeMessage("look at this https://xn--dscord-pvf.com/gift");
   const result = await checkMessageForPhishing(msg);
   assert.equal(result, true);
   assert.equal(msg._deleted.called, true);
