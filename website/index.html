@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Pawan Satoshi Academy — free digital literacy, cybersecurity, programming and Web3 learning.">
+  <title>Pawan Satoshi Academy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top">Pawan Satoshi Academy</a><nav><a href="#curriculum">Curriculum</a><a href="#verify">Verify</a><a href="#about">About</a></nav></header>
+  <main id="top">
+    <section class="hero"><div><p class="eyebrow">FREE DIGITAL LEARNING</p><h1>Learn the systems behind the internet, security and Web3.</h1><p class="lead">A structured curriculum from digital literacy and cybersecurity to programming, blockchain, DeFi and community operations.</p><div class="actions"><a class="button" href="#curriculum">Start learning</a><a class="button secondary" href="#verify">Verify certificate</a></div></div><div class="hero-card"><strong>22 subjects</strong><span>637 validated quiz questions</span><span>12 progressive classes</span><span>Required assessments + graduation</span></div></section>
+    <section id="curriculum" class="section"><div class="section-head"><p class="eyebrow">CURRICULUM</p><h2>Progressive, practical learning</h2></div><div id="lesson-grid" class="grid"></div></section>
+    <section id="verify" class="section verify"><div><p class="eyebrow">PUBLIC VERIFICATION</p><h2>Check a graduation certificate</h2><p>Enter a certificate ID and the Academy runtime API. The API returns a signed-by-registry verification record and the generated PDF.</p></div><form id="verify-form"><label>Certificate ID<input id="cert-id" required placeholder="PSA-2026-XXXXXXXXXXXX"></label><label>Verification API<input id="api-base" placeholder="https://your-academy-runtime.example"></label><button class="button" type="submit">Verify certificate</button></form><pre id="verify-result" aria-live="polite"></pre></section>
+    <section id="about" class="section about"><h2>Built for learning, not hype.</h2><p>The Academy emphasizes source-aware education, operational security, responsible community participation and hands-on practice. Practice quizzes are optional; chapter assessments and the final examination demonstrate progression.</p></section>
+  </main>
+  <footer><span>© Pawan Satoshi Academy</span><span>Open curriculum · responsible use · community learning</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
