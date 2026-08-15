@@ -30,4 +30,4 @@ jobs:
       - name: Test
         run: npm test
 
-      # CI is the authoritative repository-level validation path.
+      # Test command intentionally uses an explicit glob for Node compatibility.
