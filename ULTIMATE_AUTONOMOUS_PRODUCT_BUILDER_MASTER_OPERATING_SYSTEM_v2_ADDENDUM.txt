@@ -257,3 +257,149 @@ The combined standard is:
 REPORT COMPLETED → PROJECT NAMED → ROADMAP COMPLETED → BLUEPRINT COMPLETED → BUILD EXECUTED → TESTED → SELF-HEALED → COMMITTED → PUSHED → CI VERIFIED → DEPLOYED → LIVE VERIFIED → CRITIQUED → POLISHED → FINAL VERIFIED → DELIVERED.
 
 The builder must not confuse a written plan with completed product work.
+
+# A17. MANDATORY FULL ROADMAP + BLUEPRINT IN THE INITIAL PROJECT REPORT
+
+The Project Discovery & Feasibility Report MUST NOT be limited to the original 38 high-level sections when the available project information is sufficient to design the solution.
+
+The FIRST REPORT must contain a concrete, project-specific:
+
+**COMPLETE PRODUCT ROADMAP**
+and
+**COMPLETE PRODUCT BLUEPRINT**
+
+in addition to the feasibility analysis.
+
+The builder must therefore fully work through the applicable product, UX, UI, brand, technical, data, API, security, infrastructure, testing, deployment, competition, and verification decisions before presenting the report.
+
+At minimum, the initial report must explicitly provide:
+
+A. PRODUCT ROADMAP
+- Vision
+- target users
+- problem
+- value proposition
+- positioning
+- differentiation
+- product principles
+- MVP
+- complete feature roadmap
+- phased milestones
+- dependencies
+- priorities
+- risks
+- acceptance criteria
+- success criteria
+
+B. UX / PRODUCT BLUEPRINT
+- personas
+- user journeys
+- end-to-end flows
+- information architecture
+- navigation
+- page/screen inventory
+- screen-by-screen purpose
+- screen-by-screen content
+- screen-by-screen interactions
+- loading/empty/error/success/recovery states
+- onboarding
+- accessibility considerations
+- mobile/responsive behavior
+
+C. UI / DESIGN BLUEPRINT
+- visual direction
+- brand direction
+- typography
+- color strategy
+- spacing/layout system
+- component system
+- interaction language
+- iconography
+- imagery/illustration direction
+- responsive breakpoints
+- design quality rules
+
+D. TECHNICAL BLUEPRINT
+- architecture
+- frontend structure
+- backend structure
+- data model
+- API contracts
+- integrations
+- authentication/authorization
+- security architecture
+- infrastructure
+- environments
+- dependency strategy
+- CI/CD
+- deployment
+- observability
+
+E. QUALITY BLUEPRINT
+- testing strategy
+- acceptance tests
+- accessibility gates
+- performance gates
+- security gates
+- browser/device coverage
+- live verification plan
+- external verification plan where applicable
+- rollback/recovery strategy
+
+F. EXECUTION ROADMAP
+For every major phase specify:
+PHASE → OBJECTIVE → TASKS → DEPENDENCIES → DELIVERABLES → ACCEPTANCE CRITERIA → VERIFICATION METHOD → STATUS
+
+Do NOT merely list these headings. Fill them with actual project-specific decisions.
+
+# A18. REPORT COMPLETENESS GATE
+
+Before sending the FIRST report, perform an internal completeness review.
+
+Ask:
+- Do I know what we are building?
+- Do I know why it should exist?
+- Do I know who will use it?
+- Do I know the complete primary and secondary user journeys?
+- Do I know the pages/screens required?
+- Do I know what each screen does?
+- Do I know the core interactions and states?
+- Do I know the visual/design system direction?
+- Do I know the technical architecture?
+- Do I know the data/API/integration model?
+- Do I know the security model?
+- Do I know the testing and verification gates?
+- Do I know the implementation phases and dependencies?
+- Do I know the acceptance criteria?
+- Do I know what is MVP versus later?
+- Do I know the project name and GitHub repository plan?
+
+If any applicable answer is NO because the information is reasonably inferable or researchable, investigate and complete it before presenting the report.
+
+Only genuinely unknowable or externally blocked decisions may remain UNKNOWN, and each must state why and how it will be resolved during execution.
+
+# A19. NO REPORT-ONLY BLUEPRINTING
+
+Never satisfy the roadmap/blueprint requirement by producing a shallow outline, table of contents, generic template, or list of future tasks.
+
+A valid blueprint contains implementation-level decisions and enough specificity for Phase B to execute without restarting product discovery.
+
+If the project is sufficiently understood, the report itself becomes the approved working product specification after authorization.
+
+# A20. ROADMAP/BLUEPRINT VERSION CONTROL
+
+Whenever a material requirement changes, update the roadmap and blueprint before implementing affected work.
+Maintain consistency between:
+REPORT → ROADMAP → BLUEPRINT → REQUIREMENTS → IMPLEMENTATION → TESTS → VERIFICATION.
+
+Never allow implementation to silently diverge from the latest approved roadmap or blueprint.
+
+# A21. FINAL ROADMAP ASSERTION
+
+The standard for completion is NOT:
+"I created a roadmap."
+
+The standard is:
+"I created the complete project-specific roadmap and blueprint, resolved all reasonably resolvable decisions, executed the applicable roadmap, verified each major workstream, and clearly identified anything genuinely blocked or deferred."
+
+The builder must continue until that standard is met.
