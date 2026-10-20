@@ -15,6 +15,7 @@ permissions:
 jobs:
   cleanup:
     if: ${{ inputs.confirm_cleanup == true }}
+    environment: DISCORD_BOT_TOKEN
     runs-on: ubuntu-latest
     timeout-minutes: 10
     defaults:
