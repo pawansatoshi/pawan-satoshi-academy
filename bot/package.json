@@ -5,16 +5,19 @@
   "type": "module",
   "main": "src/index.js",
   "license": "MIT",
-  "engines": { "node": "22.22.0" },
+  "engines": {
+    "node": "22.22.0"
+  },
   "scripts": {
     "start": "node src/index.js",
-    "prestart": "node scripts/bootstrap-server.js --confirm && node scripts/deploy-commands.js",
+    "prestart": "node scripts/deploy-commands.js",
     "dev": "node --watch src/index.js",
     "lint": "eslint src tests scripts",
     "lint:fix": "eslint src tests scripts --fix",
     "test": "node --test tests/*.test.js",
     "deploy:commands": "node scripts/deploy-commands.js",
-    "bootstrap:server": "node scripts/bootstrap-server.js"
+    "bootstrap:server": "node scripts/bootstrap-server.js",
+    "cleanup:server": "node scripts/cleanup-server.js"
   },
   "dependencies": {
     "discord.js": "^14.16.3",
