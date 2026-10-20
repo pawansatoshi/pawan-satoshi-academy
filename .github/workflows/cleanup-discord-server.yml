@@ -1,0 +1,45 @@
+name: One-time Discord Server Cleanup
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_cleanup:
+        description: "Confirm removal of Academy-created channels/categories/roles"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    if: ${{ inputs.confirm_cleanup == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: bot
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run one-time cleanup
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+          DISCORD_CLIENT_ID: ${{ secrets.DISCORD_CLIENT_ID }}
+        run: |
+          if [ -z "$DISCORD_BOT_TOKEN" ] || [ -z "$DISCORD_GUILD_ID" ]; then
+            echo "::error::Missing DISCORD_BOT_TOKEN or DISCORD_GUILD_ID repository secret."
+            exit 1
+          fi
+          npm run cleanup:server -- --confirm
